@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Documentazione BPM
 site_url: https://BPM.docs
 theme:
   name: material
@@ -7,7 +7,7 @@ theme:
   palette:
       primary: custom
       accent: custom
-
+  language: it
 extra_css:
   - stylesheets/shape.css
 
