@@ -1,12 +1,12 @@
 site_name: Documentazione BPM
-site_url: https://BPM.docs
+site_url: https://BPM.docs/it/
 theme:
   name: material
   logo: assets/favicon-96x96.png
   favicon: assets/fav.ico
   palette:
-      primary: custom
-      accent: custom
+    primary: custom
+    accent: custom
   language: it
 extra:
   alternate:
