@@ -47,5 +47,7 @@ In caso di chiusura accidentale, è possibile riaprire tale pannello premendo F4
 
 Nella maggior parte dei casi, un flusso ha un inizio e almeno una fine.
 
+!!! danger "Rimozione dello Start"
+    È possibile rimuovere Start, ma è un comportamento non convenzionale e tendenzialmente sconsigliato in quanto all'inizio verrà richiesto all'utente di inserire i valori nelle variabili richieste.  
 
-L'inizio può essere sovrascritto: cliccando tasto destro su un elemento presente sul canvas, dal menù contestuale si può scegliere l'opzione **Imposta come oggetto di avvio**. Così facendo il flusso inizierà dall'elemento impostato come oggetto di avvio.
+L'inizio, quindi, può essere sovrascritto: cliccando tasto destro su un elemento presente sul canvas, dal menù contestuale si può scegliere l'opzione **Imposta come oggetto di avvio**. Così facendo il flusso inizierà dall'elemento impostato come oggetto di avvio.

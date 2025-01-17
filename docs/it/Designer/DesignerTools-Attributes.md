@@ -27,7 +27,7 @@ Una volta selezionato dal Designer Tools, passando il cursore sopra un elemento,
 
 Mentre si sta tracciando, passando il cursore su un elemento differente dal primo, è possibile collegarlo ad uno dei punti del destinatario.
 
-![](../../assets/Linking.gif)
+![](../../assets/linking.gif)
 
 Fatto ciò, i due elementi saranno collegati: spostandoli all'interno del canvas, il link rimarrà ancorato ad essi.  
 
@@ -46,3 +46,12 @@ Nel pannello degli attributi di un link inoltre sono disponibili tutte le caratt
 
 Lo Start è il punto di inizio di ogni flusso manualmente azionato.  
 
+Un flusso può avere più Start. In questo caso, alla partenza del processo, verrà richiesto all'utente da quale Start partire.  
+
+Ogni Start ha necessariamente bisogno che le **_Variabili da inserire_** siano dichiarate.  
+Una volta inserite, apparirà una @ accanto allo start nel canvas.  
+
+Nel menù contestuale si trova un altro aspetto fondamentale assegnare il processo agli utenti che dovranno inserire le variabili precedentemente dichiarate.
+Nel dialog che viene aperto è anche possibile far sì che il flow non potrà essere iniziato prima di essere stato assegnato. 
+
+![](../../assets/inserimentoVarUserTask.gif)
