@@ -4,7 +4,7 @@ title: BPM Docs
 
 ---
 # Documentazione BPM
-![Divieto d'accesso](../assets/divietoAccesso.png)
+![Divieto d'accesso](assets/divietoAccesso.png)
 # **SITO IN COSTRUZIONE**
 
 Questa documentazione aiuta a:
@@ -30,13 +30,13 @@ Lorem ipsum dolor sit amet
 
 La ricerca darà risultati affinché inseriremo l'inizio di una parola.
 
-![Ricerca Corretta](../assets/ricercaCorretta.png "Ricerca fatta nel modo corretto")
+![Ricerca Corretta](assets/ricercaCorretta.png "Ricerca fatta nel modo corretto")
 
 N.B. per parola è intesa una qualsiasi successione di caratteri che si trova tra due spazi vuoti.  
 
 Infatti, se si cercasse  nella barra la parola "sum", non si otterrebbero risultati, in quanto "sum" non è l'inizio di una parola.
 
-![Ricerca Errata](../assets/ricercaErrata.png "Ricerca fatta in modo errato")
+![Ricerca Errata](assets/ricercaErrata.png "Ricerca fatta in modo errato")
 
 ### Come sapere quali termini cercare 
 Purtroppo, l'unico modo è provare per tentativi, utilizzando le parole più significative dell'argomento da cercare.
