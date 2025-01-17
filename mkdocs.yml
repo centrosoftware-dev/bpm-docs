@@ -8,6 +8,14 @@ theme:
       primary: custom
       accent: custom
   language: it
+extra:
+  alternate:
+    - name: Italiano
+      link: /it/
+      lang: it
+    - name: English
+      link: /en/
+      lang: en
 extra_css:
   - stylesheets/shape.css
 
