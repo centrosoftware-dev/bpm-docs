@@ -9,6 +9,6 @@
     --md-accent-bg-color:                #f4f6f9;
     --md-accent-bg-color--light:         #e4e8ed2a;
   }
-  a {
-    text-decoration: underline;
+p a {
+  text-decoration: underline;
 }
