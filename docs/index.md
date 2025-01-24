@@ -1,18 +1,15 @@
 ---
-title: BPM Docs
-
-
+title: "Presentazione"
 ---
-# Documentazione BPM
+
+# Documentazione BPM **SITO IN COSTRUZIONE**
 ![Divieto d'accesso](assets/divietoAccesso.png)
-# **SITO IN COSTRUZIONE**
 
-Questa documentazione aiuta a:
+Leggendo la documentazione è possibile risolvere una problematica ostica, imparare ad usare nuove feature o rendere più efficienti quelle che si conoscono.  
 
-* Risolvere una problematica
-* Scoprire funzionalità di cui si ha bisogno
-* Rendere più efficienti i tuoi workflow
-* Capire il funzionamento delle feature dello strumento
+Un utente che ha bisogno di aiuto qui può trovare la soluzione che cerca, senza dover attendere o passare per altri media.  
+
+Scritta in un linguaggio comprensibile, la documentazione cerca di essere esaustiva, estensiva ed efficace.  
 
 Per richiedere l'aggiunta di uno specifico argomento, [scrivi una issue a riguardo sul GitHub apposito](https://github.com/centrosoftware-dev/bpm-docs/issues).
 

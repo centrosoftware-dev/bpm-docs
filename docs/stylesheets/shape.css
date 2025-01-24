@@ -12,3 +12,6 @@
 p a {
   text-decoration: underline;
 }
+article ul li a{
+  text-decoration: underline;
+}

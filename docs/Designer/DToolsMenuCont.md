@@ -1,10 +1,11 @@
-# Designer Tools e Attributi
+# Designer Tools e Menù contestuale
 
-In questa pagina verranno descritte dettagliatamente tutte le sezioni e gli elementi al loro interno.  
+In questa pagina verranno descritte dettagliatamente tutte le sezioni e gli elementi all'interno del **_Designer Tools_** e **_Menù contestuale_**.  
 
-Il Designer Tools è il pannello che si trova sulla sinistra, gli Attributi invece si trovano nel Menù contestuale e nel Pannello Attributi.
+Il **_Designer Tools_** è il pannello che si trova sulla sinistra, si accede al **_Menù contestuale_** di un elemento cliccandoci sopra col tasto destro.
 
 ## Designer Tools
+
 Il Designers Tools è suddiviso in 6 sezioni.  
 
 Alla sommità è situata la search bar. Digitando al suo interno è possibile filtrare gli oggetti delle varie sezioni. I risultati della ricerca appariranno nella propria sezione. Se più oggetti corrispondono col termine ricercato, verranno mostrati nelle proprie sezioni, se diverse, collassate.
@@ -27,7 +28,7 @@ Una volta selezionato dal Designer Tools, passando il cursore sopra un elemento,
 
 Mentre si sta tracciando, passando il cursore su un elemento differente dal primo, è possibile collegarlo ad uno dei punti del destinatario.
 
-![](../../assets/linking.gif)
+![](../assets/linking.gif)
 
 Fatto ciò, i due elementi saranno collegati: spostandoli all'interno del canvas, il link rimarrà ancorato ad essi.  
 
@@ -35,16 +36,16 @@ Cliccando sul collegamento con il tasto destro del mouse, si aprirà il menù di
 
 * Nome Collegamento, aprirà un dialog dove poter inserire il nome del link che verrà mostrato nel canvas.
 * Percorso per Pianificazione, se spuntato, il processo, al suo inizio, riterrà il collegamento come percorso default per determinare le attività future.
-* Condizioni Abilitazione, complementari al Percorso per Pianificazione, le condizioni di abilitazione decidono se un Link sia percorribile o meno. Tale decisione è basata sulle formule scritte nel dialog che si apre una volta cliccata l'opzione.
+* Condizioni Abilitazione, complementari al Percorso per Pianificazione, le condizioni di abilitazione decidono se un Link sia percorribile o meno. Tale decisione è basata sulle formule scritte nel dialog che si apre una volta cliccata l'opzione.  Una volta inserita una condizione, l'inizio del **_Link_** assumerà una forma a rombo. Se da un elemento, sono collegati più **_Link_** con uscite diverse, essi sono trattati come un percorso inclusive, documentato e approfondito [qui](#percorsi-liberi-inclusive-e-complex). 
 * Imposta variabili, è possibile impostare delle variabili quando il link viene attraversato, arrivando a destinazione coi nuovi valori assegnati.
 * Tipo Linea, è possibile decidere tra le varie opzioni il comportamento del link all'interno del canvas.
 * Elimina Collegamento
 
 #### Start
 
-Lo Start è il punto di inizio di ogni flusso manualmente azionato.  
+Lo **_Start_** è il punto di inizio di ogni flusso manualmente azionato.  
 
-Un flusso può avere più Start. In questo caso, alla partenza del processo, verrà richiesto all'utente da quale Start partire.  
+Un flusso può avere più Start. In tal caso, alla partenza del processo, verrà richiesto all'utente da quale Start partire.  
 
 Ogni Start ha necessariamente bisogno che le **_Variabili da richiedere_** siano dichiarate.  
 Una volta inserite, apparirà una @ accanto allo start nel canvas.
@@ -65,13 +66,16 @@ Nella sezione **_Gestione_** si trovano gli attributi principali di un'attività
 
 Attributo che aggiunge la necessità di confermare la fine dell'attività per poter mandare avanti il flusso.
 
-##### Non documentabile
-
 ##### Rileva inizio attività
+
+Se impostato su true, rileva la data di inizio dell'attività e non viene dedotta dalla fine della task precedente.
 
 ##### Skip activity
 
-Se impostato su True salterà l'esecuzione della task
+Se impostato su True salterà l'esecuzione della task. 
+
+!!! info "Perché inserire nel disegno una task che non verrà mai eseguita?"
+    L'attributi Skip activity serve solo per rendere il disegno più fruibile, Facendo capire all'utente finale il modo in cui determinate azioni vanno svolte o suddivise.
 
 ##### Sottoprocesso
 
@@ -84,7 +88,14 @@ Attributo di tipo testuale. Il testo inserito apparirà al posto di "Esegui" sul
 
 ##### Tipo attività
 
+Attributo che va scelto da un dropdown. Serve come filtro.
+
 ##### Utilizza calendario
+
+**_Utilizza calendario_** è un attributo che aggiunge alle **_Scadenze/Tempi_** la logica per capire quando un giorno è lavorativo o meno, basandosi sul calendario.
+Se una task ha una data di scadenza, **_Utilizza calendario_** fa sì che i giorni del weekend non vengano contati.  
+
+Il concetto di pianificazione e scadenze è approfondito [qui](#pianificazione-e-scadenze)
 
 #### Stato processo
 
@@ -104,9 +115,139 @@ Impostando questo attributo a True, si sancisce la fine del processo.
 Un **_Sottoprocesso_** è un processo avviato dall'interno di un altro processo.
 Nel canvas dove viene inserito un Sottoprocesso (o un'attività con attributo Sottoprocesso impostato a true) l'elemento apparirà uguale ad una semplice attività, ma con una croce sotto la label descrittiva.  
 Cliccando due volte sopra l'elemento, si entra nel canvas del Sottoprocesso.
-Le funzionalità sono le stesse di un processo normale. L'unica differenza è nello start, che avviene non appena l'elemento principale del Sottoprocesso entra in esecuzione.  
+Le funzionalità sono le stesse di un processo normale. L'unica differenza è nello start, che avviene non appena l'elemento principale del Sottoprocesso entra in esecuzione e alla fine del sottoprocesso si passa all'elemento seguente nel processo principale.  
 
-Gli attributi che differenziano un'attività da un Sottoprocesso sono nella sezione **_Scadenze/Tempi_**. Entrambi questi attributi vengono approfonditi nella loro sezione [qui]().
+Gli attributi che differenziano un'attività da un Sottoprocesso sono nella sezione **_Scadenze/Tempi_**. Entrambi questi attributi vengono approfonditi nella loro sezione [qui](#pianificazione-e-scadenze).
+
+### Eventi
+
+La sezione **_Eventi_** raggruppa tutti gli elementi che fungono da Start e gli elementi che fungono da fine.  
+
+!!! note "Variabili da richiedere e Start"
+    Essendo tutti elementi predisposti per essere l'inizio di un processo (ad esclusione di quelli di fine processo), è vivamente consigliato di impostare le variabili da richiedere direttamente nello Start.
+
+#### Start
+
+Lo **_Start_** convenzionale è stato trattato [qui](#start).
+
+#### Start su evento
+
+Lo **_Start su evento_** ha la capacità di iniziare un processo quando un evento predefinito che arriva dall'esterno.
+Gli eventi sono definiti dai connettori che a loro volta sono elencati nella voce "Elenco connettori" nella sezione "Configurazione" del menù principale.
+
+#### Start a tempo
+
+Lo **_Start a tempo_** ha la capacità di iniziare un processo in modo ricorrente.
+Configurando lo **_Start a tempo_** è possibile impostare una descrizione e ogni quanto tempo far partire nuovamente il processo.  
+Le opzioni sono:
+
+* Ricorre ogni giorno.
+* Ricorre ogni settimana, dove è necessario scegliere il giorno settimanale in cui il processo ricorrerà.
+* Ricorre ogni mese, dove è necessario scegliere il numero del mese in cui far ricorrere il processo, altrimenti si può spuntare il checkbox "Ultimo del mese" per avviare il processo nell'ultimo giorno di ogni mese.
+
+In basso, infine, si ha la possibilità di specificare l'ora in cui partirà il processo.
+
+#### Attesa
+
+Analogamente allo start a tempo, l'**_Attesa_** è un genere di start che, una volta avviato un processo, attenderà il tempo stabilito prima di continuare.  
+
+Configurando l'evento, è possibile impostare una descrizione, il numero di giorni da attendere e cosa fare una volta che il tempo prestabilito sia passato.
+
+Tramite l'inpuit numerico iniziale è possibile stabilire il numero di giorni da attendere. Dopodiché tramite è possibile specificare una sola scelta su che azione dovrà svolgere l'elemento:
+
+* Non attendere oltre.
+* Attendi il primo X.
+* Attendi che sia il primo, secondo, terzo, quarto o ultimo X del mese.
+* Attendi che sia il Y del mese.
+
+X è il giorno della settimana scelto tramite un dropdown.
+Y è il giorno del mese impostato tramite input numerico.
+
+Infine è anche possibile far attendere l'inizio fino ad una determinata ora del giorno stabilito tramite un'ultima checkbox e impostando l'orario.
+
+#### Fine e Termina processo
+
+**_Fine e Termina processo_** sono due elementi per dichiarare completato un processo.
+La differenza tra i due elementi è che **_Termina processo_** termina tutti i rami paralleli e sottoprocessi attivi.
+
+### Gateway e percorsi
+
+La sezione **_Gateway e Percorsi_** raggruppa gli elementi che consentono di instradare il processo in direzioni diverse dipendentemente dalla configurazione dell'elemento.
+
+#### Percorsi alternativi (exclusive)
+
+L'elemento **_Percorsi alternativi (exclusive)_** permette di dividere il percorso del processo.
+Da questo gateway è possibile ramificare in percorsi diversi il processo, ognuno con la propria condizione di instradamento.
+Le condizioni dei percorsi sono impostate schiacciando tasto destro sul gateway e cliccando sull'entrata **_Configurazione_**.
+
+Una volta aperto il popup di configurazione, è possibile definire le condizioni di ogni percorso cliccando sui bottoni, uno per percorso, situati accanto alle entrate della colonna "Condizione".
+
+![](../assets/ifGateway.gif)
+
+Dalla configurazione è anche impostabile il percorso da considerare come default che sarà quello che il processo percorrerà se nessuna delle condizioni di uscita risulta come True.
+
+!!! info "Cosa succede se più uscite risultano come true?"
+
+    I **_Percorsi alternativi (exclusive)_** sono scelte che vanno ad instradare il processo in un singolo percorso. Di conseguenza, se più condizioni di uscita risultano come True, il percorso instradato sarà il primo.
+
+#### Percorsi paralleli (parallel)
+
+L'elemento **_Percorsi paralleli (parallel)_** funge da sdoppiatore del percorso principale in ramificazioni parallele.
+Tutte le ramificazioni parallele sono contemporanee, ma l'avanzamento varia in base allo svolgimento delle task interne di ognuna.
+
+In questo caso non ci sono condizioni, in quanto tutti i rami andranno eseguiti.
+
+#### Percorsi liberi (inclusive) e Complex
+
+Gli elementi **_Percorsi liberi_** e **_Complex_** sono il contrario dei percorsi exclusive: tutte le condizione d'uscita che risultano come True vengono instradate.
+
+#### Sincronizza
+
+L'elemento **_Sincronizza_** serve a convergere le ramificazioni che si sono create utilizzando i Gateway.
+Configurando l'elemento, è possibile definire il Number to pass, ovverosia quali percorsi devono essere arrivati all'elemento per far sì che il processo continui.
+
+### Operazioni
+
+Le **_Operazioni_** sono azioni specifiche e complesse: per questo è presente una sezione dedicata a loro che entra nelle specifiche, approfondendo ogni aspetto del loro funzionamento.  
+
+Clicca [qui]() per saltare alla loro sezione.
+
+### Processi collegati
+
+Analogamente alle operazioni, i **_Processi collegati_** hanno una sezione approfondita [qui]().
+
+### Altro
+
+La sezione **_Altro_** raggruppa gli elementi che non rientrano nel resto delle categorie.
+
+#### Gruppo e Swim lane
+
+L'elemento **_Gruppo_** è un raggruppatore di elementi.
+Gli elementi all'interno del **_Gruppo_** possono essere svolti dagli utenti assegnati al **_Gruppo_** stesso.
+
+![Utenti differenti](../assets/differentUsers.gif)
+
+L'elemento **_Swim lane_** è analogo a quello di gruppo.
+Per aggiungere pioù **_Swim lane_** basta trascinarne quante necessarie nel canvas.
+Le **_Swim lane_** suddividono il disegno in corsie, ognuna coi propri utenti associati che potranno svolgere le azioni all'interno della propria corsia.
+
+!!! Warning "Multuple associazioni di Utenti"
+
+    Se ad un **_Gruppo_** o una **_Swim lane_** e ad una task interna ad essi sono associati degli utenti e tali utenti differiscono con quelli associati nel contenitore, la task potrà essere svolta **solo** dagli utenti associati alla task stessa.
+    <center>**Task Users > Container Users**</center>
+
+#### Image, Casella di testo e Memo.
+
+**_Image_** è un elemento statico, attraverso cui è possibile inserire un immagine all'interno del canvas.  
+
+La **_Casella di testo_** è del semplice testo slegato ad altri elementi. È utile per dare titoli a parti o sezioni del flusso.  
+
+Il **_Memo_** ha la stessa funzionalità di un postit ed è collegabile ad un task tramite il link. Così facendo, tra la task e il **_Memo_** apparirà una linea tratteggiata gialla. È utile per scrivere note e ricordare agli utenti delle informazioni chiave per lo svolgimento di una task.
+
+#### Marker
+
+Il **_Marker_** è uno strumento utilizzato per navigare all'interno del processo tra diverse pagine. Questo risulta particolarmente utile quando si desidera rendere il processo stampabile, ad esempio su un foglio A4, evitando di estenderlo eccessivamente in verticale.  
+In questi casi, si aggiunge una nuova pagina, e il **_Marker_** funge da "collegamento" che consente di proseguire con il processo su un'altra sezione. In pratica, è un riferimento che rimanda a un'altra pagina del processo.
 
 ## Menù contestuale
 
@@ -118,7 +259,7 @@ Analogamente, a destra del canvas si trova il Pannello Attributi che, molto spes
 Selezionando più oggetti(1)è possibile spostarli in massa seguendo l'allineamento dell'elemento su cui si è cliccato il tasto destro. 
 { .annotate }
 
-1.  Per selezionare più oggetti è necessario tenere premuto CTRL o SHIFT quando si va a cliccare, col tasto sinistro, su un elemento.
+1.  Per selezionare più oggetti è necessario tenere premuto ++ctrl++ o ++shift++ quando si va a cliccare, col tasto sinistro, su un elemento. Altrimenti, cliccando su una parte vuota del canvas e tenendo premuto, è possibile delineare un'area i cui elementi interno verranno selezionati.
 
 Gli oggetti che possiedono un'etichetta hanno anche la possibilità di gestire il suo allineamento.
 
@@ -157,7 +298,7 @@ Questa pagina, chiamata **_Magazzino delle variabili_**, viene trattata e approf
 Per aggiungere una Variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
 Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori delle variabili così definite.
 
-![](../../assets/inserimentoVarUserTask.gif)
+![](../assets/inserimentoVarUserTask.gif)
 
 Infine, è possibile definire gli allegati da definire tramite l'entrata **_Allegati da richiedere_**.  
 In questo caso non è possibile definire gli allegati che andranno inseriti, bensì dei filtri che vadano a scremare i possibili allegati inseribili. Tutto questo tramite un popup.  
@@ -195,9 +336,11 @@ Per svolgere un'operazione basta trascinarla dalla colonna **_Operazioni disponi
 
 1. Il titolo della colonna è il momento in cui verrà svolta l'operazione.
 
-Le operazioni vengono svolte in ordine Top to Bottom.
+Le **_Operazioni_** vengono svolte in ordine Top to Bottom.
 
-Ogni operazione è trattata e approfondita nell'apposita sezione [qui]().
+Le **_Operazioni_** sono azioni specifiche e complesse: per questo è presente una sezione dedicata a loro che entra nelle specifiche, approfondendo ogni aspetto del loro funzionamento.  
+
+Clicca [qui]() per saltare alla loro sezione.
 
 ### Formula di validazione
 
@@ -252,20 +395,5 @@ Il Gruppo **_Dati Effettivi_** permette di configurare le variabili per i dati e
 ### Configurazione
 
 L'entrata **_Configurazione_** è differente per ogni elemento e viene approfondita nelle sezioni relative ai singoli elementi.
-
-
-Il Pannello Attributi presenta delle entrate comuni e generali tra gli elementi disegnabili sul canvas.  Esse sono:
-
-* 
-* Allineamento, 
-* 
-* Dati, sezione che comprende:
-    - Testo, presente in parti diverse a seconda dell'oggetto.
-    - Utenti, Utenti CC e Utenti Responsabili quando è necessaria l'assegnazione di una task.
-    - Variabili da richiedere.
-    - Allegati da richiedere.
-    - Ambito, necessario se quando si filtrano le attività della to-do list.
-    - Descrizione.
-    - Operazioni.
 
 
