@@ -121,4 +121,3 @@ Mostra e nasconde il Pannello degli attributi
 #### Griglia
 
 **_Griglia_** consente di aumentare o diminuire la distanza tra i punti della griglia.
-
