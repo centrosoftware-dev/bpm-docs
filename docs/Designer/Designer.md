@@ -23,7 +23,8 @@ Nella sidebar di sinistra abbiamo una serie di strumenti per disegnare il proces
 
 Nella sidebar di destra si trovano tutti gli attributi relativi all'elemento attualmente selezionato.
 
-Per gli approfondimenti sulla barra generale degli strumenti sono nella loro sezione al pié di pagina [qui](#barra-generale-degli-strumenti)
+Per gli approfondimenti sulla barra generale degli strumenti sono nella loro sezione al pié di pagina [qui](#barra-generale-degli-strumenti).  
+
 Gli approfondimenti sugli elementi del Designer Tools e i loro attributi si trovano nella sezione [Designer Tools e Menù contestuale](DToolsMenuCont.md).
 
 ## Costruire un modello di processo
@@ -47,6 +48,8 @@ L'inizio, quindi, può essere sovrascritto: cliccando tasto destro su un element
 ## Barra generale degli strumenti
 
 ### Home
+
+Qui sono presenti le principali azioni relative al processo, tutte suddivise in 4 sezioni.
 
 #### Workflow
 
@@ -116,7 +119,7 @@ Cliccando su **_Inserimento/modifica vatiabili_** ci si sposterà alla pagina de
 
 ##### Allegati
 
-Cliccando **_Allegati_** è possibile inserire tramite un dialog gli allegati del processo, creado directory apposite.
+Cliccando **_Allegati_** è possibile inserire tramite un dialog gli allegati del processo, crenado directory apposite.
 
 ##### Operazioni
 
@@ -125,4 +128,50 @@ Cliccando **_Allegati_** è possibile inserire tramite un dialog gli allegati de
 Cliccando **_Rinomina tabella_** è possibile cambiare il nome della tabella che contiene tutte le variabili nel Magazzino delle variabili.
 
 #### Allineamento e dimensioni
+
+Le entrate della sezione **_Allineamento e dimensioni_** sono trattate nella loro sezione dedicata [qui](DToolsMenuCont.md#allineamento).
+
+#### Posizionamento
+
+Sezione che contiene due proprietà del canvas: **_Aggancia alla griglia_** e **_Aggancia agli oggetto_**.
+
+##### Aggancia alla griglia
+
+Attivando questa proprietà il canvas diventa puntinato: lo spostamento e il ridimensionamento degli oggetti sarà guidato dai punti sul piano di disegno.
+
+##### Aggancia agli oggetto
+
+Attivando questa proprietà lo spostamento e il ridimensionamento degli oggetti sarà guidato dai bordi degli altri oggetti.
+
+#### Pagina
+
+Nella sezione **_Pagina_** sono presenti 5 pulsanti e il dropdown per lo zoom del canvas.
+
+##### Nuova pagina
+
+Il primo bottone, **_Nuova pagina_** crea una nuova pagina nel processo.
+
+##### Pagina precedente e Pagina successiva
+
+Il secondo e terzo bottone servono per cambiare pagina, andando alla **_Pagina precedente_** o alla **_Pagina successiva_**.
+
+##### Imposta pagina
+
+Il quarto bottone, **_Imposta pagina_**, apre un dialog che mostra le varie impostazioni del canvas/pagina.
+
+Dal popup è possibile impostare il formato pagina, basato sullo standard A dei fogli per stampanti, e il loro orientamento, se Portrait o Landscape.  
+
+Inoltre sono modificabili i quattro margini della pagina. Se si desidera è possibile mostrare a video i margini della pagina e i bordi sul canvas.
+
+In basso è possibile, infine, gestire l'orientamento delle Swim lane, approfondite [qui](DToolsMenuCont.md#gruppo-e-swim-lane), scegliendo tra verticale od orizzontale.
+
+##### Elimina
+
+L'ultimo bottone, **_Elimina_**, serve ad eliminare la pagina corrente.
+
+!!! note "Requirement cancellazione"
+    È possibile cancellare solo pagine vuote.
+#### Lingua
+
+Dall'ultima sezione è possibile scegliere la lingua.
 

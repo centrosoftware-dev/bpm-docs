@@ -86,6 +86,39 @@ where wkf.Name like 'fgwtfefwe'
 
 **_Importa/Esporta_** è un dropdown con 6 possibili scelte.
 
-
+Tramite le varie opzioni è possibile esportare le variabili del processo corrente o importarne altre da un file esterno.
+È possibile, altrimenti, importare/esportare solo la categoria.
 
 #### Esporta variabili
+
+**_Esporta variabili_** serve a spostare localmente le variabili. Ad esempio è possibile esportare le variabili del Mgazzino alle variabili da richiedere di una task.
+
+### Allineamento
+
+Simile all'allineamento della barra degli strumenti, trattato [qui](Designer.md/#allineamento-e-dimensioni), la sezione **_Allineamento_** contiene gli strumenti per allineare gli elementi nel canvas del Magazzino delle variabili.
+
+#### Allinea a sinistra e Allinea in alto
+
+Allineano gli elemento selezionati secondo il tipo di allineamento in base alla posizione dell'elemento su cui è stato cliccato il tasto destro.
+
+#### Porta davanti e Porta dietro
+
+Modifica lo Z-index di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare **_Porta avanti_** per portarlo in primo piano. 
+Lo stesso, ma al contrario, vale per **_Porta dietro_**.
+
+### Opzioni
+
+La sezione **_Opzioni_** raggruppa 3 opzioni generali del Magazzino.
+
+#### Proprietà
+
+Mostra e nasconde il Pannello degli attributi
+
+#### Variabili
+
+**_Variabili_** è un dropdown che consente di vedere nella Variable list o tutte la variabili ancora da inserire, o tutte le variabili indistintamente.
+
+#### Griglia
+
+**_Griglia_** consente di aumentare o diminuire la distanza tra i punti della griglia.
+

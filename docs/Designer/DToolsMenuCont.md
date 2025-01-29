@@ -256,12 +256,23 @@ Analogamente, a destra del canvas si trova il Pannello Attributi che, molto spes
 
 ### Allineamento
 
-Selezionando più oggetti(1)è possibile spostarli in massa seguendo l'allineamento dell'elemento su cui si è cliccato il tasto destro. 
+L'entrata **_Allineamento_** a sua volta ha 10 scelte: 
+
+#### Allinea
+
+Allineano gli elemento selezionati secondo il tipo di allineamento in base alla posizione dell'elemento su cui è stato cliccato il tasto destro.
+
+#### Porta davanti e Porta dietro
+
+Modifica lo Z-index di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare **_Porta avanti_** per portarlo in primo piano. 
+Lo stesso, ma al contrario, vale per **_Porta dietro_**.
+
+#### Distribuisci
+
+Selezionando più oggetti(1)è possibile spostarli in massa distrubuendoli su uno dei loro assi utilizzando le due entrate **_Distribuisci verticalmente_** o **_Distribuisci orizzontalmente_**.
 { .annotate }
 
 1.  Per selezionare più oggetti è necessario tenere premuto ++ctrl++ o ++shift++ quando si va a cliccare, col tasto sinistro, su un elemento. Altrimenti, cliccando su una parte vuota del canvas e tenendo premuto, è possibile delineare un'area i cui elementi interno verranno selezionati.
-
-Gli oggetti che possiedono un'etichetta hanno anche la possibilità di gestire il suo allineamento.
 
 ### Aspetto
 
