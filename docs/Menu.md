@@ -162,10 +162,6 @@ Descrizione del menù (es. "Nuovo menù").
 
 Permette di associare variabili per la configurazione dinamica.
 
-Note aggiuntive
-Un messaggio nella parte superiore informa che "Solo i menù verranno salvati; le radici e i sottomenù che non contengono menù verranno eliminati."
-L'interfaccia utilizza uno stile professionale e strutturato, con una chiara separazione tra strumenti, struttura del menù e configurazioni.
-
 ## Configurazione
 
 ## Sistema
