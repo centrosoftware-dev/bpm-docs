@@ -25,7 +25,7 @@ Nella sidebar di destra si trovano tutti gli attributi relativi all'elemento att
 
 Per gli approfondimenti sulla barra generale degli strumenti sono nella loro sezione al pié di pagina [qui](#barra-generale-degli-strumenti).  
 
-Gli approfondimenti sugli elementi del Designer Tools e i loro attributi si trovano nella sezione [Designer Tools e Menù contestuale](DToolsMenuCont.md).
+Gli approfondimenti sugli elementi del Designer Tools e i loro attributi si trovano nella sezione [Designer Tools e Menù contestuale](DesignerTools.md).
 
 ## Costruire un modello di processo
 
@@ -97,7 +97,7 @@ Tramite un popup vengono elencate gli avvertimenti e gli errori all'interno del 
 
 Il bottone **_puntatore_** serve per tornare alla modalità standard del cursore.
 
-Il [**_Link_**](DToolsMenuCont.md#link) viene approfondito nella sua sezione specifica [qui](DToolsMenuCont.md#link)
+Il [**_Link_**](DesignerTools.md#link) viene approfondito nella sua sezione specifica [qui](DesignerTools.md#link)
 
 ##### Modelli email
 
@@ -129,7 +129,7 @@ Cliccando **_Rinomina tabella_** è possibile cambiare il nome della tabella che
 
 #### Allineamento e dimensioni
 
-Le entrate della sezione **_Allineamento e dimensioni_** sono trattate nella loro sezione dedicata [qui](DToolsMenuCont.md#allineamento).
+Le entrate della sezione **_Allineamento e dimensioni_** sono trattate nella loro sezione dedicata [qui](DesignerTools.md#allineamento).
 
 #### Posizionamento
 
@@ -163,7 +163,7 @@ Dal popup è possibile impostare il formato pagina, basato sullo standard A dei 
 
 Inoltre sono modificabili i quattro margini della pagina. Se si desidera è possibile mostrare a video i margini della pagina e i bordi sul canvas.
 
-In basso è possibile, infine, gestire l'orientamento delle Swim lane, approfondite [qui](DToolsMenuCont.md#gruppo-e-swim-lane), scegliendo tra verticale od orizzontale.
+In basso è possibile, infine, gestire l'orientamento delle Swim lane, approfondite [qui](DesignerTools.md#gruppo-e-swim-lane), scegliendo tra verticale od orizzontale.
 
 ##### Elimina
 

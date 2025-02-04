@@ -1,10 +1,15 @@
 site_name: Documentazione BPM
 site_url: https://centrosoftware-dev.github.io/bpm-docs/
-
+plugins:
+    - search
+    - awesome-pages
 theme:
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.path
+    - search.suggest
+    - search.share
   name: material
   logo: assets/favicon-96x96.png
   favicon: assets/fav.ico

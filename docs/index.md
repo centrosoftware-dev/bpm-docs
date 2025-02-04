@@ -1,8 +1,4 @@
----
-title: "Presentazione"
----
-
-# Documentazione BPM **SITO IN COSTRUZIONE**
+# Documentazione BPM
 ![Divieto d'accesso](assets/divietoAccesso.png)
 
 Leggendo la documentazione è possibile risolvere una problematica ostica, imparare ad usare nuove feature o rendere più efficienti quelle che si conoscono.  
