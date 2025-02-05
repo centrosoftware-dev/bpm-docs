@@ -20,13 +20,9 @@ theme:
     accent: custom
   language: it
 extra:
-  alternate:
-    - name: Italiano
-      link: /
-      lang: it
-    - name: English
-      link: /bpm-docs/en/
-      lang: en
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/centrosoftware-dev/bpm-docs/tree/main/docs
 extra_css:
   - stylesheets/shape.css
 
