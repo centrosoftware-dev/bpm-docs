@@ -121,3 +121,13 @@ Mostra e nasconde il Pannello degli attributi
 #### Griglia
 
 **_Griglia_** consente di aumentare o diminuire la distanza tra i punti della griglia.
+
+## Magazzino delle variabili di un elemento
+
+Il **_Magazzino delle variabili di un elemento_** è lo stesso concetto del Magazzino delle variabili, ma riferito alle variabili da richiedere di un elemento.  
+
+Esso differisce in alcuni punti:
+
+* Non è possibile aggiungere o duplicare variabili.
+* È possibile aggiornare le descrizioni di tutte le variabili tramite **_Aggiorna Descrizione_** nella barra degli strumenti.
+* Non è possibile eseguire la **_Sqlview_**.

@@ -4,13 +4,21 @@ Nel Pannello Attributi sulla destra sono elencati tutti gli **_Attributi di una 
 ## Impostazioni base
 
 ### Nome variabile
-Nome identificativo della variabile.
+
+Il **_Nome della variabile_** è il nome tecnico con cui ci si riferisce alla variabile.  
+Esso Non può essere modificato dopo l'inizializzazione.
 
 ### Descrizione
-Breve descrizione del significato o scopo della variabile.
+
+La Descrizione di una variabile definisce la label che appare nel canvas.  
+Serve ad un utente per capire che genere di dato inserire in un input.
 
 ### Descrizione su interrogazioni
-Testo aggiuntivo per descrivere la variabile in contesti di interrogazione.
+
+Utilizzando la ricerca processi, la **_Descrizione su interrogazioni_** è l'attributo che viene ricercato e mostrato in caso combaciasse coi filtri di ricerca.
+
+!!! note
+    Si consiglia di impostare la **_Descrizione su interrogazioni_** in modo che sia più accurata e specifica rispetto alla Descrizione normale, in quanto la **_Descrizione su interrogazioni_** viene letta in una pagina dove l'utente non vede il flusso disegnato.
 
 ### Gruppo
 Definisce il gruppo logico o categoria a cui appartiene la variabile.

@@ -75,7 +75,7 @@ Se impostato su true, rileva la data di inizio dell'attività e non viene dedott
 Se impostato su True salterà l'esecuzione della task. 
 
 !!! info "Perché inserire nel disegno una task che non verrà mai eseguita?"
-    L'attributi Skip activity serve solo per rendere il disegno più fruibile, Facendo capire all'utente finale il modo in cui determinate azioni vanno svolte o suddivise.
+    L'attributo **_Skip activity_** serve solamente a rendere il disegno più fruibile, facendo capire all'utente finale il modo in cui determinate azioni vanno svolte o suddivise.
 
 ##### Sottoprocesso
 
@@ -106,9 +106,12 @@ Nella sezione Gestione ci sono 2 attributi:
 
 ##### Blocca edit
 
+Quando si entra nello stato il documento non è più modificabile dal magazzino. Anche gli utenti con le dovute autorizzazioni non possono modificare i dati immessi nelle variabili nel processo.
+
 ##### Stato di chiusura
 
-Impostando questo attributo a True, si sancisce la fine del processo.
+Impostando questo attributo a True, si sancisce la fine del processo interrompendo tutte le attività in corso.
+
 
 #### Sottoprocesso
 
