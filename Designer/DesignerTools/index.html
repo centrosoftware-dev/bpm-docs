@@ -1,0 +1,2717 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://centrosoftware-dev.github.io/bpm-docs/Designer/DesignerTools/">
+      
+      
+        <link rel="prev" href="../Designer/">
+      
+      
+        <link rel="next" href="../MenuContestualePannelloAttributi/">
+      
+      
+      <link rel="icon" href="../../assets/fav.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Designer Tools - Documentazione BPM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/shape.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#designer-tools" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="Documentazione BPM" class="md-header__button md-logo" aria-label="Documentazione BPM" data-md-component="logo">
+      
+  <img src="../../assets/favicon-96x96.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentazione BPM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Designer Tools
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Documentazione BPM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Men%C3%B9/Menu/" class="md-tabs__link">
+          
+  
+  Menù
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Designer/" class="md-tabs__link">
+          
+  
+  Designer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../glossario/" class="md-tabs__link">
+        
+  
+    
+  
+  Glossario
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentazione BPM" class="md-nav__button md-logo" aria-label="Documentazione BPM" data-md-component="logo">
+      
+  <img src="../../assets/favicon-96x96.png" alt="logo">
+
+    </a>
+    Documentazione BPM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentazione BPM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Menù
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Menù
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Menu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menù principale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Menù di configurazione
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Menù di configurazione
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Opzioni generali
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Opzioni generali
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/Parametri/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametri
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/MenuPersonalizzati/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menu personalizzati
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/Contatori/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contatori
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/ConfigurazioneEmail/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurazioni Mail
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/ProcessiRicorrenti/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processi con avvio ricorrente
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/AggiornamentoMassivoProcessi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aggiornamento massivo processi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/AttivaDisattivaProcessi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attiva/Disattiva processi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/VisualizzaStoricoGenerale/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visualizza storico generale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Opzioni modelli
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Opzioni modelli
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/ConfiguraImpostazioneListaProcessiDaExcel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ConfiguraImpostazioneListaProcessiDaExcel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/PrefiltriProcessi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PrefiltriProcessi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/EseguiImportazioneProcessiExcel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EseguiImportazioneProcessiExcel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/VerificaImportazioniDaExcel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VerificaImportazioniDaExcel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/TipiDiDossier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TipiDiDossier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/StampaBarcodeQR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StampaBarcodeQR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/UtentiGruppi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utenti e Gruppi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Designer
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Designer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Designer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Il Designer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Designer Tools
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Designer Tools
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#designer-tools_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designer Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Designer Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attività
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attività">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#puntatore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Puntatore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attivita_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attività
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attività">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#da-confermare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Da confermare
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rileva-inizio-attivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rileva inizio attività
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skip activity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sottoprocesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sottoprocesso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testo-pulsante-esegui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testo pulsante esegui
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-attivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo attività
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizza-calendario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilizza calendario
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stato-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stato processo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stato processo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocca-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blocca edit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stato-di-chiusura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stato di chiusura
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sottoprocesso_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sottoprocesso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Eventi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-su-evento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start su evento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-a-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start a tempo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attesa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attesa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fine-e-termina-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fine e Termina processo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway-e-percorsi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gateway e percorsi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gateway e percorsi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#percorsi-alternativi-exclusive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Percorsi alternativi (exclusive)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#percorsi-paralleli-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Percorsi paralleli (parallel)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#percorsi-liberi-inclusive-e-complex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Percorsi liberi (inclusive) e Complex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sincronizza" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sincronizza
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operazioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operazioni
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processi-collegati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processi collegati
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Altro
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Altro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gruppo-e-swim-lane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gruppo e Swim lane
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-casella-di-testo-e-memo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image, Casella di testo e Memo.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu-contestuale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menù contestuale
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Menù contestuale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colore-e-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colore e font
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allineamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allineamento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Allineamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allinea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allinea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porta-davanti-e-porta-dietro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Porta davanti e Porta dietro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribuisci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribuisci
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manipolazione-oggetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipolazione oggetto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manipolazione-testo-e-label" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipolazione Testo e Label
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impostare-un-oggetto-come-oggetto-di-avvio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impostare un oggetto come oggetto di avvio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definire-gli-utenti-e-i-responsabili-le-variabili-da-richiedere-e-gli-allegati-da-richiedere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definire gli Utenti e i Responsabili, le Variabili da richiedere e gli Allegati da richiedere
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operazioni_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operazioni
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formula-di-validazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formula di validazione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pianificazione-e-scadenze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pianificazione e Scadenze
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurazione
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pannello-attributi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pannello attributi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pannello attributi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aspetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspetto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dati">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ambito-e-descrizione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ambito e Descrizione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operazioni_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operazioni
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorità
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definire-gli-utenti-utenti-cc-e-responsabili-le-variabili-da-richiedere-e-gli-allegati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definire gli Utenti, Utenti cc e Responsabili, le Variabili da richiedere e gli Allegati
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scadenzetempi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scadenze/Tempi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MenuContestualePannelloAttributi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menù contestuale e Pannello attributi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MagazzinoVariabili/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magazzino delle variabili
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AttributiVariabili/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attributi di una variabile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossario
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#designer-tools_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designer Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Designer Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attività
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attività">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#puntatore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Puntatore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attivita_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attività
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attività">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#da-confermare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Da confermare
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rileva-inizio-attivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rileva inizio attività
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skip activity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sottoprocesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sottoprocesso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testo-pulsante-esegui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testo pulsante esegui
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-attivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipo attività
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizza-calendario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilizza calendario
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stato-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stato processo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stato processo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocca-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blocca edit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stato-di-chiusura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stato di chiusura
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sottoprocesso_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sottoprocesso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Eventi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-su-evento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start su evento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-a-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start a tempo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attesa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attesa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fine-e-termina-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fine e Termina processo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway-e-percorsi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gateway e percorsi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gateway e percorsi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#percorsi-alternativi-exclusive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Percorsi alternativi (exclusive)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#percorsi-paralleli-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Percorsi paralleli (parallel)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#percorsi-liberi-inclusive-e-complex" class="md-nav__link">
+    <span class="md-ellipsis">
+      Percorsi liberi (inclusive) e Complex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sincronizza" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sincronizza
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operazioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operazioni
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processi-collegati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processi collegati
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Altro
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Altro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gruppo-e-swim-lane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gruppo e Swim lane
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-casella-di-testo-e-memo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image, Casella di testo e Memo.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu-contestuale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menù contestuale
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Menù contestuale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colore-e-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colore e font
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allineamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allineamento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Allineamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allinea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allinea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porta-davanti-e-porta-dietro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Porta davanti e Porta dietro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribuisci" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribuisci
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manipolazione-oggetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipolazione oggetto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manipolazione-testo-e-label" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipolazione Testo e Label
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impostare-un-oggetto-come-oggetto-di-avvio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impostare un oggetto come oggetto di avvio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definire-gli-utenti-e-i-responsabili-le-variabili-da-richiedere-e-gli-allegati-da-richiedere" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definire gli Utenti e i Responsabili, le Variabili da richiedere e gli Allegati da richiedere
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operazioni_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operazioni
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formula-di-validazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formula di validazione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pianificazione-e-scadenze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pianificazione e Scadenze
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurazione
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pannello-attributi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pannello attributi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pannello attributi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aspetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aspetto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dati">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ambito-e-descrizione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ambito e Descrizione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operazioni_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operazioni
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priorita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorità
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definire-gli-utenti-utenti-cc-e-responsabili-le-variabili-da-richiedere-e-gli-allegati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definire gli Utenti, Utenti cc e Responsabili, le Variabili da richiedere e gli Allegati
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scadenzetempi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scadenze/Tempi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="designer-tools">Designer Tools</h1>
+<p>In questa pagina verranno descritte dettagliatamente tutte le sezioni e gli elementi all'interno del <strong><em>Designer Tools</em></strong> e <strong><em>Menù contestuale</em></strong>.  </p>
+<p>Il <strong><em>Designer Tools</em></strong> è il pannello che si trova sulla sinistra, si accede al <strong><em>Menù contestuale</em></strong> di un elemento cliccandoci sopra col tasto destro.</p>
+<h2 id="designer-tools_1">Designer Tools</h2>
+<p>Il Designers Tools è suddiviso in 6 sezioni.  </p>
+<p>Alla sommità è situata la search bar. Digitando al suo interno è possibile filtrare gli oggetti delle varie sezioni. I risultati della ricerca appariranno nella propria sezione. Se più oggetti corrispondono col termine ricercato, verranno mostrati nelle proprie sezioni, se diverse, collassate.</p>
+<h3 id="attivita">Attività</h3>
+<p>Sezione contenente i principali elementi di un flusso.</p>
+<h4 id="puntatore">Puntatore</h4>
+<p>Cliccandolo, riporta le funzionalità del mouse a quelle standard: click per tasto sinistro e menù contestuale per tasto destro.  </p>
+<p>Non essendo trascinabile nel canvas e, quindi, <strong>non essendo un elemento</strong>, non possiede attributi.</p>
+<h4 id="link">Link</h4>
+<p>Il link è un collegamento tra un elemento e un altro.  </p>
+<p>Una volta selezionato dal Designer Tools, passando il cursore sopra un elemento, appariranno dei cerchi gialli. Selezionando un cerchio e tenendo premuto il tasto sinistro, inizierà il tracciamento del link.  </p>
+<p>Mentre si sta tracciando, passando il cursore su un elemento differente dal primo, è possibile collegarlo ad uno dei punti del destinatario.</p>
+<p><img alt="" src="../assets/linking.gif" /></p>
+<p>Fatto ciò, i due elementi saranno collegati: spostandoli all'interno del canvas, il link rimarrà ancorato ad essi.  </p>
+<p>Cliccando sul collegamento con il tasto destro del mouse, si aprirà il menù di contesto contenente una lista di proprietà:</p>
+<ul>
+<li>Nome Collegamento, aprirà un dialog dove poter inserire il nome del link che verrà mostrato nel canvas.</li>
+<li>Percorso per Pianificazione, se spuntato, il processo, al suo inizio, riterrà il collegamento come percorso default per determinare le attività future.</li>
+<li>Condizioni Abilitazione, complementari al Percorso per Pianificazione, le condizioni di abilitazione decidono se un Link sia percorribile o meno. Tale decisione è basata sulle formule scritte nel dialog che si apre una volta cliccata l'opzione.  Una volta inserita una condizione, l'inizio del <strong><em>Link</em></strong> assumerà una forma a rombo. Se da un elemento, sono collegati più <strong><em>Link</em></strong> con uscite diverse, essi sono trattati come un percorso inclusive, documentato e approfondito <a href="#percorsi-liberi-inclusive-e-complex">qui</a>. </li>
+<li>Imposta variabili, è possibile impostare delle variabili quando il link viene attraversato, arrivando a destinazione coi nuovi valori assegnati.</li>
+<li>Tipo Linea, è possibile decidere tra le varie opzioni il comportamento del link all'interno del canvas.</li>
+<li>Elimina Collegamento</li>
+</ul>
+<h4 id="start">Start</h4>
+<p>Lo <strong><em>Start</em></strong> è il punto di inizio di ogni flusso manualmente azionato.  </p>
+<p>Un flusso può avere più Start. In tal caso, alla partenza del processo, verrà richiesto all'utente da quale Start partire.  </p>
+<p>Ogni Start ha necessariamente bisogno che le <strong><em>Variabili da richiedere</em></strong> siano dichiarate.<br />
+Una volta inserite, apparirà una @ accanto allo start nel canvas.
+Allo stesso modo, se sono presenti delle Variabili da richiedere, è dovuto specificare gli <strong><em>Utenti e Responsabili</em></strong> della task.  </p>
+<p>È inoltre possibile richiedere l'inserimento di allegati e lo svolgimento di operazioni, sempre tramite il menù contestuale, alla voce <strong><em>Allegati da richiedere</em></strong> e <strong><em>Operazioni</em></strong>.<br />
+Uno Start consente di effettuare delle operazioni <strong><em>In esecuzione</em></strong> e ad <strong><em>Esecuzione terminata</em></strong>.</p>
+<h4 id="attivita_1">Attività</h4>
+<p>Le <strong><em>Attività</em></strong> sono il blocco fondamentale dei processi.
+Servono a definire il lavoro di ogni persona. Attività per attività, un processo viene concluso, portando a termine lavori che, senza il BPM, risulterebbero tediosi e ad alto compenso di tempo.</p>
+<p>Le <strong><em>Attività</em></strong>, nel pannello degli attributi, presentano una serie di caratteristiche che rendono la task personalizzabile e utilizzabile in ogni ambito.
+Nella sezione <strong><em>Gestione</em></strong> si trovano gli attributi principali di un'attività:</p>
+<h5 id="da-confermare">Da confermare</h5>
+<p>Attributo che aggiunge la necessità di confermare la fine dell'attività per poter mandare avanti il flusso.</p>
+<h5 id="rileva-inizio-attivita">Rileva inizio attività</h5>
+<p>Se impostato su true, rileva la data di inizio dell'attività e non viene dedotta dalla fine della task precedente.</p>
+<h5 id="skip-activity">Skip activity</h5>
+<p>Se impostato su True salterà l'esecuzione della task. </p>
+<div class="admonition info">
+<p class="admonition-title">Perché inserire nel disegno una task che non verrà mai eseguita?</p>
+<p>L'attributo <strong><em>Skip activity</em></strong> serve solamente a rendere il disegno più fruibile, facendo capire all'utente finale il modo in cui determinate azioni vanno svolte o suddivise.</p>
+</div>
+<h5 id="sottoprocesso">Sottoprocesso</h5>
+<p>Se impostato su True, rende l'Attività un Sottoprocesso.<br />
+Per approfondire il concetto di <strong><em>Sottoprocesso</em></strong> scendi alla sezione Sottoprocesso o clicca <a href="">qui</a>.</p>
+<h5 id="testo-pulsante-esegui">Testo pulsante esegui</h5>
+<p>Attributo di tipo testuale. Il testo inserito apparirà al posto di "Esegui" sul bottone esegui.</p>
+<h5 id="tipo-attivita">Tipo attività</h5>
+<p>Attributo che va scelto da un dropdown. Serve come filtro.</p>
+<h5 id="utilizza-calendario">Utilizza calendario</h5>
+<p><strong><em>Utilizza calendario</em></strong> è un attributo che aggiunge alle <strong><em>Scadenze/Tempi</em></strong> la logica per capire quando un giorno è lavorativo o meno, basandosi sul calendario.
+Se una task ha una data di scadenza, <strong><em>Utilizza calendario</em></strong> fa sì che i giorni del weekend non vengano contati.  </p>
+<p>Il concetto di pianificazione e scadenze è approfondito <a href="#pianificazione-e-scadenze">qui</a></p>
+<h4 id="stato-processo">Stato processo</h4>
+<p>L'elemento <strong><em>Stato processo</em></strong> serve a visualizzare graficamente lo stato del processo.
+Uno Stato processo consente di effettuare delle operazioni solo <strong><em>In attivazione</em></strong>.</p>
+<p>Nella sezione Gestione ci sono 2 attributi:</p>
+<h5 id="blocca-edit">Blocca edit</h5>
+<p>Quando si entra nello stato il documento non è più modificabile dal magazzino. Anche gli utenti con le dovute autorizzazioni non possono modificare i dati immessi nelle variabili nel processo.</p>
+<h5 id="stato-di-chiusura">Stato di chiusura</h5>
+<p>Impostando questo attributo a True, si sancisce la fine del processo interrompendo tutte le attività in corso.</p>
+<h4 id="sottoprocesso_1">Sottoprocesso</h4>
+<p>Un <strong><em>Sottoprocesso</em></strong> è un processo avviato dall'interno di un altro processo.
+Nel canvas dove viene inserito un Sottoprocesso (o un'attività con attributo Sottoprocesso impostato a true) l'elemento apparirà uguale ad una semplice attività, ma con una croce sotto la label descrittiva.<br />
+Cliccando due volte sopra l'elemento, si entra nel canvas del Sottoprocesso.
+Le funzionalità sono le stesse di un processo normale. L'unica differenza è nello start, che avviene non appena l'elemento principale del Sottoprocesso entra in esecuzione e alla fine del sottoprocesso si passa all'elemento seguente nel processo principale.  </p>
+<p>Gli attributi che differenziano un'attività da un Sottoprocesso sono nella sezione <strong><em>Scadenze/Tempi</em></strong>. Entrambi questi attributi vengono approfonditi nella loro sezione <a href="#pianificazione-e-scadenze">qui</a>.</p>
+<h3 id="eventi">Eventi</h3>
+<p>La sezione <strong><em>Eventi</em></strong> raggruppa tutti gli elementi che fungono da Start e gli elementi che fungono da fine.  </p>
+<div class="admonition note">
+<p class="admonition-title">Variabili da richiedere e Start</p>
+<p>Essendo tutti elementi predisposti per essere l'inizio di un processo (ad esclusione di quelli di fine processo), è vivamente consigliato di impostare le variabili da richiedere direttamente nello Start.</p>
+</div>
+<h4 id="start_1">Start</h4>
+<p>Lo <strong><em>Start</em></strong> convenzionale è stato trattato <a href="#start">qui</a>.</p>
+<h4 id="start-su-evento">Start su evento</h4>
+<p>Lo <strong><em>Start su evento</em></strong> ha la capacità di iniziare un processo quando un evento predefinito che arriva dall'esterno.
+Gli eventi sono definiti dai connettori che a loro volta sono elencati nella voce "Elenco connettori" nella sezione "Configurazione" del menù principale.</p>
+<h4 id="start-a-tempo">Start a tempo</h4>
+<p>Lo <strong><em>Start a tempo</em></strong> ha la capacità di iniziare un processo in modo ricorrente.
+Configurando lo <strong><em>Start a tempo</em></strong> è possibile impostare una descrizione e ogni quanto tempo far partire nuovamente il processo.<br />
+Le opzioni sono:</p>
+<ul>
+<li>Ricorre ogni giorno.</li>
+<li>Ricorre ogni settimana, dove è necessario scegliere il giorno settimanale in cui il processo ricorrerà.</li>
+<li>Ricorre ogni mese, dove è necessario scegliere il numero del mese in cui far ricorrere il processo, altrimenti si può spuntare il checkbox "Ultimo del mese" per avviare il processo nell'ultimo giorno di ogni mese.</li>
+</ul>
+<p>In basso, infine, si ha la possibilità di specificare l'ora in cui partirà il processo.</p>
+<h4 id="attesa">Attesa</h4>
+<p>Analogamente allo start a tempo, l'<strong><em>Attesa</em></strong> è un genere di start che, una volta avviato un processo, attenderà il tempo stabilito prima di continuare.  </p>
+<p>Configurando l'evento, è possibile impostare una descrizione, il numero di giorni da attendere e cosa fare una volta che il tempo prestabilito sia passato.</p>
+<p>Tramite l'inpuit numerico iniziale è possibile stabilire il numero di giorni da attendere. Dopodiché tramite è possibile specificare una sola scelta su che azione dovrà svolgere l'elemento:</p>
+<ul>
+<li>Non attendere oltre.</li>
+<li>Attendi il primo X.</li>
+<li>Attendi che sia il primo, secondo, terzo, quarto o ultimo X del mese.</li>
+<li>Attendi che sia il Y del mese.</li>
+</ul>
+<p>X è il giorno della settimana scelto tramite un dropdown.
+Y è il giorno del mese impostato tramite input numerico.</p>
+<p>Infine è anche possibile far attendere l'inizio fino ad una determinata ora del giorno stabilito tramite un'ultima checkbox e impostando l'orario.</p>
+<h4 id="fine-e-termina-processo">Fine e Termina processo</h4>
+<p><strong><em>Fine e Termina processo</em></strong> sono due elementi per dichiarare completato un processo.
+La differenza tra i due elementi è che <strong><em>Termina processo</em></strong> termina tutti i rami paralleli e sottoprocessi attivi.</p>
+<h3 id="gateway-e-percorsi">Gateway e percorsi</h3>
+<p>La sezione <strong><em>Gateway e Percorsi</em></strong> raggruppa gli elementi che consentono di instradare il processo in direzioni diverse dipendentemente dalla configurazione dell'elemento.</p>
+<h4 id="percorsi-alternativi-exclusive">Percorsi alternativi (exclusive)</h4>
+<p>L'elemento <strong><em>Percorsi alternativi (exclusive)</em></strong> permette di dividere il percorso del processo.
+Da questo gateway è possibile ramificare in percorsi diversi il processo, ognuno con la propria condizione di instradamento.
+Le condizioni dei percorsi sono impostate schiacciando tasto destro sul gateway e cliccando sull'entrata <strong><em>Configurazione</em></strong>.</p>
+<p>Una volta aperto il popup di configurazione, è possibile definire le condizioni di ogni percorso cliccando sui bottoni, uno per percorso, situati accanto alle entrate della colonna "Condizione".</p>
+<p><img alt="" src="../../assets/ifGateway.gif" /></p>
+<p>Dalla configurazione è anche impostabile il percorso da considerare come default che sarà quello che il processo percorrerà se nessuna delle condizioni di uscita risulta come True.</p>
+<div class="admonition info">
+<p class="admonition-title">Cosa succede se più uscite risultano come true?</p>
+<p>I <strong><em>Percorsi alternativi (exclusive)</em></strong> sono scelte che vanno ad instradare il processo in un singolo percorso. Di conseguenza, se più condizioni di uscita risultano come True, il percorso instradato sarà il primo.</p>
+</div>
+<h4 id="percorsi-paralleli-parallel">Percorsi paralleli (parallel)</h4>
+<p>L'elemento <strong><em>Percorsi paralleli (parallel)</em></strong> funge da sdoppiatore del percorso principale in ramificazioni parallele.
+Tutte le ramificazioni parallele sono contemporanee, ma l'avanzamento varia in base allo svolgimento delle task interne di ognuna.</p>
+<p>In questo caso non ci sono condizioni, in quanto tutti i rami andranno eseguiti.</p>
+<h4 id="percorsi-liberi-inclusive-e-complex">Percorsi liberi (inclusive) e Complex</h4>
+<p>Gli elementi <strong><em>Percorsi liberi</em></strong> e <strong><em>Complex</em></strong> sono il contrario dei percorsi exclusive: tutte le condizione d'uscita che risultano come True vengono instradate.</p>
+<h4 id="sincronizza">Sincronizza</h4>
+<p>L'elemento <strong><em>Sincronizza</em></strong> serve a convergere le ramificazioni che si sono create utilizzando i Gateway.
+Configurando l'elemento, è possibile definire il Number to pass, ovverosia quali percorsi devono essere arrivati all'elemento per far sì che il processo continui.</p>
+<h3 id="operazioni">Operazioni</h3>
+<p>Le <strong><em>Operazioni</em></strong> sono azioni specifiche e complesse: per questo è presente una sezione dedicata a loro che entra nelle specifiche, approfondendo ogni aspetto del loro funzionamento.  </p>
+<p>Clicca <a href="">qui</a> per saltare alla loro sezione.</p>
+<h3 id="processi-collegati">Processi collegati</h3>
+<p>Analogamente alle operazioni, i <strong><em>Processi collegati</em></strong> hanno una sezione approfondita <a href="">qui</a>.</p>
+<h3 id="altro">Altro</h3>
+<p>La sezione <strong><em>Altro</em></strong> raggruppa gli elementi che non rientrano nel resto delle categorie.</p>
+<h4 id="gruppo-e-swim-lane">Gruppo e Swim lane</h4>
+<p>L'elemento <strong><em>Gruppo</em></strong> è un raggruppatore di elementi.
+Gli elementi all'interno del <strong><em>Gruppo</em></strong> possono essere svolti dagli utenti assegnati al <strong><em>Gruppo</em></strong> stesso.</p>
+<p><img alt="Utenti differenti" src="../../assets/differentUsers.gif" /></p>
+<p>L'elemento <strong><em>Swim lane</em></strong> è analogo a quello di gruppo.
+Per aggiungere pioù <strong><em>Swim lane</em></strong> basta trascinarne quante necessarie nel canvas.
+Le <strong><em>Swim lane</em></strong> suddividono il disegno in corsie, ognuna coi propri utenti associati che potranno svolgere le azioni all'interno della propria corsia.</p>
+<div class="admonition warning">
+<p class="admonition-title">Multuple associazioni di Utenti</p>
+<p>Se ad un <strong><em>Gruppo</em></strong> o una <strong><em>Swim lane</em></strong> e ad una task interna ad essi sono associati degli utenti e tali utenti differiscono con quelli associati nel contenitore, la task potrà essere svolta <strong>solo</strong> dagli utenti associati alla task stessa.
+<center><strong>Task Users &gt; Container Users</strong></center></p>
+</div>
+<h4 id="image-casella-di-testo-e-memo">Image, Casella di testo e Memo.</h4>
+<p><strong><em>Image</em></strong> è un elemento statico, attraverso cui è possibile inserire un immagine all'interno del canvas.  </p>
+<p>La <strong><em>Casella di testo</em></strong> è del semplice testo slegato ad altri elementi. È utile per dare titoli a parti o sezioni del flusso.  </p>
+<p>Il <strong><em>Memo</em></strong> ha la stessa funzionalità di un postit ed è collegabile ad un task tramite il link. Così facendo, tra la task e il <strong><em>Memo</em></strong> apparirà una linea tratteggiata gialla. È utile per scrivere note e ricordare agli utenti delle informazioni chiave per lo svolgimento di una task.</p>
+<h4 id="marker">Marker</h4>
+<p>Il <strong><em>Marker</em></strong> è uno strumento utilizzato per navigare all'interno del processo tra diverse pagine. Questo risulta particolarmente utile quando si desidera rendere il processo stampabile, ad esempio su un foglio A4, evitando di estenderlo eccessivamente in verticale.<br />
+In questi casi, si aggiunge una nuova pagina, e il <strong><em>Marker</em></strong> funge da "collegamento" che consente di proseguire con il processo su un'altra sezione. In pratica, è un riferimento che rimanda a un'altra pagina del processo.</p>
+<h2 id="menu-contestuale">Menù contestuale</h2>
+<p>Il menù contestuale appare quando si preme il tasto destro del mouse su un oggetto nel canvas. In base all'oggetto cliccato le entrate saranno differenti. </p>
+<h3 id="colore-e-font">Colore e font</h3>
+<p>Generalmente, in un oggetto è possibile cambiare:</p>
+<ul>
+<li>Colore e font della targhetta dell'elemento.</li>
+<li>Colore dello sfondo.</li>
+<li>Colore e spessore e del bordo.</li>
+</ul>
+<h3 id="allineamento">Allineamento</h3>
+<p>L'entrata <strong><em>Allineamento</em></strong> a sua volta ha 10 scelte: </p>
+<h4 id="allinea">Allinea</h4>
+<p>Allineano gli elemento selezionati secondo il tipo di allineamento in base alla posizione dell'elemento su cui è stato cliccato il tasto destro.</p>
+<h4 id="porta-davanti-e-porta-dietro">Porta davanti e Porta dietro</h4>
+<p>Modifica lo Z-index di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare <strong><em>Porta avanti</em></strong> per portarlo in primo piano. 
+Lo stesso, ma al contrario, vale per <strong><em>Porta dietro</em></strong>.</p>
+<h4 id="distribuisci">Distribuisci</h4>
+<p class="annotate">Selezionando più oggetti(1)è possibile spostarli in massa distrubuendoli su uno dei loro assi utilizzando le due entrate <strong><em>Distribuisci verticalmente</em></strong> o <strong><em>Distribuisci orizzontalmente</em></strong>.</p>
+<ol>
+<li>Per selezionare più oggetti è necessario tenere premuto <span class="keys"><kbd class="key-control">Ctrl</kbd></span> o <span class="keys"><kbd class="key-shift">Shift</kbd></span> quando si va a cliccare, col tasto sinistro, su un elemento. Altrimenti, cliccando su una parte vuota del canvas e tenendo premuto, è possibile delineare un'area i cui elementi interno verranno selezionati.</li>
+</ol>
+<h3 id="manipolazione-oggetto">Manipolazione oggetto</h3>
+<p>Oltre al tagliare e copiare un oggetto, è possibile spostarlo da una pagina ad un'altra del processo tramite l'entrata <strong><em>Sposta oggetto alla pagina ...</em></strong>.</p>
+<h3 id="manipolazione-testo-e-label">Manipolazione Testo e Label</h3>
+<p>Nel menù contestuale è presente l'entrata <strong><em>Sposta testo</em></strong> per spostare l'etichetta dell'oggetto dove si vuole nel canvas. Essa rimarrà ancorata al punto dove si è spostata.
+L'entrata <strong><em>Modifica Testo</em></strong> consente di modificare il testo della Label.</p>
+<h3 id="impostare-un-oggetto-come-oggetto-di-avvio">Impostare un oggetto come oggetto di avvio</h3>
+<div class="admonition danger">
+<p class="admonition-title">Rimozione dello Start</p>
+<p>È possibile rimuovere lo Start, ma è un comportamento non convenzionale e tendenzialmente sconsigliato in quanto il processo richiederà all'utente di inserire direttamente le variabili da richiedere.</p>
+</div>
+<p>Premendo tasto destro, l'entrata <strong><em>Imposta come oggetto di avvio</em></strong> renderà l'oggetto su cui si è cliccato, il punto di partenza.</p>
+<h3 id="definire-gli-utenti-e-i-responsabili-le-variabili-da-richiedere-e-gli-allegati-da-richiedere">Definire gli Utenti e i Responsabili, le Variabili da richiedere e gli Allegati da richiedere</h3>
+<p>Tramite l'entrata <strong><em>Utenti e responsabili</em></strong> è possibile definire chi dovrà svolgere una determinata task.</p>
+<p>Analogamente, è possibile definire i dati che, gli utenti precedentemente, assegnati dovranno inserire.
+Questo è possibile tramite l'entrata <strong><em>Variabili da richiedere</em></strong> che, una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili.<br />
+Questa pagina, chiamata <strong><em>Magazzino delle variabili</em></strong>, viene trattata e approfondita nella sua sezione apposita <a href="../MagazzinoVariabili/">qui</a>.
+Per aggiungere una Variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
+Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori delle variabili così definite.</p>
+<p><img alt="" src="../../assets/inserimentoVarUserTask.gif" /></p>
+<p>Infine, è possibile definire gli allegati da definire tramite l'entrata <strong><em>Allegati da richiedere</em></strong>.<br />
+In questo caso non è possibile definire gli allegati che andranno inseriti, bensì dei filtri che vadano a scremare i possibili allegati inseribili. Tutto questo tramite un popup.<br />
+Il popup presenta due checkbox:</p>
+<ul>
+<li>La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup.</li>
+<li>La seconda, invece, fa sì che gli allegati caricati non possano essere poi modificati.</li>
+</ul>
+<p>Dopodiché una sezione dedicata ai filtri: qui è possibile infatti definire il <strong><em>Gruppo allegato</em></strong>, il <strong><em>Tipo allegato</em></strong> e il <strong><em>Percorso</em></strong>.  </p>
+<p>Il <strong><em>Gruppo allegato</em></strong> e il <strong><em>Tipo Allegato</em></strong> sono definibili dal menù delle impostazioni alla sezione <strong><em>Configurazione</em></strong>, sottogruppo <strong><em>Allegati</em></strong>.  </p>
+<p>Per il <strong><em>Percorso</em></strong> invece è necessario scegliere una delle cartelle interne al processo.<br />
+Per crearne una è necessario cliccare la voce <strong><em>Allegati</em></strong> dalla <strong><em>barra degli strumenti</em></strong>.<br />
+Da lì si apriranno le impostazioni generali del processo relative agli allegati.<br />
+Cliccando tasto destro sulla lista delle cartelle, sarà possibile crearne una nuova. Una volta fatto, sarà presente tra le scelte disponibili per determinare il percorso degli allegati di una task.</p>
+<p>Sotto i Filtri, è possibile gestire la <strong><em>Dimensione Massima in KB</em></strong> (Dim. Massima kb), tramite un input numerico.
+Il numero immesso sarà il tetto massimo per la dimensione di un file.  </p>
+<p>Nella parte bassa del popup invece si ha il gruppo relativo ai Tipi di file consentiti.<br />
+Tramite una serie di checkbox è possibile definire le estensioni dei file che possono essere accettati.<br />
+L'input di testo finale invece è riservato ad estensioni specifiche per gli utenti che ne hanno bisogno. <strong><em>Tali estensioni vanno separate dalla virgola e includendo il punto</em></strong>.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Altre Estensioni</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>.cad,.php,.bat
+</span></code></pre></div></td></tr></table></div>
+<h3 id="operazioni_1">Operazioni</h3>
+<p class="annotate">L'entrata relativa alle <strong><em>Operazioni</em></strong> apre un popup che permette di eseguire delle operazioni in diversi momenti della task.<br />
+In base all'elemento su cui si apre il popup, i momenti in cui sarà possibile svolgere un'operazione saranno diversi.<br />
+Per svolgere un'operazione basta trascinarla dalla colonna <strong><em>Operazioni disponibili</em></strong> a quella del momento in cui si desidera svolgerla.(1) </p>
+<ol>
+<li>Il titolo della colonna è il momento in cui verrà svolta l'operazione.</li>
+</ol>
+<p>Le <strong><em>Operazioni</em></strong> vengono svolte in ordine Top to Bottom.</p>
+<p>Le <strong><em>Operazioni</em></strong> sono azioni specifiche e complesse, per approfondimenti e spiegazioni è nmecessario rifarsi alla loro sezione <a href="">qui</a>.</p>
+<h3 id="formula-di-validazione">Formula di validazione</h3>
+<p>La <strong><em>Formula di validazione</em></strong> è una formula che determina se è possibile continuare con la task successiva del processo.
+Cliccando su questa entrata, verrà aperto il popup per la scrittura delle formule.<br />
+Le formule di validazione degli elementi del canvas sono in una relazione AND con le altre formule definibili dalla barra degli strumenti della pagina delle variabili.</p>
+<h3 id="escalation">Escalation</h3>
+<p>L'<strong><em>Escalation</em></strong> è un'entrata del menù contestuale specifica di alcuni elementi.<br />
+Con l'utilizzo dell'<strong><em>Escalation</em></strong> è possibile, dopo un determinato numero di giorni inserito dall'utente, eseguire le 3 azioni seguenti:</p>
+<ul>
+<li>Non variare attività</li>
+<li>Riassegna attività, cedendo ad altri utenti la possibilità di mandare avanti il processo</li>
+<li>Chiudi attività</li>
+</ul>
+<p>Dall'Escalation poi è possibile iniziare un collegamento, così da poter instradare il processo altrove in caso si dovesse riassegnare o chiudere la task.</p>
+<h3 id="pianificazione-e-scadenze">Pianificazione e Scadenze</h3>
+<p>Il popup "Pianificazione e Scadenze" permette di impostare i dettagli di pianificazione, scadenze e priorità relativi a una specifica attività (task). È diviso in tre schede principali: Pianificazione e scadenze, Variabili, e Dati aggiuntivi.</p>
+<p>In <strong><em>Pianificazione e Scadenze</em></strong> è possibile impostare la durata prevista e la scadenza di una task.
+Inoltre sono presenti 3 checkbox:</p>
+<ul>
+<li>Da confermare</li>
+<li>Rileva inizio</li>
+<li>Utilizza calendario</li>
+</ul>
+<p>La tab <strong><em>Variabili</em></strong> consente di associare variabili ai campi relativi a una pianificazione aggiornata dell'attività. I campi configurabili includono:</p>
+<ul>
+<li>Data inizio prevista aggiornata, consente di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.</li>
+<li>Data fine aggiornata, permette di associare una variabile alla data di fine dell'attività pianificata.</li>
+<li>Durata prevista (giorni), offre la possibilità di collegare una variabile che rappresenta la durata stimata dell'attività (in giorni).</li>
+<li>Scadenza dell'attività, configura una variabile per rappresentare la data di scadenza dell'attività.</li>
+<li>Priorità dell'attività, consente di associare una variabile alla priorità assegnata all'attività.</li>
+</ul>
+<p>La scheda <strong><em>Dati aggiuntivi</em></strong> consente di associare variabili a campi specifici relativi ai dati pianificati e ai dati effettivi di un'attività. Questa scheda è divisa in due sezioni principali: Dati Previsti/Pianificati e Dati Effettivi.</p>
+<p>Nel gruppo <strong><em>Dati Previsti/Pianificati</em></strong> è possibile configurare le variabili per i dati pianificati dell'attività. I campi disponibili sono:</p>
+<ul>
+<li>Data inizio prevista/pianificata, permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.</li>
+<li>Data fine prevista/pianificata, consente di associare una variabile alla data di fine pianificata dell'attività.</li>
+<li>Durata prevista (giorni), Collega una variabile che rappresenta la durata stimata dell'attività in giorni.</li>
+</ul>
+<p>Il Gruppo <strong><em>Dati Effettivi</em></strong> permette di configurare le variabili per i dati effettivi dell'attività, ovvero i valori realmente registrati. I campi configurabili sono:</p>
+<ul>
+<li>Data inizio dell'attività, associa una variabile che rappresenta la data di inizio effettiva dell'attività.</li>
+<li>Data fine dell'attività, collega una variabile alla data di completamento effettiva dell'attività.</li>
+<li>Durata effettiva (giorni), consente di collegare una variabile che rappresenta la durata effettiva dell'attività in giorni.</li>
+</ul>
+<h3 id="configurazione">Configurazione</h3>
+<p>L'entrata <strong><em>Configurazione</em></strong> è differente per ogni elemento e viene approfondita nelle sezioni relative ai singoli elementi.</p>
+<h2 id="pannello-attributi">Pannello attributi</h2>
+<p>Analogamente, a destra del canvas si trova il <strong><em>Pannello Attributi</em></strong> che, molto spesso, presenta entrate comuni a quelle del menù contestuale.</p>
+<h3 id="aspetto">Aspetto</h3>
+<p>Nel Pannello attributi, <strong><em>Aspetto</em></strong> contiene tutte le informazioni di un oggetto relative all'allineamento della targhetta, ai colori e ai font.</p>
+<h3 id="dati">Dati</h3>
+<p>La sezione <strong><em>Dati</em></strong> comprende le proprietà più specifiche di un singolo elemento.  </p>
+<p>Gli attributi elencati forniscono informazioni e impostazioni per personalizzare il comportamento e la gestione della task all'interno del flusso. Si tratta di proprietà che riguardano ambiti funzionali, priorità, gestione utenti e operazioni specifiche, oltre ad altre configurazioni utili per determinare come la task interagisce con il sistema o con altri elementi del flusso.</p>
+<h4 id="ambito-e-descrizione">Ambito e Descrizione</h4>
+<p>L'<strong><em>Ambito</em></strong> è un campo di testo libero.<br />
+Dalla to-do list è possibile ricercare tutte le task con uno stesso <strong><em>Ambito</em></strong>.</p>
+<p>Impostando la <strong><em>Descrizione</em></strong> è possibile fornire informazioni testuali riguardanti una task, utili a chi dovrà poi dovrà svolgerla. Apparirà infatti nella tab <strong><em>Istruzioni</em></strong> quando un utente starà eseguendo la task.</p>
+<h4 id="escalation_1">Escalation</h4>
+<p>Con l'utilizzo dell'<strong><em>Escalation</em></strong> è possibile, dopo un determinato numero di giorni inserito dall'utente, eseguire le 3 azioni seguenti:</p>
+<ul>
+<li>Non variare attività</li>
+<li>Riassegna attività, cedendo ad altri utenti la possibilità di mandare avanti il processo</li>
+<li>Chiudi attività</li>
+</ul>
+<p>Dall'Escalation poi è possibile iniziare un collegamento, così da poter instradare il processo altrove in caso si dovesse riassegnare o chiudere la task.</p>
+<h4 id="operazioni_2">Operazioni</h4>
+<p class="annotate">Da <strong><em>Operazioni</em></strong> si apre un popup che permette di eseguire delle operazioni in diversi momenti della task.<br />
+In base all'elemento su cui si apre il popup, i momenti in cui sarà possibile svolgere un'operazione saranno diversi.<br />
+Per svolgere un'operazione basta trascinarla dalla colonna <strong><em>Operazioni disponibili</em></strong> a quella del momento in cui si desidera svolgerla.(1) </p>
+<ol>
+<li>Il titolo della colonna è il momento in cui verrà svolta l'operazione.</li>
+</ol>
+<p>Le <strong><em>Operazioni</em></strong> vengono svolte in ordine Top to Bottom.</p>
+<p>Le <strong><em>Operazioni</em></strong> sono azioni specifiche e complesse, per approfondimenti e spiegazioni è nmecessario rifarsi alla loro sezione <a href="../MagazzinoVariabili/">qui</a>.</p>
+<h4 id="priorita">Priorità</h4>
+<p>Tramite <strong><em>Priorità</em></strong> è possibile assegnare un livello di importanza per lo svolgimento di una task.  </p>
+<p>Dalla to-do list è possibile filtrare e ordinare le task in base alla loro priorità.  </p>
+<p>I livelli possibili sono: Bassa, Media, Alta o Sospesa.</p>
+<h4 id="testo">Testo</h4>
+<p>Il <strong><em>Testo</em></strong> consente di modificare ciò che appare sul canvas a video nella label di un elemento. Il valore inserito sarà anche un nome secondario dell'elemento, filtrabile anch'esso e che apparirà nella tab <strong><em>Dati</em></strong> dell'esecuzione di una task.</p>
+<h4 id="definire-gli-utenti-utenti-cc-e-responsabili-le-variabili-da-richiedere-e-gli-allegati">Definire gli Utenti, Utenti cc e Responsabili, le Variabili da richiedere e gli Allegati</h4>
+<p>Tramite l'entrata <strong><em>Utenti</em></strong>, <strong><em>Utenti cc</em></strong> e <strong><em>Utenti resp</em></strong> è possibile definire chi dovrà svolgere una determinata task.
+Cliccando questi attributi verrà aperto un popup dove sarà possibile, tramite delle checkbox, marcare gli utenti che dovranno svolgere la task, supervisionarla o che saranno i responsabili del loro svolgimento.</p>
+<p>Analogamente, è possibile definire i dati che, gli utenti precedentemente, assegnati dovranno inserire.
+Questo è possibile tramite l'entrata <strong><em>Variabili da richiedere</em></strong> che, una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili.<br />
+Questa pagina, chiamata <strong><em>Magazzino delle variabili</em></strong>, viene trattata e approfondita nella sua sezione apposita <a href="">qui</a>.
+Per aggiungere una Variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
+Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori delle variabili così definite.</p>
+<p>Infine, è possibile definire gli allegati da definire tramite l'entrata <strong><em>Allegati</em></strong>.<br />
+In questo caso non è possibile definire gli allegati che andranno inseriti, bensì dei filtri che vadano a scremare i possibili allegati inseribili. Tutto questo tramite un popup.<br />
+Il popup presenta due checkbox:</p>
+<ul>
+<li>La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup.</li>
+<li>La seconda, invece, fa sì che gli allegati caricati non possano essere poi modificati.</li>
+</ul>
+<p>Dopodiché una sezione dedicata ai filtri: qui è possibile infatti definire il <strong><em>Gruppo allegato</em></strong>, il <strong><em>Tipo allegato</em></strong> e il <strong><em>Percorso</em></strong>.  </p>
+<p>Il <strong><em>Gruppo allegato</em></strong> e il <strong><em>Tipo Allegato</em></strong> sono definibili dal menù delle impostazioni alla sezione <strong><em>Configurazione</em></strong>, sottogruppo <strong><em>Allegati</em></strong>.  </p>
+<p>Per il <strong><em>Percorso</em></strong> invece è necessario scegliere una delle cartelle interne al processo.<br />
+Per crearne una è necessario cliccare la voce <strong><em>Allegati</em></strong> dalla <strong><em>barra degli strumenti</em></strong>.<br />
+Da lì si apriranno le impostazioni generali del processo relative agli allegati.<br />
+Cliccando tasto destro sulla lista delle cartelle, sarà possibile crearne una nuova. Una volta fatto, sarà presente tra le scelte disponibili per determinare il percorso degli allegati di una task.</p>
+<p>Sotto i Filtri, è possibile gestire la <strong><em>Dimensione Massima in KB</em></strong> (Dim. Massima kb), tramite un input numerico.
+Il numero immesso sarà il tetto massimo per la dimensione di un file.  </p>
+<p>Nella parte bassa del popup invece si ha il gruppo relativo ai Tipi di file consentiti.<br />
+Tramite una serie di checkbox è possibile definire le estensioni dei file che possono essere accettati.<br />
+L'input di testo finale invece è riservato ad estensioni specifiche per gli utenti che ne hanno bisogno. <strong><em>Tali estensioni vanno separate dalla virgola e includendo il punto</em></strong>.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Altre Estensioni</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>.cad,.php,.bat
+</span></code></pre></div></td></tr></table></div>
+<h3 id="scadenzetempi">Scadenze/Tempi</h3>
+<p>L'approfondimento sulle <strong><em>Scadenze/Tempi</em></strong> è presenta nella sua sezione <a href="#pianificazione-e-scadenze">qui</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/centrosoftware-dev/bpm-docs/tree/main/docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "search.suggest", "search.share"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>

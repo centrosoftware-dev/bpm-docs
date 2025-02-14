@@ -1,0 +1,1815 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://centrosoftware-dev.github.io/bpm-docs/Designer/MagazzinoVariabili/">
+      
+      
+        <link rel="prev" href="../MenuContestualePannelloAttributi/">
+      
+      
+        <link rel="next" href="../AttributiVariabili/">
+      
+      
+      <link rel="icon" href="../../assets/fav.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Magazzino delle variabili - Documentazione BPM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/shape.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#magazzino-delle-variabili" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="Documentazione BPM" class="md-header__button md-logo" aria-label="Documentazione BPM" data-md-component="logo">
+      
+  <img src="../../assets/favicon-96x96.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentazione BPM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Magazzino delle variabili
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Documentazione BPM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Men%C3%B9/Menu/" class="md-tabs__link">
+          
+  
+  Menù
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Designer/" class="md-tabs__link">
+          
+  
+  Designer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../glossario/" class="md-tabs__link">
+        
+  
+    
+  
+  Glossario
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentazione BPM" class="md-nav__button md-logo" aria-label="Documentazione BPM" data-md-component="logo">
+      
+  <img src="../../assets/favicon-96x96.png" alt="logo">
+
+    </a>
+    Documentazione BPM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentazione BPM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Menù
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Menù
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Menu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menù principale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Menù di configurazione
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Menù di configurazione
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Opzioni generali
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Opzioni generali
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/Parametri/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametri
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/MenuPersonalizzati/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menu personalizzati
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/Contatori/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contatori
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/ConfigurazioneEmail/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurazioni Mail
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/ProcessiRicorrenti/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processi con avvio ricorrente
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/AggiornamentoMassivoProcessi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aggiornamento massivo processi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/AttivaDisattivaProcessi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attiva/Disattiva processi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/VisualizzaStoricoGenerale/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visualizza storico generale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Opzioni modelli
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Opzioni modelli
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/ConfiguraImpostazioneListaProcessiDaExcel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ConfiguraImpostazioneListaProcessiDaExcel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/PrefiltriProcessi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PrefiltriProcessi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/EseguiImportazioneProcessiExcel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EseguiImportazioneProcessiExcel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/VerificaImportazioniDaExcel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VerificaImportazioniDaExcel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/TipiDiDossier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TipiDiDossier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/StampaBarcodeQR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    StampaBarcodeQR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Men%C3%B9/Men%C3%B9%20di%20configurazione/UtentiGruppi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utenti e Gruppi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Designer
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Designer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Designer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Il Designer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DesignerTools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Designer Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MenuContestualePannelloAttributi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menù contestuale e Pannello attributi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Magazzino delle variabili
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Magazzino delle variabili
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#barra-degli-strumenti-variabili" class="md-nav__link">
+    <span class="md-ellipsis">
+      Barra degli strumenti - Variabili
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Barra degli strumenti - Variabili">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operativita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operatività
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operatività">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nuova-variabile-duplica-variabile-e-rimuovi-variabile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuova variabile, Duplica variabile e Rimuovi variabile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trova-riferimenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trova riferimenti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pagina
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pagina">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nuova-pagina-rinomina-pagina-e-refresh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuova pagina, Rinomina pagina e Refresh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nuova pagina, Rinomina pagina e Refresh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nuova-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuova pagina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rinomina-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rinomina pagina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refresh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refresh
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestione
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestione">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validazione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inizializzazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inizializzazione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formattazione-ricerche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formattazione ricerche
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sqlview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sqlview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importaesporta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importa/Esporta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esporta-variabili" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esporta variabili
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allineamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allineamento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Allineamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allinea-a-sinistra-e-allinea-in-alto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allinea a sinistra e Allinea in alto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porta-davanti-e-porta-dietro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Porta davanti e Porta dietro
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opzioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opzioni
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opzioni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proprieta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proprietà
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variabili" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variabili
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#griglia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Griglia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magazzino-delle-variabili-di-un-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magazzino delle variabili di un elemento
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AttributiVariabili/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Attributi di una variabile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossario
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#barra-degli-strumenti-variabili" class="md-nav__link">
+    <span class="md-ellipsis">
+      Barra degli strumenti - Variabili
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Barra degli strumenti - Variabili">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operativita" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operatività
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operatività">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nuova-variabile-duplica-variabile-e-rimuovi-variabile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuova variabile, Duplica variabile e Rimuovi variabile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trova-riferimenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trova riferimenti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pagina
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pagina">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nuova-pagina-rinomina-pagina-e-refresh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuova pagina, Rinomina pagina e Refresh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nuova pagina, Rinomina pagina e Refresh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nuova-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuova pagina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rinomina-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rinomina pagina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refresh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refresh
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestione
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestione">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validazione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inizializzazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inizializzazione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formattazione-ricerche" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formattazione ricerche
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sqlview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sqlview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importaesporta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importa/Esporta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esporta-variabili" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esporta variabili
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allineamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allineamento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Allineamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allinea-a-sinistra-e-allinea-in-alto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allinea a sinistra e Allinea in alto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porta-davanti-e-porta-dietro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Porta davanti e Porta dietro
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opzioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opzioni
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Opzioni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proprieta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proprietà
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variabili" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variabili
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#griglia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Griglia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magazzino-delle-variabili-di-un-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magazzino delle variabili di un elemento
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="magazzino-delle-variabili">Magazzino delle variabili</h1>
+<p>Con <strong><em>Magazzino delle variabili</em></strong> si intende la pagina di un processo dove sono contenuti tutti i dati.</p>
+<p>In questa pagina ci sono 2 colonne laterali: la sidebar di sinistra contiene tutte le variabili ed è infatti chiamata <strong><em>Variable List</em></strong>, mentre la sidebar di destra contiene i loro attributi.</p>
+<p>In alto è presente la barra degli strumenti che, sotto la sezione <strong><em>Variabili</em></strong>, presenta tutti i comandi utili nel contesto del Magazzino.</p>
+<h2 id="barra-degli-strumenti-variabili">Barra degli strumenti - Variabili</h2>
+<p>La sezione variabili della barra degli strumenti è divisa in 6 colonne la cui ultima presenta solo il bottone di chiusura della pagina del Magazzino delle variabili.</p>
+<h3 id="operativita">Operatività</h3>
+<p>La colonna <strong><em>Operatività</em></strong> contiene i comandi più comuni utilizzabili nel Magazzino.</p>
+<h4 id="nuova-variabile-duplica-variabile-e-rimuovi-variabile">Nuova variabile, Duplica variabile e Rimuovi variabile</h4>
+<p><strong><em>Nuova variabile</em></strong> serve ad aggiungere nuove variabili al Magazzino.<br />
+Cliccando il comando, un dialog si aprirà chiedendo all'utente di inserire il Nome variabile.<br />
+Dopo aver confermato, si aprirà un secondo dialog dove è possibile personalizzare tutti gli attributi di una variabile.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il <strong><em>Nome variabile</em></strong> non è reimpostabile né dal dialog degli attributi né dal pannello degli attributi.<br />
+Gli attributi del secondo dialog sono situae nel pannello degli attributi.  </p>
+</div>
+<p><strong><em>Duplica variabile</em></strong>, selezionando una variabile all'interno del canvas, duplica la variabile selezionata, chiedendo all'utente di inserire solamente il nome della variabile duplicata.  </p>
+<p><strong><em>Rimuovi variabile</em></strong> serve a rimuovere una variabile dal canvas.</p>
+<h4 id="trova-riferimenti">Trova riferimenti</h4>
+<p>Selezionando una variabile nel canvas, <strong><em>Trova riferimenti</em></strong> cercherà nel processo tutte i riferimenti alla variabile selezionata.</p>
+<h3 id="pagina">Pagina</h3>
+<p>Per <strong><em>Pagina</em></strong> non si intendono nel pagine del progetto, bensì quelle del Magazzino delle variabili, simili a delle schede.</p>
+<h4 id="nuova-pagina-rinomina-pagina-e-refresh">Nuova pagina, Rinomina pagina e Refresh</h4>
+<h5 id="nuova-pagina">Nuova pagina</h5>
+<p>Crea una nuova scheda all'interno del Magazzino delle variabili.  </p>
+<h5 id="rinomina-pagina">Rinomina pagina</h5>
+<p>Rinomina la pagina in cui si sta lavorando.  </p>
+<h5 id="refresh">Refresh</h5>
+<p>Aggiorna la pagina corrente.</p>
+<h3 id="gestione">Gestione</h3>
+<p>La colonna <strong><em>Gestione</em></strong> raggruppa i comandi e le impostazioni per gestire la portabilità e la validazione.</p>
+<h4 id="formule">Formule</h4>
+<p>Le <strong><em>Formule</em></strong> sono 3: <strong><em>Validazione, Inizializzazione e Formattazione ricerche</em></strong>.</p>
+<h5 id="validazione">Validazione</h5>
+<p>Formula che valida la fine di un processo.</p>
+<h5 id="inizializzazione">Inizializzazione</h5>
+<h5 id="formattazione-ricerche">Formattazione ricerche</h5>
+<h4 id="sqlview">Sqlview</h4>
+<p>L'<strong><em>Sqlview</em></strong> semplifica la scrittura delle query sul database del BPM.
+Sul click, si aprirà un file di testo con all'interno una query relative a tutte le variabili nel Magazzino.
+Dalla query di default verrà selezionato l'InstanceID del workflow.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Default query</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>-- Verranno riportate nella selezione soltanto le variabili di testata (non di gruppo)
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>Select WKF.InstanceID, v1.aaa
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>from WKF
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>left join (Select StringValue As aaa, InstanceID,VariableName  from VAR_FGWTFEFWE ) v1 On  v1.VariableName =&#39;aaa&#39; and v1.InstanceID = wkf.InstanceID
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>where wkf.Name like &#39;fgwtfefwe&#39; 
+</span></code></pre></div></td></tr></table></div>
+<h4 id="importaesporta">Importa/Esporta</h4>
+<p><strong><em>Importa/Esporta</em></strong> è un dropdown con 6 possibili scelte.</p>
+<p>Tramite le varie opzioni è possibile esportare le variabili del processo corrente o importarne altre da un file esterno.
+È possibile, altrimenti, importare/esportare solo la categoria.</p>
+<h4 id="esporta-variabili">Esporta variabili</h4>
+<p><strong><em>Esporta variabili</em></strong> serve a spostare localmente le variabili. Ad esempio è possibile esportare le variabili del Mgazzino alle variabili da richiedere di una task.</p>
+<h3 id="allineamento">Allineamento</h3>
+<p>Simile all'allineamento della barra degli strumenti, trattato <a href="../Designer/#allineamento-e-dimensioni">qui</a>, la sezione <strong><em>Allineamento</em></strong> contiene gli strumenti per allineare gli elementi nel canvas del Magazzino delle variabili.</p>
+<h4 id="allinea-a-sinistra-e-allinea-in-alto">Allinea a sinistra e Allinea in alto</h4>
+<p>Allineano gli elemento selezionati secondo il tipo di allineamento in base alla posizione dell'elemento su cui è stato cliccato il tasto destro.</p>
+<h4 id="porta-davanti-e-porta-dietro">Porta davanti e Porta dietro</h4>
+<p>Modifica lo Z-index di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare <strong><em>Porta avanti</em></strong> per portarlo in primo piano. 
+Lo stesso, ma al contrario, vale per <strong><em>Porta dietro</em></strong>.</p>
+<h3 id="opzioni">Opzioni</h3>
+<p>La sezione <strong><em>Opzioni</em></strong> raggruppa 3 opzioni generali del Magazzino.</p>
+<h4 id="proprieta">Proprietà</h4>
+<p>Mostra e nasconde il Pannello degli attributi</p>
+<h4 id="variabili">Variabili</h4>
+<p><strong><em>Variabili</em></strong> è un dropdown che consente di vedere nella Variable list o tutte la variabili ancora da inserire, o tutte le variabili indistintamente.</p>
+<h4 id="griglia">Griglia</h4>
+<p><strong><em>Griglia</em></strong> consente di aumentare o diminuire la distanza tra i punti della griglia.</p>
+<h2 id="magazzino-delle-variabili-di-un-elemento">Magazzino delle variabili di un elemento</h2>
+<p>Il <strong><em>Magazzino delle variabili di un elemento</em></strong> è lo stesso concetto del Magazzino delle variabili, ma riferito alle variabili da richiedere di un elemento.  </p>
+<p>Esso differisce in alcuni punti:</p>
+<ul>
+<li>Non è possibile aggiungere o duplicare variabili.</li>
+<li>È possibile aggiornare le descrizioni di tutte le variabili tramite <strong><em>Aggiorna Descrizione</em></strong> nella barra degli strumenti.</li>
+<li>Non è possibile eseguire la <strong><em>Sqlview</em></strong>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/centrosoftware-dev/bpm-docs/tree/main/docs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "search.suggest", "search.share"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
