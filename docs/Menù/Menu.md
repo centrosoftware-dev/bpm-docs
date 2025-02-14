@@ -63,16 +63,31 @@ Sulla destra vengono elencate, per gruppo, tutte le classi documentali.
 
 La sezione **_Menù personalizzati_** apre una schermata dedicata alla creazione di Menù.
 
-Essendo un'entrata comune al menù di configurazione, i **_Menù personalizzati_** sono approfonditi [qui](Configurazione.md).
+Essendo un'entrata comune al menù di configurazione, i **_Menù personalizzati_** sono approfonditi [qui](Menù di configurazione/MenuPersonalizzati.md).
 
 ## Configurazione
 
-La sezione **_Configurazione_** presenta un menù interno con 10 entrate.  
-Essendo tutte complesse e diverse tra loro, vengono trattate e approfondite nella pagina dedicata alla sezione **_Configurazione_** [qui](Configurazione.md).
+La sezione **_Configurazione_** presenta un menù interno: il **Menù di configurazione**.  
+
+Il **Menù di configurazione** presenta 10 sezioni: 
+
+* Opzioni generali
+* Opzioni modelli
+* Utenti e gruppi
+* Contatti
+* Dashboard
+* Report
+* Allegati
+* Tabelle
+* Connettori
+* Altre opzioni
+
+Essendo tutte complesse e diverse tra loro, vengono trattate e approfondite nelle loro pagine dedicate raggruppate nella sezione **Menù di configurazione**.
+
 
 ## Sistema
 
-Nella sezione **_Sistema_** sono presenti tutte le informazioni e feature riguardanti l'applicativo stesso del BPM
+Nella sezione **_Sistema_** sono presenti tutte le informazioni e feature riguardanti l'applicativo stesso del BPM.
 
 ### Aggiornamenti software
 

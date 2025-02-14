@@ -1,0 +1,18 @@
+nav:
+    - Opzioni generali:
+        - Parametri.md
+        - MenuPersonalizzati.md
+        - Contatori.md
+        - ConfigurazioneEmail.md
+        - ProcessiRicorrenti.md
+        - AggiornamentoMassivoProcessi.md
+        - AttivaDisattivaProcessi.md
+        - VisualizzaStoricoGenerale.md
+    - Opzioni modelli:
+        - ConfiguraImpostazioneListaProcessiDaExcel.md
+        - PrefiltriProcessi.md
+        - EseguiImportazioneProcessiExcel.md
+        - VerificaImportazioniDaExcel.md
+        - TipiDiDossier.md
+        - StampaBarcodeQR.md
+    - UtentiGruppi.md
