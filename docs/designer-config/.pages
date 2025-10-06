@@ -1,0 +1,6 @@
+nav: 
+    - Introduzione: intro.md
+    - Designer di processi: process-designer
+    - Designer di classi documentali: document-designer
+    - Variabili: variables
+    - Parti comuni: common
