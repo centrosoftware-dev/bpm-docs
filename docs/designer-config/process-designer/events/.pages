@@ -1,0 +1,7 @@
+nav:
+    - Start: designer-config/process-designer/activities/start
+    - Start su evento: start-event.md
+    - Start a tempo: start-timer.md
+    - Attesa: wait.md
+    - Fine: end.md
+    - Termina Processo: terminate.md

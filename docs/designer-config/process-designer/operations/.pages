@@ -1,0 +1,10 @@
+nav:
+    - Decision Table: decision-table.md
+    - Imposta Variabili: variables-to-set.md
+    - Connettore Attivo: active-connector.md
+    - Invia email: email-send.md
+    - Carica dati: load-data.md
+    - Esegui SQL: exec-sql.md
+    - Aggiorna Altro Processo: update-proc.md
+    - Esegui programma: exec-prog.md
+    

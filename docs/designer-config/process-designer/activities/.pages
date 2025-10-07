@@ -1,0 +1,7 @@
+nav: 
+    - Link: link.md
+    - Start: start.md
+    - Attività: task.md
+    - Stato: state.md
+    - Sottoprocesso: subprocess.md
+    

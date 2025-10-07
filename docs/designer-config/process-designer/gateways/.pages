@@ -1,0 +1,7 @@
+nav:
+    - Intro: intro.md
+    - Percorsi alternativi: exclusive.md
+    - Percorsi paralleli: parallel.md
+    - Percorsi liberi: inclusive.md
+    - Complex: complex.md
+    - Sincronizza: synchro.md
