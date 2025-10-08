@@ -62,4 +62,3 @@ Nei capitoli successivi verranno trattati:
 - Gli elementi comuni configurabili  
 - Le modalità per il riutilizzo di modelli e classi  
 - Le best practice per una gestione corretta dell’ambiente BPM  
-

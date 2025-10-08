@@ -1,20 +1,22 @@
-# Il Designer
+# Designer di processi
 
-Il Designer e Costruttore di Flussi del BPM è uno strumento grafico e interattivo che consente agli utenti di progettare, modellare e ottimizzare i processi aziendali attraverso un'interfaccia visiva. Si tratta di un ambiente di sviluppo no-code o low-code pensato per trasformare procedure complesse in flussi di lavoro organizzati e automatizzati.
+Il Designer di processi del BPM è uno strumento grafico e interattivo che consente agli utenti di progettare, modellare e ottimizzare i processi aziendali attraverso un'interfaccia visiva. Si tratta di un ambiente di sviluppo no-code o low-code pensato per trasformare procedure complesse in flussi di lavoro organizzati e automatizzati.
+
 
 ## Creare un processo
 
 Un processo, chiamato anche Workflow, è un diagramma di flusso dove ogni forma o immagine che lo compone svolge una determinata azione.  
 
-Tramite il Designer è possibile disegnare tali processi.  
+Tramite il Designer è possibile disegnare tali processi in modo intuitivo tramite semplici azioni di drag & drop.  
 
 Creare un nuovo modello di processo è semplice: basta recarsi nel pannello delle impostazioni in alto a sinistra, poi cliccare la voce **Modelli di Processo** ed infine cliccare **Nuovo modello di processo**.
 
 ![Creazione di un Modello](../../assets/newModel.gif "Creazione di un Modello")
 
+
 ## Gli strumenti del Designer
 
-Gli strumenti del Designer sono suddivisi in più sezioni: una barra superiore, una sidebar di sinistra, chiamata Designer Tools e una sidebar di destra, contenente tutti gli attributi di un elemento.
+Gli strumenti del Designer sono suddivisi in più sezioni: una barra superiore, una sidebar di sinistra, chiamata Designer Tools, una sidebar di destra, contenente tutti gli attributi di un elemento e una sezione nella parte inferiore contente le etichette delle diverse paginedi lavoro e la barra per lo zoom su queste pagine.
 
 Nella barra superiore troviamo gli strumenti generali per la manipolazione degli elementi e dei loro attributi e per la manipolazione delle informazioni del processo.  
 
@@ -22,9 +24,8 @@ Nella sidebar di sinistra abbiamo una serie di strumenti per disegnare il proces
 
 Nella sidebar di destra si trovano tutti gli attributi relativi all'elemento attualmente selezionato.
 
-Per gli approfondimenti sulla barra generale degli strumenti sono nella loro sezione al pié di pagina [qui](#barra-generale-degli-strumenti).  
+Nella parte inferiore troviamo le etichette delle pagine di lavoro attualmente aperte per questo processo. Inizialmente la pagina selezionata è del processo, in cui troviamo tutti gli elementi del flusso. Sulla sinistra troviamo la [Pagina Info](#pagina-info) per la configurazione delle impostazioni di processo. Sulla destra invece si apriranno man mano tutte le altre finestre di lavoro in cui entriamo, ad esempio quella relativa alle variabili di progetto o quelle delle singole attività.
 
-Gli approfondimenti sugli elementi del Designer Tools e i loro attributi si trovano nella sezione [Designer Tools e Menù contestuale](DesignerTools.md).
 
 ## Costruire un modello di processo
 
@@ -32,7 +33,7 @@ Dalla sidebar di sinistra, trascinando un oggetto sul canvas, esso verrà disegn
 
 Queste attività possono o devono essere collegate tra loro. Ogni singola attività ha delle proprietà. Alcune di esse sono comuni a tutte le attività, mentre altre sono specifiche per le singole attività.  
 
-Ogni elemento va collegato col precendente o con se stesso tramite i **Link**, delle frecce che indicano i vari percorsi che il processo può instradare.  
+Ogni elemento va collegato ad altri elementi o a se stesso tramite i **Link**, delle frecce orientate che indicano i vari percorsi che il processo può instradare.  
 
 Selezionando uno degli oggetti disegnati, sulla destra si aprirà il pannello degli attributi ad esso riferiti.  
 In caso di chiusura accidentale, è possibile riaprire tale pannello premendo F4.  
@@ -43,6 +44,7 @@ Nella maggior parte dei casi, un flusso ha un inizio e almeno una fine.
     È possibile rimuovere lo Start, ma è un comportamento non convenzionale e tendenzialmente sconsigliato in quanto il processo richiederà all'utente di inserire direttamente le variabili da richiedere.
 
 L'inizio, quindi, può essere sovrascritto: cliccando tasto destro su un elemento presente sul canvas, dal menù contestuale si può scegliere l'opzione **Imposta come oggetto di avvio**. Così facendo il flusso inizierà dall'elemento impostato come oggetto di avvio.
+
 
 ## Barra generale degli strumenti
 
@@ -170,7 +172,36 @@ L'ultimo bottone, **_Elimina_**, serve ad eliminare la pagina corrente.
 
 !!! note "Requirement cancellazione"
     È possibile cancellare solo pagine vuote.
+
 #### Lingua
 
 Dall'ultima sezione è possibile scegliere la lingua.
+
+
+## Pagina Info
+
+Questa pagina contiene le impostazioni del processo ed è suddivisa in 4 sezioni:
+
+### Impostazioni base
+
+##### Nome modello
+
+##### Descrizione modello
+
+##### Cartella
+
+##### Gruppi di modelli
+
+##### Modello Principale
+
+##### Tabella variabili
+
+
+### Gestione
+
+### Contatti e utenti
+
+### Permessi
+
+
 
