@@ -1,9 +1,5 @@
 nav:
     - Introduzione: intro.md
-    - Riepilogo strumenti: tools.md
-    - Attività: activities
-    - Eventi: events
-    - Gateway e percorsi: gateways
-    - Processi collegati: linked-process
-    - Operazioni: operations
-    - Altro: other
+    - Barra degli strumenti: toolbar.md
+    - Pagina Info processo: pagina-info.md
+    - Designer Tools: designer-tools
