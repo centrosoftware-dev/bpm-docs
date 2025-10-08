@@ -1,6 +1,5 @@
 # Il Designer
 
-
 Il Designer e Costruttore di Flussi del BPM è uno strumento grafico e interattivo che consente agli utenti di progettare, modellare e ottimizzare i processi aziendali attraverso un'interfaccia visiva. Si tratta di un ambiente di sviluppo no-code o low-code pensato per trasformare procedure complesse in flussi di lavoro organizzati e automatizzati.
 
 ## Creare un processo
@@ -11,7 +10,7 @@ Tramite il Designer è possibile disegnare tali processi.
 
 Creare un nuovo modello di processo è semplice: basta recarsi nel pannello delle impostazioni in alto a sinistra, poi cliccare la voce **Modelli di Processo** ed infine cliccare **Nuovo modello di processo**.
 
-![Creazione di un Modello](../assets/newModel.gif "Creazione di un Modello")
+![Creazione di un Modello](../../assets/newModel.gif "Creazione di un Modello")
 
 ## Gli strumenti del Designer
 

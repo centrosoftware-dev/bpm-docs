@@ -8,14 +8,14 @@ In questa parte dell’applicativo, l’utente ha pieno controllo sul **disegno 
 
 ## Struttura della sezione
 
-La sezione **_Designer e Configurazione_** è composta da quattro parti principali, ognuna con un ruolo specifico nel ciclo di vita di un processo.
+La sezione Designer e Configurazione è composta da quattro parti principali, ognuna con un ruolo specifico nel ciclo di vita di un processo.
 
 ??? info "Approfondimenti"
     Ogni sezione del **_Designer e Configurazione_** è descritta in modo approfondito nei capitoli dedicati, con esempi pratici, immagini e suggerimenti per un uso efficiente del BPM.
 
-### Designer di processi
+### **Designer di processi**
 
-Il **_Designer di processi_** consente di **creare e modificare modelli di processo**, definendo attività, transizioni e condizioni logiche.  
+Il [Designer di processi](./process-designer/intro.md) consente di **creare e modificare modelli di processo**, definendo attività, transizioni e condizioni logiche.  
 Attraverso un’interfaccia visuale intuitiva, è possibile costruire graficamente i flussi di lavoro e collegare tra loro le diverse fasi operative.
 
 Nei capitoli successivi verranno approfonditi:
@@ -24,9 +24,11 @@ Nei capitoli successivi verranno approfonditi:
 - Le impostazioni dei singoli componenti
 - Le funzioni di validazione e versionamento del modello  
 
-### Designer di classi documentali
+---
 
-Il **_Designer di classi documentali_** permette di **definire la struttura dei documenti** utilizzati dai processi.  
+### **Designer di classi documentali**
+
+Il [Designer di classi documentali](./document-designer/intro.md) permette di **definire la struttura dei documenti** utilizzati dai processi.  
 Ogni classe documentale rappresenta un insieme di dati strutturati composti sia dagli allegati che dai relativi metadati, che possono essere creati, modificati o consultati durante l’esecuzione del processo.
 
 Nei prossimi capitoli verranno spiegati nel dettaglio:
@@ -35,9 +37,11 @@ Nei prossimi capitoli verranno spiegati nel dettaglio:
 - Le proprietà dei campi e i tipi di dato supportati  
 - Le relazioni tra classi documentali e processi  
 
-### Variabili di processo
+---
 
-Le **_Variabili di processo_** sono elementi fondamentali che consentono di **memorizzare e scambiare informazioni** durante l’esecuzione di un processo.  
+### **Variabili di processo**
+
+Le [Variabili](./variables/intro.md) di processo sono elementi fondamentali che consentono di **memorizzare e scambiare informazioni** durante l’esecuzione di un processo.  
 Possono essere di diverso tipo, sia semplice (testo, numero, data) che più complesso, e vengono utilizzate per memorizzare informazioni, generare documenti o impostare regole logiche per l'esecuzione del processo.
 
 I capitoli dedicati mostreranno come:
@@ -46,14 +50,16 @@ I capitoli dedicati mostreranno come:
 - Collegare variabili a classi documentali  
 - Utilizzare le variabili nelle condizioni di processo e nelle formule
 
-### Parti comuni
+---
 
-La sezione **_Parti comuni_** raccoglie le **impostazioni condivise** tra i diversi moduli del BPM.  
+### **Parti comuni**
+
+La sezione [Parti comuni](./common/intro.md) raccoglie le **impostazioni condivise** tra i diversi moduli del BPM.  
 Qui si trovano configurazioni trasversali come parametri generali, template riutilizzabili e regole comuni di sicurezza o comportamento.
 
 Nei capitoli successivi verranno trattati:
 
 - Gli elementi comuni configurabili  
-- Le modalità di riutilizzo tra modelli e classi  
-- Le best practice per una gestione coerente dell’ambiente BPM  
+- Le modalità per il riutilizzo di modelli e classi  
+- Le best practice per una gestione corretta dell’ambiente BPM  
 

@@ -1,0 +1,5 @@
+nav:
+    - Introduzione: intro.md
+    - Variabili nel processo: process.md
+    - Tipi di variabile: types
+    
