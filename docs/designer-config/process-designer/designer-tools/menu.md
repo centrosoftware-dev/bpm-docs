@@ -15,7 +15,7 @@ Generalmente, in un oggetto è possibile cambiare:
 L'entrata Allineamento a sua volta ha 10 scelte, divise in 3 gruppi: 
 
 #### Porta davanti e Porta dietro
-Modifica lo **Z-index** di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare _Porta davanti_ per portarlo in primo piano. 
+Modifica lo **_Z-index_** di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare _Porta davanti_ per portarlo in primo piano. 
 Lo stesso, ma al contrario, vale per _Porta dietro_.
 
 #### Allinea
@@ -29,28 +29,28 @@ Selezionando più oggetti(1)è possibile spostarli in massa distrubuendoli su un
 
 ## Manipolazione oggetto
 
-Oltre a **tagliare** e **copiare** un oggetto, è possibile **spostarlo da una pagina ad un'altra** del processo tramite l'entrata _Sposta oggetto alla pagina ..._ .
+Oltre a **_tagliare_** e **_copiare_** un oggetto, è possibile **_spostarlo da una pagina ad un'altra_** del processo tramite l'entrata _Sposta oggetto alla pagina ..._ .
 
 ## Manipolazione Testo e Label
 
 Nel menù contestuale è presente l'entrata **_Sposta testo_** per spostare l'etichetta dell'oggetto dove si vuole nel canvas. Essa rimarrà ancorata al punto dove la si è spostata.
 L'entrata **_Modifica Testo_** consente di modificare il testo della Label.
 
-## Impostare un oggetto come oggetto di avvio
+## Imposta come oggetto di avvio
 
-L'entrata **_Imposta come oggetto di avvio_** renderà l'oggetto su cui si è cliccato, il punto di partenza del processo.
+Quest'entrata permette di impostare un oggetto come oggetto di avvio,rendendo l'oggetto su cui si è cliccato, il punto di partenza del processo.
 
 !!! danger "Rimozione dello Start"
     È possibile rimuovere lo Start, ma è un comportamento non convenzionale e tendenzialmente sconsigliato in quanto il processo richiederà all'utente di inserire direttamente le variabili da richiedere.
 
 
-## Utenti e responsabili...
+## Utenti e responsabili
 
 Tramite quest'entrata è possibile definire il ruolo degli utenti rispetto ad un'attività da svolgere. Si può lavorare sia su singoli utenti sia su **gruppi**. I ruoli possibili sono 3:
 
-- **Esecutore** - chi dovrà svolgere effettivamente una determinata task.
-- **Responsabile** - colui che assegnerà l'attività prima che venga eseguita (in caso il task sia configurato in questo modo).
-- **CC** - utenti che devono vedere l'attività, ma senza poterci interagire.
+- **_Esecutore_** - chi dovrà svolgere effettivamente una determinata task.
+- **_Responsabile_** - colui che assegnerà l'attività prima che venga eseguita (in caso il task sia configurato in questo modo).
+- **_CC_** - utenti che devono vedere l'attività, ma senza poterci interagire.
 
 
 ## Variabili da richiedere
@@ -76,25 +76,24 @@ Il popup presenta due checkbox:
 - La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup.
 - La seconda, invece, fa sì che gli allegati caricati non possano essere poi modificati.
 
-**----------------------SIAMO ARRIVATI QUI -----------------------------**
+Dopodiché una sezione dedicata ai filtri, 3 in particolare:
 
-Dopodiché una sezione dedicata ai filtri: qui è possibile infatti definire il **_Gruppo allegato_**, il **_Tipo allegato_** e il **_Percorso_**.  
+Il **_Gruppo allegato_** e il **_Tipo Allegato_**, definibili dal menù delle impostazioni alla sezione **_Configurazione_**, nel segmento **_Allegati_**, permettono di accettare solo allegati che appartengono a questi gruppi o tipi.
 
-Il **_Gruppo allegato_** e il **_Tipo Allegato_** sono definibili dal menù delle impostazioni alla sezione **_Configurazione_**, sottogruppo **_Allegati_**.  
-
-Per il **_Percorso_** invece è necessario scegliere una delle cartelle interne al processo.  
-Per crearne una è necessario cliccare la voce **_Allegati_** dalla **_barra degli strumenti_**.  
-Da lì si apriranno le impostazioni generali del processo relative agli allegati.  
-Cliccando tasto destro sulla lista delle cartelle, sarà possibile crearne una nuova. Una volta fatto, sarà presente tra le scelte disponibili per determinare il percorso degli allegati di una task.
+Il **_Percorso_** permette di filtrare gli allegati sulla base del percorso file in cui sono memorizzati, il quale deve appartenere a una delle cartelle interne al processo.  
+Per crearne una è necessario cliccare la voce **_Allegati_** dalla [**barra degli strumenti**](../toolbar.md).  
+Da lì si apriranno le impostazioni generali del processo relative agli allegati. Cliccando tasto destro sulla lista delle cartelle, sarà possibile crearne una nuova. Una volta fatto, sarà presente tra le scelte disponibili per determinare il percorso degli allegati di una task.
 
 Sotto i Filtri, è possibile gestire la **_Dimensione Massima in KB_** (Dim. Massima kb), tramite un input numerico.
 Il numero immesso sarà il tetto massimo per la dimensione di un file.  
 
-Nella parte bassa del popup invece si ha il gruppo relativo ai Tipi di file consentiti.  
+Nella parte bassa troviamo invece il gruppo relativo ai Tipi di file consentiti.  
 Tramite una serie di checkbox è possibile definire le estensioni dei file che possono essere accettati.  
-L'input di testo finale invece è riservato ad estensioni specifiche per gli utenti che ne hanno bisogno. **_Tali estensioni vanno separate dalla virgola e includendo il punto_**.
+La casella di testo finale permette di specificare ulteriori estensioni in caso ce ne fosse bisogno. 
 
-``` title="Altre Estensioni" linenums="1"
+!!! tip "Tali estensioni vanno separate dalla virgola e devono includere il punto"
+
+``` title="Esempio di altre estensioni" linenums="1"
 .cad,.php,.bat
 ```
 
@@ -107,159 +106,78 @@ Per svolgere un'operazione basta trascinarla dalla colonna **_Operazioni disponi
 
 1. Il titolo della colonna è il momento in cui verrà svolta l'operazione.
 
-Le **_Operazioni_** vengono svolte in ordine Top to Bottom.
+Le [**_Operazioni_**](./operations/intro.md) sono azioni specifiche e complesse che vengono svolte in ordine Top to Bottom.
 
-Le **_Operazioni_** sono azioni specifiche e complesse, per approfondimenti e spiegazioni è nmecessario rifarsi alla loro sezione [qui]().
+
+## Pianificazione e Scadenze
+Questa finestra permette di impostare i dettagli di pianificazione, scadenza e priorità relativi a una specifica attività.   
+È diviso in 3 schede principali:
+
+### Pianificazione e Scadenze
+Permette di impostare la **durata prevista** e la **scadenza** di una task.
+Presenta inoltre 3 checkbox per la gestione della pianificazione:
+
+- _Da confermare_
+- _Rileva inizio_
+- _Utilizza calendario_
+
+### Dati Attività
+
+Consente di associare variabili ai campi relativi a una pianificazione aggiornata dell'attivit
+consente di associare variabili a campi specifici relativi ai dati effettivi di un'attività.
+permette di configurare le variabili per i dati effettivi dell'attività, ovvero i valori realmente registrati. I campi configurabili sono:
+consente di associare variabili a campi specifici relativi ai dati pianificati 
+
+
+I campi configurabili si dividono in 3 gruppi:
+
+1. _Date **Aggiornate** Attività_: 
+    * Data _inizio_ aggiornata: permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
+    * Data _fine_ aggiornata: permette di associare una variabile alla data di fine pianificata dell'attività nel calendario.
+    * _Durata_ aggiornata: permette di collegare una variabile che rappresenta la durata stimata dell'attività (in giorni).
+
+
+2. _Date **Effettive** Attività_ 
+    * Data _inizio_ effettiva: permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
+    * Data _fine_ effettiva: permette di associare una variabile alla data di fine pianificata dell'attività nel calendario.
+    * _Durata_ effettiva: permette di collegare una variabile che rappresenta la durata stimata dell'attività in giorni.
+
+
+3. _Date **Previste** Attività_
+    * Data _inizio_ prevista/pianificata: permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
+    * Data _fine_ prevista/pianificata: permette di associare una variabile alla data di fine pianificata dell'attività nel calendario.
+    * _Durata_ prevista/pianificata: permette di collegare una variabile che rappresenta la durata stimata dell'attività in giorni.
+
+
+### Dati Aggiuntivi
+Qui troviamo 3 campi:
+
+* **Scadenza** dell'attività, configura una variabile per rappresentare la data di scadenza a calendario dell'attività.
+
+* **Priorità** dell'attività, consente di associare una variabile alla priorità assegnata all'attività.
+
+* **Colore** dell'attività, consente di associare una variabile al colore assegnato all'attività nella todo list.
+
 
 ## Formula di validazione
 
-La **_Formula di validazione_** è una formula che determina se è possibile continuare con la task successiva del processo.
-Cliccando su questa entrata, verrà aperto il popup per la scrittura delle formule.  
-Le formule di validazione degli elementi del canvas sono in una relazione AND con le altre formule definibili dalla barra degli strumenti della pagina delle variabili.
+La **_Formula di validazione_** è una formula che determina se è possibile continuare o meno con la task successiva del processo.
+Cliccando su questa entrata, verrà aperto il popup per la scrittura della formula.  
+Le formule di validazione degli elementi del canvas sono in una relazione **AND** con le altre formule definibili dalla barra degli strumenti della pagina delle variabili.
+
 
 ## Escalation
 
-L'**_Escalation_** è un'entrata del menù contestuale specifica di alcuni elementi.  
-Con l'utilizzo dell'**_Escalation_** è possibile, dopo un determinato numero di giorni inserito dall'utente, eseguire le 3 azioni seguenti:
+L'**_Escalation/Timeout_** è un'entrata del menù contestuale specifica di alcuni elementi.  
+Con il suo utilizzo è possibile, dopo un determinato numero di giorni inserito dall'utente, eseguire le 3 azioni seguenti:
 
-* Non variare attività
-* Riassegna attività, cedendo ad altri utenti la possibilità di mandare avanti il processo
-* Chiudi attività
+* Non variare l'attività
+* Riassegnare l'attività, cedendo ad altri utenti la possibilità di mandare avanti il processo
+* Terminare l'attività
 
-Dall'Escalation poi è possibile iniziare un collegamento, così da poter instradare il processo altrove in caso si dovesse riassegnare o chiudere la task.
+Dall'Escalation è poi possibile far partire un [link](./activities/link.md) specifico, il quale indica al processo la strada alternativa da percorrere se l'escalation si verifica effetivamente, ad esempio in caso di riassegnazione o chiusura della task.
 
-## Pianificazione e Scadenze
 
-Il popup "Pianificazione e Scadenze" permette di impostare i dettagli di pianificazione, scadenze e priorità relativi a una specifica attività (task). È diviso in tre schede principali: Pianificazione e scadenze, Variabili, e Dati aggiuntivi.
-
-In **_Pianificazione e Scadenze_** è possibile impostare la durata prevista e la scadenza di una task.
-Inoltre sono presenti 3 checkbox:
-
-* Da confermare
-* Rileva inizio
-* Utilizza calendario
-
-La tab **_Variabili_** consente di associare variabili ai campi relativi a una pianificazione aggiornata dell'attività. I campi configurabili includono:
-
-* Data inizio prevista aggiornata, consente di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
-* Data fine aggiornata, permette di associare una variabile alla data di fine dell'attività pianificata.
-* Durata prevista (giorni), offre la possibilità di collegare una variabile che rappresenta la durata stimata dell'attività (in giorni).
-* Scadenza dell'attività, configura una variabile per rappresentare la data di scadenza dell'attività.
-* Priorità dell'attività, consente di associare una variabile alla priorità assegnata all'attività.
-
-La scheda **_Dati aggiuntivi_** consente di associare variabili a campi specifici relativi ai dati pianificati e ai dati effettivi di un'attività. Questa scheda è divisa in due sezioni principali: Dati Previsti/Pianificati e Dati Effettivi.
-
-Nel gruppo **_Dati Previsti/Pianificati_** è possibile configurare le variabili per i dati pianificati dell'attività. I campi disponibili sono:
-
-* Data inizio prevista/pianificata, permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
-* Data fine prevista/pianificata, consente di associare una variabile alla data di fine pianificata dell'attività.
-* Durata prevista (giorni), Collega una variabile che rappresenta la durata stimata dell'attività in giorni.
-
-Il Gruppo **_Dati Effettivi_** permette di configurare le variabili per i dati effettivi dell'attività, ovvero i valori realmente registrati. I campi configurabili sono:
-
-* Data inizio dell'attività, associa una variabile che rappresenta la data di inizio effettiva dell'attività.
-* Data fine dell'attività, collega una variabile alla data di completamento effettiva dell'attività.
-* Durata effettiva (giorni), consente di collegare una variabile che rappresenta la durata effettiva dell'attività in giorni.
-
-### Configurazione
+## Configurazione
 
 L'entrata **_Configurazione_** è differente per ogni elemento e viene approfondita nelle sezioni relative ai singoli elementi.
-
-
-## Pannello attributi
-
-Analogamente, a destra del canvas si trova il **_Pannello Attributi_** che, molto spesso, presenta entrate comuni a quelle del menù contestuale.
-
-### Aspetto
-
-Nel Pannello attributi, **_Aspetto_** contiene tutte le informazioni di un oggetto relative all'allineamento della targhetta, ai colori e ai font.
-
-### Dati
-
-La sezione **_Dati_** comprende le proprietà più specifiche di un singolo elemento.  
-
-Gli attributi elencati forniscono informazioni e impostazioni per personalizzare il comportamento e la gestione della task all'interno del flusso. Si tratta di proprietà che riguardano ambiti funzionali, priorità, gestione utenti e operazioni specifiche, oltre ad altre configurazioni utili per determinare come la task interagisce con il sistema o con altri elementi del flusso.
-
-#### Ambito e Descrizione
-
-L'**_Ambito_** è un campo di testo libero.  
-Dalla to-do list è possibile ricercare tutte le task con uno stesso **_Ambito_**.
-
-Impostando la **_Descrizione_** è possibile fornire informazioni testuali riguardanti una task, utili a chi dovrà poi dovrà svolgerla. Apparirà infatti nella tab **_Istruzioni_** quando un utente starà eseguendo la task.
-
-#### Escalation
- 
-Con l'utilizzo dell'**_Escalation_** è possibile, dopo un determinato numero di giorni inserito dall'utente, eseguire le 3 azioni seguenti:
-
-* Non variare attività
-* Riassegna attività, cedendo ad altri utenti la possibilità di mandare avanti il processo
-* Chiudi attività
-
-Dall'Escalation poi è possibile iniziare un collegamento, così da poter instradare il processo altrove in caso si dovesse riassegnare o chiudere la task.
-
-#### Operazioni
-
-Da **_Operazioni_** si apre un popup che permette di eseguire delle operazioni in diversi momenti della task.  
-In base all'elemento su cui si apre il popup, i momenti in cui sarà possibile svolgere un'operazione saranno diversi.  
-Per svolgere un'operazione basta trascinarla dalla colonna **_Operazioni disponibili_** a quella del momento in cui si desidera svolgerla.(1) 
-{ .annotate }
-
-1. Il titolo della colonna è il momento in cui verrà svolta l'operazione.
-
-Le **_Operazioni_** vengono svolte in ordine Top to Bottom.
-
-Le **_Operazioni_** sono azioni specifiche e complesse, per approfondimenti e spiegazioni è nmecessario rifarsi alla loro sezione [qui](MagazzinoVariabili.md).
-
-#### Priorità
-
-Tramite **_Priorità_** è possibile assegnare un livello di importanza per lo svolgimento di una task.  
-
-Dalla to-do list è possibile filtrare e ordinare le task in base alla loro priorità.  
-
-I livelli possibili sono: Bassa, Media, Alta o Sospesa.
-
-#### Testo
-
-Il **_Testo_** consente di modificare ciò che appare sul canvas a video nella label di un elemento. Il valore inserito sarà anche un nome secondario dell'elemento, filtrabile anch'esso e che apparirà nella tab **_Dati_** dell'esecuzione di una task.
-
-#### Definire gli Utenti, Utenti cc e Responsabili, le Variabili da richiedere e gli Allegati
-
-Tramite l'entrata **_Utenti_**, **_Utenti cc_** e **_Utenti resp_** è possibile definire chi dovrà svolgere una determinata task.
-Cliccando questi attributi verrà aperto un popup dove sarà possibile, tramite delle checkbox, marcare gli utenti che dovranno svolgere la task, supervisionarla o che saranno i responsabili del loro svolgimento.
-
-Analogamente, è possibile definire i dati che, gli utenti precedentemente, assegnati dovranno inserire.
-Questo è possibile tramite l'entrata **_Variabili da richiedere_** che, una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili.  
-Questa pagina, chiamata **_Magazzino delle variabili_**, viene trattata e approfondita nella sua sezione apposita [qui]().
-Per aggiungere una Variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
-Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori delle variabili così definite.
-
-Infine, è possibile definire gli allegati da definire tramite l'entrata **_Allegati_**.  
-In questo caso non è possibile definire gli allegati che andranno inseriti, bensì dei filtri che vadano a scremare i possibili allegati inseribili. Tutto questo tramite un popup.  
-Il popup presenta due checkbox:
-
-* La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup.
-* La seconda, invece, fa sì che gli allegati caricati non possano essere poi modificati.
-
-Dopodiché una sezione dedicata ai filtri: qui è possibile infatti definire il **_Gruppo allegato_**, il **_Tipo allegato_** e il **_Percorso_**.  
-
-Il **_Gruppo allegato_** e il **_Tipo Allegato_** sono definibili dal menù delle impostazioni alla sezione **_Configurazione_**, sottogruppo **_Allegati_**.  
-
-Per il **_Percorso_** invece è necessario scegliere una delle cartelle interne al processo.  
-Per crearne una è necessario cliccare la voce **_Allegati_** dalla **_barra degli strumenti_**.  
-Da lì si apriranno le impostazioni generali del processo relative agli allegati.  
-Cliccando tasto destro sulla lista delle cartelle, sarà possibile crearne una nuova. Una volta fatto, sarà presente tra le scelte disponibili per determinare il percorso degli allegati di una task.
-
-Sotto i Filtri, è possibile gestire la **_Dimensione Massima in KB_** (Dim. Massima kb), tramite un input numerico.
-Il numero immesso sarà il tetto massimo per la dimensione di un file.  
-
-Nella parte bassa del popup invece si ha il gruppo relativo ai Tipi di file consentiti.  
-Tramite una serie di checkbox è possibile definire le estensioni dei file che possono essere accettati.  
-L'input di testo finale invece è riservato ad estensioni specifiche per gli utenti che ne hanno bisogno. **_Tali estensioni vanno separate dalla virgola e includendo il punto_**.
-
-``` title="Altre Estensioni" linenums="1"
-.cad,.php,.bat
-```
-
-### Scadenze/Tempi
-
-L'approfondimento sulle **_Scadenze/Tempi_** è presenta nella sua sezione [qui](#pianificazione-e-scadenze).
