@@ -6,15 +6,14 @@ Una volta selezionato dal Designer Tools, passando il cursore sopra un elemento,
 
 Mentre si sta tracciando, passando il cursore su un elemento differente dal primo, è possibile collegarlo ad uno dei punti del destinatario.
 
-![Animazione link](./images/link-anim.gif)
+!["Link animation"](../assets/activities/link-anim.gif)
 
 Fatto ciò, i due elementi saranno collegati: spostandoli all'interno del canvas, il link rimarrà ancorato ad essi. 
 
 !!! tip "Note sul Routing"
-    Durante la creazione dei link:  
-      
-      - I **punti di ancoraggio** sono visibili come **puntini gialli** sugli oggetti.
-
+    Durante la creazione dei link:
+     
+      - I **punti di ancoraggio** sono visibili come **puntini gialli** sugli oggetti.  
       - Durante il **drag-and-drop**, una linea **verde** indica che il collegamento è valido; una **rossa** segnala che non è permesso.
 
 
@@ -24,7 +23,7 @@ Nel disegno di un processo BPM, i **link** rappresentano i collegamenti logici t
 
 Cliccando sul collegamento con il tasto destro del mouse, si aprirà il menù contestuale contenente una lista di proprietà e parametri per configurarlo e personalizzarlo:
 
-![alt text](./images/link-dropdown-screenshot.png)
+!["Link dropdown menu"](../assets/activities/link-dropdown-screenshot.png)
 
 ### Nome collegamento
 Permette di assegnare un'etichetta testuale al link, utile per identificare percorsi alternativi o indicare il significato logico del collegamento. Questo nome viene visualizzato nel canvas vicino alla linea e non modifica la logica del processo.
@@ -37,7 +36,7 @@ Definisce una condizione (espressa tramite formula nel dialog) che deve essere v
 Quando è presente una condizione, compare un piccolo **rombo** grafico all'inizio del link.
 Se da un elemento, sono collegati più **_Link_** con uscite diverse, essi sono trattati come un percorso [inclusive](../gateways/inclusive.md). 
 
-!["Link condizionato"](./images/link-cond.png)
+!["Link condizionato"](../assets/activities/link-cond.png)
 
 ### Imposta variabili
 Consente di impostare valori su variabili nel momento in cui il processo percorre quel link. È uno dei diversi modi per iniettare logica personalizzata nel flusso, alternativo all’uso di operazioni nei task o stati.
@@ -61,7 +60,7 @@ Le tipologie disponibili sono:
 > 💡 La modalità più utilizzata in fase iniziale è quella **ortogonale automatica**, eventualmente modificata successivamente in manuale per una migliore pulizia grafica.
 
 ### Elimina collegamento
-Permette di eliminare il collegamento selezionato, in alernativa si può cancellare anche premendo il tasto **`canc`** da tastiera.
+Permette di eliminare il collegamento selezionato, in alernativa si può cancellare anche premendo il tasto <kbd>canc</kbd> da tastiera.
 
 ## Regole di connessione
 - Ogni punto può essere condiviso da più link contemporaneamente.

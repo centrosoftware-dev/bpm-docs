@@ -1,8 +1,9 @@
-## Menù contestuale
+# Menù contestuale
 
-Il menù contestuale appare quando si preme il tasto destro del mouse su un oggetto nel canvas. In base all'oggetto cliccato le entrate saranno differenti. si accede al **_Menù contestuale_** di un elemento cliccandoci sopra col tasto destro.
+Il **_Menù contestuale_** appare quando si preme il tasto destro del mouse su un oggetto nel canvas.  
+Alcune opzioni saranno comuni a più oggetti, altre invece saranno differenti in base all'oggetto selezionato.
 
-### Colore e font
+## Colore e font
 
 Generalmente, in un oggetto è possibile cambiare:
 
@@ -10,60 +11,72 @@ Generalmente, in un oggetto è possibile cambiare:
 * Colore dello sfondo.
 * Colore e spessore e del bordo.
 
-### Allineamento
-
-L'entrata **_Allineamento_** a sua volta ha 10 scelte: 
-
-#### Allinea
-
-Allineano gli elemento selezionati secondo il tipo di allineamento in base alla posizione dell'elemento su cui è stato cliccato il tasto destro.
+## Allineamento
+L'entrata Allineamento a sua volta ha 10 scelte, divise in 3 gruppi: 
 
 #### Porta davanti e Porta dietro
+Modifica lo **Z-index** di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare _Porta davanti_ per portarlo in primo piano. 
+Lo stesso, ma al contrario, vale per _Porta dietro_.
 
-Modifica lo Z-index di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare **_Porta avanti_** per portarlo in primo piano. 
-Lo stesso, ma al contrario, vale per **_Porta dietro_**.
+#### Allinea
+Permette di allineare gli elementi selezionati secondo il tipo di allineamento scelto, in base alla posizione dell'elemento su cui è stato cliccato il tasto destro. L'allineamento può essere verticale o orizzantale, sia agli estremi che al centro.
 
 #### Distribuisci
-
-Selezionando più oggetti(1)è possibile spostarli in massa distrubuendoli su uno dei loro assi utilizzando le due entrate **_Distribuisci verticalmente_** o **_Distribuisci orizzontalmente_**.
+Selezionando più oggetti(1)è possibile spostarli in massa distrubuendoli su uno dei loro assi utilizzando le due entrate _Distribuisci verticalmente_ o _Distribuisci orizzontalmente_.
 { .annotate }
 
 1.  Per selezionare più oggetti è necessario tenere premuto ++ctrl++ o ++shift++ quando si va a cliccare, col tasto sinistro, su un elemento. Altrimenti, cliccando su una parte vuota del canvas e tenendo premuto, è possibile delineare un'area i cui elementi interno verranno selezionati.
 
-### Manipolazione oggetto
+## Manipolazione oggetto
 
-Oltre al tagliare e copiare un oggetto, è possibile spostarlo da una pagina ad un'altra del processo tramite l'entrata **_Sposta oggetto alla pagina ..._**.
+Oltre a **tagliare** e **copiare** un oggetto, è possibile **spostarlo da una pagina ad un'altra** del processo tramite l'entrata _Sposta oggetto alla pagina ..._ .
 
-### Manipolazione Testo e Label
+## Manipolazione Testo e Label
 
-Nel menù contestuale è presente l'entrata **_Sposta testo_** per spostare l'etichetta dell'oggetto dove si vuole nel canvas. Essa rimarrà ancorata al punto dove si è spostata.
+Nel menù contestuale è presente l'entrata **_Sposta testo_** per spostare l'etichetta dell'oggetto dove si vuole nel canvas. Essa rimarrà ancorata al punto dove la si è spostata.
 L'entrata **_Modifica Testo_** consente di modificare il testo della Label.
 
-### Impostare un oggetto come oggetto di avvio
+## Impostare un oggetto come oggetto di avvio
+
+L'entrata **_Imposta come oggetto di avvio_** renderà l'oggetto su cui si è cliccato, il punto di partenza del processo.
 
 !!! danger "Rimozione dello Start"
     È possibile rimuovere lo Start, ma è un comportamento non convenzionale e tendenzialmente sconsigliato in quanto il processo richiederà all'utente di inserire direttamente le variabili da richiedere.
 
-Premendo tasto destro, l'entrata **_Imposta come oggetto di avvio_** renderà l'oggetto su cui si è cliccato, il punto di partenza.
 
-### Definire gli Utenti e i Responsabili, le Variabili da richiedere e gli Allegati da richiedere
+## Utenti e responsabili...
 
-Tramite l'entrata **_Utenti e responsabili_** è possibile definire chi dovrà svolgere una determinata task.
+Tramite quest'entrata è possibile definire il ruolo degli utenti rispetto ad un'attività da svolgere. Si può lavorare sia su singoli utenti sia su **gruppi**. I ruoli possibili sono 3:
 
-Analogamente, è possibile definire i dati che, gli utenti precedentemente, assegnati dovranno inserire.
-Questo è possibile tramite l'entrata **_Variabili da richiedere_** che, una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili.  
-Questa pagina, chiamata **_Magazzino delle variabili_**, viene trattata e approfondita nella sua sezione apposita [qui](MagazzinoVariabili.md).
+- **Esecutore** - chi dovrà svolgere effettivamente una determinata task.
+- **Responsabile** - colui che assegnerà l'attività prima che venga eseguita (in caso il task sia configurato in questo modo).
+- **CC** - utenti che devono vedere l'attività, ma senza poterci interagire.
+
+
+## Variabili da richiedere
+
+L'entrata **_Variabili da richiedere_** permette di definire i dati che gli utenti assegnati dovranno inserire.
+Una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili.  
+Questa pagina, chiamata **Magazzino delle variabili**, viene trattata e approfondita nella sua sezione apposita [qui](../../variables/warehouse.md).
 Per aggiungere una Variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
 Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori delle variabili così definite.
 
-![](../assets/inserimentoVarUserTask.gif)
+![](./assets/menu-inserimentoVarUserTask.gif)
 
-Infine, è possibile definire gli allegati da definire tramite l'entrata **_Allegati da richiedere_**.  
-In questo caso non è possibile definire gli allegati che andranno inseriti, bensì dei filtri che vadano a scremare i possibili allegati inseribili. Tutto questo tramite un popup.  
+
+## Allegati da richiedere
+
+È inoltre possibile definire gli allegati richiesti tramite l'entrata **_Allegati da richiedere_**.  
+In questo caso non è possibile definire direttamente gli allegati da inserire, ma piuttosto, creare tramite un popup, dei filtri che vadano a scremare i possibili allegati inseribili.
+
+![Menu attachment options](./assets/menu-attachment-options.png)
+
 Il popup presenta due checkbox:
 
-* La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup.
-* La seconda, invece, fa sì che gli allegati caricati non possano essere poi modificati.
+- La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup.
+- La seconda, invece, fa sì che gli allegati caricati non possano essere poi modificati.
+
+**----------------------SIAMO ARRIVATI QUI -----------------------------**
 
 Dopodiché una sezione dedicata ai filtri: qui è possibile infatti definire il **_Gruppo allegato_**, il **_Tipo allegato_** e il **_Percorso_**.  
 
@@ -85,7 +98,7 @@ L'input di testo finale invece è riservato ad estensioni specifiche per gli ute
 .cad,.php,.bat
 ```
 
-### Operazioni
+## Operazioni
 
 L'entrata relativa alle **_Operazioni_** apre un popup che permette di eseguire delle operazioni in diversi momenti della task.  
 In base all'elemento su cui si apre il popup, i momenti in cui sarà possibile svolgere un'operazione saranno diversi.  
@@ -98,13 +111,13 @@ Le **_Operazioni_** vengono svolte in ordine Top to Bottom.
 
 Le **_Operazioni_** sono azioni specifiche e complesse, per approfondimenti e spiegazioni è nmecessario rifarsi alla loro sezione [qui]().
 
-### Formula di validazione
+## Formula di validazione
 
 La **_Formula di validazione_** è una formula che determina se è possibile continuare con la task successiva del processo.
 Cliccando su questa entrata, verrà aperto il popup per la scrittura delle formule.  
 Le formule di validazione degli elementi del canvas sono in una relazione AND con le altre formule definibili dalla barra degli strumenti della pagina delle variabili.
 
-### Escalation
+## Escalation
 
 L'**_Escalation_** è un'entrata del menù contestuale specifica di alcuni elementi.  
 Con l'utilizzo dell'**_Escalation_** è possibile, dopo un determinato numero di giorni inserito dall'utente, eseguire le 3 azioni seguenti:
@@ -115,7 +128,7 @@ Con l'utilizzo dell'**_Escalation_** è possibile, dopo un determinato numero di
 
 Dall'Escalation poi è possibile iniziare un collegamento, così da poter instradare il processo altrove in caso si dovesse riassegnare o chiudere la task.
 
-### Pianificazione e Scadenze
+## Pianificazione e Scadenze
 
 Il popup "Pianificazione e Scadenze" permette di impostare i dettagli di pianificazione, scadenze e priorità relativi a una specifica attività (task). È diviso in tre schede principali: Pianificazione e scadenze, Variabili, e Dati aggiuntivi.
 

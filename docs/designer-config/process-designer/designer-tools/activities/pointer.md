@@ -2,7 +2,7 @@
 
 Cliccando sopra alla relativa icona:
 
-![alt text](./images/pointer.png)
+![Pointer icon](../assets/activities/pointer.png)
 
 le funzionalità del mouse verranno riportate a quelle standard: 
 
