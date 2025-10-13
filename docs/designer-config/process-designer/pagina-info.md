@@ -1,6 +1,6 @@
 # Pagina Info processo
 
-La sezione Pagina Info permette di configurare le **impostazioni** principali di un **modello di processo**.  
+La sezione **_Pagina Info_** permette di configurare le **impostazioni** principali di un **modello di processo**.  
 Da qui è possibile gestire le informazioni di base, le regole di gestione, i contatti associati, i permessi di utilizzo e altro ancora.
 
 Questa sezione è suddivisa in quattro blocchi principali, ciascuno dei quali contiene campi specifici che permettono di definire in modo preciso il comportamento e le proprietà del modello:

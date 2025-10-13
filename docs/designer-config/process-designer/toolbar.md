@@ -60,11 +60,11 @@ Qui troviamo i principali strumenti per il design del flusso di lavoro e per la 
 
 ##### Puntatore
 
-Il bottone puntatore serve per tornare alla modalità standard del cursore.
+Il bottone [Puntatore](./designer-tools/activities/pointer.md) serve per tornare alla modalità standard del cursore. 
 
 ##### Strumento di collegamento
 
-Permette di creare dei Link di collegamento tra processi diversi o con se stessi.
+Permette di creare dei [Link](./designer-tools/activities/link.md) di collegamento tra processi diversi o con se stessi.
 
 ##### Undo
 

@@ -1,4 +1,5 @@
 nav: 
+    - Puntatore: pointer.md
     - Link: link.md
     - Start: start.md
     - Attività: task.md
