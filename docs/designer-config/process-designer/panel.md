@@ -1,6 +1,6 @@
 ## Pannello attributi
 
-Analogamente, a destra del canvas si trova il **_Pannello Attributi_** che, molto spesso, presenta entrate comuni a quelle del menù contestuale.
+Sulla destra del canvas si trova il **_Pannello Attributi_** che, molto spesso, presenta entrate comuni a quelle del menù contestuale.
 
 ### Aspetto
 

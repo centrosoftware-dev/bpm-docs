@@ -132,21 +132,21 @@ consente di associare variabili a campi specifici relativi ai dati pianificati
 I campi configurabili si dividono in 3 gruppi:
 
 1. _Date **Aggiornate** Attività_: 
-    * Data _inizio_ aggiornata: permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
-    * Data _fine_ aggiornata: permette di associare una variabile alla data di fine pianificata dell'attività nel calendario.
-    * _Durata_ aggiornata: permette di collegare una variabile che rappresenta la durata stimata dell'attività (in giorni).
+    * Data _inizio_ aggiornata: permette di collegare una variabile alla data di inizio aggiornata dell'attività nel calendario.
+    * Data _fine_ aggiornata: permette di associare una variabile alla data di fine aggiornata dell'attività nel calendario.
+    * _Durata_ aggiornata: permette di collegare una variabile che rappresenta la stima della durata aggiornata dell'attività (in giorni).
 
 
 2. _Date **Effettive** Attività_ 
-    * Data _inizio_ effettiva: permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
-    * Data _fine_ effettiva: permette di associare una variabile alla data di fine pianificata dell'attività nel calendario.
-    * _Durata_ effettiva: permette di collegare una variabile che rappresenta la durata stimata dell'attività in giorni.
+    * Data _inizio_ effettiva: permette di collegare una variabile alla data di inizio effettiva dell'attività nel calendario.
+    * Data _fine_ effettiva: permette di associare una variabile alla data di fine effettiva dell'attività nel calendario.
+    * _Durata_ effettiva: permette di collegare una variabile che rappresenta la stima della durata effettiva dell'attività in giorni.
 
 
 3. _Date **Previste** Attività_
     * Data _inizio_ prevista/pianificata: permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
     * Data _fine_ prevista/pianificata: permette di associare una variabile alla data di fine pianificata dell'attività nel calendario.
-    * _Durata_ prevista/pianificata: permette di collegare una variabile che rappresenta la durata stimata dell'attività in giorni.
+    * _Durata_ prevista/pianificata: permette di collegare una variabile che rappresenta la stima della durata pianificata dell'attività in giorni.
 
 
 ### Dati Aggiuntivi

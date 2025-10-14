@@ -1,4 +1,4 @@
-# Designer Tools
+# Designer tools
 
 Il **_Designer Tools_** è il pannello che si trova sulla sinistra.
 

@@ -19,14 +19,14 @@ Creare un nuovo modello di processo è semplice: basta recarsi nel pannello dell
 
 Gli strumenti del Designer sono suddivisi in più sezioni: 
 
-1) Una [barra superiore degli strumenti](toolbar.md) in cui troviamo tools generali per la manipolazione del processo, degli elementi e dei loro attributi.
+1. Una [barra superiore degli strumenti](toolbar.md) in cui troviamo tools generali per la manipolazione del processo, degli elementi e dei loro attributi.
 
-2) Una sidebar di sinistra, chiamata [Designer Tools](./designer-tools/intro.md), che contiene una serie di strumenti per disegnare il processo tramite drag & drop.
+2. Una sidebar di sinistra, chiamata [Designer tools](./designer-tools/intro.md), che contiene una serie di strumenti per disegnare il processo tramite drag & drop.
 
-3) Una sidebar di destra in cui possiamo vedere tutti gli attributi relativi all'elemento attualmente selezionato. In caso di chiusura accidentale, è possibile riaprire tale pannello premendo F4.
+3. Un [pannello degli attributi](panel.md) a destra in cui possiamo vedere tutte le proprietà relative all'elemento attualmente selezionato. In caso di chiusura accidentale, è possibile riaprire tale pannello premendo F4.
 
-4) Una sezione nella parte inferiore contente le etichette delle diverse pagine di lavoro attualmente aperte e una scroll bar per regolare lo zoom su queste pagine.
-Inizialmente la pagina selezionata è quella del processo, in cui troviamo tutti gli elementi grafici del flusso. Subito a sinistra troviamo la [Pagina Info](pagina-info.md) per la configurazione delle impostazioni di processo. Sulla destra invece troveremo man mano tutte le altre finestre di lavoro aperte, ad esempio quella relativa alle variabili di progetto o quelle delle variabili delle singole attività.
+4. Una sezione nella parte inferiore contente le etichette delle diverse pagine di lavoro attualmente aperte e una scroll bar per regolare lo zoom su queste pagine. Inizialmente la pagina selezionata è quella del processo, in cui troviamo tutti gli elementi grafici del flusso.  
+Subito a sinistra troviamo la [pagina Info](pagina-info.md) per la configurazione delle impostazioni di processo. Sulla destra invece troveremo man mano tutte le altre finestre di lavoro aperte, ad esempio quella relativa alle variabili di progetto o quelle delle variabili delle singole attività.
 
 ![Componenti Designer di processi](../../assets/designer-config/designer-parts.png "Componenti Designer di processi")
 
