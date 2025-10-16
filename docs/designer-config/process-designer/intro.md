@@ -38,7 +38,7 @@ Quando creiamo un nuovo modello di processo non troveremo il canvas completament
 
 Nella maggior parte dei casi, un flusso ha un inizio e almeno una fine.
 
-L'inizio, può essere sovrascritto: cliccando tasto destro su un altro elemento presente sul canvas, dal menù contestuale si può scegliere l'opzione **Imposta come oggetto di avvio**. Così facendo il flusso inizierà dall'elemento impostato come oggetto di avvio.
+L'inizio, può essere sovrascritto: cliccando tasto destro su un altro elemento presente sul canvas, dal menu contestuale si può scegliere l'opzione **Imposta come oggetto di avvio**. Così facendo il flusso inizierà dall'elemento impostato come oggetto di avvio.
 
 !!! danger "Rimozione dello Start"
     È possibile rimuovere lo Start, ma è un comportamento non convenzionale e tendenzialmente sconsigliato in quanto il processo richiederà all'utente di inserire direttamente le variabili da richiedere.

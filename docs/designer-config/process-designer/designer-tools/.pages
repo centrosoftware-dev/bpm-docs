@@ -1,6 +1,6 @@
 nav:
     - Introduzione: intro.md
-    - Menù contestuale: menu.md
+    - Menu contestuale: menu.md
     - Attività: activities
     - Eventi: events
     - Gateway e percorsi: gateways

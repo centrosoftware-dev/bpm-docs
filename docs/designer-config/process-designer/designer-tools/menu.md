@@ -1,21 +1,14 @@
-# Menù contestuale
+# Menu contestuale
 
-Il **_Menù contestuale_** appare quando si preme il tasto destro del mouse su un oggetto nel canvas.  
-Alcune opzioni saranno comuni a più oggetti, altre invece saranno differenti in base all'oggetto selezionato.
+Il **_Menu contestuale_** appare quando si preme il tasto destro del mouse su un oggetto nel canvas.  
+Le opzioni visibili saranno differenti per ciascun tipo di oggetto selezionato, ma alcune di essere saranno invece comuni ad tutti gli oggetti.
 
-## Colore e font
-
-Generalmente, in un oggetto è possibile cambiare:
-
-* Colore e font della targhetta dell'elemento.
-* Colore dello sfondo.
-* Colore e spessore e del bordo.
 
 ## Allineamento
 L'entrata Allineamento a sua volta ha 10 scelte, divise in 3 gruppi: 
 
 #### Porta davanti e Porta dietro
-Modifica lo **_Z-index_** di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare _Porta davanti_ per portarlo in primo piano. 
+Modifica lo _Z-index_ di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare _Porta davanti_ per portarlo in primo piano. 
 Lo stesso, ma al contrario, vale per _Porta dietro_.
 
 #### Allinea
@@ -27,13 +20,23 @@ Selezionando più oggetti(1)è possibile spostarli in massa distrubuendoli su un
 
 1.  Per selezionare più oggetti è necessario tenere premuto ++ctrl++ o ++shift++ quando si va a cliccare, col tasto sinistro, su un elemento. Altrimenti, cliccando su una parte vuota del canvas e tenendo premuto, è possibile delineare un'area i cui elementi interno verranno selezionati.
 
+
+## Colore e font
+
+Tramite questa voce è possibile cambiare:
+ - Colore e font dell'etichetta dell'elemento.
+ - Colore dello sfondo.
+ - Colore del bordo.
+
+
 ## Manipolazione oggetto
 
-Oltre a **_tagliare_** e **_copiare_** un oggetto, è possibile **_spostarlo da una pagina ad un'altra_** del processo tramite l'entrata _Sposta oggetto alla pagina ..._ .
+Oltre a **_tagliare_** e **_copiare_** un oggetto, è possibile _spostarlo da una pagina ad un'altra_ del processo tramite l'entrata **_Sposta oggetto alla pagina ..._** .
 
-## Manipolazione Testo e Label
 
-Nel menù contestuale è presente l'entrata **_Sposta testo_** per spostare l'etichetta dell'oggetto dove si vuole nel canvas. Essa rimarrà ancorata al punto dove la si è spostata.
+## Manipolazione testo e label
+
+Nel menu contestuale è presente l'entrata **_Sposta testo_** per spostare l'etichetta dell'oggetto dove si vuole nel canvas. Essa rimarrà ancorata al punto dove la si è spostata.
 L'entrata **_Modifica Testo_** consente di modificare il testo della Label.
 
 ## Imposta come oggetto di avvio
@@ -78,7 +81,7 @@ Il popup presenta due checkbox:
 
 Dopodiché una sezione dedicata ai filtri, 3 in particolare:
 
-Il **_Gruppo allegato_** e il **_Tipo Allegato_**, definibili dal menù delle impostazioni alla sezione **_Configurazione_**, nel segmento **_Allegati_**, permettono di accettare solo allegati che appartengono a questi gruppi o tipi.
+Il **_Gruppo allegato_** e il **_Tipo Allegato_**, definibili dal menu delle impostazioni alla sezione **_Configurazione_**, nel segmento **_Allegati_**, permettono di accettare solo allegati che appartengono a questi gruppi o tipi.
 
 Il **_Percorso_** permette di filtrare gli allegati sulla base del percorso file in cui sono memorizzati, il quale deve appartenere a una delle cartelle interne al processo.  
 Per crearne una è necessario cliccare la voce **_Allegati_** dalla [**barra degli strumenti**](../toolbar.md).  
@@ -152,11 +155,11 @@ I campi configurabili si dividono in 3 gruppi:
 ### Dati Aggiuntivi
 Qui troviamo 3 campi:
 
-* **Scadenza** dell'attività, configura una variabile per rappresentare la data di scadenza a calendario dell'attività.
+* **_Scadenza_** dell'attività, configura una variabile per rappresentare la data di scadenza a calendario dell'attività.
 
-* **Priorità** dell'attività, consente di associare una variabile alla priorità assegnata all'attività.
+* **_Priorità_** dell'attività, consente di associare una variabile alla priorità assegnata all'attività.
 
-* **Colore** dell'attività, consente di associare una variabile al colore assegnato all'attività nella todo list.
+* **_Colore_** dell'attività, consente di associare una variabile al colore assegnato all'attività nella todo list.
 
 
 ## Formula di validazione
@@ -168,7 +171,7 @@ Le formule di validazione degli elementi del canvas sono in una relazione **AND*
 
 ## Escalation
 
-L'**_Escalation/Timeout_** è un'entrata del menù contestuale specifica di alcuni elementi.  
+L'**_Escalation/Timeout_** è un'entrata del menu contestuale specifica di alcuni elementi.  
 Con il suo utilizzo è possibile, dopo un determinato numero di giorni inserito dall'utente, eseguire le 3 azioni seguenti:
 
 * Non variare l'attività
@@ -179,4 +182,14 @@ Dall'Escalation è poi possibile far partire un [link](./activities/link.md) spe
 
 ## Configurazione
 
-L'entrata **_Configurazione_** è totalmente differente per ogni elemento e viene approfondita nelle sezioni relative ai singoli elementi.
+L'entrata _Configurazione_ è totalmente differente per ogni oggetto e viene approfondita nelle sezioni relative ai singoli elementi.
+
+## Extra: Oggetti tipo Link
+Utilizzando il menu contestuale su oggetti di tipo [link](./activities/link.md) si possono vedere altre opzioni specifiche per questo elemento:
+
+ - _Percorso per abilitazione_
+ - _Condizioni di abilitazione_
+ - _Imposta variabili_
+ - _Tipo linea_
+
+Gli scopi di tutte queste voci sono spiegati nel dettaglio nella sezione dedicata ai link, che puoi trovare [qui](./activities/link.md).
