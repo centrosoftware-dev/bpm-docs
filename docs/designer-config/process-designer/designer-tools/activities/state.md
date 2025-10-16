@@ -1,6 +1,6 @@
-## Descrizione
+# Stato
 
-![immagine stato](state-img.png)
+![Immagine stato](../assets/activities/state.png)
 
 Lo **Stato** è un'entità astratta all'interno del processo BPM che rappresenta un **punto significativo** nell’evoluzione del flusso, ma **non costituisce un'attività eseguibile (task)**. Si tratta di una **milestone logica** che fotografa la condizione globale del processo in un determinato momento.
 
@@ -18,20 +18,17 @@ Ogni processo definisce autonomamente i propri stati in funzione del dominio app
 - Gli stati sono **esclusivi**: in un determinato momento, un processo può trovarsi in **uno e un solo stato**.
 - La transizione da uno stato a un altro può essere **automatica** (guidata dalla logica del workflow) o **manuale** in base ad un'attivazione forzata da un utente owner del processo.
 
+Nel pannello degli attributi sono presenti alcune voci specifiche per l'oggetto State, spiegate nel dettaglio [qui](../../panel.md#stato)
+
+
 ## Utilizzo
 
 - Serve come **indicatore del progresso** del processo.
 - Può essere utilizzato per **filtrare, classificare o monitorare** l’avanzamento dei processi nel sistema.
-- Lo stato marcato come 'stato di chiusura' fa sì che, al suo raggiungimento, eventuali altri task aperti vengano forzati alla chiusura (annullati)
-- Lo stato marcato come 'blocca edit' consente di bloccare la modifica dei dati di processo (o documento) al di fuori delle logiche di processo
-
-## Configurazione
-
-Lo stato può essere inserito all'interno del workflow di processo: in questo caso lo stato si attiva automaticamente al completamento dei task ad esso precedenti.
-Nel menu tasto destro sono presenti alcune funzionalità tipiche del designer:
+- Può essere inserito all'interno del workflow di processo: in questo caso si attiva automaticamente al completamento dei task ad esso precedenti.
 
 
-## Menu tasto destro
+## Menu contestuale
 
 Nel menu tasto destro relativo al task sono presenti una serie di funzioni che permettono di regolare il funzionamento dello stato.
 
@@ -48,11 +45,9 @@ Modifica e gestione dell'oggetto:
 - Copia ➝ Duplica l'oggetto per incollarlo in un'altra posizione.
 - Modifica testo (F2) ➝ Permette di modificare il testo dell'elemento.
 - Sposta testo ➝ Cambia la posizione del testo all'interno dell'oggetto.
-
-Impostazioni:
-
 - Imposta come oggetto di avvio ➝ Definisce l'elemento come punto di partenza nel flusso di lavoro.
-- Operazioni ➝ Permette di configurare azioni specifiche legate all'elemento.
+- _Operazioni_ ➝ Permette di configurare azioni specifiche legate all'elemento. Negli stati, le operazioni si possono agganciare solo all'evento di 'attivazione' dello stato ovvero: il momento in cui stato è stato raggiunto dal workflow oppure quando questo è stato attivato manualmente dall'utente.
+
 
 Altro:
 
@@ -60,14 +55,8 @@ Altro:
 
 ---
 
-## Form Operazioni
 
-Nel contesto di un processo BPM, le operazioni rappresentano attività automatiche (come esecuzione di query SQL, invio di mail, chiamate a web service, ecc.) che possono essere inserite nel workflow esattamente come un task manuale.
 
-Tuttavia, per evitare di appesantire il disegno del flusso con dettagli tecnici, il sistema consente di associare operazioni direttamente agli stati tramite la Form Operazioni.
-
-Nella form è possibile trascinare (drag & drop) le operazioni già disponibili nel BPM, associandole a specifici eventi del task.
-Le operazioni disponibili sono sempre le stesse (Decision Table, Imposta Variabili, Invio Mail, Esegui SQL, Connettore Azione, ecc.) e sono gestite in modo centralizzato.
 
 Per quanto riguarda gli stati, le operazioni si possono agganciare all'evento di 'attivazione' dello stato ==> il momento in cui lo stato è stato raggiunto dal workflow oppure quando questo è stato attivato manualmente dall'utente.
 

@@ -102,9 +102,10 @@ La casella di testo finale permette di specificare ulteriori estensioni in caso 
 
 ## Operazioni
 
-L'entrata relativa alle **_Operazioni_** apre un popup che permette di eseguire delle operazioni in diversi momenti della task.  
-In base all'elemento su cui si apre il popup, i momenti in cui sarà possibile svolgere un'operazione saranno diversi.  
-Per svolgere un'operazione basta trascinarla dalla colonna **_Operazioni disponibili_** a quella del momento in cui si desidera svolgerla.(1) 
+Nel contesto di un processo BPM, le operazioni rappresentano attività automatiche (come esecuzione di query SQL, invio di mail, chiamate a web service, ecc.) che possono essere inserite nel workflow esattamente come un task manuale.
+Tuttavia, per evitare di appesantire il disegno del flusso con dettagli tecnici, il sistema consente di associare direttamente le operazioni già disponibili nel BPM a specifici eventi del task tramite l'entrata **_Operazioni_** del menu contestuale.
+Quest'entrata apre una schermata di configurazione dove, in base all'oggetto su cui lo si apre, sarà possibile configurare l'operazione da svolgere in momenti differenti.
+Per svolgere un'operazione basta trascinarla (drag & drop) dalla colonna **_Operazioni disponibili_** a quella del momento in cui si desidera svolgerla.(1) 
 { .annotate }
 
 1. Il titolo della colonna è il momento in cui verrà svolta l'operazione.

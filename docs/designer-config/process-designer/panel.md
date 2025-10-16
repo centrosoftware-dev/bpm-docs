@@ -77,8 +77,8 @@ Vediamo nel dettaglio cosa è possibile configurare per ciascun oggetto:
     - _Utilizza calendario_: determina se utilizzare o meno il calendario per avere riferimenti temporali reali **(?)**.
 
  2. #### [Stato](./designer-tools/activities/state.md)
-    - _Blocca edit_: **(?)**
-    - _Stato di chiusura_: **(?)**
+    - _Blocca edit_: se settatato a True, fa sì che, al raggiungimento dello stato, eventuali altri task aperti vengano forzati alla chiusura (annullati).
+    - _Stato di chiusura_: consente di bloccare la modifica dei dati di processo (o documento) al di fuori delle logiche di processo.
 
  3. #### [Connettore Attivo](./designer-tools/operations/active-connector.md)
     - _Interfaccia_: apre la finestra di configurazione accessibile anche tramite menu contestuale, illustrata nella pagina dedicata a questo connettore.
