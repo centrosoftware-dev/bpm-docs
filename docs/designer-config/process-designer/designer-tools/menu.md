@@ -177,7 +177,6 @@ Con il suo utilizzo è possibile, dopo un determinato numero di giorni inserito 
 
 Dall'Escalation è poi possibile far partire un [link](./activities/link.md) specifico, il quale indica al processo la strada alternativa da percorrere se l'escalation si verifica effetivamente, ad esempio in caso di riassegnazione o chiusura della task.
 
-
 ## Configurazione
 
-L'entrata **_Configurazione_** è differente per ogni elemento e viene approfondita nelle sezioni relative ai singoli elementi.
+L'entrata **_Configurazione_** è totalmente differente per ogni elemento e viene approfondita nelle sezioni relative ai singoli elementi.

@@ -1,88 +1,103 @@
-## Pannello attributi
+# Pannello attributi
 
-Sulla destra del canvas si trova il **_Pannello Attributi_** che, molto spesso, presenta entrate comuni a quelle del menù contestuale.
+Il **_Pannello Attributi_** si trova sulla destra del canvas, ma è visibile solo quando un oggetto è selezionato.  
+Qui sono raggruppate molte informazioni e impostazioni dell'oggetto selezionato, alcune delle quali comuni a quelle del [menù contestuale](./designer-tools/menu.md). Le voci visibili dipendono dall'oggetto selezionato.
 
-### Aspetto
+Dall'altro come prima voce, presente a tutti gli oggetti, troviamo il _(Nome)_ dell'oggetto. Questo viene assegnato in modo automatico quando l'oggetto è inserito nel canvas e non può essere modificato in seguito. Il nome è formato dal tipo dell'oggetto seguito da un numero identificativo incrementale (ad esempio: _start1_).
 
-Nel Pannello attributi, **_Aspetto_** contiene tutte le informazioni di un oggetto relative all'allineamento della targhetta, ai colori e ai font.
-
-### Dati
-
-La sezione **_Dati_** comprende le proprietà più specifiche di un singolo elemento.  
-
-Gli attributi elencati forniscono informazioni e impostazioni per personalizzare il comportamento e la gestione della task all'interno del flusso. Si tratta di proprietà che riguardano ambiti funzionali, priorità, gestione utenti e operazioni specifiche, oltre ad altre configurazioni utili per determinare come la task interagisce con il sistema o con altri elementi del flusso.
-
-#### Ambito e Descrizione
-
-L'**_Ambito_** è un campo di testo libero.  
-Dalla to-do list è possibile ricercare tutte le task con uno stesso **_Ambito_**.
-
-Impostando la **_Descrizione_** è possibile fornire informazioni testuali riguardanti una task, utili a chi dovrà poi dovrà svolgerla. Apparirà infatti nella tab **_Istruzioni_** quando un utente starà eseguendo la task.
+Di seguito troviamo tutte le impostazioni, modificabili dall'utente e raggruppate in gruppi:
 
 
-#### Operazioni
+## Aspetto
+Permette di gestire l'**allineamento** della targhetta, il **colore** e il **font** del **testo** al suo interno, lo **spessore** e il **colore** dei **bordi** dell'oggetto, il **colore** dello **sfondo**, il **tipo di linea** (in caso di un oggetto [link](./designer-tools/activities/link.md)), 
 
-Da **_Operazioni_** si apre un popup che permette di eseguire delle operazioni in diversi momenti della task.  
-In base all'elemento su cui si apre il popup, i momenti in cui sarà possibile svolgere un'operazione saranno diversi.  
-Per svolgere un'operazione basta trascinarla dalla colonna **_Operazioni disponibili_** a quella del momento in cui si desidera svolgerla.(1) 
-{ .annotate }
 
-1. Il titolo della colonna è il momento in cui verrà svolta l'operazione.
+## CONFIGURAZIONE
+Questa sezione è presente solo per due oggetti e permette di accedere direttamente alla finestra di configurazione di ciascun oggetto. Essse sono aggiungibili anche tramite menu contestuale e sono illustrate nelle apposite sezioni dedicate (raggiungibili tramite i link contenuti nei nomi degli oggetti qui sotto).  
 
-Le **_Operazioni_** vengono svolte in ordine Top to Bottom.
+La sezione contiene un'unica voce, con nome specifico per ciascun oggetto:
 
-Le **_Operazioni_** sono azioni specifiche e complesse, per approfondimenti e spiegazioni è nmecessario rifarsi alla loro sezione [qui](MagazzinoVariabili.md).
+- CONFIGURAZIONE **_TIMER_** per l'oggetto [Start a tempo](./designer-tools/events/start-event.md)
 
-#### Priorità
+- CONFIGURAZIONE **_ATTESA_** per l'oggetto [Attesa](./designer-tools/events/wait.md)
 
-Tramite **_Priorità_** è possibile assegnare un livello di importanza per lo svolgimento di una task.  
 
-Dalla to-do list è possibile filtrare e ordinare le task in base alla loro priorità.  
+## Dati
+Questa sezione contiene proprietà modificabili del singolo oggetto per personalizzarne il comportamento. Molte di queste voci sono comuni con il menù contestuale e portano ai medesimi pannelli di configurazione. Le voci che troviamo sono:
 
-I livelli possibili sono: Bassa, Media, Alta o Sospesa.
+### Allegati
+Il popup aperto al click di questa voce è il medesimo che possiamo configurare tramite la voce allegati del menu contestuale, illustrata [qui](./designer-tools/menu.md#allegati-da-richiedere).
 
-#### Testo
+### Ambito
+Un campo di testo libero che permette raggruppare/categorizzare le task.  
+Dalla to-do list infatti è possibile ricercare tutte le task con uno stesso ambito.
 
-Il **_Testo_** consente di modificare ciò che appare sul canvas a video nella label di un elemento. Il valore inserito sarà anche un nome secondario dell'elemento, filtrabile anch'esso e che apparirà nella tab **_Dati_** dell'esecuzione di una task.
+### Descrizione
+Permette di fornire informazioni testuali riguardanti una task, utili a chi dovrà poi dovrà svolgerla.  
+Queste informazioni appariranno poi nella tab _Istruzioni_ quando un utente eseguirà quella task.
 
-#### Definire gli Utenti, Utenti cc e Responsabili, le Variabili da richiedere e gli Allegati
+### Escalation
+Cliccando su questo campo verrà aperto lo stesso pannello accessibile tramite la medesima voce del menu contestuale, spiegato nel dettaglio [qui](./designer-tools/menu.md#escalation). 
 
-Tramite l'entrata **_Utenti_**, **_Utenti cc_** e **_Utenti resp_** è possibile definire chi dovrà svolgere una determinata task.
-Cliccando questi attributi verrà aperto un popup dove sarà possibile, tramite delle checkbox, marcare gli utenti che dovranno svolgere la task, supervisionarla o che saranno i responsabili del loro svolgimento.
+### Operazioni
+Il popup aperto cliccando su questa voce permette di configurare le operazioni relative alla task, nello stesso modo in cui è possibile farlo tramite menu contestuale, come descritto [qui](./designer-tools/menu.md#operazioni)
 
-Analogamente, è possibile definire i dati che, gli utenti precedentemente, assegnati dovranno inserire.
-Questo è possibile tramite l'entrata **_Variabili da richiedere_** che, una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili.  
-Questa pagina, chiamata **_Magazzino delle variabili_**, viene trattata e approfondita nella sua sezione apposita [qui]().
-Per aggiungere una Variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
-Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori delle variabili così definite.
+### Priorità
+Permette di assegnare un livello di importanza allo svolgimento di una task.  
+Dalla to-do list è poi possibile filtrare e ordinare le task in base alla loro priorità.  
+I livelli possibili sono: _Nessuna_, _Bassa_, _Media_, _Alta_ o _Sospesa_.
 
-Infine, è possibile definire gli allegati da definire tramite l'entrata **_Allegati_**.  
-In questo caso non è possibile definire gli allegati che andranno inseriti, bensì dei filtri che vadano a scremare i possibili allegati inseribili. Tutto questo tramite un popup.  
-Il popup presenta due checkbox:
+### Testo
+Consente di modificare ciò che appare sul canvas a video nella label di un elemento. Il valore inserito sarà considerato anche come nome secondario dell'elemento, permettendo di filtrare le task in base ad esso e apparendo nella tab _Dati_ dell'esecuzione di una task.
 
-* La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup.
-* La seconda, invece, fa sì che gli allegati caricati non possano essere poi modificati.
+### Utenti, Utenti cc e Utenti responsabili
+Quest'entrata serve per definire chi dovrà svolgere una determinata task. Il popup di configurazione è accessibile anche tramite menu contestuale ed è spiegato nel dettaglio [qui](./designer-tools/menu.md#utenti-e-responsabili).
 
-Dopodiché una sezione dedicata ai filtri: qui è possibile infatti definire il **_Gruppo allegato_**, il **_Tipo allegato_** e il **_Percorso_**.  
+### Variabili da richiedere
+Le variabili relative a un task sono configurabili anche tramite menu contestuale tramite la medesima voce, descritta in modo specifico [qui](./designer-tools/menu.md#variabili-da-richiedere).
 
-Il **_Gruppo allegato_** e il **_Tipo Allegato_** sono definibili dal menù delle impostazioni alla sezione **_Configurazione_**, sottogruppo **_Allegati_**.  
+### Impostazioni
+Questa voce, esclusiva dell'oggetto [Ritorno al processo chiamante](./designer-tools/linked-process/return-linked-process.md), apre semplicemente la schermata di configurazione dell'oggetto, la quale viene descritta in modo approfondito nell'apposita sezione dedicata all'oggetto. 
 
-Per il **_Percorso_** invece è necessario scegliere una delle cartelle interne al processo.  
-Per crearne una è necessario cliccare la voce **_Allegati_** dalla **_barra degli strumenti_**.  
-Da lì si apriranno le impostazioni generali del processo relative agli allegati.  
-Cliccando tasto destro sulla lista delle cartelle, sarà possibile crearne una nuova. Una volta fatto, sarà presente tra le scelte disponibili per determinare il percorso degli allegati di una task.
 
-Sotto i Filtri, è possibile gestire la **_Dimensione Massima in KB_** (Dim. Massima kb), tramite un input numerico.
-Il numero immesso sarà il tetto massimo per la dimensione di un file.  
+## Gestione
+In questa sezione troviamo le impostazioni per la gestione del processo nella todo list.  
+È presente per solo 4 oggetti, con voci differenti per ognuno di essi.  
+Vediamo nel dettaglio cosa è possibile configurare per ciascun oggetto:
 
-Nella parte bassa del popup invece si ha il gruppo relativo ai Tipi di file consentiti.  
-Tramite una serie di checkbox è possibile definire le estensioni dei file che possono essere accettati.  
-L'input di testo finale invece è riservato ad estensioni specifiche per gli utenti che ne hanno bisogno. **_Tali estensioni vanno separate dalla virgola e includendo il punto_**.
+ 1. [Task](./designer-tools/activities/task.md)/[Sottoprocesso](./designer-tools/activities/subprocess.md)
+    - Colore in todo list: determina il colore della task nella todo list per maggiore organizzazione a livello visivo.
+    - Da confermare: determina se la task sia da confermare esplicitamente prima di poter essere eseguita
+    - Non documentabile
+    - Rileva inizio attività: determina se l'attività sia da iniziare espicitamente o se inizia automaticamente all'attivazione, utile per assegnare operazioni automatiche all'inizio dell'attività invece che all'attivazione.
+    - Skip activity: determina se la task deve essere saltata senza eseguire, andando direttamente alla successiva, o meno. 
+    - Sottoprocesso: per definire se l'oggetto contiene o meno un sottoprocesso e di che tipo, tramite l'apposita finestra di configurazione illustrata [qui](./designer-tools/activities/subprocess.md)
+    - Testo pulsante esegui: permette di modificare il testo del link per eseguire la task, presente nella colonna 'Azione' della todo list.
+    - Tipo attività: permette di categorizzare la task tramite un elenco pre-impostato dei tipi di attività più comuni.
+    - Utilizza calendario: determina se utilizzare o meno il calendario per avere riferimenti temporali reali.
 
-``` title="Altre Estensioni" linenums="1"
-.cad,.php,.bat
-```
 
-### Scadenze/Tempi
+ 2. [Stato](./designer-tools/activities/state.md)
+    - Blocca edit
+    - Stato di chiusura
 
-L'approfondimento sulle **_Scadenze/Tempi_** è presenta nella sua sezione [qui](#pianificazione-e-scadenze).
+ 3. [Connettore Attivo](./designer-tools/operations/active-connector.md)
+    - Interfaccia
+
+
+## Scadenze/Tempi
+
+Questa sezione contiene due voci: _Durata prevista_ e _Scadenza_. Entrambe rimandano allo stesso pannello di configurazione, che contiene le due voci e permette di modificarle. L'approfondimento su questo pannello, essendo accessibile anche tramite menu contestuale, è disponibile [qui](./designer-tools/menu.md#pianificazione-e-scadenze).
+
+## Varie
+
+
+### Percorso pianificazione (Link)
+### PosizioniMarkers (Marker)
+### FormulaAttivazioneDef (Avvio processo collegato)
+### oldCartellaDestinazioneAllegati (Avvio processo collegato)
+
+
+### Configurazione (Tutte le operazioni + Tutti i gateaway tranne sincronizza)
+
+L'entrata **_Configurazione_** è totalmente differente per ogni elemento e viene approfondita nelle sezioni relative ai singoli elementi.

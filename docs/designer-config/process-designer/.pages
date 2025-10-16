@@ -2,5 +2,5 @@ nav:
     - Introduzione: intro.md
     - Barra degli strumenti: toolbar.md
     - Designer tools: designer-tools
-    - Pannello delle proprietà: panel.md
+    - Pannello attributi: panel.md
     - Pagina Info processo: pagina-info.md
