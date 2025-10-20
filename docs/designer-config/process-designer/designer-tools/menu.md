@@ -8,7 +8,7 @@ Le opzioni visibili saranno differenti per ciascun tipo di oggetto selezionato, 
 L'entrata Allineamento a sua volta ha 10 scelte, divise in 3 gruppi: 
 
 #### Porta davanti e Porta dietro
-Modifica lo _Z-index_ di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare _Porta davanti_ per portarlo in primo piano. 
+Modifica lo _Z-index_ di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare _Porta davanti_ per portarlo in primo piano.   
 Lo stesso, ma al contrario, vale per _Porta dietro_.
 
 #### Allinea
@@ -18,26 +18,29 @@ Permette di allineare gli elementi selezionati secondo il tipo di allineamento s
 Selezionando più oggetti(1)è possibile spostarli in massa distrubuendoli su uno dei loro assi utilizzando le due entrate _Distribuisci verticalmente_ o _Distribuisci orizzontalmente_.
 { .annotate }
 
-1.  Per selezionare più oggetti è necessario tenere premuto ++ctrl++ o ++shift++ quando si va a cliccare, col tasto sinistro, su un elemento. Altrimenti, cliccando su una parte vuota del canvas e tenendo premuto, è possibile delineare un'area i cui elementi interno verranno selezionati.
+1.  Per selezionare più oggetti è necessario tenere premuto <kbd>ctrl</kbd> o ++shift++ quando si va a cliccare, col tasto sinistro, su un elemento. Altrimenti, cliccando su una parte vuota del canvas e tenendo premuto, è possibile delineare un'area i cui elementi interno verranno selezionati.
 
 
 ## Colore e font
 
 Tramite questa voce è possibile cambiare:
- - Colore e font dell'etichetta dell'elemento.
- - Colore dello sfondo.
- - Colore del bordo.
+
+- Colore e font dell'**etichetta** dell'elemento.
+- Colore dello **sfondo**.
+- Colore del **bordo**.
 
 
 ## Manipolazione oggetto
 
-Oltre a **_tagliare_** e **_copiare_** un oggetto, è possibile _spostarlo da una pagina ad un'altra_ del processo tramite l'entrata **_Sposta oggetto alla pagina ..._** .
+- **Taglia**: Rimuove l'oggetto dalla posizione corrente e lo salva temporaneamente in memoria per poterlo incollare altrove.
+- **Copia**: Salva in memoria l'oggetto per incollarlo in un'altra posizione, duplicandolo.
+- **Sposta oggetto alla pagina ...**: permette di spostare l'oggetto in un'altra pagina del processo.
 
 
 ## Manipolazione testo e label
 
-Nel menu contestuale è presente l'entrata **_Sposta testo_** per spostare l'etichetta dell'oggetto dove si vuole nel canvas. Essa rimarrà ancorata al punto dove la si è spostata.
-L'entrata **_Modifica Testo_** consente di modificare il testo della Label.
+- **Sposta testo** per spostare l'etichetta dell'oggetto dove si vuole nel canvas. Essa rimarrà ancorata al punto dove la si è spostata.
+- **Modifica Testo** consente di modificare il testo dell'etichetta. Azione eseguibile anche da tastiera tramite il tasto <kbd>F2</kbd> sull'oggetto selezionato.
 
 ## Imposta come oggetto di avvio
 
@@ -181,11 +184,22 @@ Con il suo utilizzo è possibile, dopo un determinato numero di giorni inserito 
 
 Dall'Escalation è poi possibile far partire un [link](./activities/link.md) specifico, il quale indica al processo la strada alternativa da percorrere se l'escalation si verifica effetivamente, ad esempio in caso di riassegnazione o chiusura della task.
 
+
 ## Configurazione
 
 L'entrata _Configurazione_ è totalmente differente per ogni oggetto e viene approfondita nelle sezioni relative ai singoli elementi.
 
+
+## Eliminazione
+
+Tramite questa funzione è possibile **cancellare** l'oggetto selezionato dal canvas.  
+In automatico vengono cancellati anche tutti i _collegamenti_ che hanno l'oggetto come punto di partenza o di arrivo.  
+
+Si può anche utilizzare direttamente il tasto <kbd>canc</kbd> da tastiera.
+
+
 ## Extra: Oggetti tipo Link
+
 Utilizzando il menu contestuale su oggetti di tipo [link](./activities/link.md) si possono vedere altre opzioni specifiche per questo elemento:
 
  - _Percorso per abilitazione_
