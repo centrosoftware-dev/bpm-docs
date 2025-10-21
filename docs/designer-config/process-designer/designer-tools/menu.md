@@ -1,20 +1,20 @@
 # Menu contestuale
 
-Il **_Menu contestuale_** appare quando si preme il tasto destro del mouse su un oggetto nel canvas.  
-Le opzioni visibili saranno differenti per ciascun tipo di oggetto selezionato, ma alcune di essere saranno invece comuni ad tutti gli oggetti.
+Il **_Menu contestuale_** appare quando si preme il **tasto destro del mouse su un oggetto** nel canvas.  
+Le _opzioni visibili saranno differenti per ciascun tipo di oggetto selezionato_, ma alcune di essere saranno invece comuni a tutti gli oggetti.
 
 
 ## Allineamento
 L'entrata Allineamento a sua volta ha 10 scelte, divise in 3 gruppi: 
 
-#### Porta davanti e Porta dietro
+### Porta davanti e Porta dietro
 Modifica lo _Z-index_ di un oggetto: se un oggetto risulta sovrapposto ad un altro, per portarlo in avanti è sufficiente cliccare _Porta davanti_ per portarlo in primo piano.   
 Lo stesso, ma al contrario, vale per _Porta dietro_.
 
-#### Allinea
+### Allinea
 Permette di allineare gli elementi selezionati secondo il tipo di allineamento scelto, in base alla posizione dell'elemento su cui è stato cliccato il tasto destro. L'allineamento può essere verticale o orizzantale, sia agli estremi che al centro.
 
-#### Distribuisci
+### Distribuisci
 Selezionando più oggetti(1)è possibile spostarli in massa distrubuendoli su uno dei loro assi utilizzando le due entrate _Distribuisci verticalmente_ o _Distribuisci orizzontalmente_.
 { .annotate }
 
@@ -52,7 +52,11 @@ Quest'entrata permette di impostare un oggetto come oggetto di avvio,rendendo l'
 
 ## Utenti e responsabili
 
-Tramite quest'entrata è possibile definire il ruolo degli utenti rispetto ad un'attività da svolgere. Si può lavorare sia su singoli utenti sia su **gruppi**. I ruoli possibili sono 3:
+![config utenti e resp](./assets/menu/utenti-resp.png)
+
+Tramite quest'entrata è possibile definire il ruolo degli utenti rispetto ad un oggetto su cui è necessario svolgere una qualsiasi azione da parte di un dipendente.  
+Inoltre è possibile, tramite l'apposita spunta, configurare l'attività da svolgere per far si che essa debba essere assegnata (solitamente da un responsabile ad un dipendente) prima di essere svolta.  
+Si può lavorare sia su **singoli utenti** sia su **gruppi**. I ruoli possibili sono 3:
 
 - **_Esecutore_** - chi dovrà svolgere effettivamente una determinata task.
 - **_Responsabile_** - colui che assegnerà l'attività prima che venga eseguita (in caso il task sia configurato in questo modo).
@@ -67,7 +71,7 @@ Questa pagina, chiamata **Magazzino delle variabili**, viene trattata e approfon
 Per aggiungere una Variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
 Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori delle variabili così definite.
 
-![](./assets/menu-inserimentoVarUserTask.gif)
+![](./assets/menu/inserimentoVarUserTask.gif)
 
 
 ## Allegati da richiedere
@@ -75,7 +79,7 @@ Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori
 È inoltre possibile definire gli allegati richiesti tramite l'entrata **_Allegati da richiedere_**.  
 In questo caso non è possibile definire direttamente gli allegati da inserire, ma piuttosto, creare tramite un popup, dei filtri che vadano a scremare i possibili allegati inseribili.
 
-![Menu attachment options](./assets/menu-attachment-options.png)
+![Menu attachment options](./assets/menu/attachment-options.png)
 
 Il popup presenta due checkbox:
 
@@ -105,59 +109,59 @@ La casella di testo finale permette di specificare ulteriori estensioni in caso 
 
 ## Operazioni
 
-Nel contesto di un processo BPM, le operazioni rappresentano attività automatiche (come esecuzione di query SQL, invio di mail, chiamate a web service, ecc.) che possono essere inserite nel workflow esattamente come un task manuale.
-Tuttavia, per evitare di appesantire il disegno del flusso con dettagli tecnici, il sistema consente di associare direttamente le operazioni già disponibili nel BPM a specifici eventi del task tramite l'entrata **_Operazioni_** del menu contestuale.
-Quest'entrata apre una schermata di configurazione dove, in base all'oggetto su cui lo si apre, sarà possibile configurare l'operazione da svolgere in momenti differenti.
+![config operazioni](./assets/menu/operazioni-config.png)
+
+Nel contesto di un processo BPM, le operazioni rappresentano attività automatiche (come esecuzione di query SQL, invio di mail, chiamate a web service, ecc.) che possono essere inserite nel workflow esattamente come un task manuale.  
+Tuttavia, per evitare di appesantire il disegno del flusso con dettagli tecnici, il sistema consente di associare direttamente le operazioni già disponibili nel BPM a specifici eventi del task tramite l'entrata **_Operazioni_** del menu contestuale.  
+Quest'entrata apre una schermata di configurazione dove, in base all'oggetto su cui lo si apre, sarà possibile configurare l'operazione da svolgere in momenti differenti. Le operazioni assegnate vengono svolte in ordine Top to Bottom.
 Per svolgere un'operazione basta trascinarla (drag & drop) dalla colonna **_Operazioni disponibili_** a quella del momento in cui si desidera svolgerla.(1) 
 { .annotate }
 
 1. Il titolo della colonna è il momento in cui verrà svolta l'operazione.
 
-Le [**_Operazioni_**](./operations/intro.md) sono azioni specifiche e complesse che vengono svolte in ordine Top to Bottom.
+Le _Operazioni_ sono azioni complesse di vario tipo e sono illustrate in dettaglio nella sezione dedicata che puoi trovare [**qui**](./operations/intro.md).
 
 
 ## Pianificazione e Scadenze
 Questa finestra permette di impostare i dettagli di pianificazione, scadenza e priorità relativi a una specifica attività.   
 È diviso in 3 schede principali:
 
-### Pianificazione e Scadenze
-Permette di impostare la **durata prevista** e la **scadenza** di una task.
+### Pianificazione e Scadenze (?)
+
+![config pianificazione 1](./assets/menu/pianificazione-1.png)
+
+Permette di impostare la **durata prevista** e la **scadenza** di una task, in giorni.  
 Presenta inoltre 3 checkbox per la gestione della pianificazione:
 
-- _Da confermare_
-- _Rileva inizio_
-- _Utilizza calendario_
+- **Da confermare**: (?)
+- **Rileva inizio**: (?)
+- **Utilizza calendari**: (?)
 
 ### Dati Attività
-
-Consente di associare variabili ai campi relativi a una pianificazione aggiornata dell'attivit
-consente di associare variabili a campi specifici relativi ai dati effettivi di un'attività.
-permette di configurare le variabili per i dati effettivi dell'attività, ovvero i valori realmente registrati. I campi configurabili sono:
-consente di associare variabili a campi specifici relativi ai dati pianificati 
-
-
-I campi configurabili si dividono in 3 gruppi:
+Consente di associare variabili a campi specifici relativi ai dati aggiornati/effettivi/pianificati di un'attività.  
+I campi configurabili si dividono in 3 gruppi e sono:
 
 1. _Date **Aggiornate** Attività_: 
-    * Data _inizio_ aggiornata: permette di collegare una variabile alla data di inizio aggiornata dell'attività nel calendario.
-    * Data _fine_ aggiornata: permette di associare una variabile alla data di fine aggiornata dell'attività nel calendario.
-    * _Durata_ aggiornata: permette di collegare una variabile che rappresenta la stima della durata aggiornata dell'attività (in giorni).
-
+    * Data _inizio_ aggiornata: permette di collegare una variabile alla data di inizio _aggiornata_ dell'attività nel calendario.
+    * Data _fine_ aggiornata: permette di associare una variabile alla data di fine _aggiornata_ dell'attività nel calendario.
+    * _Durata_ aggiornata: permette di collegare una variabile che rappresenta la stima della durata _aggiornata_ dell'attività (in giorni).
 
 2. _Date **Effettive** Attività_ 
-    * Data _inizio_ effettiva: permette di collegare una variabile alla data di inizio effettiva dell'attività nel calendario.
-    * Data _fine_ effettiva: permette di associare una variabile alla data di fine effettiva dell'attività nel calendario.
-    * _Durata_ effettiva: permette di collegare una variabile che rappresenta la stima della durata effettiva dell'attività in giorni.
-
+    * Data _inizio_ effettiva: permette di collegare una variabile alla data di inizio _effettiva_ dell'attività nel calendario.
+    * Data _fine_ effettiva: permette di associare una variabile alla data di fine _effettiva_ dell'attività nel calendario.
+    * _Durata_ effettiva: permette di collegare una variabile che rappresenta la stima della durata _effettiva_ dell'attività in giorni.
 
 3. _Date **Previste** Attività_
-    * Data _inizio_ prevista/pianificata: permette di collegare una variabile alla data di inizio pianificata dell'attività nel calendario.
-    * Data _fine_ prevista/pianificata: permette di associare una variabile alla data di fine pianificata dell'attività nel calendario.
-    * _Durata_ prevista/pianificata: permette di collegare una variabile che rappresenta la stima della durata pianificata dell'attività in giorni.
+    * Data _inizio_ prevista/pianificata: permette di collegare una variabile alla data di inizio _pianificata_ dell'attività nel calendario.
+    * Data _fine_ prevista/pianificata: permette di associare una variabile alla data di fine _pianificata_ dell'attività nel calendario.
+    * _Durata_ prevista/pianificata: permette di collegare una variabile che rappresenta la stima della durata _pianificata_ dell'attività in giorni.
 
 
 ### Dati Aggiuntivi
-Qui troviamo 3 campi:
+
+![config pianificazione 2](./assets/menu/pianificazione-2.png)
+
+Qui troviamo 3 campi configurabili:
 
 * **_Scadenza_** dell'attività, configura una variabile per rappresentare la data di scadenza a calendario dell'attività.
 
@@ -175,14 +179,21 @@ Le formule di validazione degli elementi del canvas sono in una relazione **AND*
 
 ## Escalation
 
-L'**_Escalation/Timeout_** è un'entrata del menu contestuale specifica di alcuni elementi.  
-Con il suo utilizzo è possibile, dopo un determinato numero di giorni inserito dall'utente, eseguire le 3 azioni seguenti:
+![form escalation](./assets/menu/escalation.png)
 
-* Non variare l'attività
-* Riassegnare l'attività, cedendo ad altri utenti la possibilità di mandare avanti il processo
-* Terminare l'attività
+L'**_Escalation/Timeout_** è un'entrata del menu contestuale esclusiva dell'oggetto [Attività](./activities/task.md).  
+Con il suo utilizzo è possibile configurare l'esecuzione di un'azione dopo un determinato numero di giorni, inserito dall'utente, dalla data di **attivazione** o di **scadenza** del task. Il numero di giorni puù essere impostati come giorni lavorativi o qualsiasi.  
+Le 3 azioni configurabili sono le seguenti:
 
-Dall'Escalation è poi possibile far partire un [link](./activities/link.md) specifico, il quale indica al processo la strada alternativa da percorrere se l'escalation si verifica effetivamente, ad esempio in caso di riassegnazione o chiusura della task.
+* _Non variare_ l'attività
+* _Riassegnare_ l'attività, cedendo ad altri utenti la possibilità di mandare avanti il processo
+* _Terminare_ l'attività
+
+Da un task con Escalation configurata è poi possibile far partire un [_link_](./activities/link.md) _'speciale'_ da un punto specifico, inidicato dal simbolo:
+
+![escalation icon](./assets/menu/escalation-icon.png)
+
+il quale indicherà al processo la _strada alternativa_ da percorrere se l'escalation si verifica effetivamente, ad esempio in caso di riassegnazione o chiusura della task.
 
 
 ## Configurazione
@@ -206,5 +217,6 @@ Utilizzando il menu contestuale su oggetti di tipo [link](./activities/link.md) 
  - _Condizioni di abilitazione_
  - _Imposta variabili_
  - _Tipo linea_
+ - _Elimina collegamento<->
 
-Gli scopi di tutte queste voci sono spiegati nel dettaglio nella sezione dedicata ai link, che puoi trovare [qui](./activities/link.md).
+Gli scopi di tutte queste voci sono spiegati nel dettaglio nella sezione dedicata ai link, che puoi trovare [**qui**](./activities/link.md).

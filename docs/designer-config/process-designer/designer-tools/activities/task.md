@@ -1,6 +1,5 @@
-# Attività (Task) nel Processo
+# Attività (Task)
 
-## Cos'è un'attività
 
 Un'attività rappresenta un'unità operativa all'interno di un processo ed è sempre assegnata a uno o più utenti o gruppi. Ogni task, prima o poi, finisce nella **to-do list** di almeno una persona, diventando così visibile e gestibile nel flusso di lavoro.
 
@@ -221,8 +220,6 @@ In questo tab si possono mappare variabili di processo ai dati del task:
 ---
 
 ## Form Escalation 
-
-![screenshot form escalation](task-form-escalation.png)
 
 Quando un task supera il tempo previsto (scadenza o durata massima), è necessario definire come il processo deve reagire. La finestra **Escalation/Timeout** permette di configurare il comportamento automatico del sistema in questi casi.
 
