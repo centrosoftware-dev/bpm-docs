@@ -32,7 +32,7 @@ Ogni processo definisce autonomamente i propri stati in funzione del dominio app
 Nel menu relativo all'oggetto **Stato**, accessibile tramite tasto destro, sono presenti una serie di funzioni che permettono di configurarne diversi aspetti.  
 Per questo elemento le funzioni disponibili sono sostanzialmente quelle standard, ciascuna illustrata in dettaglio nella sezione dedicata al _menu contestuale_, che puoi trovare [**qui**](../menu.md).
 
-L'unica cosa da notare per l'oggetto _State_ è che le _Operazioni_ si possono agganciare solo all'evento di '**attivazione**' dello stato ovvero: il momento in cui stato è stato raggiunto dal workflow oppure quando questo è stato attivato manualmente dall'utente.
+L'unica cosa particolare dell'oggetto _State_ è che le _Operazioni_ si possono agganciare solo all'evento di '**attivazione**' dello stato ovvero: il momento in cui stato è stato raggiunto dal workflow oppure quando questo è stato attivato manualmente dall'utente.
 
 
 

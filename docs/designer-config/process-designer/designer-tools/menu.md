@@ -93,15 +93,16 @@ Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori
 
 ## Allegati da richiedere
 
-È inoltre possibile definire gli allegati richiesti tramite l'entrata **_Allegati da richiedere_**.  
+Tramite l'entrata **_Allegati da richiedere_** à inoltre possibile definire gli allegati richiesti e gestiti nell'oggetto.
 In questo caso non è possibile definire direttamente gli allegati da inserire, ma piuttosto, creare tramite un popup, dei filtri che vadano a scremare i possibili allegati inseribili.
 
 ![Menu attachment options](./assets/menu/attachment-options.png)
 
 Il popup presenta due checkbox:
 
-- La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup.
-- La seconda, invece, fa sì che gli allegati caricati non possano essere poi modificati.
+- La prima, se spuntata, renderà funzionanti i filtri e le preferenze che vengono definite nel resto del popup. Inoltre, farà si che l'utente assegnato a questo oggetto vedrà durante l'esecuzione un tab con l’albero degli allegati associati al processo/documento.
+
+- La seconda, invece, determina se gli allegati caricati possano essere successivamente modificati o se solamente visti.
 
 Dopodiché una sezione dedicata ai filtri, 3 in particolare:
 
@@ -114,7 +115,7 @@ Da lì si apriranno le impostazioni generali del processo relative agli allegati
 Sotto i Filtri, è possibile gestire la **_Dimensione Massima in KB_** (Dim. Massima kb), tramite un input numerico.
 Il numero immesso sarà il tetto massimo per la dimensione di un file.  
 
-Nella parte bassa troviamo invece il gruppo relativo ai Tipi di file consentiti.  
+Nella parte bassa troviamo invece il gruppo relativo ai **_Tipi di file_**_ consentiti.  
 Tramite una serie di checkbox è possibile definire le estensioni dei file che possono essere accettati.  
 La casella di testo finale permette di specificare ulteriori estensioni in caso ce ne fosse bisogno. 
 
@@ -124,35 +125,72 @@ La casella di testo finale permette di specificare ulteriori estensioni in caso 
 .cad,.php,.bat
 ```
 
+!!! note "⚡ Nota: "
+    in BPM gli allegati sono organizzati in "cartelle" logiche, anche se fisicamente sono salvati nello stesso spazio.
+
 ## Operazioni
 
 ![config operazioni](./assets/menu/operazioni-config.png)
 
-Nel contesto di un processo BPM, le operazioni rappresentano attività automatiche (come esecuzione di query SQL, invio di mail, chiamate a web service, ecc.) che possono essere inserite nel workflow esattamente come un task manuale.  
-Tuttavia, per evitare di appesantire il disegno del flusso con dettagli tecnici, il sistema consente di associare direttamente le operazioni già disponibili nel BPM a specifici eventi del task tramite l'entrata **_Operazioni_** del menu contestuale.  
-Quest'entrata apre una schermata di configurazione dove, in base all'oggetto su cui lo si apre, sarà possibile configurare l'operazione da svolgere in momenti differenti. Le operazioni assegnate vengono svolte in ordine Top to Bottom.
-Per svolgere un'operazione basta trascinarla (drag & drop) dalla colonna **_Operazioni disponibili_** a quella del momento in cui si desidera svolgerla.(1) 
+Nel contesto di un processo BPM, le operazioni rappresentano **attività automatiche** (come esecuzione di query SQL, invio di mail, chiamate a web service, ecc.) che possono essere inserite nel workflow esattamente come un task manuale.  
+Le operazioni configurabili sono diverse e vengono illustrate in dettaglio nella sezione dedicata, che puoi trovare [**qui**](./operations/intro.md).
+
+Invece di utilizzare un oggetto per ciascuna operazione come di norma, il sistema consente anche di associare direttamente le operazioni già disponibili nel BPM a momenti di vita specifici dell'oggett, tramite l'entrata **_Operazioni_** del menu contestuale.
+
+Questo comporta diversi vantaggi:
+
+- **Leggibilità**: permette di evitare di appesantire il disegno del flusso con dettagli tecnici di integrazione o automazione, che restano contestualizzati dentro l'oggetto.
+- **Centralizzazione**: gestione delle logiche tecniche all'interno di punti strategici, senza sporcare il disegno principale del workflow.
+- **Modularità**: ogni oggetto può avere comportamenti automatici senza bisogno di ulteriori nodi nel processo.
+
+Quest'entrata apre una schermata di configurazione dove, in base all'oggetto su cui lo si apre, sarà possibile configurare l'operazione da svolgere in momenti differenti. 
+Per assegnare un'operazione basta trascinarla (drag & drop) dalla colonna **_Operazioni disponibili_** a quella del momento in cui si desidera svolgerla (1).  
+Le operazioni assegnate vengono poi svolte in ordine *Top to Bottom*.
 { .annotate }
 
 1. Il titolo della colonna è il momento in cui verrà svolta l'operazione.
 
-Le _Operazioni_ sono azioni complesse di vario tipo e sono illustrate in dettaglio nella sezione dedicata che puoi trovare [**qui**](./operations/intro.md).
+I momenti di vita dell'oggetto a cui si possono agganciare le operazioni sono:
+
+1.	**Attivazione**
+    - Quando l'oggetto diventa disponibile per l’utente, subito dopo il completamento dei task precedenti.
+    > Tipico uso: inviare notifiche agli utenti o ad altri sistemi.
+
+2.	**Inizio**
+    - Opzione esclusiva dell'oggetto Attività.
+    - Scatta solo se il task ha attiva la proprietà 'Rileva inizio'.
+    - Parte quando l’utente inizia effettivamente l'attività dalla sua todo list.
+    - In caso contrario, questo evento non viene lanciato.
+
+3.	**In Esecuzione**
+    - Scatta subito prima del completamento del task.
+    - Dopo il click su "COMPLETATO" da parte dell'utente, ma prima delle formule di validazione.
+
+4.	**Esecuzione Terminata**
+    - Scatta dopo il completamento definitivo del task e dopo il superamento delle validazioni.
+    - L’effetto è simile a un normale avanzamento nel flusso, ma senza dover disegnare ulteriori task.
+    - La differenza con il precedente è sottile, ma in questo caso siamo sicuri che il flusso abbia già superato le formule di validazione senza bloccarsi.
 
 
 ## Pianificazione e Scadenze
-Questa finestra permette di impostare i dettagli di pianificazione, scadenza e priorità relativi a una specifica attività.   
+
+Questa finestra permette di configurare i parametri temporali dell'attività, come: i dettagli di _pianificazione_, le _scadenza_ e le _priorità_.   
+È fondamentale per una gestione efficace delle scadenze e per il corretto funzionamento delle automazioni del processo.  
 È diviso in 3 schede principali:
 
-### Pianificazione e Scadenze (?)
+### Pianificazione e Scadenze
 
 ![config pianificazione 1](./assets/menu/pianificazione-1.png)
 
-Permette di impostare la **durata prevista** e la **scadenza** di una task, in giorni.  
+Permette di impostare:
+- **Durata prevista**: il numero di giorni previsti per completare il task. 
+- **Scadenza**: Definisce il termine massimo entro cui il task deve essere completato, calcolato in giorni a partire dalla data di inizio.  
+
 Presenta inoltre 3 checkbox per la gestione della pianificazione:
 
-- **Da confermare**: (?)
-- **Rileva inizio**: (?)
-- **Utilizza calendari**: (?)
+- **Da confermare**: se abilitato, indica che la pianificazione deve essere approvata manualmente.
+- **Rileva inizio**: se selezionato, il sistema attiva la rilevazione della data inizio effettivo da parte dell’utente, ossia quando inizia l'attività dalla sua todo list. _Necessaria_ se si vuole assegnare un'operazione all'evento di _Inizio task_.
+- **Utilizza calendari**: se abilitato, il calcolo della durata e delle scadenze considera solo i giorni lavorativi definiti nel calendario aziendale (esclude weekend, festività, ecc.). 
 
 ### Dati Attività
 Consente di associare variabili a campi specifici relativi ai dati aggiornati/effettivi/pianificati di un'attività.  
@@ -178,13 +216,15 @@ I campi configurabili si dividono in 3 gruppi e sono:
 
 ![config pianificazione 2](./assets/menu/pianificazione-2.png)
 
-Qui troviamo 3 campi configurabili:
+Qui possiamo mappare le variabili di processo a 3 campi:
 
-* **_Scadenza_** dell'attività, configura una variabile per rappresentare la data di scadenza a calendario dell'attività.
+* **_Scadenza_** dell'attività: associa la scadenza calcolata a una variabile del processo per poterla usare altrove (es. notifiche).
 
-* **_Priorità_** dell'attività, consente di associare una variabile alla priorità assegnata all'attività.
+* **_Priorità_** dell'attività: associa una variabile di processo alla priorità del task. Possiamo mappare valori specifici con la funzione Mappatura valori.
+!!! danger Attenzione
+    Se non configuri correttamente questa mappatura, il task potrebbe risultare senza priorità e comportarsi in modo anomalo nelle liste.
 
-* **_Colore_** dell'attività, consente di associare una variabile al colore assegnato all'attività nella todo list.
+* **_Colore_** dell'attività: definisce dinamicamente il colore con cui il task verrà visualizzato nella todo list, in base a una variabile del processo.
 
 
 ## Formula di validazione
@@ -198,19 +238,44 @@ Le formule di validazione degli elementi del canvas sono in una relazione **AND*
 
 ![form escalation](./assets/menu/escalation.png)
 
-L'**_Escalation/Timeout_** è un'entrata del menu contestuale esclusiva dell'oggetto [Attività](./activities/task.md).  
-Con il suo utilizzo è possibile configurare l'esecuzione di un'azione dopo un determinato numero di giorni, inserito dall'utente, dalla data di **attivazione** o di **scadenza** del task. Il numero di giorni puù essere impostati come giorni lavorativi o qualsiasi.  
-Le 3 azioni configurabili sono le seguenti:
+**_Escalation/Timeout_** è una voce del menu contestuale esclusiva dell'oggetto [_Attività_](./activities/task.md).
 
-* _Non variare_ l'attività
-* _Riassegnare_ l'attività, cedendo ad altri utenti la possibilità di mandare avanti il processo
-* _Terminare_ l'attività
+Quando un task supera il tempo previsto (scadenza o durata massima), è necessario definire come il processo deve reagire.
 
-Da un task con Escalation configurata è poi possibile far partire un [_link_](./activities/link.md) _'speciale'_ da un punto specifico, inidicato dal simbolo:
+La data di trigger del timeout/escalation può essere configurata in due modi:
+
+- Data di **scadenza** + N giorni: scatta dopo un certo numero di giorni dalla scadenza prevista.
+- Data di **attivazione** + N giorni: alternativa utile quando vuoi gestire il timeout a partire dall'inizio dell'attività e non dalla scadenza.
+
+I giorni possono essere impostati come giorni lavorativi o qualsiasi tramite l'apposita spunta.
+
+Nella finestra di configurazione è possibile definire il comportamento automatico del sistema in questi casi.
+
+Quando il task supera il limite impostato, sono 3 le azioni sul task stesso che si possono configurare:
+
+-  **Non variare** l'attività: lascia il task aperto, senza fare nulla.
+
+-  **Riassegnare** l'attività: sposta il task su un altro utente o gruppo cedendo ad altri utenti la possibilità di mandare avanti il processo (es. scalando il problema ai livelli superiori).
+
+-  **Terminare** l'attività: termina automaticamente il task come annullato.
+
+### Attivare flusso alternativo
+
+All'attivazione del trigger dell'escalation/timeout è poi possibile anche reindirizzare il processo su un nuovo percorso.   
+Alcuni esempi concreti tipici sono: invio di notifiche/promemoria, assegnazione di nuovi task a chi deve gestire l'eccezione...
+
+Per configurare il **flusso alternativo** è necessario creare un _link 'speciale'_ a partire da un punto specifico del task, indicato dal simbolo:
 
 ![escalation icon](./assets/menu/escalation-icon.png)
 
-il quale indicherà al processo la _strada alternativa_ da percorrere se l'escalation si verifica effetivamente, ad esempio in caso di riassegnazione o chiusura della task.
+questo collegamento indicherà al processo la strada alternativa da percorrere in caso si verifichi l'escalation/timeout.
+
+!!! note "⚡ Nota operativa"
+    Dal punto di vista tecnico non cambia nulla scegliere Timeout o Escalation, il sistema reagisce allo stesso modo anche se l'icona è diversa nei due casi.  
+    La distinzione serve solo per dare un'indicazione "semantica" su cosa si sta gestendo:
+
+    - Timeout → il task semplicemente è scaduto.
+    - Escalation → serve l'intervento di livelli superiori o alternative di processo.
 
 
 ## Configurazione
