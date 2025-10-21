@@ -1,105 +1,40 @@
 # Attività (Task)
 
+![task icon](../assets/activities/task.png)
 
-Un'attività rappresenta un'unità operativa all'interno di un processo ed è sempre assegnata a uno o più utenti o gruppi. Ogni task, prima o poi, finisce nella **to-do list** di almeno una persona, diventando così visibile e gestibile nel flusso di lavoro.
+Un'attività rappresenta un'**unità operativa da eseguire** all'interno di un processo.  
+Ogni task, prima o poi, finisce nella **todo list** di una o più persone a cui è assegnata, diventando così visibile e gestibile nel flusso di lavoro.
 
-## Ruoli associati al task
+## Utilizzo
+ - Definisce le **azioni** da eseguire all'interno di un flusso di lavoro.
+ - Permette agli **utenti** di **interagire con il processo**: eseguendo azioni, assegnando valori alle variabili tramire i relativi campi o anche semplicemente permettendogli di visualizzare dati significativi.
 
-Nel rispetto di una logica di processo, ogni attività può prevedere l’assegnazione di più ruoli:
+## Caratteristiche principali
 
-- **Esecutore**: l’utente che effettivamente esegue il task.
-- **Responsabile** (opzionale): colui che assegna il task all’esecutore; può essere specificato tramite i parametri del processo.
-- **Utente in copia (CC)**: riceve aggiornamenti sull'andamento del task ma non ha responsabilità operative dirette.
-
+Ogni attività può essere **assegnata** a uno o più **utenti** o **gruppi**.  
+È possibile definire queste logiche tramite un'entrata del menu contestuale o del pannello degli attributi dell'oggetto.  
+Questa finestra di configurazione, comune anche ad altri oggetti, è descritta nel dettaglio [**qui**](../menu.md#utenti-e-responsabili).   
 > In contesti meno formalizzati, è possibile semplificare questa logica: ad esempio, il primo utente che visualizza il task può prenderlo in carico ed eseguirlo direttamente, senza passaggi intermedi o ruoli formali.
 
----
-
-## Variabili del task
-
+<br>
 Ogni task è associato a un insieme di **variabili**, ovvero dati o informazioni necessari per la sua corretta esecuzione. Queste possono essere:
 
 - **In lettura**: informazioni che l’esecutore deve conoscere.
-- **In scrittura**: dati che devono essere raccolti o aggiornati durante il completamento dell’attività.
+- **In scrittura**: dati che devono essere compilati o aggiornati durante il completamento dell’attività.
 
----
+Le variabili di processo sono spiegate con maggiore precisione nella sezione dedicata che puoi trovare [**qui**](../../../variables/intro.md).
 
-## Menu tasto destro
 
-Nel menu tasto destro relativo al task sono presenti una serie di funzioni che permettono di regolare il funzionamento del task stesso.
+## Menu contestuale
 
-Personalizzazione dell'aspetto:
+Nel menu relativo all'oggetto **Attività**, accessibile tramite tasto destro, sono presenti una serie di funzioni che permettono di configurarne il funzionamento del task stesso.  
 
-- Allineamento ➝ Permette di allineare l'oggetto con altri elementi.
-- Colore ➝ Cambia il colore dell'elemento.
-- Font ➝ Modifica lo stile del testo.
+Per questo elemento le funzioni disponibili sono sostanzialmente quelle standard, ciascuna illustrata in dettaglio nella sezione dedicata al menu contestuale, che puoi trovare qui.
 
-Modifica e gestione dell'oggetto:
+L'unica voce all'interno del menu contestuale **esclusiva** di questo oggetto è quella relativa all'**Escalation**, che per coerenza strutturale è descritta [**qui**](../menu.md#escalation).
 
-- Sposta oggetto alla pagina... ➝ Permette di spostare l'oggetto in un'altra pagina.
-- Taglia ➝ Rimuove l'oggetto dalla posizione corrente (pronto per incollarlo altrove).
-- Copia ➝ Duplica l'oggetto per incollarlo in un'altra posizione.
-- Modifica testo (F2) ➝ Permette di modificare il testo dell'elemento.
-- Sposta testo ➝ Cambia la posizione del testo all'interno dell'oggetto.
 
-Impostazioni:
-
-- Imposta come oggetto di avvio ➝ Definisce l'elemento come punto di partenza nel flusso di lavoro.
-- Utenti e responsabili... ➝ Permette di assegnare utenti responsabili dell'elemento.
-- Variabili da richiedere ➝ Specifica le variabili necessarie per l'elemento.
-- Allegati da richiedere ➝ Definisce eventuali file o documenti da allegare.
-- Operazioni ➝ Permette di configurare azioni specifiche legate all'elemento.
-- Pianificazione e scadenze… ➝ Gestisce tempi e scadenze dell'elemento.
-- Escalation ➝ Imposta regole per l'escalation in caso di problemi.
-
-Altro:
-
-- Elimina ➝ Cancella l'oggetto dal flusso di lavoro.
-
----
-
-## Form Utenti e Responsabili
-
-![screenshot form utenti e responsabili](task-form-utenti-resp.png)
-
-La form consente di configurare:
-
--	Esecutore: utenti o gruppi autorizzati a svolgere il task.
--	Responsabile: utenti o gruppi che supervisionano e assegnano il task.
--	CC: utenti o gruppi che devono essere informati sull’esecuzione del task.
-
-Sono gestibili sia utenti/gruppi statici sia variabili di tipo UserType (identificate dal simbolo @ all’inizio del nome). L'uso delle variabili UserType consente il routing dinamico dei task sulla base dei dati del processo.
-
-Nella parte inferiore della form è presente il flag:
-
--	Task deve essere assegnato prima di poter essere eseguito
-
-Non selezionato: Il primo utente disponibile tra gli esecutori può prendere in carico o eseguire direttamente il task. Nessuna assegnazione preventiva è necessaria.
-Selezionato: Il responsabile deve assegnare esplicitamente il task a un esecutore. Solo l'assegnatario potrà poi eseguire l'attività.
-
-Tipologie di Utenti Gestibili:
-
-- Utente singolo: Utente fisico presente in anagrafica.
-- Gruppo: Insieme di utenti
-- Variabile UserType: Placeholder dinamico risolto a runtime in base ai dati del processo (es: @[FUNZIONE COINVOLTA]).
-
-Le variabili UserType garantiscono la massima flessibilità nei workflow complessi, adattandosi automaticamente a chi deve realmente gestire l'attività.
-
----
-
-## Form Variabili da Richiedere
-
-La form "Variabili da Richiedere" permette di configurare quali variabili devono essere compilate o mostrate durante l'esecuzione del task.
-Questa form è una versione limitata dell'editor variabili di processo/documento:
-
-•	Non è possibile creare nuove variabili.
-•	Si possono solo selezionare variabili esistenti definite a livello di processo o documento.
-
-L'obiettivo è definire quali dati devono essere richiesti all'utente durante il task, partendo dalla struttura globale del processo.
-
----
-
-### Comportamento delle Variabili nel Contesto del Task ###
+### Variabili del Task
 
 Quando una variabile viene agganciata al task:
 

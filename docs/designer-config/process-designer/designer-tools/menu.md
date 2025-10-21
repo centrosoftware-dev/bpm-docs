@@ -55,23 +55,40 @@ Quest'entrata permette di impostare un oggetto come oggetto di avvio,rendendo l'
 ![config utenti e resp](./assets/menu/utenti-resp.png)
 
 Tramite quest'entrata è possibile definire il ruolo degli utenti rispetto ad un oggetto su cui è necessario svolgere una qualsiasi azione da parte di un dipendente.  
-Inoltre è possibile, tramite l'apposita spunta, configurare l'attività da svolgere per far si che essa debba essere assegnata (solitamente da un responsabile ad un dipendente) prima di essere svolta.  
-Si può lavorare sia su **singoli utenti** sia su **gruppi**. I ruoli possibili sono 3:
 
-- **_Esecutore_** - chi dovrà svolgere effettivamente una determinata task.
-- **_Responsabile_** - colui che assegnerà l'attività prima che venga eseguita (in caso il task sia configurato in questo modo).
-- **_CC_** - utenti che devono vedere l'attività, ma senza poterci interagire.
+Si può lavorare sia su **singoli utenti** sia su **gruppi** di utente.
+
+Oltre ad utenti/gruppi statici è possibile gestire **variabili** di tipo **UserType**, identificate dal simbolo @ all’inizio del nome e descritte più in dettaglio [qui](../../variables/types/usertype.md).  
+L'uso di queste variabili consente il **routing dinamico** dei task sulla base dei dati del processo in corso e garantiscono la massima flessibilità nei workflow complessi, adattandosi automaticamente a chi deve realmente gestire l'attività.
+
+Nella parte inferiore della ffinestra di configurazione è inoltre presente il flag:
+
+-	_Task deve essere assegnato prima di poter essere eseguito_
+
+Non selezionato: Il primo utente disponibile tra gli esecutori può prendere in carico o eseguire direttamente il task. Nessuna assegnazione preventiva è necessaria.
+Selezionato: Il responsabile deve assegnare esplicitamente il task a un esecutore. Solo l'assegnatario potrà poi eseguire l'attività.
+
+I ruoli assegnabili a utenti o gruppi sono 3:
+
+- **_Esecutore_** - chi dovrà svolgere effettivamente la task.
+- **_Responsabile_** (opzionale) - colui che assegnerà l'attività ad un esercutore prima che venga eseguita (in caso il task sia configurato in questo modo).
+- **_Utenti in copia (CC)_** - utenti che ricevono aggiornamenti sull'andamento del task ma non hanno responsabilità operative dirette.
 
 
 ## Variabili da richiedere
 
-L'entrata **_Variabili da richiedere_** permette di definire i dati che gli utenti assegnati dovranno inserire.
-Una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili.  
-Questa pagina, chiamata **Magazzino delle variabili**, viene trattata e approfondita nella sua sezione apposita [qui](../../variables/warehouse.md).
-Per aggiungere una Variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
+L'entrata **_Variabili da richiedere_** permette di definire i dati che l'utente dovrà inserire o visualizzare durante l'esecuzione dell'oggetto.  
+
+Una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili, a partire dalla struttura globale delle variabili di processo.  
+Questa è una versione limitata dell'editor variabili di processo/documento, chiamato **Magazzino delle variabili** e approfondito [qui](../../variables/warehouse.md), in cui:
+
+- Non è possibile creare nuove variabili.
+- Si possono solo selezionare variabili esistenti definite a livello di processo o documento.
+
+Per aggiungere una variabile da richiedere, basta prenderne una dalla lista di sinistra e trascinarla nel canvas.
 Così facendo, gli utenti a cui è assegnata la task, dovranno inserire i valori delle variabili così definite.
 
-![](./assets/menu/inserimentoVarUserTask.gif)
+![config variabili da richidere](./assets/menu/inserimento-var.gif)
 
 
 ## Allegati da richiedere

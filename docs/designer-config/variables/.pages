@@ -1,6 +1,7 @@
 nav:
     - Introduzione: intro.md
     - Magazzino delle variabili: warehouse.md
+    - Attributi delle veriabili: attributes.md
     - Variabili nel processo: process.md
     - Tipi di variabile: types
     
