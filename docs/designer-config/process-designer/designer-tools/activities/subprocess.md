@@ -1,18 +1,21 @@
-## Introduzione
+# Sottoprocesso
 
-![immagine sottoprocesso](subprocess-img.png)
+![immagine sottoprocesso](../assets/activities/subprocess-img.png)
 
-I **sottoprocessi** sono un tipo particolare di task, rappresentati graficamente in modo differente, che funzionano come **contenitori** di processi secondari.
-Sono fondamentali per:
+I **sottoprocessi** sono un tipo particolare di task, rappresentati anche graficamente in modo diverso, che funzionano come **contenitori** di processi secondari.  
 
-- Pulire e rendere più leggibile la grafica di processi complessi isolando parti ripetitive o di dettaglio.
-- Riutilizzare logiche che devono essere eseguite più volte in base a condizioni dinamiche.
 
-## Tipologie di sottoprocesso
+## Utilizzo
 
-![screenshot sottoprocesso](subprocess-screenshot.png)
+- Aumentare la **leggibilità** e la **pulizia** grafica di processi complessi, isolando parti ripetitive o di dettaglio.
+- **Riutilizzare logiche** che devono essere eseguite più volte in base a condizioni dinamiche.
 
-Ci sono due modalità operative principali:
+
+## Caratteristiche Generali
+
+![configurazione sottoprocesso](../assets/activities/subprocess-config.png)
+
+Ci sono due modalità operative principali, il menu di configurazione varia leggermente in base alla tipologia scelta:
 
 ### Sottoprocesso Singolo
 
@@ -26,12 +29,21 @@ Quando serve eseguire lo stesso sottoprocesso più volte, su dati diversi.
 In pratica, il sottoprocesso "gira" su ogni riga di un gruppo di variabili.
 La configurazione di un sottoprocesso ricorrente include:
 
-- **Modalità di esecuzione**:
+## ----------- ARRIVATO QUA ------------------
 
-    - Parallelo: tutte le istanze partono subito.
-    - Sequenziale: ogni istanza parte solo dopo che la precedente è completata.
+## Modalità di esecuzione
 
-- **Condizione**: una formula logica che stabilisce se eseguire il sottoprocesso per una certa riga.
+### Parallelo
+Tutte le istanze vengono avviate nello stesso momento subito.
+
+### Sequenziale
+Ogni istanza parte solo dopo che la precedente è completata.
+
+## Condizione
+: una formula logica che stabilisce se eseguire il sottoprocesso per una certa riga.
   Se la condizione è falsa, quella riga viene ignorata.
-- **Formula testo**: una formula che genera il nome di ciascuna istanza del sottoprocesso, così che nella Todo List gli utenti capiscano a quale "riga" si riferisce ogni task.
-- **Durata**: se il sottoprocesso non è ancora esploso (cioè non sono ancora generate tutte le istanze), il BPM usa questa durata "globale" come riferimento di pianificazione.
+## Formula testo
+: una formula che genera il nome di ciascuna istanza del sottoprocesso, così che nella Todo List gli utenti capiscano a quale "riga" si riferisce ogni task.
+
+## Durata prevista
+Se il sottoprocesso non è ancora esploso, ossia non sono ancora generate tutte le istanze, il BPM usa questa stima della durata "complessiva" come riferimento di **pianificazione**.
