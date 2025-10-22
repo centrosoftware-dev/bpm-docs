@@ -12,16 +12,6 @@ Di seguito troviamo tutte le impostazioni, modificabili dall'utente e raggruppat
 Permette di gestire l'**allineamento** della targhetta, il **colore** e il **font** del **testo** al suo interno, lo **spessore** e il **colore** dei **bordi** dell'oggetto, il **colore** dello **sfondo**, il **tipo di linea** (in caso di un oggetto [link](./designer-tools/activities/link.md)), 
 
 
-## CONFIGURAZIONE
-Questa sezione è presente solo per due oggetti e permette di accedere direttamente alla finestra di configurazione di ciascun oggetto. Essse sono aggiungibili anche tramite menu contestuale e sono illustrate nelle apposite sezioni dedicate (raggiungibili tramite i link contenuti nei nomi degli oggetti qui sotto).  
-
-La sezione contiene un'unica voce, con nome specifico per ciascun oggetto:
-
-- CONFIGURAZIONE **_TIMER_** per l'oggetto [Start a tempo](./designer-tools/events/start-event.md)
-
-- CONFIGURAZIONE **_ATTESA_** per l'oggetto [Attesa](./designer-tools/events/wait.md)
-
-
 ## Dati
 Questa sezione contiene proprietà modificabili del singolo oggetto per personalizzarne il comportamento. Molte di queste voci sono comuni con il menu contestuale e portano ai medesimi pannelli di configurazione. Le voci che troviamo sono:
 
@@ -60,21 +50,20 @@ Le variabili relative a un task sono configurabili anche tramite menu contestual
 Questa voce, esclusiva dell'oggetto [Ritorno al processo chiamante](./designer-tools/linked-process/return-linked-process.md), apre semplicemente la schermata di configurazione dell'oggetto, la quale viene descritta in modo approfondito nell'apposita sezione dedicata all'oggetto. 
 
 
-## Gestione **(?)**
+## Gestione
 In questa sezione troviamo le impostazioni per la gestione del processo nella todo list.  
 È presente solo per 4 oggetti, con voci differenti per ognuno di essi.  
 Vediamo nel dettaglio cosa è possibile configurare per ciascun oggetto:
 
  1. #### [Task](./designer-tools/activities/task.md)/[Sottoprocesso](./designer-tools/activities/subprocess.md)
     - _Colore in todo list_: determina il colore della task nella todo list per maggiore organizzazione a livello visivo.
-    - _Da confermare_: determina se la task sia da confermare esplicitamente prima di poter essere eseguita **(?)**
-    - _Non documentabile_: **(?)**
+    - _Da confermare_: determina se la task necessiti o meno di un'azione di conferma esplicita prima di poter essere effettivamente eseguita.
     - _Rileva inizio attività_: determina se l'attività sia da iniziare espicitamente o se inizia automaticamente all'attivazione, utile per assegnare operazioni automatiche all'inizio dell'attività invece che all'attivazione.
     - _Skip activity_: determina se la task deve essere saltata senza eseguire, andando direttamente alla successiva, o meno. 
     - _Sottoprocesso_: per definire se l'oggetto contiene o meno un sottoprocesso e di che tipo, tramite l'apposita finestra di configurazione illustrata [qui](./designer-tools/activities/subprocess.md)
     - _Testo pulsante esegui_: permette di modificare il testo del link per eseguire la task, presente nella colonna 'Azione' della todo list.
-    - _Tipo attività_: permette di categorizzare la task tramite un elenco pre-impostato dei tipi di attività più comuni **(FILTRI?)**.
-    - _Utilizza calendario_: determina se utilizzare o meno il calendario per avere riferimenti temporali reali **(?)**.
+    - _Tipo attività_: permette di categorizzare la task tramite un elenco pre-impostato dei tipi di attività più comuni.
+    - _Utilizza calendario_: determina se utilizzare o meno il calendario per il calcolo dei giorni, in modo da poter impostare i giorno come feriali. Troviamo la stessa opzione nel menu contestuale all'interno della voce Pianificazione e scadenze, descritta in dettaglio [qui](./designer-tools/menu.md#pianificazione-e-scadenze).
 
  2. #### [Stato](./designer-tools/activities/state.md)
     - _Blocca edit_: se settatato a True, fa sì che, al raggiungimento dello stato, eventuali altri task aperti vengano forzati alla chiusura (annullati).
@@ -89,23 +78,23 @@ Vediamo nel dettaglio cosa è possibile configurare per ciascun oggetto:
 Questa sezione contiene due voci: _Durata prevista_ e _Scadenza_. Entrambe rimandano allo stesso pannello di configurazione, che contiene le due voci e permette di modificarle. L'approfondimento su questo pannello, essendo accessibile anche tramite menu contestuale, è disponibile [qui](./designer-tools/menu.md#pianificazione-e-scadenze).
 
 
-## Varie **(?)**
+## Varie
 
 Alcune impostazioni sono specifiche di certi singoli oggetti e non sono assegnabili in uno dei precedenti raggruppamenti.  
 Per questo vengono inseriti in questa sezione contenente tutti le voci speciali/extra:
 
-- ### Percorso per pianificazione **(?)**
-  Esclusivo dell'oggetto [Link](./designer-tools/activities/link.md), determina il percorso di pianificazione
+- ### Percorso per pianificazione
+  Esclusivo dell'oggetto [Link](./designer-tools/activities/link.md), determina il percorso di default per la pianificazione temporale delle attività del processo fatta dal BPM.  
+  Utile solo in caso il flusso sia ramificato, ad esempio con percorsi diversi da seguire in base ai valori assunti da alcune variabili di processo.
 
-- ### PosizioniMarkers **(?)**
-Esclusivo dell'oggetto [Marker](./designer-tools/other/marker.md), 
+### Configurazione 
+Questa sezione è presente solo per due oggetti e permette di accedere direttamente alla finestra di configurazione di ciascun oggetto. Essse sono aggiungibili anche tramite menu contestuale e sono illustrate nelle apposite sezioni dedicate (raggiungibili tramite i link contenuti nei nomi degli oggetti qui sotto).  
 
-- ### FormulaAttivazioneDef **(?)**
-Esclusivo dell'oggetto [Avvio processo collegato](./designer-tools/linked-process/start-linked-process.md)
+La sezione contiene un'unica voce, con nome specifico per ciascun oggetto:
 
-- ### oldCartellaDestinazioneAllegati **(?)**
-Esclusivo dell'oggetto [Avvio processo collegato](./designer-tools/linked-process/start-linked-process.md)
+- CONFIGURAZIONE **_TIMER_** per l'oggetto [Start a tempo](./designer-tools/events/start-event.md)
 
-### Configurazione
+- CONFIGURAZIONE **_ATTESA_** per l'oggetto [Attesa](./designer-tools/events/wait.md)
+
 Quest'opzione è presente solamente per: tutti gli [Operatori](./designer-tools/operations/intro.md) e per tutti i [Gateway](./designer-tools/gateways/intro.md) (tranne il 'Sincronizza').  
 La schermata di _Configurazione_ è totalmente differente per ogni oggetto e viene approfondita nelle sezioni relative ai singoli elementi.

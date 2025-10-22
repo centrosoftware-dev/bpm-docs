@@ -299,6 +299,6 @@ Utilizzando il menu contestuale su oggetti di tipo [link](./activities/link.md) 
  - _Condizioni di abilitazione_
  - _Imposta variabili_
  - _Tipo linea_
- - _Elimina collegamento<->
+ - _Elimina collegamento_
 
 Gli scopi di tutte queste voci sono spiegati nel dettaglio nella sezione dedicata ai link, che puoi trovare [**qui**](./activities/link.md).
