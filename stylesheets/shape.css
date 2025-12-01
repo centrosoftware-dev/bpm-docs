@@ -1,0 +1,29 @@
+:root {
+    --md-text-font: "Noto Sans"; 
+    --md-code-font: "Anonymous Pro";
+    --md-primary-fg-color:        #011e41;
+    --md-primary-fg-color--light: #bac4d4;
+    --md-primary-fg-color--dark:  #153f70;
+    --md-accent-fg-color:                #17ff88;
+    --md-accent-fg-color--transparent:   #17ff871f;
+    --md-accent-bg-color:                #f4f6f9;
+    --md-accent-bg-color--light:         #e4e8ed2a;
+  }
+p a {
+  text-decoration: underline;
+}
+article ul li a{
+  text-decoration: underline;
+}
+
+/* Maximum space for text block */
+.md-grid {
+  max-width: 100%; /* or 100%, if you want to stretch to full-width */
+}
+
+/* Admonitions width  */
+.md-typeset .admonition,
+.md-typeset details {
+  width: 75%;
+  margin: auto;
+}
