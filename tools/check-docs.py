@@ -17,7 +17,7 @@ REQUIRED_FIELDS = {"id", "tipo", "nome", "percorso_ui", "pagina", "stato", "font
 MARKDOWN_LINK = re.compile(r"!?\[[^]]*]\(([^)]+)\)")
 SAFE_PATH_PART = re.compile(r"^[a-z0-9.-]+$")
 EXPECTED_ROOT_NAV = [
-    "index.md",
+    {"Home": "index.md"},
     {"Tutorial": "tutorial"},
     {"Modelli di processo": "modelli-di-processo"},
     {"Classi documentali": "classi-documentali"},

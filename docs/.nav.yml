@@ -1,5 +1,5 @@
 nav:
-  - index.md
+  - Home: index.md
   - Tutorial: tutorial
   - Modelli di processo: modelli-di-processo
   - Classi documentali: classi-documentali

@@ -76,3 +76,61 @@
 .md-footer {
   display: none;
 }
+
+/* ---------- Homepage ---------- */
+.bpm-hero {
+  background: linear-gradient(90deg, #011e41 0%, #0b3765 100%);
+  color: #c9c9c9;
+  border-radius: 8px;
+  border-bottom: 4px solid var(--shp-text-accent-onbrand);
+  padding: 2.5rem 2.5rem 2rem;
+  margin: 0 0 2.5rem;
+}
+.md-typeset .bpm-hero h1 {
+  color: #fafafa;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  max-width: 22ch;
+}
+.bpm-hero p {
+  max-width: 60ch;
+  font-size: 0.9rem;
+}
+.md-typeset .bpm-hero__eyebrow {
+  color: var(--shp-text-accent-onbrand);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+.md-typeset .bpm-hero .md-button {
+  color: #fafafa;
+  border-color: #fafafa;
+  margin: 0.6rem 0.4rem 0 0;
+}
+.md-typeset .bpm-hero .md-button--primary {
+  background: var(--shp-text-accent-onbrand);
+  border-color: var(--shp-text-accent-onbrand);
+  color: #042d58;
+}
+.md-typeset .bpm-hero .md-button:hover {
+  background: #fafafa;
+  border-color: #fafafa;
+  color: #042d58;
+}
+.md-typeset .grid.cards .lg {
+  color: var(--shp-bg-brand-secondary);
+}
+.md-typeset .grid.cards > ul > li {
+  border-radius: 8px;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--shp-text-link);
+}
+.bpm-home-note {
+  margin-top: 2.5rem;
+  color: var(--shp-text-body-secondary);
+  font-size: 0.75rem;
+}
