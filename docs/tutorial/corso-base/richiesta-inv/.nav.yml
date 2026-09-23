@@ -1,0 +1,12 @@
+nav:
+  - index.md
+  - "Fase 1 — Abbozzo del diagramma": 01-abbozzo-diagramma.md
+  - "Fase 2 — Utenti e gruppi": 02-utenti-gruppi.md
+  - "Fase 3 — Primo salvataggio e pubblicazione": 03-primo-salvataggio-pubblicazione.md
+  - "Fase 4 — Il magazzino delle variabili": 04-magazzino-variabili.md
+  - "Fase 5 — Variabili da richiedere sui singoli task": 05-variabili-richiedere-sui-singoli.md
+  - "Fase 6 — Approvazioni, condizioni e diramazioni": 06-approvazioni-condizioni-diramazioni.md
+  - "Fase 7 — Formule di processo e nuova pubblicazione": 07-formule-nuova-pubblicazione.md
+  - "Fase 8 — Avviare e osservare un'istanza": 08-avviare-osservare-istanza.md
+  - "Fase 9 — Variabili di gruppo: i preventivi fornitore": 09-variabili-gruppo-preventivi-fornitore.md
+  - "Fase 10 — Chiusura dell'esercizio": 10-chiusura-esercizio.md

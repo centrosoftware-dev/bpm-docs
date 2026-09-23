@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(./uv.exe run --with python-docx python -c ' *)",
+      "Bash(./uv.exe run python -c ' *)"
+    ]
+  }
+}

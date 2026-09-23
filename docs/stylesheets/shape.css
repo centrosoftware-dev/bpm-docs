@@ -27,3 +27,12 @@ article ul li a{
   width: 75%;
   margin: auto;
 }
+
+/* Miniature degli screenshot: piccole nel testo, a tutto schermo al clic (glightbox) */
+.md-typeset a.glightbox img {
+  max-width: 420px;
+  width: 100%;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  cursor: zoom-in;
+}

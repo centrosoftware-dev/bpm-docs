@@ -1,0 +1,10 @@
+nav:
+  - index.md
+  - Attivita: attivita.md
+  - Sottoprocesso: sottoprocesso.md
+  - Stato: stato.md
+  - Link: link.md
+  - Eventi: eventi.md
+  - Gateway e percorsi: gateway.md
+  - Operazioni: operazioni
+  - Elementi grafici: elementi-grafici.md

@@ -1,0 +1,772 @@
+[
+ {
+  "index": 1,
+  "timestamp": "00:02:10",
+  "category": "definition",
+  "title": "What BPM stands for",
+  "filename": "001_000210_what-bpm-stands-for.jpg",
+  "t0": 130,
+  "t1": 250,
+  "stem": "001_000210_what-bpm-stands-for"
+ },
+ {
+  "index": 2,
+  "timestamp": "00:04:16",
+  "category": "concept-intro",
+  "title": "Process = activities, drawn in the Designer",
+  "filename": "002_000416_process-activities-drawn-in-the-designer.jpg",
+  "t0": 256,
+  "t1": 296,
+  "stem": "002_000416_process-activities-drawn-in-the-designer"
+ },
+ {
+  "index": 3,
+  "timestamp": "00:04:58",
+  "category": "concept-intro",
+  "title": "Task and Start shapes",
+  "filename": "003_000458_task-and-start-shapes.jpg",
+  "t0": 298,
+  "t1": 309,
+  "stem": "003_000458_task-and-start-shapes"
+ },
+ {
+  "index": 4,
+  "timestamp": "00:05:11",
+  "category": "concept-intro",
+  "title": "Gateway (diamond) for branching",
+  "filename": "004_000511_gateway-diamond-for-branching.jpg",
+  "t0": 311,
+  "t1": 425,
+  "stem": "004_000511_gateway-diamond-for-branching"
+ },
+ {
+  "index": 5,
+  "timestamp": "00:07:07",
+  "category": "concept-intro",
+  "title": "Operations = automations",
+  "filename": "005_000707_operations-automations.jpg",
+  "t0": 427,
+  "t1": 526,
+  "stem": "005_000707_operations-automations"
+ },
+ {
+  "index": 6,
+  "timestamp": "00:08:48",
+  "category": "concept-intro",
+  "title": "Users & roles: executor, responsible, CC",
+  "filename": "006_000848_users-roles-executor-responsible-cc.jpg",
+  "t0": 528,
+  "t1": 590,
+  "stem": "006_000848_users-roles-executor-responsible-cc"
+ },
+ {
+  "index": 7,
+  "timestamp": "00:09:52",
+  "category": "concept",
+  "title": "To-Do List is the execution mechanism",
+  "filename": "007_000952_to-do-list-is-the-execution-mechanism.jpg",
+  "t0": 592,
+  "t1": 675,
+  "stem": "007_000952_to-do-list-is-the-execution-mechanism"
+ },
+ {
+  "index": 8,
+  "timestamp": "00:11:17",
+  "category": "concept-intro",
+  "title": "Process variables (\"magazzino\")",
+  "filename": "008_001117_process-variables-magazzino.jpg",
+  "t0": 677,
+  "t1": 797,
+  "stem": "008_001117_process-variables-magazzino"
+ },
+ {
+  "index": 9,
+  "timestamp": "00:15:36",
+  "category": "definition",
+  "title": "Publishing a process",
+  "filename": "009_001536_publishing-a-process.jpg",
+  "t0": 936,
+  "t1": 1032,
+  "stem": "009_001536_publishing-a-process"
+ },
+ {
+  "index": 10,
+  "timestamp": "00:17:14",
+  "category": "demo-start",
+  "title": "Starting a process instance",
+  "filename": "010_001714_starting-a-process-instance.jpg",
+  "t0": 1034,
+  "t1": 1144,
+  "stem": "010_001714_starting-a-process-instance"
+ },
+ {
+  "index": 11,
+  "timestamp": "00:19:06",
+  "category": "concept-intro",
+  "title": "Watching the token move",
+  "filename": "011_001906_watching-the-token-move.jpg",
+  "t0": 1146,
+  "t1": 1266,
+  "stem": "011_001906_watching-the-token-move"
+ },
+ {
+  "index": 12,
+  "timestamp": "00:24:41",
+  "category": "demo",
+  "title": "Searching and filtering process instances",
+  "filename": "012_002441_searching-and-filtering-process-instances.jpg",
+  "t0": 1481,
+  "t1": 1601,
+  "stem": "012_002441_searching-and-filtering-process-instances"
+ },
+ {
+  "index": 13,
+  "timestamp": "00:28:35",
+  "category": "concept-intro",
+  "title": "Client vs. architecture overview",
+  "filename": "013_002835_client-vs-architecture-overview.jpg",
+  "t0": 1715,
+  "t1": 1835,
+  "stem": "013_002835_client-vs-architecture-overview"
+ },
+ {
+  "index": 14,
+  "timestamp": "00:36:29",
+  "category": "demo-start",
+  "title": "Designer menu tour",
+  "filename": "014_003629_designer-menu-tour.jpg",
+  "t0": 2189,
+  "t1": 2309,
+  "stem": "014_003629_designer-menu-tour"
+ },
+ {
+  "index": 15,
+  "timestamp": "00:39:42",
+  "category": "definition",
+  "title": "Model vs. process instance",
+  "filename": "015_003942_model-vs-process-instance.jpg",
+  "t0": 2382,
+  "t1": 2474,
+  "stem": "015_003942_model-vs-process-instance"
+ },
+ {
+  "index": 16,
+  "timestamp": "00:41:16",
+  "category": "tip",
+  "title": "Sketch first, refine later",
+  "filename": "016_004116_sketch-first-refine-later.jpg",
+  "t0": 2476,
+  "t1": 2537,
+  "stem": "016_004116_sketch-first-refine-later"
+ },
+ {
+  "index": 17,
+  "timestamp": "00:42:19",
+  "category": "tutorial-step",
+  "title": "Creating and naming activities",
+  "filename": "017_004219_creating-and-naming-activities.jpg",
+  "t0": 2539,
+  "t1": 2659,
+  "stem": "017_004219_creating-and-naming-activities"
+ },
+ {
+  "index": 18,
+  "timestamp": "00:44:44",
+  "category": "tutorial-step",
+  "title": "Connecting activities with the Link tool",
+  "filename": "018_004444_connecting-activities-with-the-link-tool.jpg",
+  "t0": 2684,
+  "t1": 2804,
+  "stem": "018_004444_connecting-activities-with-the-link-tool"
+ },
+ {
+  "index": 19,
+  "timestamp": "00:46:48",
+  "category": "concept-intro",
+  "title": "State objects (milestones)",
+  "filename": "019_004648_state-objects-milestones.jpg",
+  "t0": 2808,
+  "t1": 2875,
+  "stem": "019_004648_state-objects-milestones"
+ },
+ {
+  "index": 20,
+  "timestamp": "00:47:57",
+  "category": "tip",
+  "title": "End is optional, cosmetic",
+  "filename": "020_004757_end-is-optional-cosmetic.jpg",
+  "t0": 2877,
+  "t1": 2908,
+  "stem": "020_004757_end-is-optional-cosmetic"
+ },
+ {
+  "index": 21,
+  "timestamp": "00:48:30",
+  "category": "concept-intro",
+  "title": "Fine vs. Termina processo",
+  "filename": "021_004830_fine-vs-termina-processo.jpg",
+  "t0": 2910,
+  "t1": 2975,
+  "stem": "021_004830_fine-vs-termina-processo"
+ },
+ {
+  "index": 22,
+  "timestamp": "00:49:37",
+  "category": "tutorial-step",
+  "title": "Sketching loop-back / rejection paths",
+  "filename": "022_004937_sketching-loop-back-rejection-paths.jpg",
+  "t0": 2977,
+  "t1": 3097,
+  "stem": "022_004937_sketching-loop-back-rejection-paths"
+ },
+ {
+  "index": 23,
+  "timestamp": "00:54:11",
+  "category": "tutorial-step",
+  "title": "Creating users and groups",
+  "filename": "023_005411_creating-users-and-groups.jpg",
+  "t0": 3251,
+  "t1": 3371,
+  "stem": "023_005411_creating-users-and-groups"
+ },
+ {
+  "index": 24,
+  "timestamp": "00:56:37",
+  "category": "tutorial-step",
+  "title": "Assigning a group as task executor",
+  "filename": "024_005637_assigning-a-group-as-task-executor.jpg",
+  "t0": 3397,
+  "t1": 3493,
+  "stem": "024_005637_assigning-a-group-as-task-executor"
+ },
+ {
+  "index": 25,
+  "timestamp": "00:58:15",
+  "category": "concept-intro",
+  "title": "\"Must be assigned before execution\" flag",
+  "filename": "025_005815_must-be-assigned-before-execution-flag.jpg",
+  "t0": 3495,
+  "t1": 3615,
+  "stem": "025_005815_must-be-assigned-before-execution-flag"
+ },
+ {
+  "index": 26,
+  "timestamp": "01:01:44",
+  "category": "tutorial-step",
+  "title": "Save process to file",
+  "filename": "026_010144_save-process-to-file.jpg",
+  "t0": 3704,
+  "t1": 3723,
+  "stem": "026_010144_save-process-to-file"
+ },
+ {
+  "index": 27,
+  "timestamp": "01:02:05",
+  "category": "tutorial-step",
+  "title": "Naming and publishing the model",
+  "filename": "027_010205_naming-and-publishing-the-model.jpg",
+  "t0": 3725,
+  "t1": 3845,
+  "stem": "027_010205_naming-and-publishing-the-model"
+ },
+ {
+  "index": 28,
+  "timestamp": "01:05:43",
+  "category": "demo-start",
+  "title": "Opening the variable warehouse",
+  "filename": "028_010543_opening-the-variable-warehouse.jpg",
+  "t0": 3943,
+  "t1": 4029,
+  "stem": "028_010543_opening-the-variable-warehouse"
+ },
+ {
+  "index": 29,
+  "timestamp": "01:07:11",
+  "category": "tutorial-step",
+  "title": "Creating the first variable",
+  "filename": "029_010711_creating-the-first-variable.jpg",
+  "t0": 4031,
+  "t1": 4128,
+  "stem": "029_010711_creating-the-first-variable"
+ },
+ {
+  "index": 30,
+  "timestamp": "01:08:50",
+  "category": "concept-intro",
+  "title": "Variable type catalogue",
+  "filename": "030_010850_variable-type-catalogue.jpg",
+  "t0": 4130,
+  "t1": 4250,
+  "stem": "030_010850_variable-type-catalogue"
+ },
+ {
+  "index": 31,
+  "timestamp": "01:20:35",
+  "category": "concept-intro",
+  "title": "\"Variabili da richiedere\" per task",
+  "filename": "031_012035_variabili-da-richiedere-per-task.jpg",
+  "t0": 4835,
+  "t1": 4955,
+  "stem": "031_012035_variabili-da-richiedere-per-task"
+ },
+ {
+  "index": 32,
+  "timestamp": "01:22:54",
+  "category": "tip",
+  "title": "Export/import variable layouts",
+  "filename": "032_012254_export-import-variable-layouts.jpg",
+  "t0": 4974,
+  "t1": 5094,
+  "stem": "032_012254_export-import-variable-layouts"
+ },
+ {
+  "index": 33,
+  "timestamp": "01:33:19",
+  "category": "concept-intro",
+  "title": "Label-type variable",
+  "filename": "033_013319_label-type-variable.jpg",
+  "t0": 5599,
+  "t1": 5719,
+  "stem": "033_013319_label-type-variable"
+ },
+ {
+  "index": 34,
+  "timestamp": "01:39:29",
+  "category": "definition",
+  "title": "Variable name is immutable",
+  "filename": "034_013929_variable-name-is-immutable.jpg",
+  "t0": 5969,
+  "t1": 6089,
+  "stem": "034_013929_variable-name-is-immutable"
+ },
+ {
+  "index": 35,
+  "timestamp": "01:43:00",
+  "category": "concept-intro",
+  "title": "\"Variabile senza salvataggio\"",
+  "filename": "035_014300_variabile-senza-salvataggio.jpg",
+  "t0": 6180,
+  "t1": 6300,
+  "stem": "035_014300_variabile-senza-salvataggio"
+ },
+ {
+  "index": 36,
+  "timestamp": "01:45:03",
+  "category": "concept-intro",
+  "title": "Tabella di origine (source table)",
+  "filename": "036_014503_tabella-di-origine-source-table.jpg",
+  "t0": 6303,
+  "t1": 6423,
+  "stem": "036_014503_tabella-di-origine-source-table"
+ },
+ {
+  "index": 37,
+  "timestamp": "01:48:32",
+  "category": "concept-intro",
+  "title": "Numeric field as a counter",
+  "filename": "037_014832_numeric-field-as-a-counter.jpg",
+  "t0": 6512,
+  "t1": 6632,
+  "stem": "037_014832_numeric-field-as-a-counter"
+ },
+ {
+  "index": 38,
+  "timestamp": "01:51:23",
+  "category": "concept-intro",
+  "title": "Autocomplete on string fields",
+  "filename": "038_015123_autocomplete-on-string-fields.jpg",
+  "t0": 6683,
+  "t1": 6776,
+  "stem": "038_015123_autocomplete-on-string-fields"
+ },
+ {
+  "index": 39,
+  "timestamp": "01:52:58",
+  "category": "concept-intro",
+  "title": "The formula editor (Visual Basic)",
+  "filename": "039_015258_the-formula-editor-visual-basic.jpg",
+  "t0": 6778,
+  "t1": 6898,
+  "stem": "039_015258_the-formula-editor-visual-basic"
+ },
+ {
+  "index": 40,
+  "timestamp": "01:55:38",
+  "category": "concept-intro",
+  "title": "Formula di validazione",
+  "filename": "040_015538_formula-di-validazione.jpg",
+  "t0": 6938,
+  "t1": 7058,
+  "stem": "040_015538_formula-di-validazione"
+ },
+ {
+  "index": 41,
+  "timestamp": "02:00:00",
+  "category": "concept-intro",
+  "title": "Formula di visibilità",
+  "filename": "041_020000_formula-di-visibilit.jpg",
+  "t0": 7200,
+  "t1": 7291,
+  "stem": "041_020000_formula-di-visibilit"
+ },
+ {
+  "index": 42,
+  "timestamp": "02:01:33",
+  "category": "concept-intro",
+  "title": "Formula per default vs. Valore di default",
+  "filename": "042_020133_formula-per-default-vs-valore-di-default.jpg",
+  "t0": 7293,
+  "t1": 7413,
+  "stem": "042_020133_formula-per-default-vs-valore-di-default"
+ },
+ {
+  "index": 43,
+  "timestamp": "02:06:07",
+  "category": "example",
+  "title": "Calculated total via formula",
+  "filename": "043_020607_calculated-total-via-formula.jpg",
+  "t0": 7567,
+  "t1": 7687,
+  "stem": "043_020607_calculated-total-via-formula"
+ },
+ {
+  "index": 44,
+  "timestamp": "02:13:22",
+  "category": "concept-intro",
+  "title": "Variabili da impostare (button actions)",
+  "filename": "044_021322_variabili-da-impostare-button-actions.jpg",
+  "t0": 8002,
+  "t1": 8122,
+  "stem": "044_021322_variabili-da-impostare-button-actions"
+ },
+ {
+  "index": 45,
+  "timestamp": "02:21:16",
+  "category": "tip",
+  "title": "Diagram color coding",
+  "filename": "045_022116_diagram-color-coding.jpg",
+  "t0": 8476,
+  "t1": 8596,
+  "stem": "045_022116_diagram-color-coding"
+ },
+ {
+  "index": 46,
+  "timestamp": "02:29:14",
+  "category": "concept-intro",
+  "title": "Conditions drive approval branching",
+  "filename": "046_022914_conditions-drive-approval-branching.jpg",
+  "t0": 8954,
+  "t1": 9074,
+  "stem": "046_022914_conditions-drive-approval-branching"
+ },
+ {
+  "index": 47,
+  "timestamp": "02:33:44",
+  "category": "tutorial-step",
+  "title": "Condition on a transition arrow",
+  "filename": "047_023344_condition-on-a-transition-arrow.jpg",
+  "t0": 9224,
+  "t1": 9327,
+  "stem": "047_023344_condition-on-a-transition-arrow"
+ },
+ {
+  "index": 48,
+  "timestamp": "02:35:29",
+  "category": "concept-intro",
+  "title": "Exclusive Gateway object",
+  "filename": "048_023529_exclusive-gateway-object.jpg",
+  "t0": 9329,
+  "t1": 9449,
+  "stem": "048_023529_exclusive-gateway-object"
+ },
+ {
+  "index": 49,
+  "timestamp": "02:42:35",
+  "category": "tip",
+  "title": "Dynamic assignment to a process-variable user",
+  "filename": "049_024235_dynamic-assignment-to-a-process-variable-user.jpg",
+  "t0": 9755,
+  "t1": 9805,
+  "stem": "049_024235_dynamic-assignment-to-a-process-variable-user"
+ },
+ {
+  "index": 50,
+  "timestamp": "02:43:27",
+  "category": "concept-intro",
+  "title": "Parallel gateways (fork/join)",
+  "filename": "050_024327_parallel-gateways-fork-join.jpg",
+  "t0": 9807,
+  "t1": 9927,
+  "stem": "050_024327_parallel-gateways-fork-join"
+ },
+ {
+  "index": 51,
+  "timestamp": "02:45:43",
+  "category": "concept-intro",
+  "title": "Inclusive gateway",
+  "filename": "051_024543_inclusive-gateway.jpg",
+  "t0": 9943,
+  "t1": 10063,
+  "stem": "051_024543_inclusive-gateway"
+ },
+ {
+  "index": 52,
+  "timestamp": "02:48:11",
+  "category": "tutorial-step",
+  "title": "Process name & description formulas",
+  "filename": "052_024811_process-name-description-formulas.jpg",
+  "t0": 10091,
+  "t1": 10211,
+  "stem": "052_024811_process-name-description-formulas"
+ },
+ {
+  "index": 53,
+  "timestamp": "02:55:52",
+  "category": "concept-intro",
+  "title": "Three activity states",
+  "filename": "053_025552_three-activity-states.jpg",
+  "t0": 10552,
+  "t1": 10672,
+  "stem": "053_025552_three-activity-states"
+ },
+ {
+  "index": 54,
+  "timestamp": "02:58:06",
+  "category": "tutorial-step",
+  "title": "Customizing the To-Do List grid",
+  "filename": "054_025806_customizing-the-to-do-list-grid.jpg",
+  "t0": 10686,
+  "t1": 10806,
+  "stem": "054_025806_customizing-the-to-do-list-grid"
+ },
+ {
+  "index": 55,
+  "timestamp": "03:03:22",
+  "category": "demo-start",
+  "title": "Process detail / inspection screen",
+  "filename": "055_030322_process-detail-inspection-screen.jpg",
+  "t0": 11002,
+  "t1": 11122,
+  "stem": "055_030322_process-detail-inspection-screen"
+ },
+ {
+  "index": 56,
+  "timestamp": "03:06:14",
+  "category": "concept-intro",
+  "title": "Storico: full audit log",
+  "filename": "056_030614_storico-full-audit-log.jpg",
+  "t0": 11174,
+  "t1": 11294,
+  "stem": "056_030614_storico-full-audit-log"
+ },
+ {
+  "index": 57,
+  "timestamp": "03:08:53",
+  "category": "tutorial-step",
+  "title": "Custom search views",
+  "filename": "057_030853_custom-search-views.jpg",
+  "t0": 11333,
+  "t1": 11453,
+  "stem": "057_030853_custom-search-views"
+ },
+ {
+  "index": 58,
+  "timestamp": "03:12:45",
+  "category": "demo-start",
+  "title": "Web client walkthrough",
+  "filename": "058_031245_web-client-walkthrough.jpg",
+  "t0": 11565,
+  "t1": 11685,
+  "stem": "058_031245_web-client-walkthrough"
+ },
+ {
+  "index": 59,
+  "timestamp": "03:20:17",
+  "category": "concept-intro",
+  "title": "Custom menu entries",
+  "filename": "059_032017_custom-menu-entries.jpg",
+  "t0": 12017,
+  "t1": 12137,
+  "stem": "059_032017_custom-menu-entries"
+ },
+ {
+  "index": 60,
+  "timestamp": "03:25:44",
+  "category": "tip",
+  "title": "Admin force-edit outside the process flow",
+  "filename": "060_032544_admin-force-edit-outside-the-process-flow.jpg",
+  "t0": 12344,
+  "t1": 12464,
+  "stem": "060_032544_admin-force-edit-outside-the-process-flow"
+ },
+ {
+  "index": 61,
+  "timestamp": "03:32:36",
+  "category": "concept-intro",
+  "title": "Group (master-detail) variables",
+  "filename": "061_033236_group-master-detail-variables.jpg",
+  "t0": 12756,
+  "t1": 12876,
+  "stem": "061_033236_group-master-detail-variables"
+ },
+ {
+  "index": 62,
+  "timestamp": "03:42:15",
+  "category": "tip",
+  "title": "Admin-only force process advancement",
+  "filename": "062_034215_admin-only-force-process-advancement.jpg",
+  "t0": 13335,
+  "t1": 13455,
+  "stem": "062_034215_admin-only-force-process-advancement"
+ },
+ {
+  "index": 63,
+  "timestamp": "03:48:41",
+  "category": "concept-intro",
+  "title": "Detail pop-up form for a grid row",
+  "filename": "063_034841_detail-pop-up-form-for-a-grid-row.jpg",
+  "t0": 13721,
+  "t1": 13841,
+  "stem": "063_034841_detail-pop-up-form-for-a-grid-row"
+ },
+ {
+  "index": 64,
+  "timestamp": "03:53:52",
+  "category": "concept-intro",
+  "title": "Source table lookup: local vs. external",
+  "filename": "064_035352_source-table-lookup-local-vs-external.jpg",
+  "t0": 14032,
+  "t1": 14152,
+  "stem": "064_035352_source-table-lookup-local-vs-external"
+ },
+ {
+  "index": 65,
+  "timestamp": "04:01:10",
+  "category": "concept-intro",
+  "title": "Preview: Connectors (e.g. SAM)",
+  "filename": "065_040110_preview-connectors-e-g-sam.jpg",
+  "t0": 14470,
+  "t1": 14542,
+  "stem": "065_040110_preview-connectors-e-g-sam"
+ },
+ {
+  "index": 66,
+  "timestamp": "04:02:24",
+  "category": "concept-intro",
+  "title": "Versioning: running instances pin to their version",
+  "filename": "066_040224_versioning-running-instances-pin-to-their-version.jpg",
+  "t0": 14544,
+  "t1": 14664,
+  "stem": "066_040224_versioning-running-instances-pin-to-their-version"
+ },
+ {
+  "index": 67,
+  "timestamp": "04:07:16",
+  "category": "concept-intro",
+  "title": "Attachments overview",
+  "filename": "067_040716_attachments-overview.jpg",
+  "t0": 14836,
+  "t1": 14956,
+  "stem": "067_040716_attachments-overview"
+ },
+ {
+  "index": 68,
+  "timestamp": "04:09:24",
+  "category": "concept-intro",
+  "title": "Allegati da richiedere",
+  "filename": "068_040924_allegati-da-richiedere.jpg",
+  "t0": 14964,
+  "t1": 15084,
+  "stem": "068_040924_allegati-da-richiedere"
+ },
+ {
+  "index": 69,
+  "timestamp": "04:13:00",
+  "category": "concept-intro",
+  "title": "Storage roots: Database vs. File System",
+  "filename": "069_041300_storage-roots-database-vs-file-system.jpg",
+  "t0": 15180,
+  "t1": 15300,
+  "stem": "069_041300_storage-roots-database-vs-file-system"
+ },
+ {
+  "index": 70,
+  "timestamp": "04:22:44",
+  "category": "tutorial-step",
+  "title": "Mandatory attachment via a button",
+  "filename": "070_042244_mandatory-attachment-via-a-button.jpg",
+  "t0": 15764,
+  "t1": 15884,
+  "stem": "070_042244_mandatory-attachment-via-a-button"
+ },
+ {
+  "index": 71,
+  "timestamp": "04:38:56",
+  "category": "concept-intro",
+  "title": "Sub-processes",
+  "filename": "071_043856_sub-processes.jpg",
+  "t0": 16736,
+  "t1": 16856,
+  "stem": "071_043856_sub-processes"
+ },
+ {
+  "index": 72,
+  "timestamp": "04:41:46",
+  "category": "concept-intro",
+  "title": "Recurring sub-process",
+  "filename": "072_044146_recurring-sub-process.jpg",
+  "t0": 16906,
+  "t1": 17026,
+  "stem": "072_044146_recurring-sub-process"
+ },
+ {
+  "index": 73,
+  "timestamp": "04:54:39",
+  "category": "concept-intro",
+  "title": "Lookup from local group data",
+  "filename": "073_045439_lookup-from-local-group-data.jpg",
+  "t0": 17679,
+  "t1": 17799,
+  "stem": "073_045439_lookup-from-local-group-data"
+ },
+ {
+  "index": 74,
+  "timestamp": "05:05:25",
+  "category": "concept-intro",
+  "title": "Permission baseline: citation is enough",
+  "filename": "074_050525_permission-baseline-citation-is-enough.jpg",
+  "t0": 18325,
+  "t1": 18423,
+  "stem": "074_050525_permission-baseline-citation-is-enough"
+ },
+ {
+  "index": 75,
+  "timestamp": "05:07:05",
+  "category": "concept-intro",
+  "title": "Domain-linked users & single sign-on",
+  "filename": "075_050705_domain-linked-users-single-sign-on.jpg",
+  "t0": 18425,
+  "t1": 18545,
+  "stem": "075_050705_domain-linked-users-single-sign-on"
+ },
+ {
+  "index": 76,
+  "timestamp": "05:12:06",
+  "category": "concept-intro",
+  "title": "Permission categories overview",
+  "filename": "076_051206_permission-categories-overview.jpg",
+  "t0": 18726,
+  "t1": 18846,
+  "stem": "076_051206_permission-categories-overview"
+ },
+ {
+  "index": 77,
+  "timestamp": "05:26:05",
+  "category": "tip",
+  "title": "Enable vs. Deny override semantics",
+  "filename": "077_052605_enable-vs-deny-override-semantics.jpg",
+  "t0": 19565,
+  "t1": 19685,
+  "stem": "077_052605_enable-vs-deny-override-semantics"
+ }
+]

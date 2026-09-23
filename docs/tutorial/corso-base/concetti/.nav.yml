@@ -1,0 +1,11 @@
+nav:
+  - index.md
+  - "Architettura": architettura.md
+  - "Il Designer e gli oggetti di processo": designer-oggetti.md
+  - "Utenti e assegnazione attività": utenti-assegnazione-attivita.md
+  - "Le variabili di processo (il magazzino)": variabili.md
+  - "Pubblicazione e versioni": pubblicazione-versioni.md
+  - "Esecuzione e monitoraggio": esecuzione-monitoraggio.md
+  - "Allegati": allegati.md
+  - "Sotto-processi": sotto-processi.md
+  - "Permessi": permessi.md

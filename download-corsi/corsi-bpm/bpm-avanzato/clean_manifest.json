@@ -1,0 +1,822 @@
+[
+ {
+  "index": 1,
+  "timestamp": "00:15:53",
+  "category": "concept-intro",
+  "title": "Data grid variable type introduced",
+  "filename": "001_001553_data-grid-variable-type-introduced.jpg",
+  "t0": 953,
+  "t1": 1073,
+  "stem": "001_001553_data-grid-variable-type-introduced"
+ },
+ {
+  "index": 2,
+  "timestamp": "00:18:07",
+  "category": "demo-start",
+  "title": "Linking a data grid to a table",
+  "filename": "002_001807_linking-a-data-grid-to-a-table.jpg",
+  "t0": 1087,
+  "t1": 1207,
+  "stem": "002_001807_linking-a-data-grid-to-a-table"
+ },
+ {
+  "index": 3,
+  "timestamp": "00:27:06",
+  "category": "tutorial-step",
+  "title": "Configure a per-task filter on a group variable",
+  "filename": "003_002706_configure-a-per-task-filter-on-a-group-variable.jpg",
+  "t0": 1626,
+  "t1": 1746,
+  "stem": "003_002706_configure-a-per-task-filter-on-a-group-variable"
+ },
+ {
+  "index": 4,
+  "timestamp": "00:30:43",
+  "category": "tip",
+  "title": "Helper variable workaround for debugging formulas",
+  "filename": "004_003043_helper-variable-workaround-for-debugging-formulas.jpg",
+  "t0": 1843,
+  "t1": 1963,
+  "stem": "004_003043_helper-variable-workaround-for-debugging-formulas"
+ },
+ {
+  "index": 5,
+  "timestamp": "00:34:15",
+  "category": "tutorial-step",
+  "title": "VB-script loop over group rows (worked example)",
+  "filename": "005_003415_vb-script-loop-over-group-rows-worked-example.jpg",
+  "t0": 2055,
+  "t1": 2175,
+  "stem": "005_003415_vb-script-loop-over-group-rows-worked-example"
+ },
+ {
+  "index": 6,
+  "timestamp": "00:39:44",
+  "category": "definition",
+  "title": "Global validation formula vs field-level validation",
+  "filename": "006_003944_global-validation-formula-vs-field-level-validatio.jpg",
+  "t0": 2384,
+  "t1": 2504,
+  "stem": "006_003944_global-validation-formula-vs-field-level-validatio"
+ },
+ {
+  "index": 7,
+  "timestamp": "00:43:44",
+  "category": "definition",
+  "title": "Legacy sync bar object (\"sbarra di sincronizzazione\")",
+  "filename": "007_004344_legacy-sync-bar-object-sbarra-di-sincronizzazione.jpg",
+  "t0": 2624,
+  "t1": 2732,
+  "stem": "007_004344_legacy-sync-bar-object-sbarra-di-sincronizzazione"
+ },
+ {
+  "index": 8,
+  "timestamp": "00:45:34",
+  "category": "tip",
+  "title": "ALL vs ALL PLANNED gotcha on sync bars",
+  "filename": "008_004534_all-vs-all-planned-gotcha-on-sync-bars.jpg",
+  "t0": 2734,
+  "t1": 2818,
+  "stem": "008_004534_all-vs-all-planned-gotcha-on-sync-bars"
+ },
+ {
+  "index": 9,
+  "timestamp": "00:47:00",
+  "category": "definition",
+  "title": "Three modern gateway types: exclusive, parallel, inclusive",
+  "filename": "009_004700_three-modern-gateway-types-exclusive-parallel-incl.jpg",
+  "t0": 2820,
+  "t1": 2940,
+  "stem": "009_004700_three-modern-gateway-types-exclusive-parallel-incl"
+ },
+ {
+  "index": 10,
+  "timestamp": "00:52:39",
+  "category": "concept-intro",
+  "title": "Purely graphical objects: text box, image, page setup",
+  "filename": "010_005239_purely-graphical-objects-text-box-image-page-setup.jpg",
+  "t0": 3159,
+  "t1": 3279,
+  "stem": "010_005239_purely-graphical-objects-text-box-image-page-setup"
+ },
+ {
+  "index": 11,
+  "timestamp": "00:58:20",
+  "category": "definition",
+  "title": "Marker object for multi-page process navigation",
+  "filename": "011_005820_marker-object-for-multi-page-process-navigation.jpg",
+  "t0": 3500,
+  "t1": 3608,
+  "stem": "011_005820_marker-object-for-multi-page-process-navigation"
+ },
+ {
+  "index": 12,
+  "timestamp": "01:00:10",
+  "category": "concept-intro",
+  "title": "Swim lanes introduced",
+  "filename": "012_010010_swim-lanes-introduced.jpg",
+  "t0": 3610,
+  "t1": 3730,
+  "stem": "012_010010_swim-lanes-introduced"
+ },
+ {
+  "index": 13,
+  "timestamp": "01:06:00",
+  "category": "definition",
+  "title": "Swim lane inherits \"utenti responsabili\" to its tasks",
+  "filename": "013_010600_swim-lane-inherits-utenti-responsabili-to-its-task.jpg",
+  "t0": 3960,
+  "t1": 4046,
+  "stem": "013_010600_swim-lane-inherits-utenti-responsabili-to-its-task"
+ },
+ {
+  "index": 14,
+  "timestamp": "01:07:28",
+  "category": "example",
+  "title": "Real project: zig-zag swim-lane process",
+  "filename": "014_010728_real-project-zig-zag-swim-lane-process.jpg",
+  "t0": 4048,
+  "t1": 4168,
+  "stem": "014_010728_real-project-zig-zag-swim-lane-process"
+ },
+ {
+  "index": 15,
+  "timestamp": "01:15:37",
+  "category": "concept-intro",
+  "title": "Multiple start events in one process",
+  "filename": "015_011537_multiple-start-events-in-one-process.jpg",
+  "t0": 4537,
+  "t1": 4558,
+  "stem": "015_011537_multiple-start-events-in-one-process"
+ },
+ {
+  "index": 16,
+  "timestamp": "01:16:00",
+  "category": "demo-start",
+  "title": "Building two start events: normal vs. security",
+  "filename": "016_011600_building-two-start-events-normal-vs-security.jpg",
+  "t0": 4560,
+  "t1": 4680,
+  "stem": "016_011600_building-two-start-events-normal-vs-security"
+ },
+ {
+  "index": 17,
+  "timestamp": "01:22:05",
+  "category": "definition",
+  "title": "\"Start a tempo\" — scheduled/timed start event",
+  "filename": "017_012205_start-a-tempo-scheduled-timed-start-event.jpg",
+  "t0": 4925,
+  "t1": 5022,
+  "stem": "017_012205_start-a-tempo-scheduled-timed-start-event"
+ },
+ {
+  "index": 18,
+  "timestamp": "01:23:44",
+  "category": "definition",
+  "title": "\"Attesa\" (wait) event",
+  "filename": "018_012344_attesa-wait-event.jpg",
+  "t0": 5024,
+  "t1": 5144,
+  "stem": "018_012344_attesa-wait-event"
+ },
+ {
+  "index": 19,
+  "timestamp": "01:26:00",
+  "category": "definition",
+  "title": "\"Fine\" vs \"Termina Processo\" distinction",
+  "filename": "019_012600_fine-vs-termina-processo-distinction.jpg",
+  "t0": 5160,
+  "t1": 5280,
+  "stem": "019_012600_fine-vs-termina-processo-distinction"
+ },
+ {
+  "index": 20,
+  "timestamp": "01:28:10",
+  "category": "definition",
+  "title": "Timeout/escalation boundary event",
+  "filename": "020_012810_timeout-escalation-boundary-event.jpg",
+  "t0": 5290,
+  "t1": 5410,
+  "stem": "020_012810_timeout-escalation-boundary-event"
+ },
+ {
+  "index": 21,
+  "timestamp": "01:30:34",
+  "category": "concept-intro",
+  "title": "\"Operations\" — automatic system activities",
+  "filename": "021_013034_operations-automatic-system-activities.jpg",
+  "t0": 5434,
+  "t1": 5554,
+  "stem": "021_013034_operations-automatic-system-activities"
+ },
+ {
+  "index": 22,
+  "timestamp": "01:34:06",
+  "category": "tutorial-step",
+  "title": "Building an email notification template",
+  "filename": "022_013406_building-an-email-notification-template.jpg",
+  "t0": 5646,
+  "t1": 5766,
+  "stem": "022_013406_building-an-email-notification-template"
+ },
+ {
+  "index": 23,
+  "timestamp": "01:41:00",
+  "category": "definition",
+  "title": "\"Attivazione\" vs \"inizio\" (activation vs start)",
+  "filename": "023_014100_attivazione-vs-inizio-activation-vs-start.jpg",
+  "t0": 6060,
+  "t1": 6180,
+  "stem": "023_014100_attivazione-vs-inizio-activation-vs-start"
+ },
+ {
+  "index": 24,
+  "timestamp": "01:46:14",
+  "category": "tip",
+  "title": "\"Link web al task\" generic field",
+  "filename": "024_014614_link-web-al-task-generic-field.jpg",
+  "t0": 6374,
+  "t1": 6494,
+  "stem": "024_014614_link-web-al-task-generic-field"
+ },
+ {
+  "index": 25,
+  "timestamp": "01:50:03",
+  "category": "concept-intro",
+  "title": "\"Nuovo processo collegato\" (linked/child process) operation",
+  "filename": "025_015003_nuovo-processo-collegato-linked-child-process-oper.jpg",
+  "t0": 6603,
+  "t1": 6723,
+  "stem": "025_015003_nuovo-processo-collegato-linked-child-process-oper"
+ },
+ {
+  "index": 26,
+  "timestamp": "01:52:41",
+  "category": "demo-start",
+  "title": "Building a linked process: \"gestione collaudo\"",
+  "filename": "026_015241_building-a-linked-process-gestione-collaudo.jpg",
+  "t0": 6761,
+  "t1": 6881,
+  "stem": "026_015241_building-a-linked-process-gestione-collaudo"
+ },
+ {
+  "index": 27,
+  "timestamp": "01:58:47",
+  "category": "tutorial-step",
+  "title": "Formula-driven variable mapping on launch",
+  "filename": "027_015847_formula-driven-variable-mapping-on-launch.jpg",
+  "t0": 7127,
+  "t1": 7198,
+  "stem": "027_015847_formula-driven-variable-mapping-on-launch"
+ },
+ {
+  "index": 28,
+  "timestamp": "02:00:00",
+  "category": "definition",
+  "title": "\"Ritorno al processo chiamante\" — required companion object",
+  "filename": "028_020000_ritorno-al-processo-chiamante-required-companion-o.jpg",
+  "t0": 7200,
+  "t1": 7320,
+  "stem": "028_020000_ritorno-al-processo-chiamante-required-companion-o"
+ },
+ {
+  "index": 29,
+  "timestamp": "02:10:20",
+  "category": "definition",
+  "title": "Set-variable/formula operation (\"inserire un pezzo di scritto\")",
+  "filename": "029_021020_set-variable-formula-operation-inserire-un-pezzo-d.jpg",
+  "t0": 7820,
+  "t1": 7877,
+  "stem": "029_021020_set-variable-formula-operation-inserire-un-pezzo-d"
+ },
+ {
+  "index": 30,
+  "timestamp": "02:11:19",
+  "category": "example",
+  "title": "Clearing a stale variable on a rework loop",
+  "filename": "030_021119_clearing-a-stale-variable-on-a-rework-loop.jpg",
+  "t0": 7879,
+  "t1": 7999,
+  "stem": "030_021119_clearing-a-stale-variable-on-a-rework-loop"
+ },
+ {
+  "index": 31,
+  "timestamp": "02:15:17",
+  "category": "example",
+  "title": "Auto-assign an approver by amount threshold",
+  "filename": "031_021517_auto-assign-an-approver-by-amount-threshold.jpg",
+  "t0": 8117,
+  "t1": 8237,
+  "stem": "031_021517_auto-assign-an-approver-by-amount-threshold"
+ },
+ {
+  "index": 32,
+  "timestamp": "02:19:05",
+  "category": "concept-intro",
+  "title": "Decision table object introduced",
+  "filename": "032_021905_decision-table-object-introduced.jpg",
+  "t0": 8345,
+  "t1": 8437,
+  "stem": "032_021905_decision-table-object-introduced"
+ },
+ {
+  "index": 33,
+  "timestamp": "02:20:39",
+  "category": "tutorial-step",
+  "title": "Decision table demo: amount → approver",
+  "filename": "033_022039_decision-table-demo-amount-approver.jpg",
+  "t0": 8439,
+  "t1": 8559,
+  "stem": "033_022039_decision-table-demo-amount-approver"
+ },
+ {
+  "index": 34,
+  "timestamp": "02:27:47",
+  "category": "tip",
+  "title": "Convert between decision table and formula code",
+  "filename": "034_022747_convert-between-decision-table-and-formula-code.jpg",
+  "t0": 8867,
+  "t1": 8946,
+  "stem": "034_022747_convert-between-decision-table-and-formula-code"
+ },
+ {
+  "index": 35,
+  "timestamp": "02:29:08",
+  "category": "concept-intro",
+  "title": "SQL operation object introduced",
+  "filename": "035_022908_sql-operation-object-introduced.jpg",
+  "t0": 8948,
+  "t1": 9016,
+  "stem": "035_022908_sql-operation-object-introduced"
+ },
+ {
+  "index": 36,
+  "timestamp": "02:30:18",
+  "category": "tutorial-step",
+  "title": "SQL update/query demo with in/out parameters",
+  "filename": "036_023018_sql-update-query-demo-with-in-out-parameters.jpg",
+  "t0": 9018,
+  "t1": 9138,
+  "stem": "036_023018_sql-update-query-demo-with-in-out-parameters"
+ },
+ {
+  "index": 37,
+  "timestamp": "02:34:16",
+  "category": "definition",
+  "title": "External connection strings configuration",
+  "filename": "037_023416_external-connection-strings-configuration.jpg",
+  "t0": 9256,
+  "t1": 9308,
+  "stem": "037_023416_external-connection-strings-configuration"
+ },
+ {
+  "index": 38,
+  "timestamp": "02:35:10",
+  "category": "definition",
+  "title": "\"Aggiorna un altro processo\" operation",
+  "filename": "038_023510_aggiorna-un-altro-processo-operation.jpg",
+  "t0": 9310,
+  "t1": 9430,
+  "stem": "038_023510_aggiorna-un-altro-processo-operation"
+ },
+ {
+  "index": 39,
+  "timestamp": "02:41:19",
+  "category": "concept-intro",
+  "title": "\"Get Data\" operation introduced",
+  "filename": "039_024119_get-data-operation-introduced.jpg",
+  "t0": 9679,
+  "t1": 9799,
+  "stem": "039_024119_get-data-operation-introduced"
+ },
+ {
+  "index": 40,
+  "timestamp": "02:46:02",
+  "category": "concept-intro",
+  "title": "Custom local tables (\"tabelle P_\") introduced",
+  "filename": "040_024602_custom-local-tables-tabelle-p-introduced.jpg",
+  "t0": 9962,
+  "t1": 10062,
+  "stem": "040_024602_custom-local-tables-tabelle-p-introduced"
+ },
+ {
+  "index": 41,
+  "timestamp": "02:47:44",
+  "category": "tutorial-step",
+  "title": "Demo: creating a custom table \"aree geografiche\"",
+  "filename": "041_024744_demo-creating-a-custom-table-aree-geografiche.jpg",
+  "t0": 10064,
+  "t1": 10184,
+  "stem": "041_024744_demo-creating-a-custom-table-aree-geografiche"
+ },
+ {
+  "index": 42,
+  "timestamp": "02:56:08",
+  "category": "tip",
+  "title": "Value list vs. custom table — when to use which",
+  "filename": "042_025608_value-list-vs-custom-table-when-to-use-which.jpg",
+  "t0": 10568,
+  "t1": 10655,
+  "stem": "042_025608_value-list-vs-custom-table-when-to-use-which"
+ },
+ {
+  "index": 43,
+  "timestamp": "02:57:37",
+  "category": "concept-intro",
+  "title": "Reports & dashboards — two ways to extract data",
+  "filename": "043_025737_reports-dashboards-two-ways-to-extract-data.jpg",
+  "t0": 10657,
+  "t1": 10712,
+  "stem": "043_025737_reports-dashboards-two-ways-to-extract-data"
+ },
+ {
+  "index": 44,
+  "timestamp": "02:58:34",
+  "category": "example",
+  "title": "Real case study: \"scheda commessa\" (work-order form)",
+  "filename": "044_025834_real-case-study-scheda-commessa-work-order-form.jpg",
+  "t0": 10714,
+  "t1": 10834,
+  "stem": "044_025834_real-case-study-scheda-commessa-work-order-form"
+ },
+ {
+  "index": 45,
+  "timestamp": "03:02:27",
+  "category": "definition",
+  "title": "Report designer — embedded 3rd-party tool",
+  "filename": "045_030227_report-designer-embedded-3rd-party-tool.jpg",
+  "t0": 10947,
+  "t1": 11067,
+  "stem": "045_030227_report-designer-embedded-3rd-party-tool"
+ },
+ {
+  "index": 46,
+  "timestamp": "03:08:03",
+  "category": "concept-intro",
+  "title": "SAM connector — integration topic introduced",
+  "filename": "046_030803_sam-connector-integration-topic-introduced.jpg",
+  "t0": 11283,
+  "t1": 11403,
+  "stem": "046_030803_sam-connector-integration-topic-introduced"
+ },
+ {
+  "index": 47,
+  "timestamp": "03:10:52",
+  "category": "concept-intro",
+  "title": "\"Connettore attivo\" (active connector) operation",
+  "filename": "047_031052_connettore-attivo-active-connector-operation.jpg",
+  "t0": 11452,
+  "t1": 11572,
+  "stem": "047_031052_connettore-attivo-active-connector-operation"
+ },
+ {
+  "index": 48,
+  "timestamp": "03:13:24",
+  "category": "tutorial-step",
+  "title": "XML template ↔ variable mapping demo",
+  "filename": "048_031324_xml-template-variable-mapping-demo.jpg",
+  "t0": 11604,
+  "t1": 11724,
+  "stem": "048_031324_xml-template-variable-mapping-demo"
+ },
+ {
+  "index": 49,
+  "timestamp": "03:18:49",
+  "category": "definition",
+  "title": "Detail/row parameters — mapping a group to XML rows",
+  "filename": "049_031849_detail-row-parameters-mapping-a-group-to-xml-rows.jpg",
+  "t0": 11929,
+  "t1": 12049,
+  "stem": "049_031849_detail-row-parameters-mapping-a-group-to-xml-rows"
+ },
+ {
+  "index": 50,
+  "timestamp": "03:25:34",
+  "category": "definition",
+  "title": "Connector architecture: definition + DLL",
+  "filename": "050_032534_connector-architecture-definition-dll.jpg",
+  "t0": 12334,
+  "t1": 12454,
+  "stem": "050_032534_connector-architecture-definition-dll"
+ },
+ {
+  "index": 51,
+  "timestamp": "03:34:22",
+  "category": "tip",
+  "title": "Active connector requires SAM's Web Import installed",
+  "filename": "051_033422_active-connector-requires-sam-s-web-import-install.jpg",
+  "t0": 12862,
+  "t1": 12982,
+  "stem": "051_033422_active-connector-requires-sam-s-web-import-install"
+ },
+ {
+  "index": 52,
+  "timestamp": "03:39:01",
+  "category": "concept-intro",
+  "title": "SAM to-do list shows BPM events",
+  "filename": "052_033901_sam-to-do-list-shows-bpm-events.jpg",
+  "t0": 13141,
+  "t1": 13261,
+  "stem": "052_033901_sam-to-do-list-shows-bpm-events"
+ },
+ {
+  "index": 53,
+  "timestamp": "03:42:38",
+  "category": "example",
+  "title": "Bidirectional sync: firma1/firma2 mirrored in both systems",
+  "filename": "053_034238_bidirectional-sync-firma1-firma2-mirrored-in-both-.jpg",
+  "t0": 13358,
+  "t1": 13478,
+  "stem": "053_034238_bidirectional-sync-firma1-firma2-mirrored-in-both-"
+ },
+ {
+  "index": 54,
+  "timestamp": "03:44:51",
+  "category": "tutorial-step",
+  "title": "User alias mapping between BPM and SAM",
+  "filename": "054_034451_user-alias-mapping-between-bpm-and-sam.jpg",
+  "t0": 13491,
+  "t1": 13611,
+  "stem": "054_034451_user-alias-mapping-between-bpm-and-sam"
+ },
+ {
+  "index": 55,
+  "timestamp": "03:48:22",
+  "category": "concept-intro",
+  "title": "Piloting BPM from SAM — topic introduced",
+  "filename": "055_034822_piloting-bpm-from-sam-topic-introduced.jpg",
+  "t0": 13702,
+  "t1": 13822,
+  "stem": "055_034822_piloting-bpm-from-sam-topic-introduced"
+ },
+ {
+  "index": 56,
+  "timestamp": "03:50:25",
+  "category": "definition",
+  "title": "Standard endpoints: create process, exec task, etc.",
+  "filename": "056_035025_standard-endpoints-create-process-exec-task-etc.jpg",
+  "t0": 13825,
+  "t1": 13924,
+  "stem": "056_035025_standard-endpoints-create-process-exec-task-etc"
+ },
+ {
+  "index": 57,
+  "timestamp": "03:52:06",
+  "category": "demo-start",
+  "title": "Postman demo: create a new process via web service",
+  "filename": "057_035206_postman-demo-create-a-new-process-via-web-service.jpg",
+  "t0": 13926,
+  "t1": 14046,
+  "stem": "057_035206_postman-demo-create-a-new-process-via-web-service"
+ },
+ {
+  "index": 58,
+  "timestamp": "03:56:01",
+  "category": "definition",
+  "title": "Stored-procedure wrapper mechanism",
+  "filename": "058_035601_stored-procedure-wrapper-mechanism.jpg",
+  "t0": 14161,
+  "t1": 14224,
+  "stem": "058_035601_stored-procedure-wrapper-mechanism"
+ },
+ {
+  "index": 59,
+  "timestamp": "03:57:06",
+  "category": "definition",
+  "title": "Triggers — the only way to catch SAM-side events",
+  "filename": "059_035706_triggers-the-only-way-to-catch-sam-side-events.jpg",
+  "t0": 14226,
+  "t1": 14346,
+  "stem": "059_035706_triggers-the-only-way-to-catch-sam-side-events"
+ },
+ {
+  "index": 60,
+  "timestamp": "03:59:34",
+  "category": "tip",
+  "title": "Trigger/stored-procedure calls are fire-and-forget (async)",
+  "filename": "060_035934_trigger-stored-procedure-calls-are-fire-and-forget.jpg",
+  "t0": 14374,
+  "t1": 14494,
+  "stem": "060_035934_trigger-stored-procedure-calls-are-fire-and-forget"
+ },
+ {
+  "index": 61,
+  "timestamp": "04:02:34",
+  "category": "tutorial-step",
+  "title": "\"External ID\" convention for trigger-started processes",
+  "filename": "061_040234_external-id-convention-for-trigger-started-process.jpg",
+  "t0": 14554,
+  "t1": 14674,
+  "stem": "061_040234_external-id-convention-for-trigger-started-process"
+ },
+ {
+  "index": 62,
+  "timestamp": "04:08:46",
+  "category": "tip",
+  "title": "Recap: four aspects of SAM↔BPM integration",
+  "filename": "062_040846_recap-four-aspects-of-sam-bpm-integration.jpg",
+  "t0": 14926,
+  "t1": 15046,
+  "stem": "062_040846_recap-four-aspects-of-sam-bpm-integration"
+ },
+ {
+  "index": 63,
+  "timestamp": "04:13:04",
+  "category": "example",
+  "title": "Anecdote: a trigger event too \"fuzzy\" to automate reliably",
+  "filename": "063_041304_anecdote-a-trigger-event-too-fuzzy-to-automate-rel.jpg",
+  "t0": 15184,
+  "t1": 15304,
+  "stem": "063_041304_anecdote-a-trigger-event-too-fuzzy-to-automate-rel"
+ },
+ {
+  "index": 64,
+  "timestamp": "04:18:05",
+  "category": "concept-intro",
+  "title": "Process planning/scheduling topic introduced",
+  "filename": "064_041805_process-planning-scheduling-topic-introduced.jpg",
+  "t0": 15485,
+  "t1": 15605,
+  "stem": "064_041805_process-planning-scheduling-topic-introduced"
+ },
+ {
+  "index": 65,
+  "timestamp": "04:22:29",
+  "category": "tutorial-step",
+  "title": "Demo: setting standard task durations on the model",
+  "filename": "065_042229_demo-setting-standard-task-durations-on-the-model.jpg",
+  "t0": 15749,
+  "t1": 15869,
+  "stem": "065_042229_demo-setting-standard-task-durations-on-the-model"
+ },
+ {
+  "index": 66,
+  "timestamp": "04:25:01",
+  "category": "definition",
+  "title": "Auto-generated Gantt chart",
+  "filename": "066_042501_auto-generated-gantt-chart.jpg",
+  "t0": 15901,
+  "t1": 16021,
+  "stem": "066_042501_auto-generated-gantt-chart"
+ },
+ {
+  "index": 67,
+  "timestamp": "04:27:32",
+  "category": "demo-start",
+  "title": "Completing a task updates the Gantt live",
+  "filename": "067_042732_completing-a-task-updates-the-gantt-live.jpg",
+  "t0": 16052,
+  "t1": 16120,
+  "stem": "067_042732_completing-a-task-updates-the-gantt-live"
+ },
+ {
+  "index": 68,
+  "timestamp": "04:28:42",
+  "category": "tip",
+  "title": "Plan always pushes right, never pulls left",
+  "filename": "068_042842_plan-always-pushes-right-never-pulls-left.jpg",
+  "t0": 16122,
+  "t1": 16155,
+  "stem": "068_042842_plan-always-pushes-right-never-pulls-left"
+ },
+ {
+  "index": 69,
+  "timestamp": "04:29:17",
+  "category": "definition",
+  "title": "\"Data scadenza\" (deadline) concept",
+  "filename": "069_042917_data-scadenza-deadline-concept.jpg",
+  "t0": 16157,
+  "t1": 16277,
+  "stem": "069_042917_data-scadenza-deadline-concept"
+ },
+ {
+  "index": 70,
+  "timestamp": "04:33:15",
+  "category": "definition",
+  "title": "Three parallel date sets: initial, updated, actual",
+  "filename": "070_043315_three-parallel-date-sets-initial-updated-actual.jpg",
+  "t0": 16395,
+  "t1": 16515,
+  "stem": "070_043315_three-parallel-date-sets-initial-updated-actual"
+ },
+ {
+  "index": 71,
+  "timestamp": "04:36:28",
+  "category": "definition",
+  "title": "\"Rileva inizio\" flag decouples start from activation",
+  "filename": "071_043628_rileva-inizio-flag-decouples-start-from-activation.jpg",
+  "t0": 16588,
+  "t1": 16708,
+  "stem": "071_043628_rileva-inizio-flag-decouples-start-from-activation"
+ },
+ {
+  "index": 72,
+  "timestamp": "04:42:40",
+  "category": "concept-intro",
+  "title": "Linking deadlines/durations to variables",
+  "filename": "072_044240_linking-deadlines-durations-to-variables.jpg",
+  "t0": 16960,
+  "t1": 17080,
+  "stem": "072_044240_linking-deadlines-durations-to-variables"
+ },
+ {
+  "index": 73,
+  "timestamp": "04:48:36",
+  "category": "concept-intro",
+  "title": "Dashboard tool introduced",
+  "filename": "073_044836_dashboard-tool-introduced.jpg",
+  "t0": 17316,
+  "t1": 17406,
+  "stem": "073_044836_dashboard-tool-introduced"
+ },
+ {
+  "index": 74,
+  "timestamp": "04:50:08",
+  "category": "tutorial-step",
+  "title": "Demo: create a dashboard and add a data source",
+  "filename": "074_045008_demo-create-a-dashboard-and-add-a-data-source.jpg",
+  "t0": 17408,
+  "t1": 17528,
+  "stem": "074_045008_demo-create-a-dashboard-and-add-a-data-source"
+ },
+ {
+  "index": 75,
+  "timestamp": "04:55:18",
+  "category": "tutorial-step",
+  "title": "Demo: combo-box filter element",
+  "filename": "075_045518_demo-combo-box-filter-element.jpg",
+  "t0": 17718,
+  "t1": 17838,
+  "stem": "075_045518_demo-combo-box-filter-element"
+ },
+ {
+  "index": 76,
+  "timestamp": "04:57:35",
+  "category": "tip",
+  "title": "Dashboards complement, not replace, dedicated BI tools",
+  "filename": "076_045735_dashboards-complement-not-replace-dedicated-bi-too.jpg",
+  "t0": 17855,
+  "t1": 17908,
+  "stem": "076_045735_dashboards-complement-not-replace-dedicated-bi-too"
+ },
+ {
+  "index": 77,
+  "timestamp": "04:58:30",
+  "category": "example",
+  "title": "KPI example: response time from two captured dates",
+  "filename": "077_045830_kpi-example-response-time-from-two-captured-dates.jpg",
+  "t0": 17910,
+  "t1": 17951,
+  "stem": "077_045830_kpi-example-response-time-from-two-captured-dates"
+ },
+ {
+  "index": 78,
+  "timestamp": "04:59:13",
+  "category": "tutorial-step",
+  "title": "Set-Variable operations capture \"today\" at key transitions",
+  "filename": "078_045913_set-variable-operations-capture-today-at-key-trans.jpg",
+  "t0": 17953,
+  "t1": 18073,
+  "stem": "078_045913_set-variable-operations-capture-today-at-key-trans"
+ },
+ {
+  "index": 79,
+  "timestamp": "05:04:36",
+  "category": "example",
+  "title": "Real project: coffee-roasting quality-control dashboard",
+  "filename": "079_050436_real-project-coffee-roasting-quality-control-dashb.jpg",
+  "t0": 18276,
+  "t1": 18309,
+  "stem": "079_050436_real-project-coffee-roasting-quality-control-dashb"
+ },
+ {
+  "index": 80,
+  "timestamp": "05:05:11",
+  "category": "definition",
+  "title": "Dashboards live under \"Analisi Dati,\" also available on web",
+  "filename": "080_050511_dashboards-live-under-analisi-dati-also-available-.jpg",
+  "t0": 18311,
+  "t1": 18431,
+  "stem": "080_050511_dashboards-live-under-analisi-dati-also-available-"
+ },
+ {
+  "index": 81,
+  "timestamp": "05:11:08",
+  "category": "concept-intro",
+  "title": "\"Da confermare\" (to-be-confirmed) planning concept",
+  "filename": "081_051108_da-confermare-to-be-confirmed-planning-concept.jpg",
+  "t0": 18668,
+  "t1": 18761,
+  "stem": "081_051108_da-confermare-to-be-confirmed-planning-concept"
+ },
+ {
+  "index": 82,
+  "timestamp": "05:12:43",
+  "category": "demo-start",
+  "title": "Demo: confirming freezes the baseline plan",
+  "filename": "082_051243_demo-confirming-freezes-the-baseline-plan.jpg",
+  "t0": 18763,
+  "t1": 18883,
+  "stem": "082_051243_demo-confirming-freezes-the-baseline-plan"
+ }
+]

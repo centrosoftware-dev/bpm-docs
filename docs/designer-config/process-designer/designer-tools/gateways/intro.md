@@ -1,1 +1,0 @@
-# Approcci per pilotare lo svolgimento di un processo

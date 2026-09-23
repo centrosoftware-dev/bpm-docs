@@ -1,9 +1,0 @@
-nav:
-    - Introduzione: intro.md
-    - Menu contestuale: menu.md
-    - Attività: activities
-    - Eventi: events
-    - Gateway e percorsi: gateways
-    - Processi collegati: linked-process
-    - Operazioni: operations
-    - Altro: other

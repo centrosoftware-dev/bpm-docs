@@ -1,0 +1,1115 @@
+[
+ {
+  "index": 1,
+  "course": "bpm-base",
+  "stem": "001_000210_what-bpm-stands-for",
+  "chosen": "001_000210_what-bpm-stands-for__c1_t154.jpg",
+  "reason": "Shows the graphical Designer with a complete workflow/flow diagram open, illustrating BPM as a graphical process modeler used to design flows."
+ },
+ {
+  "index": 2,
+  "course": "bpm-base",
+  "stem": "002_000416_process-activities-drawn-in-the-designer",
+  "chosen": "002_000416_process-activities-drawn-in-the-designer__c3_t280.jpg",
+  "reason": "Shows a newly created 'APPROVAZIONE EDP' activity box connected via a link line into the flow, demonstrating an activity placed and wired up by drag-and-drop in the Designer."
+ },
+ {
+  "index": 3,
+  "course": "bpm-base",
+  "stem": "003_000458_task-and-start-shapes",
+  "chosen": "003_000458_task-and-start-shapes__c0_t298.jpg",
+  "reason": "Shows the Designer canvas with the green circle Start event and rectangular Task activity boxes clearly visible together."
+ },
+ {
+  "index": 4,
+  "course": "bpm-base",
+  "stem": "004_000511_gateway-diamond-for-branching",
+  "chosen": "004_000511_gateway-diamond-for-branching__c4_t402.jpg",
+  "reason": "Shows the small white diamond gateway shapes at multiple branch points along the process flow, matching the described branching/condition element."
+ },
+ {
+  "index": 5,
+  "course": "bpm-base",
+  "stem": "005_000707_operations-automations",
+  "chosen": "005_000707_operations-automations__c4_t506.jpg",
+  "reason": "Shows the expanded 'Operazioni' panel listing automation objects (Send Email, Get Data, Rest api call, SQL/OLEDB, etc.), matching the description of Operations as automation objects."
+ },
+ {
+  "index": 6,
+  "course": "bpm-base",
+  "stem": "006_000848_users-roles-executor-responsible-cc",
+  "chosen": "006_000848_users-roles-executor-responsible-cc__c2_t552.jpg",
+  "reason": "Shows the 'Impostazioni Utenti' dialog with explicit Esecutore (Executor), Resp. (Responsible) and CC checkbox columns per user."
+ },
+ {
+  "index": 7,
+  "course": "bpm-base",
+  "stem": "007_000952_to-do-list-is-the-execution-mechanism",
+  "chosen": null,
+  "reason": "All 6 candidates continue showing the Users settings dialog, a right-click context menu, or the process diagram in the Designer; none show an actual To-Do List screen."
+ },
+ {
+  "index": 8,
+  "course": "bpm-base",
+  "stem": "008_001117_process-variables-magazzino",
+  "chosen": "008_001117_process-variables-magazzino__c1_t701.jpg",
+  "reason": "Shows the Variabili (variables) editor/form designer with the process's information fields (Richiedente, Data, Numero Investimento, etc.), matching the description of process variables defined via a form designer."
+ },
+ {
+  "index": 9,
+  "course": "bpm-base",
+  "stem": "009_001536_publishing-a-process",
+  "chosen": "009_001536_publishing-a-process__c3_t993.jpg",
+  "reason": "Shows the confirmation popup 'La versione R00 è stata pubblicata. Aggiornamento: 2', directly depicting the act of publishing a process and its version."
+ },
+ {
+  "index": 10,
+  "course": "bpm-base",
+  "stem": "010_001714_starting-a-process-instance",
+  "chosen": "010_001714_starting-a-process-instance__c2_t1078.jpg",
+  "reason": "Shows the process Start form (Inserimento Richiesta) with red validation icons on mandatory fields, matching the described mandatory-field validation during Avvia processo."
+ },
+ {
+  "index": 11,
+  "course": "bpm-base",
+  "stem": "011_001906_watching-the-token-move",
+  "chosen": "011_001906_watching-the-token-move__c2_t1194.jpg",
+  "reason": "Shows the running process's graphical view with the 'INSERITO' step filled green (completed) and 'PRESA VISIONE DA SICUREZZA' highlighted yellow as the active task, depicting the token's current position."
+ },
+ {
+  "index": 12,
+  "course": "bpm-base",
+  "stem": "012_002441_searching-and-filtering-process-instances",
+  "chosen": "012_002441_searching-and-filtering-process-instances__c1_t1505.jpg",
+  "reason": "Shows the process search page with filter fields (user, dates, state, etc.) and a results grid returning one process-instance row, matching the search/filter description."
+ },
+ {
+  "index": 13,
+  "course": "bpm-base",
+  "stem": "013_002835_client-vs-architecture-overview",
+  "chosen": "013_002835_client-vs-architecture-overview__c4_t1811.jpg",
+  "reason": "Shows the browser-based BPM web app with its Todo list, Start new process and Search for processes menu loaded, i.e. the operational-only Web app side of the client-vs-web contrast."
+ },
+ {
+  "index": 14,
+  "course": "bpm-base",
+  "stem": "014_003629_designer-menu-tour",
+  "chosen": "014_003629_designer-menu-tour__c3_t2261.jpg",
+  "reason": "Shows the full left navigation menu with Sistema selected, listing Strumenti di verifica (debug tools), matching the menu tour's system/debug-tools item."
+ },
+ {
+  "index": 15,
+  "course": "bpm-base",
+  "stem": "015_003942_model-vs-process-instance",
+  "chosen": null,
+  "reason": "This is a purely verbal definition contrasting a process template with a running instance; all six candidates show only an empty design canvas or the models list, none depicting a running process instance."
+ },
+ {
+  "index": 16,
+  "course": "bpm-base",
+  "stem": "016_004116_sketch-first-refine-later",
+  "chosen": "016_004116_sketch-first-refine-later__c2_t2500.jpg",
+  "reason": "Shows the canvas with just the Start node and a single freshly-dropped Activity1 box, capturing the moment of quickly roughing out the diagram before refining it."
+ },
+ {
+  "index": 17,
+  "course": "bpm-base",
+  "stem": "017_004219_creating-and-naming-activities",
+  "chosen": "017_004219_creating-and-naming-activities__c1_t2563.jpg",
+  "reason": "Shows the right-click context menu on the activity box with the \"Modifica testo\" option visible, exactly the described way to rename an activity's display text."
+ },
+ {
+  "index": 18,
+  "course": "bpm-base",
+  "stem": "018_004444_connecting-activities-with-the-link-tool",
+  "chosen": "018_004444_connecting-activities-with-the-link-tool__c4_t2780.jpg",
+  "reason": "Shows the Link tool selected with arrows already connecting all three activities and the \"Stessa larghezza\" alignment tooltip, matching the link-and-alignment-tools description."
+ },
+ {
+  "index": 19,
+  "course": "bpm-base",
+  "stem": "019_004648_state-objects-milestones",
+  "chosen": "019_004648_state-objects-milestones__c5_t2875.jpg",
+  "reason": "Shows the \"APPROVATA\" state object placed in the flow after the approval activities, the exact checkpoint example given in the description."
+ },
+ {
+  "index": 20,
+  "course": "bpm-base",
+  "stem": "020_004757_end-is-optional-cosmetic",
+  "chosen": "020_004757_end-is-optional-cosmetic__c5_t2908.jpg",
+  "reason": "Shows the small red \"Fine\" end marker connected by an arrow after APPROVATA, illustrating the optional, purely cosmetic end object."
+ },
+ {
+  "index": 21,
+  "course": "bpm-base",
+  "stem": "021_004830_fine-vs-termina-processo",
+  "chosen": "021_004830_fine-vs-termina-processo__c1_t2923.jpg",
+  "reason": "Shows both the \"Fine\" and \"Termina processo\" palette objects together with the cursor on Termina processo, directly illustrating the contrast the narration draws between them."
+ },
+ {
+  "index": 22,
+  "course": "bpm-base",
+  "stem": "022_004937_sketching-loop-back-rejection-paths",
+  "chosen": "022_004937_sketching-loop-back-rejection-paths__c5_t3097.jpg",
+  "reason": "Shows the completed \"back to requester\" loop into Approvazione controllo di gestione together with the new \"Annullata\" cancelled state, matching both example elements in the description."
+ },
+ {
+  "index": 23,
+  "course": "bpm-base",
+  "stem": "023_005411_creating-users-and-groups",
+  "chosen": "023_005411_creating-users-and-groups__c5_t3371.jpg",
+  "reason": "Shows a newly saved group record named DIRTEC with description \"Direzione tecnica\" and \"E' un gruppo\" checked, matching the Direzione Tecnica example group in the description."
+ },
+ {
+  "index": 24,
+  "course": "bpm-base",
+  "stem": "024_005637_assigning-a-group-as-task-executor",
+  "chosen": "024_005637_assigning-a-group-as-task-executor__c1_t3416.jpg",
+  "reason": "Shows the Impostazioni Utenti dialog with the group AMM highlighted and its Esecutore checkbox checked for the Approvazione controllo di gestione activity, matching the group-as-executor assignment described."
+ },
+ {
+  "index": 25,
+  "course": "bpm-base",
+  "stem": "025_005815_must-be-assigned-before-execution-flag",
+  "chosen": "025_005815_must-be-assigned-before-execution-flag__c0_t3495.jpg",
+  "reason": "Shows the 'Impostazioni Utenti' dialog with the unchecked checkbox labeled 'Task deve essere assegnato prima di potere essere eseguito', which is exactly the flag described."
+ },
+ {
+  "index": 26,
+  "course": "bpm-base",
+  "stem": "026_010144_save-process-to-file",
+  "chosen": null,
+  "reason": "All 6 candidates in this window just show the idle process diagram with no Salva/save-to-file menu or dialog ever appearing; the actual save-to-file action (visible later, bleeding into item 27's window) falls outside this item's own candidate set."
+ },
+ {
+  "index": 27,
+  "course": "bpm-base",
+  "stem": "027_010205_naming-and-publishing-the-model",
+  "chosen": "027_010205_naming-and-publishing-the-model__c5_t3845.jpg",
+  "reason": "The workflow tab is now labeled 'RICHIESTA INV' (matching the example model name) and the properties panel shows Versione R00, confirming the model was named and published."
+ },
+ {
+  "index": 28,
+  "course": "bpm-base",
+  "stem": "028_010543_opening-the-variable-warehouse",
+  "chosen": "028_010543_opening-the-variable-warehouse__c1_t3960.jpg",
+  "reason": "Shows the Strumenti ribbon with the 'Inserimento/modifica variabili' button highlighted/being clicked, the exact action that opens the variable warehouse."
+ },
+ {
+  "index": 29,
+  "course": "bpm-base",
+  "stem": "029_010711_creating-the-first-variable",
+  "chosen": "029_010711_creating-the-first-variable__c4_t4108.jpg",
+  "reason": "Shows the newly created RICHIEDENTE (String) variable already dragged onto the form canvas, matching the described creation-and-drag action."
+ },
+ {
+  "index": 30,
+  "course": "bpm-base",
+  "stem": "030_010850_variable-type-catalogue",
+  "chosen": "030_010850_variable-type-catalogue__c1_t4154.jpg",
+  "reason": "Shows the 'Tipo variabile' dropdown open listing StringType, NumericType, BooleanType, DateType, CurrencyType, MemoType, ValueListType - the actual variable type catalogue."
+ },
+ {
+  "index": 31,
+  "course": "bpm-base",
+  "stem": "031_012035_variabili-da-richiedere-per-task",
+  "chosen": "031_012035_variabili-da-richiedere-per-task__c5_t4955.jpg",
+  "reason": "Shows the per-task 'Start1' page with the DATA RICHIESTA variable placed on it, i.e. the result of configuring which warehouse fields are requested at that specific point."
+ },
+ {
+  "index": 32,
+  "course": "bpm-base",
+  "stem": "032_012254_export-import-variable-layouts",
+  "chosen": "032_012254_export-import-variable-layouts__c2_t5022.jpg",
+  "reason": "Shows the 'Importa/Esporta' dropdown menu open with Import All Variables, Import Category, Export All Variables, Export Category and Export Selection options, directly depicting the export/import variable layout feature."
+ },
+ {
+  "index": 33,
+  "course": "bpm-base",
+  "stem": "033_013319_label-type-variable",
+  "chosen": "033_013319_label-type-variable__c4_t5695.jpg",
+  "reason": "Shows the Label's rich-text 'Testo' editor containing content ('Richiesta nr.') with its right-click context menu open on 'Variabili', i.e. inserting a variable placeholder into the read-only label."
+ },
+ {
+  "index": 34,
+  "course": "bpm-base",
+  "stem": "034_013929_variable-name-is-immutable",
+  "chosen": "034_013929_variable-name-is-immutable__c3_t6041.jpg",
+  "reason": "Shows the Descrizione field changed to 'UTENTE RICHIESTA' (and the on-canvas label updated accordingly) while the greyed-out .Nome variabile field still reads 'RICHIEDENTE', demonstrating the internal name cannot be changed."
+ },
+ {
+  "index": 35,
+  "course": "bpm-base",
+  "stem": "035_014300_variabile-senza-salvataggio",
+  "chosen": "035_014300_variabile-senza-salvataggio__c1_t6204.jpg",
+  "reason": "Shows the variable properties panel with the 'Senza salvataggio' row selected and its dropdown open, the exact flag that stops a variable from persisting to the database."
+ },
+ {
+  "index": 36,
+  "course": "bpm-base",
+  "stem": "036_014503_tabella-di-origine-source-table",
+  "chosen": "036_014503_tabella-di-origine-source-table__c4_t6399.jpg",
+  "reason": "Shows the 'Collegamento con tabella/istanza' dialog (Tipo di collegamento: TABELLA LOCALE, Tabella, Campo tabella, filtri) used to bind the CODICE STABILIMENTO string variable to a lookup source table."
+ },
+ {
+  "index": 37,
+  "course": "bpm-base",
+  "stem": "037_014832_numeric-field-as-a-counter",
+  "chosen": "037_014832_numeric-field-as-a-counter__c4_t6608.jpg",
+  "reason": "Shows the numeric field's properties with 'Tipo impostazioni di base' set to Contatore and a live preview including the ANNO field used for grouping/resetting the counter."
+ },
+ {
+  "index": 38,
+  "course": "bpm-base",
+  "stem": "038_015123_autocomplete-on-string-fields",
+  "chosen": "038_015123_autocomplete-on-string-fields__c3_t6738.jpg",
+  "reason": "Shows Autocomplete set to True for the CODICE STABILIMENTO string field, with the resulting combo dropdown arrow now visible on the field."
+ },
+ {
+  "index": 39,
+  "course": "bpm-base",
+  "stem": "039_015258_the-formula-editor-visual-basic",
+  "chosen": "039_015258_the-formula-editor-visual-basic__c2_t6826.jpg",
+  "reason": "Shows the formula editor open with the right-click helper menu expanded to Generico > (Utente corrente, Data, Anno, Altro), exactly the helper menu described."
+ },
+ {
+  "index": 40,
+  "course": "bpm-base",
+  "stem": "040_015538_formula-di-validazione",
+  "chosen": "040_015538_formula-di-validazione__c5_t7058.jpg",
+  "reason": "Shows the Formula di validazione editor for DATA RICHIESTA containing the completed validation expression '@[DATA RICHIESTA]>=Today'."
+ },
+ {
+  "index": 41,
+  "course": "bpm-base",
+  "stem": "041_020000_formula-di-visibilit",
+  "chosen": null,
+  "reason": "All 6 frames still show the prior topic's Formula di validazione editor/result (or the following topic's Formula per default field) - none show the Formula di visibilità being set or edited."
+ },
+ {
+  "index": 42,
+  "course": "bpm-base",
+  "stem": "042_020133_formula-per-default-vs-valore-di-default",
+  "chosen": "042_020133_formula-per-default-vs-valore-di-default__c4_t7389.jpg",
+  "reason": "Shows the Formula per default property for RICHIEDENTE filled in with '@@User-Name', illustrating a default-value formula versus a fixed default value."
+ },
+ {
+  "index": 43,
+  "course": "bpm-base",
+  "stem": "043_020607_calculated-total-via-formula",
+  "chosen": "043_020607_calculated-total-via-formula__c4_t7663.jpg",
+  "reason": "Shows the TOTALE COSTI formula editor with the completed expression '@[IMPORTO RICHIESTA]+@[COSTI ACCESSORI]' and the resulting calculated fields below."
+ },
+ {
+  "index": 44,
+  "course": "bpm-base",
+  "stem": "044_021322_variabili-da-impostare-button-actions",
+  "chosen": "044_021322_variabili-da-impostare-button-actions__c3_t8074.jpg",
+  "reason": "Shows the 'Impostazioni variabile boolean' dialog configuring the RICALCOLA TOTALI button, including the 'Visualizza variabili impostare' option for the imperative action list."
+ },
+ {
+  "index": 45,
+  "course": "bpm-base",
+  "stem": "045_022116_diagram-color-coding",
+  "chosen": "045_022116_diagram-color-coding__c2_t8524.jpg",
+  "reason": "Shows the process diagram with grey (executed) PRESA VISIONE/APPROVAZIONE CONTROLLER states, green (APPROVATO CONTROLLER) and yellow (APPROVAZIONE DIREZIONE INDUSTRIALE, in progress) boxes together, matching the described color coding."
+ },
+ {
+  "index": 46,
+  "course": "bpm-base",
+  "stem": "046_022914_conditions-drive-approval-branching",
+  "chosen": "046_022914_conditions-drive-approval-branching__c4_t9050.jpg",
+  "reason": "Shows the ESITO APPROVAZIONE CDG variable's properties with Tipo variabile = ValueListType, the ValueList outcome variable used to drive approval branching."
+ },
+ {
+  "index": 47,
+  "course": "bpm-base",
+  "stem": "047_023344_condition-on-a-transition-arrow",
+  "chosen": "047_023344_condition-on-a-transition-arrow__c1_t9244.jpg",
+  "reason": "Shows the 'Condizione Link' formula editor for a transition arrow with the enabling condition '@[ESITO APPROVAZIONE CDG]=\"APPROVATA\"' entered."
+ },
+ {
+  "index": 48,
+  "course": "bpm-base",
+  "stem": "048_023529_exclusive-gateway-object",
+  "chosen": "048_023529_exclusive-gateway-object__c5_t9449.jpg",
+  "reason": "Shows the 'GATEWAY CONFIGURATION' dialog with Tipo = EXCLUSIVE and a list of all outgoing destinations/conditions in one screen, matching the Exclusive Gateway object description."
+ },
+ {
+  "index": 49,
+  "course": "bpm-base",
+  "stem": "049_024235_dynamic-assignment-to-a-process-variable-user",
+  "chosen": "049_024235_dynamic-assignment-to-a-process-variable-user__c2_t9775.jpg",
+  "reason": "Shows the full 'Impostazioni Utenti' dialog with the @[RICHIEDENTE] process-variable user row selected for task assignment, exactly the dynamic assignment pattern described."
+ },
+ {
+  "index": 50,
+  "course": "bpm-base",
+  "stem": "050_024327_parallel-gateways-fork-join",
+  "chosen": "050_024327_parallel-gateways-fork-join__c4_t9903.jpg",
+  "reason": "Shows a completed parallel (cross-shaped) gateway joining the Collaudo and Parte Amministrativa branches back together, a clear fork/join example."
+ },
+ {
+  "index": 51,
+  "course": "bpm-base",
+  "stem": "051_024543_inclusive-gateway",
+  "chosen": "051_024543_inclusive-gateway__c2_t9991.jpg",
+  "reason": "Shows the full diagram with the distinct circle-in-diamond inclusive gateway icon used to both split and rejoin the Collaudo/Parte Amministrativa branches."
+ },
+ {
+  "index": 52,
+  "course": "bpm-base",
+  "stem": "052_024811_process-name-description-formulas",
+  "chosen": "052_024811_process-name-description-formulas__c4_t10187.jpg",
+  "reason": "Shows the 'Formula nome processo' field populated with @[NUMERO RICHIESTA]/@[ANNO], exactly the numero/anno name-formula described."
+ },
+ {
+  "index": 53,
+  "course": "bpm-base",
+  "stem": "053_025552_three-activity-states",
+  "chosen": "053_025552_three-activity-states__c1_t10576.jpg",
+  "reason": "Shows the process diagram with activities in distinct colors (green=completed, yellow=in progress, outlined=planned), visually depicting the three activity states."
+ },
+ {
+  "index": 54,
+  "course": "bpm-base",
+  "stem": "054_025806_customizing-the-to-do-list-grid",
+  "chosen": "054_025806_customizing-the-to-do-list-grid__c2_t10734.jpg",
+  "reason": "Shows the To-Do List grid grouped by 'Modello' (process model) with expandable group headers, demonstrating the grid-customization/grouping feature described."
+ },
+ {
+  "index": 55,
+  "course": "bpm-base",
+  "stem": "055_030322_process-detail-inspection-screen",
+  "chosen": "055_030322_process-detail-inspection-screen__c5_t11122.jpg",
+  "reason": "Shows the opened process detail record with the full tab bar (Generale, Variabili, Allegati, Processi collegati, Pianificazione, Storico, Processo) matching the described inspection screen."
+ },
+ {
+  "index": 56,
+  "course": "bpm-base",
+  "stem": "056_030614_storico-full-audit-log",
+  "chosen": "056_030614_storico-full-audit-log__c3_t11246.jpg",
+  "reason": "Shows the drilled-down Storico detail view with 'Valore prec.' and 'Valore nuovo' columns, i.e. the field-level before/after diff described."
+ },
+ {
+  "index": 57,
+  "course": "bpm-base",
+  "stem": "057_030853_custom-search-views",
+  "chosen": "057_030853_custom-search-views__c3_t11405.jpg",
+  "reason": "Shows the 'CONFIGURA VISTA' column-picker dialog used to build a custom search view, matching the 'Modifica visualizzazione' feature described."
+ },
+ {
+  "index": 58,
+  "course": "bpm-base",
+  "stem": "058_031245_web-client-walkthrough",
+  "chosen": "058_031245_web-client-walkthrough__c1_t11589.jpg",
+  "reason": "Shows the web client's side menu with Todo list, Dashboard, Avvia processo, Ricerca processi and Storico entries, matching the described web app tour."
+ },
+ {
+  "index": 59,
+  "course": "bpm-base",
+  "stem": "059_032017_custom-menu-entries",
+  "chosen": "059_032017_custom-menu-entries__c5_t12137.jpg",
+  "reason": "Shows the 'Configurazione menu' grid with a new custom shortcut row being added for the RICHIESTA INV process under a custom menu root, matching the custom-menu-entries feature."
+ },
+ {
+  "index": 60,
+  "course": "bpm-base",
+  "stem": "060_032544_admin-force-edit-outside-the-process-flow",
+  "chosen": "060_032544_admin-force-edit-outside-the-process-flow__c1_t12368.jpg",
+  "reason": "Shows the process record in edit mode (Salva active) with the CODICE STABILIMENTO warehouse variable being directly overwritten to 'XXX', matching the admin force-edit behavior described."
+ },
+ {
+  "index": 61,
+  "course": "bpm-base",
+  "stem": "061_033236_group-master-detail-variables",
+  "chosen": "061_033236_group-master-detail-variables__c5_t12876.jpg",
+  "reason": "Shows the \"Editor gruppo\" (group editor) dialog used to define a Gruppo, the mechanism that turns a variable into a detail/grid column."
+ },
+ {
+  "index": 62,
+  "course": "bpm-base",
+  "stem": "062_034215_admin-only-force-process-advancement",
+  "chosen": null,
+  "reason": "None of the 6 frames show the described right-click \"Imposta oggetto attivo\" context menu on a task; they only show generic list/process-diagram views, so the actual admin action is off-window."
+ },
+ {
+  "index": 63,
+  "course": "bpm-base",
+  "stem": "063_034841_detail-pop-up-form-for-a-grid-row",
+  "chosen": "063_034841_detail-pop-up-form-for-a-grid-row__c4_t13817.jpg",
+  "reason": "Shows the \"Dettagli Preventivo\" Button-type variable being added as a column inside the LISTA PREVENTIVI grid, with its \"Bottone senza stato\" settings open, the mechanism used to open the detail pop-up form."
+ },
+ {
+  "index": 64,
+  "course": "bpm-base",
+  "stem": "064_035352_source-table-lookup-local-vs-external",
+  "chosen": "064_035352_source-table-lookup-local-vs-external__c4_t14128.jpg",
+  "reason": "Shows the \"Collegamento con tabella/istanza\" dialog with \"Tipo di collegamento\" set to TABELLA LOCALE, the exact setting used to pick a local vs. external source table."
+ },
+ {
+  "index": 65,
+  "course": "bpm-base",
+  "stem": "065_040110_preview-connectors-e-g-sam",
+  "chosen": "065_040110_preview-connectors-e-g-sam__c1_t14484.jpg",
+  "reason": "Shows the same table-link dialog switched to \"CONNETTORE DATI\" with Connettore \"SAM v5\" filled in, previewing the SAM connector as an alternative data source."
+ },
+ {
+  "index": 66,
+  "course": "bpm-base",
+  "stem": "066_040224_versioning-running-instances-pin-to-their-version",
+  "chosen": "066_040224_versioning-running-instances-pin-to-their-version__c4_t14640.jpg",
+  "reason": "Shows the \"Aggiorna versione processo\" dialog explicitly updating a running instance from version 16 to 17, the explicit-upgrade action described."
+ },
+ {
+  "index": 67,
+  "course": "bpm-base",
+  "stem": "067_040716_attachments-overview",
+  "chosen": "067_040716_attachments-overview__c4_t14932.jpg",
+  "reason": "Shows the process's Allegati dialog with an ATTACHMENTS root folder and a PREVENTIVI virtual subfolder, illustrating the dossier's virtual folder organization."
+ },
+ {
+  "index": 68,
+  "course": "bpm-base",
+  "stem": "068_040924_allegati-da-richiedere",
+  "chosen": "068_040924_allegati-da-richiedere__c1_t14988.jpg",
+  "reason": "Shows the \"Variabile aggiunta allegato\" dialog with \"ATTIVA GESTIONE ALLEGATI SU QUESTO TASK\" checked, exactly the per-task attachment enablement described."
+ },
+ {
+  "index": 69,
+  "course": "bpm-base",
+  "stem": "069_041300_storage-roots-database-vs-file-system",
+  "chosen": "069_041300_storage-roots-database-vs-file-system__c2_t15228.jpg",
+  "reason": "Shows the Allegati folder context menu with both \"Nuova Root su File System\" and \"Nuova Root su DB\" options, directly depicting the DB-vs-FS root choice."
+ },
+ {
+  "index": 70,
+  "course": "bpm-base",
+  "stem": "070_042244_mandatory-attachment-via-a-button",
+  "chosen": "070_042244_mandatory-attachment-via-a-button__c3_t15836.jpg",
+  "reason": "Shows the \"Variabile aggiunta allegato\" settings for a stateless button, with target folder path and allowed-extension checkboxes, the setup used to force a required upload."
+ },
+ {
+  "index": 71,
+  "course": "bpm-base",
+  "stem": "071_043856_sub-processes",
+  "chosen": "071_043856_sub-processes__c3_t16808.jpg",
+  "reason": "Shows the inside of a Sub-process shape (breadcrumb \"Ritorna al processo principale\") containing its own separately-designed mini-diagram of activities."
+ },
+ {
+  "index": 72,
+  "course": "bpm-base",
+  "stem": "072_044146_recurring-sub-process",
+  "chosen": "072_044146_recurring-sub-process__c1_t16930.jpg",
+  "reason": "Shows the Subworkflow dialog with \"Tipo sottoprocesso: Ricorrente\" and Parallelo/Sequenziale plus Gruppo options, exactly the recurring-sub-process-per-group configuration described."
+ },
+ {
+  "index": 73,
+  "course": "bpm-base",
+  "stem": "073_045439_lookup-from-local-group-data",
+  "chosen": "073_045439_lookup-from-local-group-data__c4_t17775.jpg",
+  "reason": "Shows the 'Collegamento con tabella/istanza' dialog with Tipo di collegamento set to VARIABILI LOCALI and Gruppo locale LISTA PREVENTIVI, i.e. the local-group lookup being configured."
+ },
+ {
+  "index": 74,
+  "course": "bpm-base",
+  "stem": "074_050525_permission-baseline-citation-is-enough",
+  "chosen": null,
+  "reason": "This is a purely verbal explanation about implicit permissions from being cited on a process; none of the six frames (search screen, workflow diagram, config menu, user list, loading permissions tab) show that specific concept on screen."
+ },
+ {
+  "index": 75,
+  "course": "bpm-base",
+  "stem": "075_050705_domain-linked-users-single-sign-on",
+  "chosen": "075_050705_domain-linked-users-single-sign-on__c0_t18425.jpg",
+  "reason": "Shows the user record for Riccardo Gallini with 'Windows authentication' checked and domain field 'CSWDC' filled in, i.e. the domain-linked-user setting being demonstrated."
+ },
+ {
+  "index": 76,
+  "course": "bpm-base",
+  "stem": "076_051206_permission-categories-overview",
+  "chosen": "076_051206_permission-categories-overview__c2_t18774.jpg",
+  "reason": "Shows the user's 'Permessi menu' tab with the full row of permission-category tabs (Permessi processi, tabelle, dashboard, reports) visible, matching the overview of permission categories."
+ },
+ {
+  "index": 77,
+  "course": "bpm-base",
+  "stem": "077_052605_enable-vs-deny-override-semantics",
+  "chosen": "077_052605_enable-vs-deny-override-semantics__c0_t19565.jpg",
+  "reason": "Shows the user's 'Permessi processi' grid with 'Tipo abilitazione: ABILITATO DA GRUPPO', the exact field used to demonstrate how a user-level override interacts with a group-granted permission."
+ },
+ {
+  "index": 1,
+  "course": "bpm-avanzato",
+  "stem": "001_001553_data-grid-variable-type-introduced",
+  "chosen": "001_001553_data-grid-variable-type-introduced__c1_t977.jpg",
+  "reason": "Shows the variable editor with 'Tipo variabile' set to DataGrid, the moment the data-grid variable type is introduced."
+ },
+ {
+  "index": 2,
+  "course": "bpm-avanzato",
+  "stem": "002_001807_linking-a-data-grid-to-a-table",
+  "chosen": "002_001807_linking-a-data-grid-to-a-table__c3_t1159.jpg",
+  "reason": "Shows the COLONNE tab of the table link dialog with CODICE and DESCRIZIONE columns being selected and given a custom caption ('Cod Forni...'), matching the described column-mapping demo."
+ },
+ {
+  "index": 3,
+  "course": "bpm-avanzato",
+  "stem": "003_002706_configure-a-per-task-filter-on-a-group-variable",
+  "chosen": "003_002706_configure-a-per-task-filter-on-a-group-variable__c0_t1626.jpg",
+  "reason": "Shows the 'Editor gruppo' dialog (window titled VALUTAZIONE PREVENTIVI TIPO A) with 'Abilita aggiunta'/'Abilita eliminazione' checkboxes and Filtro fields for the per-task group filter."
+ },
+ {
+  "index": 4,
+  "course": "bpm-avanzato",
+  "stem": "004_003043_helper-variable-workaround-for-debugging-formulas",
+  "chosen": "004_003043_helper-variable-workaround-for-debugging-formulas__c2_t1891.jpg",
+  "reason": "Shows both throwaway helper fields 'PRESENZA TIPO A' and 'PRESENZA TIPO B' added to the form, matching the described debugging workaround."
+ },
+ {
+  "index": 5,
+  "course": "bpm-avanzato",
+  "stem": "005_003415_vb-script-loop-over-group-rows-worked-example",
+  "chosen": "005_003415_vb-script-loop-over-group-rows-worked-example__c5_t2175.jpg",
+  "reason": "Shows the completed VB script 'Dim i As Integer / For i = 0 To @[LISTA PREVENTIVI].Count / If @[TipoPreventivo](i)=\"TIPO A\" Then / Return True', exactly the worked example described."
+ },
+ {
+  "index": 6,
+  "course": "bpm-avanzato",
+  "stem": "006_003944_global-validation-formula-vs-field-level-validatio",
+  "chosen": "006_003944_global-validation-formula-vs-field-level-validatio__c0_t2384.jpg",
+  "reason": "Shows the activity-level right-click context menu with 'Formula di validazione' as an activity property, i.e. the global (whole-screen) validation formula distinct from a field's own validation formula."
+ },
+ {
+  "index": 7,
+  "course": "bpm-avanzato",
+  "stem": "007_004344_legacy-sync-bar-object-sbarra-di-sincronizzazione",
+  "chosen": "007_004344_legacy-sync-bar-object-sbarra-di-sincronizzazione__c4_t2710.jpg",
+  "reason": "Shows the sync-bar object fully wired between the two parallel 'VALUTAZIONE PREVENTIVI' activities and the 'CONCLUSIONE ATTIVITA' step, joining both parallel branches before continuing."
+ },
+ {
+  "index": 8,
+  "course": "bpm-avanzato",
+  "stem": "008_004534_all-vs-all-planned-gotcha-on-sync-bars",
+  "chosen": "008_004534_all-vs-all-planned-gotcha-on-sync-bars__c4_t2801.jpg",
+  "reason": "Shows the sync bar's properties panel with the 'Number to pass' field set to 'ALL PLANNED', the exact setting the gotcha discusses."
+ },
+ {
+  "index": 9,
+  "course": "bpm-avanzato",
+  "stem": "009_004700_three-modern-gateway-types-exclusive-parallel-incl",
+  "chosen": "009_004700_three-modern-gateway-types-exclusive-parallel-incl__c3_t2892.jpg",
+  "reason": "Shows the 'Percorsi liberi (inclusive)' gateway type highlighted in the toolbox with an inclusive-gateway diamond placed on the canvas, illustrating one of the three gateway types being introduced."
+ },
+ {
+  "index": 10,
+  "course": "bpm-avanzato",
+  "stem": "010_005239_purely-graphical-objects-text-box-image-page-setup",
+  "chosen": "010_005239_purely-graphical-objects-text-box-image-page-setup__c5_t3279.jpg",
+  "reason": "Shows the print preview (Anteprima di stampa) of the diagram with a styled title text box, demonstrating the purely cosmetic/printable page-setup aspect described."
+ },
+ {
+  "index": 11,
+  "course": "bpm-avanzato",
+  "stem": "011_005820_marker-object-for-multi-page-process-navigation",
+  "chosen": "011_005820_marker-object-for-multi-page-process-navigation__c4_t3586.jpg",
+  "reason": "Shows the 'Marker' tool selected in the toolbox with a marker object (numbered '0') placed on a second page and linked to an activity, illustrating the marker's role as a page link."
+ },
+ {
+  "index": 12,
+  "course": "bpm-avanzato",
+  "stem": "012_010010_swim-lanes-introduced",
+  "chosen": "012_010010_swim-lanes-introduced__c4_t3706.jpg",
+  "reason": "Shows the process diagram laid out inside three named swim lanes (Lane 1, Lane 2, Lane 3) with the Swim lane tool selected, directly depicting the concept being introduced."
+ },
+ {
+  "index": 13,
+  "course": "bpm-avanzato",
+  "stem": "013_010600_swim-lane-inherits-utenti-responsabili-to-its-task",
+  "chosen": "013_010600_swim-lane-inherits-utenti-responsabili-to-its-task__c1_t3977.jpg",
+  "reason": "Shows a swim lane's right-click context menu with 'Utenti e responsabili...' highlighted, the dialog used to set the responsible users that lane-contained tasks inherit."
+ },
+ {
+  "index": 14,
+  "course": "bpm-avanzato",
+  "stem": "014_010728_real-project-zig-zag-swim-lane-process",
+  "chosen": "014_010728_real-project-zig-zag-swim-lane-process__c1_t4072.jpg",
+  "reason": "Shows a real multi-department process (UFFICIO COMMERCIALE/TECNICO/ACQUISTI/QUALITA'/PRODUZIONE) with swim lanes and flows zig-zagging repeatedly between them, matching the described real project example."
+ },
+ {
+  "index": 15,
+  "course": "bpm-avanzato",
+  "stem": "015_011537_multiple-start-events-in-one-process",
+  "chosen": "015_011537_multiple-start-events-in-one-process__c3_t4549.jpg",
+  "reason": "Shows two separate green Start circles on the same diagram (one connected to the existing flow, one newly placed), illustrating a process with multiple distinct start events."
+ },
+ {
+  "index": 16,
+  "course": "bpm-avanzato",
+  "stem": "016_011600_building-two-start-events-normal-vs-security",
+  "chosen": "016_011600_building-two-start-events-normal-vs-security__c4_t4656.jpg",
+  "reason": "Shows two labeled start events on the canvas, 'INSERIMENTO RICHIESTA SICUREZZA' and 'INSERIMENTO RICHIESTA NORMALE', directly depicting the two starts being built."
+ },
+ {
+  "index": 17,
+  "course": "bpm-avanzato",
+  "stem": "017_012205_start-a-tempo-scheduled-timed-start-event",
+  "chosen": "017_012205_start-a-tempo-scheduled-timed-start-event__c1_t4944.jpg",
+  "reason": "Shows the timed-start configuration dialog set to 'Ricorre ogni mese, il PRIMO LUNEDI ... Alle ore 08:00', matching the described first-Monday-of-the-month-at-8:00 example."
+ },
+ {
+  "index": 18,
+  "course": "bpm-avanzato",
+  "stem": "018_012344_attesa-wait-event",
+  "chosen": "018_012344_attesa-wait-event__c1_t5048.jpg",
+  "reason": "Shows the 'Attesa' (wait) tool selected with a WaitObject placed in the flow after 'VALUTAZIONE DEI PREVENTIVI', including its 'Configurazione attesa' property."
+ },
+ {
+  "index": 19,
+  "course": "bpm-avanzato",
+  "stem": "019_012600_fine-vs-termina-processo-distinction",
+  "chosen": "019_012600_fine-vs-termina-processo-distinction__c4_t5256.jpg",
+  "reason": "Shows the 'Termina processo' tool highlighted with its red terminate-process icon connected at the end of a branch, illustrating the process-killing object contrasted with the plain 'Fine' marker."
+ },
+ {
+  "index": 20,
+  "course": "bpm-avanzato",
+  "stem": "020_012810_timeout-escalation-boundary-event",
+  "chosen": "020_012810_timeout-escalation-boundary-event__c5_t5410.jpg",
+  "reason": "Shows a timer boundary event attached to the corner of the 'SCELTA PREVENTIVO' task with an arrow leading to a new 'SOLLECITO' (reminder) task, exactly depicting a timeout/escalation boundary event."
+ },
+ {
+  "index": 21,
+  "course": "bpm-avanzato",
+  "stem": "021_013034_operations-automatic-system-activities",
+  "chosen": "021_013034_operations-automatic-system-activities__c1_t5458.jpg",
+  "reason": "Shows the expanded 'Operazioni' palette listing the draggable automatic system operations (send mail, create linked process, SQL, etc.) referenced by the title."
+ },
+ {
+  "index": 22,
+  "course": "bpm-avanzato",
+  "stem": "022_013406_building-an-email-notification-template",
+  "chosen": "022_013406_building-an-email-notification-template__c4_t5742.jpg",
+  "reason": "Shows the 'Modello email' template editor open with Nome, Descrizione, Subject, Destinatari and Destinatari cc fields being configured, matching the demo of building a mail template."
+ },
+ {
+  "index": 23,
+  "course": "bpm-avanzato",
+  "stem": "023_014100_attivazione-vs-inizio-activation-vs-start",
+  "chosen": "023_014100_attivazione-vs-inizio-activation-vs-start__c0_t6060.jpg",
+  "reason": "Shows the OPERAZIONI popup listing 'Attivazione task' and 'Inizio task' as distinct adjacent items, directly illustrating the activation-vs-start distinction."
+ },
+ {
+  "index": 24,
+  "course": "bpm-avanzato",
+  "stem": "024_014614_link-web-al-task-generic-field",
+  "chosen": "024_014614_link-web-al-task-generic-field__c1_t6398.jpg",
+  "reason": "Shows the email template body with the placeholder 'Link al task: @@WebLinkActivity' inserted, which is the deep-link-to-task field described."
+ },
+ {
+  "index": 25,
+  "course": "bpm-avanzato",
+  "stem": "025_015003_nuovo-processo-collegato-linked-child-process-oper",
+  "chosen": "025_015003_nuovo-processo-collegato-linked-child-process-oper__c5_t6723.jpg",
+  "reason": "Shows the 'Impostazioni creazione nuova istanza' configuration dialog (Modello di processo, Attesa ritorno, Condizione creazione) used to set up the linked/child process launch operation."
+ },
+ {
+  "index": 26,
+  "course": "bpm-avanzato",
+  "stem": "026_015241_building-a-linked-process-gestione-collaudo",
+  "chosen": "026_015241_building-a-linked-process-gestione-collaudo__c4_t6857.jpg",
+  "reason": "Shows the new 'GESTIONE COLLAUDO' process being built with an 'ESEGUI COLLAUDO' task, and the properties panel confirming the model name, matching the demo of creating this test/collaudo process."
+ },
+ {
+  "index": 27,
+  "course": "bpm-avanzato",
+  "stem": "027_015847_formula-driven-variable-mapping-on-launch",
+  "chosen": "027_015847_formula-driven-variable-mapping-on-launch__c5_t7198.jpg",
+  "reason": "Shows the completed formula 'If @[ORIG.TIPO RICHIESTA]=\"Richiesta Sicurezza\" Then @[DEST.NOTE COLLAUDO].Text = ...' exactly matching the described conditional variable-mapping example."
+ },
+ {
+  "index": 28,
+  "course": "bpm-avanzato",
+  "stem": "028_020000_ritorno-al-processo-chiamante-required-companion-o",
+  "chosen": "028_020000_ritorno-al-processo-chiamante-required-companion-o__c4_t7296.jpg",
+  "reason": "Shows the 'GESTIONE COLLAUDO' child process diagram with a 'Ritorno al processo chiamante' object placed after the 'ESEGUI COLLAUDO' task, the companion object required at the end of the child process."
+ },
+ {
+  "index": 29,
+  "course": "bpm-avanzato",
+  "stem": "029_021020_set-variable-formula-operation-inserire-un-pezzo-d",
+  "chosen": "029_021020_set-variable-formula-operation-inserire-un-pezzo-d__c3_t7854.jpg",
+  "reason": "Shows a 'SetVar1' Set Variables operation object placed in the process flow after 'SCELTA PREVENTIVO', depicting the lightweight set-variable/formula operation."
+ },
+ {
+  "index": 30,
+  "course": "bpm-avanzato",
+  "stem": "030_021119_clearing-a-stale-variable-on-a-rework-loop",
+  "chosen": "030_021119_clearing-a-stale-variable-on-a-rework-loop__c4_t7975.jpg",
+  "reason": "Shows a Set Variables operation icon placed on the rework loop path leading back into 'APPROVAZIONE CONTROLLO DI GESTIONE' from the revision branch, matching the stale-variable-clearing example."
+ },
+ {
+  "index": 31,
+  "course": "bpm-avanzato",
+  "stem": "031_021517_auto-assign-an-approver-by-amount-threshold",
+  "chosen": "031_021517_auto-assign-an-approver-by-amount-threshold__c4_t8213.jpg",
+  "reason": "Shows the process variable field 'UTENTE APPROVAZIONE TECNICA', the destination variable that the amount-threshold Set Variable formula assigns to Dir Tech or Dir Gen."
+ },
+ {
+  "index": 32,
+  "course": "bpm-avanzato",
+  "stem": "032_021905_decision-table-object-introduced",
+  "chosen": "032_021905_decision-table-object-introduced__c5_t8437.jpg",
+  "reason": "Shows a freshly opened, empty \"Decision Table\" dialog with Aggiungi Input/Aggiungi Regola buttons, i.e. the object being introduced."
+ },
+ {
+  "index": 33,
+  "course": "bpm-avanzato",
+  "stem": "033_022039_decision-table-demo-amount-approver",
+  "chosen": "033_022039_decision-table-demo-amount-approver__c3_t8511.jpg",
+  "reason": "Shows the completed 1-input/1-output decision table with IMPORTO RICHIESTA rows (minore di 1.000 / qualsiasi) mapped to UTENTE APPROVAZIONE values DIRTEC/DIRGEN."
+ },
+ {
+  "index": 34,
+  "course": "bpm-avanzato",
+  "stem": "034_022747_convert-between-decision-table-and-formula-code",
+  "chosen": "034_022747_convert-between-decision-table-and-formula-code__c4_t8930.jpg",
+  "reason": "Shows the Set Variables formula-code editor with the If/Else importo-richiesta logic, the plain-code equivalent of the decision table being discussed."
+ },
+ {
+  "index": 35,
+  "course": "bpm-avanzato",
+  "stem": "035_022908_sql-operation-object-introduced",
+  "chosen": "035_022908_sql-operation-object-introduced__c2_t8975.jpg",
+  "reason": "Shows a new SQL operation icon just placed on the process diagram canvas, introducing the SQL/libero object."
+ },
+ {
+  "index": 36,
+  "course": "bpm-avanzato",
+  "stem": "036_023018_sql-update-query-demo-with-in-out-parameters",
+  "chosen": "036_023018_sql-update-query-demo-with-in-out-parameters__c5_t9138.jpg",
+  "reason": "Shows the Query editor with a SELECT statement and both an input parameter (@n bound to a process variable) and an output parameter (@p) being configured."
+ },
+ {
+  "index": 37,
+  "course": "bpm-avanzato",
+  "stem": "037_023416_external-connection-strings-configuration",
+  "chosen": "037_023416_external-connection-strings-configuration__c2_t9276.jpg",
+  "reason": "Shows the Connessione dialog with SQL/OLEDB/ODBC connection-type options, matching the described centralized connection configuration."
+ },
+ {
+  "index": 38,
+  "course": "bpm-avanzato",
+  "stem": "038_023510_aggiorna-un-altro-processo-operation",
+  "chosen": "038_023510_aggiorna-un-altro-processo-operation__c3_t9382.jpg",
+  "reason": "Shows the \"Aggiorna altro processo\" dialog configured with a target process model and a search rule matching NUMERO RICHIESTA, illustrating updating another process instance."
+ },
+ {
+  "index": 39,
+  "course": "bpm-avanzato",
+  "stem": "039_024119_get-data-operation-introduced",
+  "chosen": "039_024119_get-data-operation-introduced__c3_t9751.jpg",
+  "reason": "Shows the \"Collegamento con tabella/istanza\" (Get Data) dialog where a table is picked and lookup filters are configured, the same UI style as a table lookup."
+ },
+ {
+  "index": 40,
+  "course": "bpm-avanzato",
+  "stem": "040_024602_custom-local-tables-tabelle-p-introduced",
+  "chosen": "040_024602_custom-local-tables-tabelle-p-introduced__c2_t10002.jpg",
+  "reason": "Shows a table-picker list full of custom tables all prefixed P_ (P_FORNITORI, P_ARTICOLI, P_CLIENTI, etc.), directly illustrating the \"tabelle P_\" concept."
+ },
+ {
+  "index": 41,
+  "course": "bpm-avanzato",
+  "stem": "041_024744_demo-creating-a-custom-table-aree-geografiche",
+  "chosen": "041_024744_demo-creating-a-custom-table-aree-geografiche__c4_t10160.jpg",
+  "reason": "Shows the new AREE_GEOGRAFICHE table being built with its column editor, with CodiceArea, DescrizioneArea and RaggruppamentoArea fields already defined."
+ },
+ {
+  "index": 42,
+  "course": "bpm-avanzato",
+  "stem": "042_025608_value-list-vs-custom-table-when-to-use-which",
+  "chosen": null,
+  "reason": "All 6 candidates show the same generic Configurazione > Opzioni generali menu screen, which does not depict the value-list-vs-custom-table guidance; this appears to be a purely verbal tip."
+ },
+ {
+  "index": 43,
+  "course": "bpm-avanzato",
+  "stem": "043_025737_reports-dashboards-two-ways-to-extract-data",
+  "chosen": "043_025737_reports-dashboards-two-ways-to-extract-data__c2_t10679.jpg",
+  "reason": "Shows the Configurazione sidebar with the Report entry highlighted next to Dashboard, matching the intro of the two BPM analytics tools."
+ },
+ {
+  "index": 44,
+  "course": "bpm-avanzato",
+  "stem": "044_025834_real-case-study-scheda-commessa-work-order-form",
+  "chosen": "044_025834_real-case-study-scheda-commessa-work-order-form__c3_t10786.jpg",
+  "reason": "Shows the COMMESSA model's DATI-MODELLO variable page with dozens of distinct fields (dimensions, materials, electrical, etc.), matching the real case's ~70-80 field capture form."
+ },
+ {
+  "index": 45,
+  "course": "bpm-avanzato",
+  "stem": "045_030227_report-designer-embedded-3rd-party-tool",
+  "chosen": "045_030227_report-designer-embedded-3rd-party-tool__c3_t11019.jpg",
+  "reason": "Shows the embedded Report Designer editing the MODULO COMMERCIALE PDF-style template with DATI-MODELLO fields bound to it, exactly the drag-and-drop report-template tool described."
+ },
+ {
+  "index": 46,
+  "course": "bpm-avanzato",
+  "stem": "046_030803_sam-connector-integration-topic-introduced",
+  "chosen": null,
+  "reason": "All 6 candidates show the same unrelated RICHIESTA INV approval workflow diagram; nothing in the window depicts the SAM connector/integration topic being introduced verbally."
+ },
+ {
+  "index": 47,
+  "course": "bpm-avanzato",
+  "stem": "047_031052_connettore-attivo-active-connector-operation",
+  "chosen": "047_031052_connettore-attivo-active-connector-operation__c1_t11476.jpg",
+  "reason": "Shows the Operazioni toolbox in the COMMESSA process designer with \"Connettore attivo\" highlighted among the draggable operation types (Send Email, Get Data, etc.)."
+ },
+ {
+  "index": 48,
+  "course": "bpm-avanzato",
+  "stem": "048_031324_xml-template-variable-mapping-demo",
+  "chosen": "048_031324_xml-template-variable-mapping-demo__c3_t11676.jpg",
+  "reason": "Shows the connector configuration dialog for the SAM v5 / xmlCommessa template with CSXTestaOV parameters mapped to a process variable (@[CODICE CLIENTE]) and a fixed value (46)."
+ },
+ {
+  "index": 49,
+  "course": "bpm-avanzato",
+  "stem": "049_031849_detail-row-parameters-mapping-a-group-to-xml-rows",
+  "chosen": "049_031849_detail-row-parameters-mapping-a-group-to-xml-rows__c0_t11929.jpg",
+  "reason": "Shows the connector's \"Parametri input Dettaglio\" tab with Gruppo set to LISTA CODICI and its CSXRigaOV row parameters mapped, exactly the group-to-XML-detail-row mapping described."
+ },
+ {
+  "index": 50,
+  "course": "bpm-avanzato",
+  "stem": "050_032534_connector-architecture-definition-dll",
+  "chosen": "050_032534_connector-architecture-definition-dll__c1_t12358.jpg",
+  "reason": "Shows the connector detail screen for SAM v5 with the \"Custom Assembly\" field pointing to SamConnector.dll, the external DLL/plugin part of the connector architecture."
+ },
+ {
+  "index": 51,
+  "course": "bpm-avanzato",
+  "stem": "051_033422_active-connector-requires-sam-s-web-import-install",
+  "chosen": null,
+  "reason": "None of the 6 frames show SAM's Web Import module or its installation status; they show unrelated connector config and a Word document opened in a browser, so this verbal sysadmin tip has no matching on-screen action."
+ },
+ {
+  "index": 52,
+  "course": "bpm-avanzato",
+  "stem": "052_033901_sam-to-do-list-shows-bpm-events",
+  "chosen": "052_033901_sam-to-do-list-shows-bpm-events__c3_t13213.jpg",
+  "reason": "Shows the \"Evento BPM - Activity10\" popup opened directly from SAM's To Do list calendar, with a link back to the BPM activity, exactly the BPM-event-inside-SAM's-todo-list feature."
+ },
+ {
+  "index": 53,
+  "course": "bpm-avanzato",
+  "stem": "053_034238_bidirectional-sync-firma1-firma2-mirrored-in-both-",
+  "chosen": "053_034238_bidirectional-sync-firma1-firma2-mirrored-in-both-__c0_t13358.jpg",
+  "reason": "Shows SAM's To Do list calendar displaying a \"Firma 1\" task entry, matching the firma1 activity that is mirrored between BPM and SAM."
+ },
+ {
+  "index": 54,
+  "course": "bpm-avanzato",
+  "stem": "054_034451_user-alias-mapping-between-bpm-and-sam",
+  "chosen": "054_034451_user-alias-mapping-between-bpm-and-sam__c1_t13515.jpg",
+  "reason": "Shows the BPM user ADMIN's \"Aliases\" tab with a row mapping connector SAM v5 to SAM user CSADMIN, exactly the external-user alias mapping described."
+ },
+ {
+  "index": 55,
+  "course": "bpm-avanzato",
+  "stem": "055_034822_piloting-bpm-from-sam-topic-introduced",
+  "chosen": "055_034822_piloting-bpm-from-sam-topic-introduced__c3_t13774.jpg",
+  "reason": "Shows the BPM Web Service Standard documentation open to \"Avviamento di un nuovo processo\" with the CreateNewProcess endpoint, the mechanism used to trigger BPM processes from SAM."
+ },
+ {
+  "index": 56,
+  "course": "bpm-avanzato",
+  "stem": "056_035025_standard-endpoints-create-process-exec-task-etc",
+  "chosen": "056_035025_standard-endpoints-create-process-exec-task-etc__c1_t13844.jpg",
+  "reason": "Shows the Word doc's full bulleted list of standard web-service endpoints (CreateNewProcess, ExecTask, UploadAttachment, UpdateProcess, GetProcess, GetTodoList, GetUser, GetSchema, UpdateTask) matching the title exactly."
+ },
+ {
+  "index": 57,
+  "course": "bpm-avanzato",
+  "stem": "057_035206_postman-demo-create-a-new-process-via-web-service",
+  "chosen": "057_035206_postman-demo-create-a-new-process-via-web-service__c0_t13926.jpg",
+  "reason": "Postman shows a POST to CreateNewProcess with the authorization/model/startObject/variables body and a successful 200 OK response containing an instanceId, matching the live demo described."
+ },
+ {
+  "index": 58,
+  "course": "bpm-avanzato",
+  "stem": "058_035601_stored-procedure-wrapper-mechanism",
+  "chosen": "058_035601_stored-procedure-wrapper-mechanism__c1_t14173.jpg",
+  "reason": "SQL Server shows the exec BPM_CreateNewProcess call together with a select * from ChiamateAPI result grid, illustrating the stored-procedure wrapper writing into the staging table."
+ },
+ {
+  "index": 59,
+  "course": "bpm-avanzato",
+  "stem": "059_035706_triggers-the-only-way-to-catch-sam-side-events",
+  "chosen": "059_035706_triggers-the-only-way-to-catch-sam-side-events__c2_t14274.jpg",
+  "reason": "Shows the actual SQL trigger code (ALTER trigger t_LancioBPM_RDA on OACTES after update) that catches a SAM-side event and calls the BPM stored procedure."
+ },
+ {
+  "index": 60,
+  "course": "bpm-avanzato",
+  "stem": "060_035934_trigger-stored-procedure-calls-are-fire-and-forget",
+  "chosen": null,
+  "reason": "This is a purely verbal caveat about asynchronous/fire-and-forget behavior; the window only shows leftover trigger code and unrelated workflow-model screens, none of which visually depict the async warning."
+ },
+ {
+  "index": 61,
+  "course": "bpm-avanzato",
+  "stem": "061_040234_external-id-convention-for-trigger-started-process",
+  "chosen": "061_040234_external-id-convention-for-trigger-started-process__c0_t14554.jpg",
+  "reason": "SSMS object explorer shows the BPM_CreateNewProcess stored procedure's parameter list including @externalID, the literal parameter name the convention discusses."
+ },
+ {
+  "index": 62,
+  "course": "bpm-avanzato",
+  "stem": "062_040846_recap-four-aspects-of-sam-bpm-integration",
+  "chosen": "062_040846_recap-four-aspects-of-sam-bpm-integration__c4_t15022.jpg",
+  "reason": "Shows the SAM/ERP2 'To Do list' calendar with BPM tasks appearing inline, concretely illustrating the fourth recap point (SAM showing the BPM to-do list)."
+ },
+ {
+  "index": 63,
+  "course": "bpm-avanzato",
+  "stem": "063_041304_anecdote-a-trigger-event-too-fuzzy-to-automate-rel",
+  "chosen": "063_041304_anecdote-a-trigger-event-too-fuzzy-to-automate-rel__c1_t15208.jpg",
+  "reason": "Shows the COMMESSA process model with the 'CONTROLLO DISEGNI E DISTINTA BASE' step on screen, matching the anecdote about the ambiguous 'distinta base' (BOM) insertion event."
+ },
+ {
+  "index": 64,
+  "course": "bpm-avanzato",
+  "stem": "064_041805_process-planning-scheduling-topic-introduced",
+  "chosen": null,
+  "reason": "The window only shows a process-model list and a generic blank 5-task workflow being created; no Pianificazione/Gantt UI is visible yet to depict the newly introduced planning topic."
+ },
+ {
+  "index": 65,
+  "course": "bpm-avanzato",
+  "stem": "065_042229_demo-setting-standard-task-durations-on-the-model",
+  "chosen": "065_042229_demo-setting-standard-task-durations-on-the-model__c0_t15749.jpg",
+  "reason": "Shows the 'Pianificazione e scadenze' dialog for a task with 'Durata prevista' set to 5, exactly the demo of setting standard task durations described."
+ },
+ {
+  "index": 66,
+  "course": "bpm-avanzato",
+  "stem": "066_042501_auto-generated-gantt-chart",
+  "chosen": "066_042501_auto-generated-gantt-chart__c1_t15925.jpg",
+  "reason": "Shows the process instance's Pianificazione tab with a fully auto-generated Gantt chart for all five tasks right after the process started, matching the description."
+ },
+ {
+  "index": 67,
+  "course": "bpm-avanzato",
+  "stem": "067_042732_completing-a-task-updates-the-gantt-live",
+  "chosen": "067_042732_completing-a-task-updates-the-gantt-live__c2_t16079.jpg",
+  "reason": "Gantt view shows Task 1 compacted to a small actual bar with its original dashed outline still visible and Task 2 shifted earlier (green bar with a shifted dashed box), matching the live update after quickly completing task 1."
+ },
+ {
+  "index": 68,
+  "course": "bpm-avanzato",
+  "stem": "068_042842_plan-always-pushes-right-never-pulls-left",
+  "chosen": "068_042842_plan-always-pushes-right-never-pulls-left__c0_t16122.jpg",
+  "reason": "Gantt chart with TASK 5 tooltip showing both the original planned dates and the 'Aggiornata' (updated) planned dates side by side, illustrating the parallel schedule tracking behind the push-right rule."
+ },
+ {
+  "index": 69,
+  "course": "bpm-avanzato",
+  "stem": "069_042917_data-scadenza-deadline-concept",
+  "chosen": "069_042917_data-scadenza-deadline-concept__c1_t16181.jpg",
+  "reason": "Task detail dialog open on the 'Scadenza ultima' (deadline) field with its date picker, showing exactly where the hard deadline constraint is configured on a task."
+ },
+ {
+  "index": 70,
+  "course": "bpm-avanzato",
+  "stem": "070_043315_three-parallel-date-sets-initial-updated-actual",
+  "chosen": "070_043315_three-parallel-date-sets-initial-updated-actual__c1_t16419.jpg",
+  "reason": "TASK 1 dialog showing all three date sets at once — PROGRAMMAZIONE, AGGIORNAMENTO and EFFETTIVI — all populated since the task is finished, matching the initial/updated/actual concept exactly."
+ },
+ {
+  "index": 71,
+  "course": "bpm-avanzato",
+  "stem": "071_043628_rileva-inizio-flag-decouples-start-from-activation",
+  "chosen": "071_043628_rileva-inizio-flag-decouples-start-from-activation__c0_t16588.jpg",
+  "reason": "Activity 'Pianificazione e scadenze' properties dialog with the 'Rileva inizio' checkbox clearly visible, which is the exact flag being described."
+ },
+ {
+  "index": 72,
+  "course": "bpm-avanzato",
+  "stem": "072_044240_linking-deadlines-durations-to-variables",
+  "chosen": "072_044240_linking-deadlines-durations-to-variables__c4_t17056.jpg",
+  "reason": "The 'Variabili' tab of the activity's scheduling dialog showing fields to bind the updated start/end date, duration and deadline of the task to process variables, with the deadline already linked to DATA SCADENZa."
+ },
+ {
+  "index": 73,
+  "course": "bpm-avanzato",
+  "stem": "073_044836_dashboard-tool-introduced",
+  "chosen": "073_044836_dashboard-tool-introduced__c1_t17334.jpg",
+  "reason": "Configuration screen with 'Dashboard' selected in the sidebar and 'Nuovo dashboard' / 'Modifica dashboard' options shown, the moment the dashboard tool is introduced in the interface."
+ },
+ {
+  "index": 74,
+  "course": "bpm-avanzato",
+  "stem": "074_045008_demo-create-a-dashboard-and-add-a-data-source",
+  "chosen": "074_045008_demo-create-a-dashboard-and-add-a-data-source__c3_t17480.jpg",
+  "reason": "Dashboard editor with the new 'Elenco Reclami' data source selected, showing the full list of pulled-in process variables (CODICE CLIENTE, DESCRIZIONE, EMETTERE NC, etc.) now available as fields."
+ },
+ {
+  "index": 75,
+  "course": "bpm-avanzato",
+  "stem": "075_045518_demo-combo-box-filter-element",
+  "chosen": "075_045518_demo-combo-box-filter-element__c3_t17790.jpg",
+  "reason": "Dashboard with 'Casella combinata 1' set to '2018', showing the pie chart and grid both cross-filtered to that year, demonstrating the combo-box acting as an interactive filter."
+ },
+ {
+  "index": 76,
+  "course": "bpm-avanzato",
+  "stem": "076_045735_dashboards-complement-not-replace-dedicated-bi-too",
+  "chosen": null,
+  "reason": "This is a purely verbal opinion/tip; the screen just continues showing the same static CLAIMS DASHBOARD example with no content specific to the 'complement, not replace BI tools' point."
+ },
+ {
+  "index": 77,
+  "course": "bpm-avanzato",
+  "stem": "077_045830_kpi-example-response-time-from-two-captured-dates",
+  "chosen": "077_045830_kpi-example-response-time-from-two-captured-dates__c0_t17910.jpg",
+  "reason": "The dashboard's 'AVG. TIME TO A[NSWER]' KPI tile showing the computed value 14,74, the on-screen response-time KPI being discussed."
+ },
+ {
+  "index": 78,
+  "course": "bpm-avanzato",
+  "stem": "078_045913_set-variable-operations-capture-today-at-key-trans",
+  "chosen": "078_045913_set-variable-operations-capture-today-at-key-trans__c4_t18049.jpg",
+  "reason": "The 'Set Variables' operation configuration dialog attached to a task transition in the RECLAMO process, matching the demo of attaching a Set Variable operation to a state transition."
+ },
+ {
+  "index": 79,
+  "course": "bpm-avanzato",
+  "stem": "079_050436_real-project-coffee-roasting-quality-control-dashb",
+  "chosen": null,
+  "reason": "Purely verbal anecdote about a coffee-roasting project; the on-screen window still shows the unrelated generic CLAIMS DASHBOARD example with no coffee/roasting content anywhere in the window."
+ },
+ {
+  "index": 80,
+  "course": "bpm-avanzato",
+  "stem": "080_050511_dashboards-live-under-analisi-dati-also-available-",
+  "chosen": "080_050511_dashboards-live-under-analisi-dati-also-available-__c5_t18431.jpg",
+  "reason": "Shows the BPM web client in a browser (localhost/BPM/app.aspx) with the Dashboard > Statistiche qualita > Reclami menu open and the Claims Dashboard loading, confirming the dashboard is also available on the web."
+ },
+ {
+  "index": 81,
+  "course": "bpm-avanzato",
+  "stem": "081_051108_da-confermare-to-be-confirmed-planning-concept",
+  "chosen": "081_051108_da-confermare-to-be-confirmed-planning-concept__c1_t18686.jpg",
+  "reason": "Shows the task properties dialog (Pianificazione e scadenze) with the \"Da confermare\" checkbox alongside Durata prevista and Scadenza fields, the exact per-task flag the title names."
+ },
+ {
+  "index": 82,
+  "course": "bpm-avanzato",
+  "stem": "082_051243_demo-confirming-freezes-the-baseline-plan",
+  "chosen": "082_051243_demo-confirming-freezes-the-baseline-plan__c4_t18859.jpg",
+  "reason": "Shows a task tooltip on the Gantt with both the original planned dates (Data inizio/fine pianificata) and the separately tracked updated dates (Data Inizio/Fine Pianificata Aggiornata), illustrating the frozen baseline vs. drifting updated schedule."
+ }
+]

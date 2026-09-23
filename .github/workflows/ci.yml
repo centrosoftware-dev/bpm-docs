@@ -26,5 +26,8 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
-      - run: pip install mkdocs-awesome-pages-plugin
+      - run: pip install mkdocs-awesome-nav
+      - run: pip install mkdocs-glightbox
+      - run: python tools/check-docs.py
+      - run: mkdocs build --strict
       - run: mkdocs gh-deploy --force

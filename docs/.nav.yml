@@ -1,6 +1,8 @@
-nav: 
-    - index.md
-    - Iniziare: getting-started
-    - Designer e Configurazione: designer-config
-    - Menù
-    - glossario.md
+nav:
+  - index.md
+  - Tutorial: tutorial
+  - Modelli di processo: modelli-di-processo
+  - Classi documentali: classi-documentali
+  - Strumenti condivisi: strumenti-condivisi
+  - Menu Configurazione: menu-configurazione
+  - Sistema: sistema

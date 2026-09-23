@@ -1,0 +1,58 @@
+area: classi-documentali
+voci:
+  - id: classi-documentali
+    tipo: area
+    nome: Classi documentali
+    percorso_ui: Classi documentali
+    pagina: classi-documentali/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: designer-classe-documentale
+    tipo: ambiente
+    nome: Designer di classe documentale
+    percorso_ui: Classi documentali > Designer
+    pagina: classi-documentali/designer/index.md
+    stato: da-documentare
+    fonte: esperto-prodotto
+  - id: elenco-classi-documentali
+    tipo: schermata
+    nome: Elenco delle classi documentali
+    percorso_ui: Classi documentali
+    pagina: classi-documentali/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: info-classe-documentale
+    tipo: schermata
+    nome: Dati generali
+    percorso_ui: Classi documentali > Designer > Info
+    pagina: classi-documentali/dati-generali.md
+    stato: da-documentare
+    fonte: esperto-prodotto
+  - id: variabili-classe-documentale
+    tipo: componente
+    nome: Variabili della classe documentale
+    percorso_ui: Classi documentali > Designer > Variabili
+    pagina: classi-documentali/variabili.md
+    stato: da-documentare
+    fonte: esperto-prodotto
+  - id: azioni-classe-documentale
+    tipo: catalogo
+    nome: Azioni
+    percorso_ui: Classi documentali > Designer > Azioni
+    pagina: classi-documentali/azioni/index.md
+    stato: da-documentare
+    fonte: esperto-prodotto
+  - id: autorizzazioni-classe-documentale
+    tipo: configurazione
+    nome: Autorizzazioni
+    percorso_ui: Classi documentali > Designer > Autorizzazioni
+    pagina: classi-documentali/autorizzazioni.md
+    stato: da-documentare
+    fonte: esperto-prodotto
+  - id: interazioni-processi-classe-documentale
+    tipo: configurazione
+    nome: Interazioni con i processi
+    percorso_ui: Classi documentali > Designer
+    pagina: classi-documentali/interazioni-con-processi.md
+    stato: da-documentare
+    fonte: esperto-prodotto

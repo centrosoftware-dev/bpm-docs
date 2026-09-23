@@ -1,0 +1,86 @@
+area: strumenti-condivisi
+voci:
+  - id: strumenti-condivisi
+    tipo: area
+    nome: Strumenti condivisi
+    percorso_ui: Vari punti di configurazione
+    pagina: strumenti-condivisi/index.md
+    stato: da-verificare
+    fonte: esperto-prodotto
+  - id: editor-variabili
+    tipo: ambiente
+    nome: Editor delle variabili
+    percorso_ui: Designer e altre configurazioni
+    pagina: strumenti-condivisi/editor-variabili/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: magazzino-variabili
+    tipo: schermata
+    nome: Magazzino delle variabili
+    percorso_ui: Editor delle variabili
+    pagina: strumenti-condivisi/editor-variabili/magazzino-delle-variabili.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: barra-strumenti-variabili
+    tipo: componente
+    nome: Barra degli strumenti
+    percorso_ui: Editor delle variabili
+    pagina: strumenti-condivisi/editor-variabili/barra-degli-strumenti.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: attributi-variabili
+    tipo: riferimento
+    nome: Attributi delle variabili
+    percorso_ui: Editor delle variabili > Pannello attributi
+    pagina: strumenti-condivisi/editor-variabili/attributi.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: tipi-variabile
+    tipo: catalogo
+    nome: Tipi di variabile
+    percorso_ui: Editor delle variabili > Tipo variabile
+    pagina: strumenti-condivisi/editor-variabili/tipi-di-variabile/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: user-type
+    tipo: tipo-variabile
+    nome: UserType
+    percorso_ui: Editor delle variabili > Tipo variabile
+    pagina: strumenti-condivisi/editor-variabili/tipi-di-variabile/user-type.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: formule-script
+    tipo: area
+    nome: Formule e script
+    percorso_ui: Vari punti di configurazione
+    pagina: strumenti-condivisi/formule-e-script/index.md
+    stato: da-verificare
+    fonte: esperto-prodotto
+  - id: editor-formule
+    tipo: ambiente
+    nome: Editor di formule
+    percorso_ui: Vari punti di configurazione > Formula
+    pagina: strumenti-condivisi/formule-e-script/editor.md
+    stato: da-documentare
+    fonte: studio-modelli-reali
+  - id: sintassi-formule
+    tipo: riferimento
+    nome: Sintassi VB.NET e variabili BPM
+    percorso_ui: Editor di formule
+    pagina: strumenti-condivisi/formule-e-script/sintassi.md
+    stato: da-documentare
+    fonte: studio-modelli-reali
+  - id: catalogo-ruoli-formule
+    tipo: catalogo
+    nome: Ruoli delle formule
+    percorso_ui: Vari punti di configurazione
+    pagina: strumenti-condivisi/formule-e-script/ruoli/index.md
+    stato: da-documentare
+    fonte: studio-modelli-reali
+  - id: glossario
+    tipo: riferimento
+    nome: Glossario
+    percorso_ui: Non applicabile
+    pagina: strumenti-condivisi/glossario.md
+    stato: da-verificare
+    fonte: manuale-precedente

@@ -1,8 +1,14 @@
 site_name: Documentazione BPM
 site_url: https://centrosoftware-dev.github.io/bpm-docs/
+exclude_docs: |
+  adr/
 plugins:
     - search
-    - awesome-pages
+    - awesome-nav
+    - glightbox:
+        zoomable: true
+        draggable: false
+        auto_caption: false
 theme:
   features:
     - navigation.tabs

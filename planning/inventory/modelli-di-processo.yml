@@ -1,0 +1,303 @@
+area: modelli-di-processo
+voci:
+  - id: modelli-di-processo
+    tipo: area
+    nome: Modelli di processo
+    percorso_ui: Modelli di processo
+    pagina: modelli-di-processo/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: pagina-info-processo
+    tipo: schermata
+    nome: Pagina Info
+    percorso_ui: Modelli di processo > Designer > Info
+    pagina: modelli-di-processo/pagina-info.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: elenco-modelli-processo
+    tipo: schermata
+    nome: Elenco dei modelli di processo
+    percorso_ui: Modelli di processo
+    pagina: modelli-di-processo/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: barra-strumenti-designer-processo
+    tipo: componente
+    nome: Barra degli strumenti
+    percorso_ui: Modelli di processo > Designer
+    pagina: modelli-di-processo/designer/barra-degli-strumenti.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: designer-processo
+    tipo: ambiente
+    nome: Designer di processo
+    percorso_ui: Modelli di processo > Designer
+    pagina: modelli-di-processo/designer/index.md
+    stato: da-verificare
+    fonte: esperto-prodotto
+  - id: pannello-attributi-designer-processo
+    tipo: componente
+    nome: Pannello attributi
+    percorso_ui: Modelli di processo > Designer
+    pagina: modelli-di-processo/designer/pannello-attributi.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: menu-contestuale-designer-processo
+    tipo: componente
+    nome: Menu contestuale
+    percorso_ui: Modelli di processo > Designer > Oggetto
+    pagina: modelli-di-processo/designer/menu-contestuale.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: puntatore
+    tipo: comando
+    nome: Puntatore
+    percorso_ui: Modelli di processo > Designer
+    pagina: modelli-di-processo/designer/puntatore.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: elementi-designer-processo
+    tipo: catalogo
+    nome: Elementi del Designer
+    percorso_ui: Modelli di processo > Designer > Designer Tools
+    pagina: modelli-di-processo/elementi/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: attivita
+    tipo: oggetto
+    nome: Attivita
+    percorso_ui: Modelli di processo > Designer > Attivita
+    pagina: modelli-di-processo/elementi/attivita.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: sottoprocesso
+    tipo: oggetto
+    nome: Sottoprocesso
+    percorso_ui: Modelli di processo > Designer > Attivita
+    pagina: modelli-di-processo/elementi/sottoprocesso.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: stato-processo
+    tipo: oggetto
+    nome: Stato
+    percorso_ui: Modelli di processo > Designer > Attivita
+    pagina: modelli-di-processo/elementi/stato.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: link
+    tipo: oggetto
+    nome: Link
+    percorso_ui: Modelli di processo > Designer > Attivita
+    pagina: modelli-di-processo/elementi/link.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: operazioni
+    tipo: catalogo
+    nome: Operazioni
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: start
+    tipo: oggetto
+    nome: Start
+    percorso_ui: Modelli di processo > Designer > Eventi
+    pagina: modelli-di-processo/elementi/eventi/start.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: eventi-processo
+    tipo: catalogo
+    nome: Eventi
+    percorso_ui: Modelli di processo > Designer > Eventi
+    pagina: modelli-di-processo/elementi/eventi.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: start-su-evento
+    tipo: oggetto
+    nome: Start su evento
+    percorso_ui: Modelli di processo > Designer > Eventi
+    pagina: modelli-di-processo/elementi/eventi/start-su-evento.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: start-a-tempo
+    tipo: oggetto
+    nome: Start a tempo
+    percorso_ui: Modelli di processo > Designer > Eventi
+    pagina: modelli-di-processo/elementi/eventi/start-a-tempo.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: attesa
+    tipo: oggetto
+    nome: Attesa
+    percorso_ui: Modelli di processo > Designer > Eventi
+    pagina: modelli-di-processo/elementi/eventi/attesa.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: fine
+    tipo: oggetto
+    nome: Fine
+    percorso_ui: Modelli di processo > Designer > Eventi
+    pagina: modelli-di-processo/elementi/eventi/fine.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: termina-processo
+    tipo: oggetto
+    nome: Termina processo
+    percorso_ui: Modelli di processo > Designer > Eventi
+    pagina: modelli-di-processo/elementi/eventi/termina-processo.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: gateway
+    tipo: catalogo
+    nome: Gateway e percorsi
+    percorso_ui: Modelli di processo > Designer > Gateway e percorsi
+    pagina: modelli-di-processo/elementi/gateway.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: gateway-percorsi-alternativi
+    tipo: oggetto
+    nome: Percorsi alternativi
+    percorso_ui: Modelli di processo > Designer > Gateway e percorsi
+    pagina: modelli-di-processo/elementi/gateway/percorsi-alternativi.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: gateway-percorsi-paralleli
+    tipo: oggetto
+    nome: Percorsi paralleli
+    percorso_ui: Modelli di processo > Designer > Gateway e percorsi
+    pagina: modelli-di-processo/elementi/gateway/percorsi-paralleli.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: gateway-percorsi-liberi
+    tipo: oggetto
+    nome: Percorsi liberi
+    percorso_ui: Modelli di processo > Designer > Gateway e percorsi
+    pagina: modelli-di-processo/elementi/gateway/percorsi-liberi.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: gateway-complex
+    tipo: oggetto
+    nome: Complex
+    percorso_ui: Modelli di processo > Designer > Gateway e percorsi
+    pagina: modelli-di-processo/elementi/gateway/complex.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: gateway-sincronizza
+    tipo: oggetto
+    nome: Sincronizza
+    percorso_ui: Modelli di processo > Designer > Gateway e percorsi
+    pagina: modelli-di-processo/elementi/gateway/sincronizza.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: processi-collegati
+    tipo: catalogo
+    nome: Processi collegati
+    percorso_ui: Modelli di processo > Designer > Processi collegati
+    pagina: modelli-di-processo/elementi/processi-collegati/index.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: elementi-grafici
+    tipo: catalogo
+    nome: Elementi grafici
+    percorso_ui: Modelli di processo > Designer > Altro
+    pagina: modelli-di-processo/elementi/elementi-grafici.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: gruppo
+    tipo: oggetto
+    nome: Gruppo
+    percorso_ui: Modelli di processo > Designer > Altro
+    pagina: modelli-di-processo/elementi/elementi-grafici/gruppo.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: swim-lane
+    tipo: oggetto
+    nome: Swim lane
+    percorso_ui: Modelli di processo > Designer > Altro
+    pagina: modelli-di-processo/elementi/elementi-grafici/swim-lane.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: immagine-canvas
+    tipo: oggetto
+    nome: Immagine
+    percorso_ui: Modelli di processo > Designer > Altro
+    pagina: modelli-di-processo/elementi/elementi-grafici/immagine.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: casella-testo
+    tipo: oggetto
+    nome: Casella di testo
+    percorso_ui: Modelli di processo > Designer > Altro
+    pagina: modelli-di-processo/elementi/elementi-grafici/casella-di-testo.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: memo
+    tipo: oggetto
+    nome: Memo
+    percorso_ui: Modelli di processo > Designer > Altro
+    pagina: modelli-di-processo/elementi/elementi-grafici/memo.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: marker
+    tipo: oggetto
+    nome: Marker
+    percorso_ui: Modelli di processo > Designer > Altro
+    pagina: modelli-di-processo/elementi/elementi-grafici/marker.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: decision-table
+    tipo: oggetto
+    nome: Decision Table
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/decision-table.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: imposta-variabili
+    tipo: oggetto
+    nome: Variabili da impostare
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/imposta-variabili.md
+    stato: da-documentare
+    fonte: esperto-prodotto
+  - id: connettore-attivo
+    tipo: oggetto
+    nome: Connettore attivo
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/connettore-attivo.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: invio-mail
+    tipo: oggetto
+    nome: Invio Mail
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/invio-mail.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: carica-dati
+    tipo: oggetto
+    nome: Carica dati
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/carica-dati.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: esegui-sql
+    tipo: oggetto
+    nome: Esegui SQL
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/esegui-sql.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: aggiorna-altro-processo
+    tipo: oggetto
+    nome: Aggiorna altro processo
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/aggiorna-altro-processo.md
+    stato: da-documentare
+    fonte: manuale-precedente
+  - id: esegui-programma
+    tipo: oggetto
+    nome: Esegui programma
+    percorso_ui: Modelli di processo > Designer > Operazioni
+    pagina: modelli-di-processo/elementi/operazioni/esegui-programma.md
+    stato: da-documentare
+    fonte: manuale-precedente

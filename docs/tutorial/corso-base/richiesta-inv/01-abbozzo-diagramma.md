@@ -1,0 +1,10 @@
+# Fase 1 — Abbozzo del diagramma
+
+1. **Aprire il Designer** e creare un nuovo modello di processo. Iniziare trascinando le attività (Task) che compongono, a grandi linee, il flusso di richiesta investimento: non è necessario avere già chiari tutti i dettagli — l'obiettivo è abbozzare rapidamente, eventualmente insieme al cliente/utente business.
+2. **Creare la prima attività**, "Presa in carico da ufficio sicurezza": trascinarla sul canvas (riceve un codice interno immutabile, es. Activity1/Activity2), poi tasto destro > "Modifica testo" per assegnarle il nome visibile.
+3. **Ribattezzare lo Start**: tasto destro sull'evento di Start (cerchio verde) > "Sposta testo" per staccare l'etichetta e scrivere, ad esempio, "Inserimento richiesta".
+4. **Aggiungere le attività successive** del flusso: "Approvazione controllo di gestione" e "Approvazione direzione industriale", collegandole in sequenza con lo strumento **Link** (trascinare dal punto di ancoraggio giallo di un'attività a quella successiva).
+5. **Allineare il disegno**: selezionare più shape con Ctrl e usare i comandi della ribbon "Stessa dimensione" e "Allinea" per tenere il diagramma ordinato e leggibile — ricordando che il disegno sarà visto dagli utenti finali.
+6. **Aggiungere gli Stati** (milestone): inserire uno stato "Inserito" collegato subito dopo lo Start e uno stato "Approvata" alla fine del flusso principale — sono etichette di avanzamento generale, indipendenti dal task specifico in corso.
+7. **Abbozzare i percorsi alternativi**: se la Direzione Industriale non approva, la richiesta torna indietro. Aggiungere un'attività "Revisione da parte del richiedente" collegata dal ramo di non-approvazione del controllo di gestione, da cui il richiedente può a sua volta rimandare la richiesta al controllo di gestione oppure rinunciare, transitando in uno stato "Annullata".
+8. **Decidere se usare un oggetto "Fine"**: opzionale, puramente cosmetico — il processo si conclude comunque automaticamente quando non restano attività da eseguire. Un secondo "Fine", ad esempio per il ramo di annullamento, può aiutare la leggibilità del diagramma senza avere alcun effetto funzionale.

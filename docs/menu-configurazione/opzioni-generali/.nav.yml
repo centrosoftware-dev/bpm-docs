@@ -1,0 +1,10 @@
+nav:
+  - index.md
+  - Parametri: parametri.md
+  - Menu personalizzati: menu-personalizzati.md
+  - Contatori: contatori.md
+  - Configurazioni Mail: configurazioni-mail.md
+  - Processi con avvio ricorrente: processi-con-avvio-ricorrente.md
+  - Aggiornamento massivo processi: aggiornamento-massivo-processi.md
+  - Attiva o disattiva processi: attiva-disattiva-processi.md
+  - Storico generale: storico-generale.md
