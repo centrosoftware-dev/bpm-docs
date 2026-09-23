@@ -48,7 +48,7 @@ Ovviamente non è possibile importare variabili che non siano già presenti a li
 L'importazione può avvenire tramite due voci della barra degli strumenti:
 
 - **Importa variabili** per importare variabili dal magazzino, già definite a livello di processo.
-- **Importa/Esporta**, che contiene le voci per importare variabili da un file locale, descritte nella [barra degli strumenti dell'Editor delle variabili](../../strumenti-condivisi/editor-variabili/barra-degli-strumenti.md#importa).
+- **Importa/Esporta**, che contiene le voci per importare variabili da un file locale, descritte nella [barra degli strumenti dell'Editor delle variabili](../../parti-comuni/editor-variabili/barra-degli-strumenti.md#importa).
 
 !!! note Ricorda
     L'importazione di una pagina è particolarmente utile quando esiste una struttura standard di dati da raccogliere, riducendo il rischio di errori manuali e velocizzando l'implementazione dei task.

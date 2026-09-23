@@ -2,11 +2,12 @@
 
 ## Dove inserire un contenuto
 
-- `docs/modelli-di-processo/`: configurazione dei modelli e del Designer di processo.
-- `docs/classi-documentali/`: configurazione delle classi documentali e delle loro regole specifiche.
-- `docs/strumenti-condivisi/`: strumenti descritti una volta sola e collegati dai contesti che li usano.
-- `docs/menu-configurazione/`: riferimento aderente alle sezioni del menu Configurazione.
-- `docs/sistema/`: gestione e monitoraggio tecnico.
+- `docs/modelli-di-processo/` (scheda **Processi**): configurazione dei modelli, Designer di processo, esecuzione (To-Do List, ricerca processi).
+- `docs/classi-documentali/` (scheda **Documenti**): classi documentali, metadati, acquisizione e ricerca dei documenti, dossier.
+- `docs/integrazione-e-ai/` (scheda **Integrazione e AI**): connettori, API REST, strumenti di intelligenza artificiale.
+- `docs/amministrazione/` (scheda **Amministrazione**): opzioni generali, utenti e gruppi, contatti, allegati, tabelle, altre opzioni e funzioni di sistema.
+- `docs/parti-comuni/` (senza scheda in alto): variabili, formule e script, dashboard, report, glossario. Descritti una volta sola e collegati da processi e documenti.
+- `docs/tutorial/` (scheda **Inizia**): percorsi di apprendimento; non fanno parte dell'inventario.
 
 Prima di creare una pagina, cerca la voce in `planning/inventory/`. Se manca, aggiungila nell'inventario della macroarea corretta.
 
@@ -30,7 +31,7 @@ Descrivi ogni campo o comando con un titolo ricercabile. Crea una pagina autonom
 
 ## Contenuti condivisi
 
-Documenta il funzionamento comune una sola volta sotto `strumenti-condivisi`. Nelle aree specifiche descrivi differenze e vincoli, quindi collega il riferimento comune.
+Documenta il funzionamento comune una sola volta sotto `parti-comuni`. Nelle aree specifiche descrivi differenze e vincoli, quindi collega il riferimento comune.
 
 Usa i termini definiti in `CONTEXT.md`. Mantieni nelle pagine i nomi esatti mostrati dall'interfaccia.
 

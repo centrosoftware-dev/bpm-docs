@@ -10,4 +10,4 @@ Il **Designer di processo** è l'ambiente nel quale si configura un modello di p
 - [Puntatore](puntatore.md): modalità di selezione degli oggetti.
 - [Elementi del Designer](../elementi/index.md): catalogo degli oggetti disponibili sul canvas.
 
-Il [canvas](../../strumenti-condivisi/glossario.md#canvas) è la superficie centrale sulla quale si dispongono e si collegano gli oggetti.
+Il [canvas](../../parti-comuni/glossario.md#canvas) è la superficie centrale sulla quale si dispongono e si collegano gli oggetti.

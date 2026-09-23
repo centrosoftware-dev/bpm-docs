@@ -4,279 +4,279 @@ voci:
     tipo: area
     nome: Menu Configurazione
     percorso_ui: Configurazione
-    pagina: menu-configurazione/index.md
+    pagina: amministrazione/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: opzioni-generali
     tipo: sezione-menu
     nome: Opzioni generali
     percorso_ui: Configurazione > Opzioni generali
-    pagina: menu-configurazione/opzioni-generali/index.md
+    pagina: amministrazione/opzioni-generali/index.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: parametri
     tipo: schermata
     nome: Parametri
     percorso_ui: Configurazione > Opzioni generali > Parametri
-    pagina: menu-configurazione/opzioni-generali/parametri.md
+    pagina: amministrazione/opzioni-generali/parametri.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: menu-personalizzati
     tipo: schermata
     nome: Menu personalizzati
     percorso_ui: Configurazione > Opzioni generali > Menu personalizzati
-    pagina: menu-configurazione/opzioni-generali/menu-personalizzati.md
+    pagina: amministrazione/opzioni-generali/menu-personalizzati.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: contatori
     tipo: schermata
     nome: Contatori
     percorso_ui: Configurazione > Opzioni generali > Contatori
-    pagina: menu-configurazione/opzioni-generali/contatori.md
+    pagina: amministrazione/opzioni-generali/contatori.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: configurazioni-mail
     tipo: schermata
     nome: Configurazioni Mail
     percorso_ui: Configurazione > Opzioni generali > Configurazioni Mail
-    pagina: menu-configurazione/opzioni-generali/configurazioni-mail.md
+    pagina: amministrazione/opzioni-generali/configurazioni-mail.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: processi-avvio-ricorrente
     tipo: schermata
     nome: Processi con avvio ricorrente
     percorso_ui: Configurazione > Opzioni generali > Processi con avvio ricorrente
-    pagina: menu-configurazione/opzioni-generali/processi-con-avvio-ricorrente.md
+    pagina: amministrazione/opzioni-generali/processi-con-avvio-ricorrente.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: aggiornamento-massivo-processi
     tipo: schermata
     nome: Aggiornamento massivo processi
     percorso_ui: Configurazione > Opzioni generali > Aggiornamento massivo processi
-    pagina: menu-configurazione/opzioni-generali/aggiornamento-massivo-processi.md
+    pagina: amministrazione/opzioni-generali/aggiornamento-massivo-processi.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: attiva-disattiva-processi
     tipo: schermata
     nome: Attiva o disattiva processi
     percorso_ui: Configurazione > Opzioni generali > Attiva o disattiva processi
-    pagina: menu-configurazione/opzioni-generali/attiva-disattiva-processi.md
+    pagina: amministrazione/opzioni-generali/attiva-disattiva-processi.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: storico-generale
     tipo: schermata
     nome: Storico generale
     percorso_ui: Configurazione > Opzioni generali > Storico generale
-    pagina: menu-configurazione/opzioni-generali/storico-generale.md
+    pagina: amministrazione/opzioni-generali/storico-generale.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: opzioni-modelli
     tipo: sezione-menu
     nome: Opzioni modelli
     percorso_ui: Configurazione > Opzioni modelli
-    pagina: menu-configurazione/opzioni-modelli/index.md
+    pagina: amministrazione/opzioni-modelli/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: impostazioni-lista-processi-excel
     tipo: schermata
     nome: Configura impostazioni lista processi da Excel
     percorso_ui: Configurazione > Opzioni modelli
-    pagina: menu-configurazione/opzioni-modelli/configura-impostazioni-lista-processi-da-excel.md
+    pagina: amministrazione/opzioni-modelli/configura-impostazioni-lista-processi-da-excel.md
     stato: da-documentare
     fonte: manuale-precedente
   - id: prefiltri-processi
     tipo: schermata
     nome: Prefiltri processi
     percorso_ui: Configurazione > Opzioni modelli
-    pagina: menu-configurazione/opzioni-modelli/prefiltri-processi.md
+    pagina: amministrazione/opzioni-modelli/prefiltri-processi.md
     stato: da-documentare
     fonte: manuale-precedente
   - id: importazione-processi-excel
     tipo: schermata
     nome: Esegui importazione processi da Excel
     percorso_ui: Configurazione > Opzioni modelli
-    pagina: menu-configurazione/opzioni-modelli/esegui-importazione-processi-da-excel.md
+    pagina: amministrazione/opzioni-modelli/esegui-importazione-processi-da-excel.md
     stato: da-documentare
     fonte: manuale-precedente
   - id: verifica-importazioni-excel
     tipo: schermata
     nome: Verifica importazioni da Excel
     percorso_ui: Configurazione > Opzioni modelli
-    pagina: menu-configurazione/opzioni-modelli/verifica-importazioni-da-excel.md
+    pagina: amministrazione/opzioni-modelli/verifica-importazioni-da-excel.md
     stato: da-documentare
     fonte: manuale-precedente
   - id: tipi-dossier
     tipo: schermata
     nome: Tipi di dossier
     percorso_ui: Configurazione > Opzioni modelli
-    pagina: menu-configurazione/opzioni-modelli/tipi-di-dossier.md
+    pagina: amministrazione/opzioni-modelli/tipi-di-dossier.md
     stato: da-documentare
     fonte: manuale-precedente
   - id: stampa-barcode-qr
     tipo: schermata
     nome: Stampa Barcode e QR
     percorso_ui: Configurazione > Opzioni modelli
-    pagina: menu-configurazione/opzioni-modelli/stampa-barcode-qr.md
+    pagina: amministrazione/opzioni-modelli/stampa-barcode-qr.md
     stato: da-documentare
     fonte: manuale-precedente
   - id: utenti-gruppi
     tipo: sezione-menu
     nome: Utenti e gruppi
     percorso_ui: Configurazione > Utenti e gruppi
-    pagina: menu-configurazione/utenti-e-gruppi/index.md
+    pagina: amministrazione/utenti-e-gruppi/index.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: contatti
     tipo: sezione-menu
     nome: Contatti
     percorso_ui: Configurazione > Contatti
-    pagina: menu-configurazione/contatti/index.md
+    pagina: amministrazione/contatti/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: gestione-contatti
     tipo: schermata
     nome: Gestione contatti
     percorso_ui: Configurazione > Contatti
-    pagina: menu-configurazione/contatti/gestione-contatti.md
+    pagina: amministrazione/contatti/gestione-contatti.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: dashboard
     tipo: sezione-menu
     nome: Dashboard
     percorso_ui: Configurazione > Dashboard
-    pagina: menu-configurazione/dashboard/index.md
+    pagina: parti-comuni/dashboard/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: configurazione-dashboard
     tipo: ambiente
     nome: Configurazione dashboard
     percorso_ui: Configurazione > Dashboard
-    pagina: menu-configurazione/dashboard/configurazione.md
+    pagina: parti-comuni/dashboard/configurazione.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: report
     tipo: sezione-menu
     nome: Report
     percorso_ui: Configurazione > Report
-    pagina: menu-configurazione/report/index.md
+    pagina: parti-comuni/report/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: configurazione-report
     tipo: ambiente
     nome: Configurazione report
     percorso_ui: Configurazione > Report
-    pagina: menu-configurazione/report/configurazione.md
+    pagina: parti-comuni/report/configurazione.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: allegati
     tipo: sezione-menu
     nome: Allegati
     percorso_ui: Configurazione > Allegati
-    pagina: menu-configurazione/allegati/index.md
+    pagina: amministrazione/allegati/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: gruppi-allegati
     tipo: schermata
     nome: Gruppi allegati
     percorso_ui: Configurazione > Allegati
-    pagina: menu-configurazione/allegati/gruppi-allegati.md
+    pagina: amministrazione/allegati/gruppi-allegati.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: tipi-allegati
     tipo: schermata
     nome: Tipi allegati
     percorso_ui: Configurazione > Allegati
-    pagina: menu-configurazione/allegati/tipi-allegati.md
+    pagina: amministrazione/allegati/tipi-allegati.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: modelli-allegati
     tipo: schermata
     nome: Modelli allegati
     percorso_ui: Configurazione > Allegati
-    pagina: menu-configurazione/allegati/modelli-allegati.md
+    pagina: amministrazione/allegati/modelli-allegati.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: tabelle
     tipo: sezione-menu
     nome: Tabelle
     percorso_ui: Configurazione > Tabelle
-    pagina: menu-configurazione/tabelle/index.md
+    pagina: amministrazione/tabelle/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: editor-tabelle
     tipo: ambiente
     nome: Editor delle tabelle personalizzate
     percorso_ui: Configurazione > Tabelle
-    pagina: menu-configurazione/tabelle/editor.md
+    pagina: amministrazione/tabelle/editor.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettori
     tipo: sezione-menu
     nome: Connettori
     percorso_ui: Configurazione > Connettori
-    pagina: menu-configurazione/connettori/index.md
+    pagina: integrazione-e-ai/connettori/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: elenco-connettori
     tipo: schermata
     nome: Elenco connettori
     percorso_ui: Configurazione > Connettori
-    pagina: menu-configurazione/connettori/elenco.md
+    pagina: integrazione-e-ai/connettori/elenco.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: stringhe-connessione
     tipo: schermata
     nome: Stringhe di connessione
     percorso_ui: Configurazione > Connettori
-    pagina: menu-configurazione/connettori/stringhe-di-connessione.md
+    pagina: integrazione-e-ai/connettori/stringhe-di-connessione.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: utility-connector
     tipo: connettore
     nome: UtilityConnector
     percorso_ui: Configurazione > Connettori
-    pagina: menu-configurazione/connettori/utility-connector.md
+    pagina: integrazione-e-ai/connettori/utility-connector.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettore-mail
     tipo: connettore
     nome: Connettore Mail
     percorso_ui: Configurazione > Connettori
-    pagina: menu-configurazione/connettori/mail.md
+    pagina: integrazione-e-ai/connettori/mail.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettore-pdf
     tipo: connettore
     nome: Connettore PDF
     percorso_ui: Configurazione > Connettori
-    pagina: menu-configurazione/connettori/pdf.md
+    pagina: integrazione-e-ai/connettori/pdf.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettore-web-service
     tipo: connettore
     nome: Connettore WebService
     percorso_ui: Configurazione > Connettori
-    pagina: menu-configurazione/connettori/web-service.md
+    pagina: integrazione-e-ai/connettori/web-service.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: altre-opzioni
     tipo: sezione-menu
     nome: Altre opzioni
     percorso_ui: Configurazione > Altre opzioni
-    pagina: menu-configurazione/altre-opzioni/index.md
+    pagina: amministrazione/altre-opzioni/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: variabili-ambiente
     tipo: schermata
     nome: Variabili di ambiente
     percorso_ui: Configurazione > Altre opzioni
-    pagina: menu-configurazione/altre-opzioni/variabili-di-ambiente.md
+    pagina: amministrazione/altre-opzioni/variabili-di-ambiente.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: chiavi-api-inbound
     tipo: schermata
     nome: Chiavi API inbound
     percorso_ui: Configurazione > Altre opzioni
-    pagina: menu-configurazione/altre-opzioni/chiavi-api-inbound.md
+    pagina: amministrazione/altre-opzioni/chiavi-api-inbound.md
     stato: da-documentare
     fonte: esperto-prodotto

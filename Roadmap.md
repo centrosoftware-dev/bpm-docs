@@ -38,6 +38,12 @@
 ## Decisioni del 23/9
 
 - Tutorial e riferimento possono ripetere gli stessi concetti. Il tutorial non copre tutto: il riferimento resta la fonte completa.
+- Navigazione principale: Inizia (home e tutorial) · Processi · Documenti · Integrazione e AI · Amministrazione. La scheda Tutorial scompare: i percorsi di apprendimento stanno sotto Inizia.
+- Amministrazione unisce Menu Configurazione e Sistema. Connettori passano a Integrazione e AI; dashboard e report alle Parti comuni.
+- Parti comuni (variabili, formule e script, dashboard, report, glossario): nessuna scheda in alto; ci si arriva dai link di processi, documenti e homepage. La sezione resta nella navigazione per avere la barra laterale, ma la sua scheda è nascosta via CSS.
+- Ogni informazione si documenta dove si configura. Dashboard e report si configurano nei loro menu ma si consultano da menu personalizzati e schermate dei processi: le pagine di configurazione lo dicono subito, e i modelli di processo e di documento rimandano a esse.
+- La parte operativa, piccola, sta nell'area a cui appartiene: To-Do List e ricerca processi in Processi; ricerca documenti e dossier in Documenti.
+- Nei contenuti non insistere sul client desktop: il Designer passerà al web nei prossimi mesi.
 
 ## Da fare — Riccardo
 

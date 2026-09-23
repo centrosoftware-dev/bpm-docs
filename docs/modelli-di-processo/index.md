@@ -32,7 +32,7 @@ Gli strumenti del Designer sono suddivisi in più sezioni:
 3. Un [pannello degli attributi](designer/pannello-attributi.md) a destra, che mostra le proprieta dell'elemento selezionato. Se viene chiuso, si puo riaprire premendo ++f4++.
 
 4. Una sezione nella parte inferiore contente le etichette delle diverse pagine di lavoro attualmente aperte e una scroll bar per regolare lo zoom su queste pagine. Inizialmente la pagina selezionata è quella del processo, in cui troviamo tutti gli elementi grafici del flusso.  
-Subito a sinistra si trova la [pagina Info](pagina-info.md), dedicata alle impostazioni del modello. Le altre schede vengono aggiunte quando si aprono strumenti come l'[Editor delle variabili](../strumenti-condivisi/editor-variabili/index.md).
+Subito a sinistra si trova la [pagina Info](pagina-info.md), dedicata alle impostazioni del modello. Le altre schede vengono aggiunte quando si aprono strumenti come l'[Editor delle variabili](../parti-comuni/editor-variabili/index.md).
 
 ![Componenti del Designer di processo](../assets/modelli-di-processo/designer-parts.png "Componenti del Designer di processo")
 

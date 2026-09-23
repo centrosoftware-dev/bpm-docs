@@ -17,26 +17,30 @@ REQUIRED_FIELDS = {"id", "tipo", "nome", "percorso_ui", "pagina", "stato", "font
 MARKDOWN_LINK = re.compile(r"!?\[[^]]*]\(([^)]+)\)")
 SAFE_PATH_PART = re.compile(r"^[a-z0-9.-]+$")
 EXPECTED_ROOT_NAV = [
-    {"Home": "index.md"},
-    {"Tutorial": "tutorial"},
-    {"Modelli di processo": "modelli-di-processo"},
-    {"Classi documentali": "classi-documentali"},
-    {"Strumenti condivisi": "strumenti-condivisi"},
-    {"Menu Configurazione": "menu-configurazione"},
-    {"Sistema": "sistema"},
+    {"Inizia": [
+        {"Home": "index.md"},
+        {"Tutorial": "tutorial/index.md"},
+        {"Corso base": "tutorial/corso-base"},
+        {"Corso avanzato": "tutorial/corso-avanzato"},
+    ]},
+    {"Processi": "modelli-di-processo"},
+    {"Documenti": "classi-documentali"},
+    {"Integrazione e AI": "integrazione-e-ai"},
+    {"Amministrazione": "amministrazione"},
+    {"Parti comuni": "parti-comuni"},
 ]
 EXPECTED_CONFIGURATION_NAV = [
     "index.md",
-    {"Opzioni generali": "opzioni-generali"},
-    {"Opzioni modelli": "opzioni-modelli"},
-    {"Utenti e gruppi": "utenti-e-gruppi"},
-    {"Contatti": "contatti"},
-    {"Dashboard": "dashboard"},
-    {"Report": "report"},
-    {"Allegati": "allegati"},
-    {"Tabelle": "tabelle"},
-    {"Connettori": "connettori"},
-    {"Altre opzioni": "altre-opzioni"},
+    {"Configurazione": [
+        {"Opzioni generali": "opzioni-generali"},
+        {"Opzioni modelli": "opzioni-modelli"},
+        {"Utenti e gruppi": "utenti-e-gruppi"},
+        {"Contatti": "contatti"},
+        {"Allegati": "allegati"},
+        {"Tabelle": "tabelle"},
+        {"Altre opzioni": "altre-opzioni"},
+    ]},
+    {"Sistema": "sistema"},
 ]
 
 
@@ -132,8 +136,8 @@ def check_navigation(errors: list[str]) -> None:
         nav = data.get("nav", [])
         if nav_file == DOCS / ".nav.yml" and nav != EXPECTED_ROOT_NAV:
             errors.append(f"{nav_file}: le macroaree non corrispondono alla struttura concordata.")
-        if nav_file == DOCS / "menu-configurazione" / ".nav.yml" and nav != EXPECTED_CONFIGURATION_NAV:
-            errors.append(f"{nav_file}: le sezioni non corrispondono al Menu Configurazione.")
+        if nav_file == DOCS / "amministrazione" / ".nav.yml" and nav != EXPECTED_CONFIGURATION_NAV:
+            errors.append(f"{nav_file}: le sezioni non corrispondono ad Amministrazione.")
 
         for target in navigation_targets(nav):
             if target == "...":

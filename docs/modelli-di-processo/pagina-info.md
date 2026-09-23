@@ -37,7 +37,7 @@ Questa sezione include campi che permettono di controllare il comportamento auto
 Campo per definire una formula che costruisce il nome delle istanze di processo in base a regole o variabili.
 
 !!! info "Automazione Formula Nome"
-    Sebbene questo campo sia opzionale, e consigliabile definire una _Formula Nome_. Un modo per rendere univoci i nomi e inserire un **Progressivo**, cioe una variabile numerica incrementata quando viene creata una nuova istanza di processo. La variabile deve essere definita nel [Magazzino delle variabili](../strumenti-condivisi/editor-variabili/magazzino-delle-variabili.md).
+    Sebbene questo campo sia opzionale, e consigliabile definire una _Formula Nome_. Un modo per rendere univoci i nomi e inserire un **Progressivo**, cioe una variabile numerica incrementata quando viene creata una nuova istanza di processo. La variabile deve essere definita nel [Magazzino delle variabili](../parti-comuni/editor-variabili/magazzino-delle-variabili.md).
 
 ##### Formula descrizione
 Campo per definire una formula che costruisce la descrizione dell'istanza di processo in base a regole o variabili.

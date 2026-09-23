@@ -83,7 +83,7 @@ Permette di visualizzare/nascondere il pannello degli attributi sulla destra.
 
 ##### Inserimento/modifica variabili
 
-Cliccando su questo pulsante si apre il [Magazzino delle variabili](../../strumenti-condivisi/editor-variabili/magazzino-delle-variabili.md).
+Cliccando su questo pulsante si apre il [Magazzino delle variabili](../../parti-comuni/editor-variabili/magazzino-delle-variabili.md).
 
 ##### Variabili per ricerche
 

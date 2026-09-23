@@ -10,7 +10,7 @@ hide:
 
 # Processi, documenti e AI.
 
-BPM porta ordine nel lavoro che oggi passa da email, fogli Excel condivisi e file *ultima versione (1)(1).doc*: lo trasforma in flussi strutturati che ricordano a ciascuno cosa fare, avvisano quando qualcosa è in ritardo e certificano che le regole aziendali sono state rispettate.
+BPM trasforma il lavoro che coinvolge più persone e reparti, oggi affidato a email, fogli condivisi e passaggi informali, in flussi strutturati: ognuno sa cosa deve fare, i ritardi emergono subito e ogni passaggio resta tracciato secondo le regole aziendali.
 
 [Primi passi](tutorial/index.md){ .md-button .md-button--primary }
 [Consulta il riferimento](modelli-di-processo/index.md){ .md-button }
@@ -37,13 +37,13 @@ BPM porta ordine nel lavoro che oggi passa da email, fogli Excel condivisi e fil
 
     Lettura e scrittura verso ERP, CRM, database e web service tramite connettori; API REST.
 
-    [:octicons-arrow-right-24: Connettori](menu-configurazione/connettori/index.md)
+    [:octicons-arrow-right-24: Connettori](integrazione-e-ai/connettori/index.md)
 
 -   :material-creation-outline:{ .lg } **AI**
 
     Acquisizione di documenti da mail e cartelle, estrazione di testo e metadati, comprensione dei contenuti all'interno dei processi.
 
-    *Sezione in preparazione.*
+    [:octicons-arrow-right-24: Integrazione e AI](integrazione-e-ai/index.md)
 
 </div>
 
@@ -94,30 +94,40 @@ BPM porta ordine nel lavoro che oggi passa da email, fogli Excel condivisi e fil
 
 <div class="grid cards" markdown>
 
--   [:material-sitemap-outline: **Modelli di processo**](modelli-di-processo/index.md)
+-   [:material-sitemap-outline: **Processi**](modelli-di-processo/index.md)
 
-    Il Designer e tutti gli oggetti di un flusso.
+    Il Designer, gli oggetti di un flusso, l'esecuzione.
 
--   [:material-file-document-multiple-outline: **Classi documentali**](classi-documentali/index.md)
+-   [:material-file-document-multiple-outline: **Documenti**](classi-documentali/index.md)
 
-    Configurazione dei tipi di documento.
+    Classi documentali, metadati, archiviazione.
 
--   [:material-toolbox-outline: **Strumenti condivisi**](strumenti-condivisi/index.md)
+-   [:material-connection: **Integrazione e AI**](integrazione-e-ai/index.md)
 
-    Editor delle variabili, formule e glossario.
+    Connettori, API REST, intelligenza artificiale.
 
--   [:material-cog-outline: **Menu Configurazione**](menu-configurazione/index.md)
+-   [:material-cog-outline: **Amministrazione**](amministrazione/index.md)
 
-    Utenti, connettori, mail, dashboard e report.
+    Opzioni, utenti e gruppi, tabelle, sistema.
 
--   [:material-server-outline: **Sistema**](sistema/index.md)
+-   [:material-variable: **Variabili**](parti-comuni/editor-variabili/index.md)
 
-    Traduzioni, caricamenti massivi, verifiche.
+    Il magazzino delle variabili, i tipi, gli attributi.
 
--   [:material-school-outline: **Tutorial**](tutorial/index.md)
+-   [:material-function-variant: **Formule e script**](parti-comuni/formule-e-script/index.md)
 
-    Corso base, corso avanzato ed esercizi guidati.
+    Calcoli, validazioni, condizioni e logiche in Visual Basic.
+
+-   [:material-view-dashboard-outline: **Dashboard**](parti-comuni/dashboard/index.md)
+
+    Cruscotti per analizzare processi e documenti.
+
+-   [:material-file-chart-outline: **Report**](parti-comuni/report/index.md)
+
+    Documenti e stampe generati dai dati di BPM.
 
 </div>
+
+:material-book-alphabet: [Glossario](parti-comuni/glossario.md){ .bpm-small-link }
 
 <p class="bpm-home-note">Cerca usando l'etichetta mostrata nell'applicazione. Manca qualcosa o non è aggiornato? <a href="https://github.com/centrosoftware-dev/bpm-docs/issues">Segnalalo con una issue</a>.</p>

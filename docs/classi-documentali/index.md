@@ -2,7 +2,7 @@
 
 Una **classe documentale** configura un tipo di documento: variabili, azioni, autorizzazioni e interazioni con i processi.
 
-Il **Designer di classe documentale** ha la stessa struttura del Designer di processo e condivide strumenti come l'[Editor delle variabili](../strumenti-condivisi/editor-variabili/index.md). Gli oggetti disponibili e le regole applicate cambiano in funzione dello scopo documentale.
+Il **Designer di classe documentale** ha la stessa struttura del Designer di processo e condivide strumenti come l'[Editor delle variabili](../parti-comuni/editor-variabili/index.md). Gli oggetti disponibili e le regole applicate cambiano in funzione dello scopo documentale.
 
 ## Accedere alle classi documentali
 

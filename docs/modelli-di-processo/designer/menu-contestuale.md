@@ -58,7 +58,7 @@ Tramite quest'entrata è possibile definire il ruolo degli utenti rispetto ad un
 
 Si può lavorare sia su **singoli utenti** sia su **gruppi** di utente.
 
-Oltre a utenti e gruppi statici e possibile gestire variabili di tipo [UserType](../../strumenti-condivisi/editor-variabili/tipi-di-variabile/user-type.md), identificate dal simbolo `@` all'inizio del nome.  
+Oltre a utenti e gruppi statici e possibile gestire variabili di tipo [UserType](../../parti-comuni/editor-variabili/tipi-di-variabile/user-type.md), identificate dal simbolo `@` all'inizio del nome.  
 L'uso di queste variabili consente il **routing dinamico** dei task sulla base dei dati del processo in corso e garantiscono la massima flessibilità nei workflow complessi, adattandosi automaticamente a chi deve realmente gestire l'attività.
 
 Nella parte inferiore della ffinestra di configurazione è inoltre presente il flag:
@@ -80,7 +80,7 @@ I ruoli assegnabili a utenti o gruppi sono 3:
 L'entrata **_Variabili da richiedere_** permette di definire i dati che l'utente dovrà inserire o visualizzare durante l'esecuzione dell'oggetto.  
 
 Una volta cliccata, aprirà una nuova pagina dedicata all'inserimento delle variabili, a partire dalla struttura globale delle variabili di processo.  
-Questa e una versione limitata dell'[Editor delle variabili](../../strumenti-condivisi/editor-variabili/index.md), in cui:
+Questa e una versione limitata dell'[Editor delle variabili](../../parti-comuni/editor-variabili/index.md), in cui:
 
 - Non è possibile creare nuove variabili.
 - Si possono solo selezionare variabili esistenti definite a livello di processo o documento.

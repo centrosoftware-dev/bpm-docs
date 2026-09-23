@@ -1,0 +1,9 @@
+area: integrazione-e-ai
+voci:
+  - id: integrazione-e-ai
+    tipo: area
+    nome: Integrazione e AI
+    percorso_ui: Integrazione e AI
+    pagina: integrazione-e-ai/index.md
+    stato: da-verificare
+    fonte: esperto-prodotto

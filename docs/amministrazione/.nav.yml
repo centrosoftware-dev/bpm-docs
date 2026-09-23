@@ -1,0 +1,11 @@
+nav:
+  - index.md
+  - Configurazione:
+      - Opzioni generali: opzioni-generali
+      - Opzioni modelli: opzioni-modelli
+      - Utenti e gruppi: utenti-e-gruppi
+      - Contatti: contatti
+      - Allegati: allegati
+      - Tabelle: tabelle
+      - Altre opzioni: altre-opzioni
+  - Sistema: sistema

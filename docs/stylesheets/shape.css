@@ -134,3 +134,12 @@
   color: var(--shp-text-body-secondary);
   font-size: 0.75rem;
 }
+
+/* Parti comuni: sezione raggiungibile dai link, senza scheda in alto */
+.md-tabs__item:has(> a[href$="parti-comuni/"]) {
+  display: none;
+}
+
+.md-typeset .bpm-small-link {
+  font-size: 0.75rem;
+}

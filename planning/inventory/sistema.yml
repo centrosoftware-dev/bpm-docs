@@ -4,62 +4,62 @@ voci:
     tipo: area
     nome: Sistema
     percorso_ui: Sistema
-    pagina: sistema/index.md
+    pagina: amministrazione/sistema/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: dizionario-traduzioni
     tipo: schermata
     nome: Dizionario e traduzioni
     percorso_ui: Sistema > Dizionario e traduzioni
-    pagina: sistema/dizionario-e-traduzioni.md
+    pagina: amministrazione/sistema/dizionario-e-traduzioni.md
     stato: da-verificare
     fonte: manuale-precedente
   - id: caricamento-massivo
     tipo: schermata
     nome: Caricamento massivo
     percorso_ui: Sistema > Caricamento massivo
-    pagina: sistema/caricamento-massivo.md
+    pagina: amministrazione/sistema/caricamento-massivo.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: strumenti-verifica
     tipo: sezione-menu
     nome: Strumenti di verifica
     percorso_ui: Sistema > Strumenti di verifica
-    pagina: sistema/strumenti-di-verifica/index.md
+    pagina: amministrazione/sistema/strumenti-di-verifica/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: log-tecnici
     tipo: schermata
     nome: Log tecnici
     percorso_ui: Sistema > Strumenti di verifica
-    pagina: sistema/strumenti-di-verifica/log.md
+    pagina: amministrazione/sistema/strumenti-di-verifica/log.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: mail-in-uscita
     tipo: schermata
     nome: Mail in uscita
     percorso_ui: Sistema > Strumenti di verifica
-    pagina: sistema/strumenti-di-verifica/mail-in-uscita.md
+    pagina: amministrazione/sistema/strumenti-di-verifica/mail-in-uscita.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: api-in-errore
     tipo: schermata
     nome: API in errore
     percorso_ui: Sistema > Strumenti di verifica
-    pagina: sistema/strumenti-di-verifica/api-in-errore.md
+    pagina: amministrazione/sistema/strumenti-di-verifica/api-in-errore.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: aggiornamenti-software
     tipo: schermata
     nome: Aggiornamenti software
     percorso_ui: Sistema > Aggiornamenti software
-    pagina: sistema/aggiornamenti-software.md
+    pagina: amministrazione/sistema/aggiornamenti-software.md
     stato: da-documentare
     fonte: manuale-precedente
   - id: chiave-attivazione
     tipo: comando
     nome: Cambio chiave di attivazione
     percorso_ui: Sistema > Aggiornamenti software
-    pagina: sistema/aggiornamenti-software.md
+    pagina: amministrazione/sistema/aggiornamenti-software.md
     stato: da-documentare
     fonte: manuale-precedente
