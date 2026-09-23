@@ -17,6 +17,7 @@ theme:
     - search.suggest
     - search.share
   name: material
+  font: false # caricato in shape.css (design system Shape)
   logo: assets/favicon-96x96.png
   favicon: assets/fav.ico
   icon:

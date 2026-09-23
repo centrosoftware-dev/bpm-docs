@@ -1,32 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
 :root {
-    --md-text-font: "Noto Sans"; 
-    --md-code-font: "Anonymous Pro";
-    --md-primary-fg-color:        #011e41;
-    --md-primary-fg-color--light: #bac4d4;
-    --md-primary-fg-color--dark:  #153f70;
-    --md-accent-fg-color:                #17ff88;
-    --md-accent-fg-color--transparent:   #17ff871f;
-    --md-accent-bg-color:                #f4f6f9;
-    --md-accent-bg-color--light:         #e4e8ed2a;
-  }
-p a {
-  text-decoration: underline;
-}
-article ul li a{
-  text-decoration: underline;
+  /* Token del design system Shape (shape.centrosoftware.com) */
+  --shp-text-headings: #042d58;
+  --shp-text-body: #1e1e1e;
+  --shp-text-body-secondary: #808080;
+  --shp-text-link: #3093ef;
+  --shp-text-accent-onbrand: #17ff88;
+  --shp-bg-brand-primary: #011e41;
+  --shp-bg-brand-secondary: #153f70;
+  --shp-bg-brand-neutral: #f4f6f9;
+
+  /* Mappatura sulle variabili di Material */
+  --md-text-font: "Noto Sans";
+  --md-code-font: Consolas, SFMono-Regular, Menlo, Monaco, "Liberation Mono", "Courier New";
+  --md-primary-fg-color:        var(--shp-bg-brand-primary);
+  --md-primary-fg-color--light: #bac4d4;
+  --md-primary-fg-color--dark:  var(--shp-bg-brand-primary);
+  --md-accent-fg-color:              var(--shp-text-link);
+  --md-accent-fg-color--transparent: #3093ef1a;
+  --md-typeset-color:   var(--shp-text-body);
+  --md-typeset-a-color: var(--shp-text-link);
 }
 
-/* Maximum space for text block */
+/* Larghezza massima del layout: righe di testo leggibili anche su schermi grandi */
 .md-grid {
-  max-width: 100%; /* or 100%, if you want to stretch to full-width */
+  max-width: 76rem;
 }
 
-/* Admonitions width  */
-.md-typeset .admonition,
-.md-typeset details {
-  width: 75%;
-  margin: auto;
-}
 
 /* Miniature degli screenshot: piccole nel testo, a tutto schermo al clic (glightbox) */
 .md-typeset a.glightbox img {
@@ -35,4 +36,43 @@ article ul li a{
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 4px;
   cursor: zoom-in;
+}
+
+/* Titoli (Shape): blu scuro, peso 600 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: var(--shp-text-headings);
+  font-weight: 600;
+}
+
+/* Schede in alto (Shape): testo bianco, scheda attiva sottolineata in verde */
+.md-tabs__link {
+  color: #fff;
+  opacity: 0.85;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid transparent;
+}
+.md-tabs__link:hover {
+  opacity: 1;
+  color: #fff;
+}
+.md-tabs__item--active .md-tabs__link {
+  opacity: 1;
+  border-bottom-color: var(--shp-text-accent-onbrand);
+}
+
+/* Indice della pagina a destra (Shape): grigio, voce attiva azzurra */
+.md-nav--secondary .md-nav__link {
+  color: var(--shp-text-body-secondary);
+}
+.md-nav--secondary .md-nav__link--active,
+.md-nav--secondary .md-nav__link:hover {
+  color: var(--shp-text-link);
+}
+
+/* Nessun footer */
+.md-footer {
+  display: none;
 }

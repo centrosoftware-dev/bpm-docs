@@ -35,6 +35,15 @@
 
 
 
+## Decisioni del 23/9
+
+- Tutorial e riferimento possono ripetere gli stessi concetti. Il tutorial non copre tutto: il riferimento resta la fonte completa.
+
+## Da fare — Riccardo
+
+- [ ] Scrivere a mano la lista di tutto quello che il riferimento deve coprire, distinguendo le cose del prodotto (schermate, oggetti, campi, comandi) dai temi trasversali (permessi, formule, allegati…).
+- [ ] Portare avanti lo studio sui 300 modelli di processo e usarlo per verificare la lista.
+
 # Appunti sparsi
 
 analisi dati cancellare
