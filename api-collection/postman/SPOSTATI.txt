@@ -1,1 +1,0 @@
-I file Postman sono stati spostati in docs/integrazione-e-ai/integrazione/web-api/postman/.

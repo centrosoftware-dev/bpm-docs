@@ -1,0 +1,30 @@
+meta {
+  name: ExecTask
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/ExecTask
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{instanceId}}",
+    "activity": "{{activityName}}",
+    "comments": "Eseguita da API",
+    "variables": {
+      "Esito": "APPROVATA"
+    }
+  }
+}
+
+docs {
+  Esegue un'attività attiva (activity = nome interno, es. activity4).
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

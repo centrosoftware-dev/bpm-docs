@@ -1,0 +1,30 @@
+meta {
+  name: UpdateProcess
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/UpdateProcess
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{instanceId}}",
+    "variables": {
+      "Nome variabile": "nuovo valore"
+    },
+    "resetGroups": [],
+    "state": ""
+  }
+}
+
+docs {
+  Modifica le variabili e, facoltativamente, forza lo stato.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

@@ -1,9 +1,39 @@
 # Operazioni
 
-Nel contesto di un modello di processo, le operazioni rappresentano attività automatiche, come l'esecuzione di query SQL, l'invio di email o le chiamate a servizi web. Possono essere inserite nel flusso come oggetti oppure associate a momenti specifici del ciclo di vita di un altro oggetto.
+Le **operazioni** sono le attività automatiche di un processo: non richiedono un utente, le esegue il motore di BPM.
 
-Per evitare di appesantire il disegno, il sistema consente di associare operazioni direttamente agli oggetti tramite la finestra **Operazioni**.
+Un'operazione si usa in due modi:
 
-Nella finestra è possibile trascinare le operazioni disponibili e associarle a specifici eventi dell'oggetto. Le operazioni comprendono, tra le altre, Decision Table, Variabili da impostare, Invio Mail, Esegui SQL e Connettore Azione.
+- **nel flusso**, come oggetto del diagramma, collegata alle altre attività;
+- **agganciata a un momento del ciclo di vita** di un altro oggetto, per esempio all'attivazione o alla conclusione di un'attività, o al raggiungimento di uno stato. Si configura nella finestra **Operazioni** dell'oggetto e non appesantisce il disegno.
 
-Per gli stati, le operazioni possono essere associate all'evento di **attivazione**, cioè al momento in cui lo stato viene raggiunto dal flusso o attivato manualmente.
+## Tipi di operazione
+
+![Le operazioni nella palette del Designer](../../../assets/modelli-di-processo/designer/palette-operazioni.png){ width=200 }
+
+| Scopo | Operazione | Cosa fa |
+|---|---|---|
+| Logica del processo | **Decision Table** | Valorizza variabili in base a una tabella di regole. |
+| | **Imposta variabili** | Imposta o calcola variabili con uno script. |
+| Comunicazione | **Invia email** | Invia una mail a partire da un modello. |
+| Processi | **Aggiorna altro processo** | Modifica un'altra istanza di processo. |
+| Dati esterni | **Carica dati** | Legge dati da una tabella o vista e li copia nelle variabili. Vedi [Carica Dati](../../../integrazione/carica-dati.md). |
+| | **Esegui sql** | Esegue un'istruzione SQL, tipicamente di scrittura. Vedi [Esegui SQL](../../../integrazione/esegui-sql.md). |
+| Estensioni | **Connettore attivo** | Esegue una funzione di un [connettore](../../../integrazione/connettori/index.md). |
+
+## Connettore attivo
+
+**Connettore attivo** è la porta d'ingresso a tutte le funzioni dei connettori di tipo *operazione*. Nella sua configurazione si sceglie il connettore e la funzione da eseguire, per esempio Web API del connettore Web Service o SaveAttachmentToFileSystem del connettore File System. BPM presenta allora i parametri della funzione, da valorizzare con valori fissi o da collegare alle variabili del processo, in ingresso e in uscita.
+
+Le funzioni disponibili dipendono dai connettori installati e attivi: integrazione con altri sistemi, gestione di PDF e fogli di calcolo, funzioni del documentale, intelligenza artificiale.
+
+## Nomi interni
+
+Ogni oggetto del diagramma ha un nome interno, assegnato alla creazione, che compare per esempio nelle risposte delle [API standard](../../../integrazione/api-standard/processi.md#getprocess). Il prefisso indica il tipo di oggetto:
+
+| Oggetto | Nome interno |
+|---|---|
+| Connettore attivo | `ActiveConnector1`, `ActiveConnector2`, … |
+| Imposta variabili | `SetVar1`, … |
+| Invia email | `SendEmail1`, … |
+| Start su evento | `EventConnector1`, … |

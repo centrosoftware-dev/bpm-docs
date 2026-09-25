@@ -1,0 +1,9 @@
+area: intelligenza-artificiale
+voci:
+  - id: intelligenza-artificiale
+    tipo: area
+    nome: "Intelligenza artificiale"
+    percorso_ui: "Documentazione"
+    pagina: intelligenza-artificiale/index.md
+    stato: da-verificare
+    fonte: esperto-prodotto

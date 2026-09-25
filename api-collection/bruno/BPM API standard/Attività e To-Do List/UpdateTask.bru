@@ -1,0 +1,28 @@
+meta {
+  name: UpdateTask
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/UpdateTask
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{instanceId}}",
+    "activityName": "{{activityName}}",
+    "priority": 5,
+    "dueDate": "2026-12-31"
+  }
+}
+
+docs {
+  Aggiorna assegnatari, priorità, date di un'attività (solo i campi valorizzati).
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

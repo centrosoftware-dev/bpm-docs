@@ -25,7 +25,8 @@ EXPECTED_ROOT_NAV = [
     ]},
     {"Processi": "modelli-di-processo"},
     {"Documenti": "classi-documentali"},
-    {"Integrazione e AI": "integrazione-e-ai"},
+    {"Integrazione": "integrazione"},
+    {"Intelligenza artificiale": "intelligenza-artificiale"},
     {"Amministrazione": "amministrazione"},
     {"Parti comuni": "parti-comuni"},
 ]

@@ -1,0 +1,26 @@
+meta {
+  name: AddLink
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/AddLink
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{instanceId}}",
+    "linkedInstanceId": "{{linkedInstanceId}}"
+  }
+}
+
+docs {
+  Collega due istanze di processo.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

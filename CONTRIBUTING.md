@@ -4,7 +4,8 @@
 
 - `docs/modelli-di-processo/` (scheda **Processi**): configurazione dei modelli, Designer di processo, esecuzione (To-Do List, ricerca processi).
 - `docs/classi-documentali/` (scheda **Documenti**): classi documentali, metadati, acquisizione e ricerca dei documenti, dossier.
-- `docs/integrazione-e-ai/` (scheda **Integrazione e AI**): connettori, API REST, strumenti di intelligenza artificiale.
+- `docs/integrazione/` (scheda **Integrazione**): Web API, coda delle chiamate, connettori, database, fonti dati esterne, script, acquisizione documenti.
+- `docs/intelligenza-artificiale/` (scheda **Intelligenza artificiale**): strumenti di intelligenza artificiale.
 - `docs/amministrazione/` (scheda **Amministrazione**): opzioni generali, utenti e gruppi, contatti, allegati, tabelle, altre opzioni e funzioni di sistema.
 - `docs/parti-comuni/` (senza scheda in alto): variabili, formule e script, dashboard, report, glossario. Descritti una volta sola e collegati da processi e documenti.
 - `docs/tutorial/` (scheda **Inizia**): percorsi di apprendimento; non fanno parte dell'inventario.
@@ -44,6 +45,22 @@ Gli esempi (JSON, SQL, script) devono essere brevi: il sito diventerà anche doc
 - Preferisci oggetti su una riga quando sono piccoli.
 - Usa dati di fantasia e segnaposto (`<chiave-api>`, `<id-istanza>`), mai dati reali di clienti.
 - Gli esempi completi e funzionanti vanno nella collection `api-collection/`, non nelle pagine.
+
+## Connettori: parti generate
+
+Le tabelle di riferimento dei connettori (funzioni e parametri) non si scrivono a mano: le genera `tools/genera-connettori.py` dai manifesti JSON dei connettori, in `snippets/connettori/`. Le pagine le includono con:
+
+```text
+--8<-- "snippets/connettori/<connettore>.md"
+```
+
+A ogni rilascio che modifica i connettori, rigenera i file:
+
+```console
+python tools/genera-connettori.py <cartella-manifesti> snippets/connettori
+```
+
+Le descrizioni si correggono nei manifesti, non nei file generati.
 
 ## File e immagini
 

@@ -37,13 +37,13 @@ BPM trasforma il lavoro che coinvolge più persone e reparti, oggi affidato a em
 
     Lettura e scrittura verso ERP, CRM, database e web service tramite connettori; API REST.
 
-    [:octicons-arrow-right-24: Connettori](integrazione-e-ai/integrazione/connettori/index.md)
+    [:octicons-arrow-right-24: Connettori](integrazione/connettori/index.md)
 
 -   :material-creation-outline:{ .lg } **AI**
 
     Acquisizione di documenti da mail e cartelle, estrazione di testo e metadati, comprensione dei contenuti all'interno dei processi.
 
-    [:octicons-arrow-right-24: Integrazione e AI](integrazione-e-ai/index.md)
+    [:octicons-arrow-right-24: Intelligenza artificiale](intelligenza-artificiale/index.md)
 
 </div>
 
@@ -92,7 +92,7 @@ BPM trasforma il lavoro che coinvolge più persone e reparti, oggi affidato a em
 
 ## Consulta il riferimento
 
-<div class="grid cards" markdown>
+<div class="grid cards bpm-grid-3" markdown>
 
 -   [:material-sitemap-outline: **Processi**](modelli-di-processo/index.md)
 
@@ -102,9 +102,13 @@ BPM trasforma il lavoro che coinvolge più persone e reparti, oggi affidato a em
 
     Classi documentali, metadati, archiviazione.
 
--   [:material-connection: **Integrazione e AI**](integrazione-e-ai/index.md)
+-   [:material-connection: **Integrazione**](integrazione/index.md)
 
-    Connettori, API REST, intelligenza artificiale.
+    API standard, connettori, database, fonti dati esterne.
+
+-   [:material-creation-outline: **Intelligenza artificiale**](intelligenza-artificiale/index.md)
+
+    Estrazione di testo e dati, comprensione dei documenti.
 
 -   [:material-cog-outline: **Amministrazione**](amministrazione/index.md)
 

@@ -65,3 +65,19 @@ L'ambiente di progettazione nel quale si configura una classe documentale. Ha la
 
 **Formula / script**:
 Codice VB.NET inserito tramite un editor condiviso e valutato con il ruolo previsto dal punto di configurazione, per esempio calcolo, inizializzazione o validazione. Nell'interfaccia e normalmente nel manuale è chiamato formula; script è naturale per logiche procedurali piu articolate. Le variabili BPM sono citate con la sintassi `@[nome_variabile]`.
+
+**Operazione**:
+Attività automatica di un processo, eseguita dal motore. Si inserisce nel flusso oppure si aggancia a un momento del ciclo di vita di un altro oggetto. Tipi: Decision Table, Imposta variabili, Invia email, Aggiorna altro processo, Carica dati, Esegui sql, Connettore attivo.
+_Avoid_: Azione, Task automatico
+
+**Connettore attivo**:
+L'operazione che esegue una funzione di tipo operazione di un connettore. È l'unica porta d'ingresso alle operazioni dei connettori.
+_Avoid_: Connettore azione
+
+**Start su evento**:
+Evento di avvio legato a un connettore: il motore resta in ascolto e avvia il processo quando si verifica l'evento del connettore (per esempio IncomingMail, IncomingFile).
+
+**Funzione di un connettore**:
+Ciò che un connettore espone: operazione (usata tramite Connettore attivo), evento (tramite Start su evento) o azione client (tramite un pulsante nell'interfaccia).
+_Avoid_: Interfaccia (termine del manifesto, non dell'interfaccia utente)
+

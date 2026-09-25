@@ -1,0 +1,35 @@
+meta {
+  name: UpdateDocumentContent
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/UpdateDocumentContent
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{documentInstanceId}}",
+    "sourceType": "base64",
+    "base64Source": {
+      "extension": ".txt",
+      "content": "TnVvdm8gY29udGVudXRv"
+    },
+    "newVersion": "new_draft",
+    "newVersionNumber": "3",
+    "newVersionDescription": "Bozza da approvare",
+    "newVersionDate": "2026-01-31",
+    "signedCopy": false
+  }
+}
+
+docs {
+  Sostituisce solo il file del documento.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

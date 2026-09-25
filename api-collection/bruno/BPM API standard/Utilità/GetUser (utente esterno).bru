@@ -1,0 +1,27 @@
+meta {
+  name: GetUser (utente esterno)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/GetUser
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authorization": {
+      "authenticationToken": "{{apiKey}}",
+      "{{aliasType}}User": "{{aliasUser}}",
+      "{{aliasType}}Company": "{{aliasCompany}}"
+    }
+  }
+}
+
+docs {
+  Verifica il mapping con gli alias: <tipo>User / <tipo>Company.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

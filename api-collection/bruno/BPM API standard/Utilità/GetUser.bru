@@ -1,0 +1,24 @@
+meta {
+  name: GetUser
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/GetUser
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}"
+  }
+}
+
+docs {
+  Verifica l'utente BPM e restituisce email e gruppi.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

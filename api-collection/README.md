@@ -1,8 +1,8 @@
-# Collection delle Web API di BPM
+# Collection delle API standard di BPM
 
 Collection con tutte le chiamate di `/api/ext`, per Postman e per Bruno.
 
-I file Postman sono pubblicati nel sito e si trovano in `docs/integrazione-e-ai/integrazione/web-api/postman/`: sono loro la versione di riferimento. Questa cartella contiene la versione nativa per Bruno. Gli esempi usano i parametri descritti in `docs/integrazione-e-ai/integrazione/web-api/`.
+I file Postman sono pubblicati nel sito e si trovano in `docs/integrazione/api-standard/postman/`: sono loro la versione di riferimento. Questa cartella contiene la versione nativa per Bruno. Gli esempi usano i parametri descritti in `docs/integrazione/api-standard/`.
 
 ## Variabili d'ambiente
 
@@ -20,11 +20,11 @@ I file Postman sono pubblicati nel sito e si trovano in `docs/integrazione-e-ai/
 
 ## Postman
 
-Importa i due file di `docs/integrazione-e-ai/integrazione/web-api/postman/` (scaricabili anche dalla pagina Web API del sito): la collection e l'ambiente **BPM**. Seleziona l'ambiente e inserisci `bpmUrl`, `apiKey` e `userName`.
+Importa i due file di `docs/integrazione/api-standard/postman/` (scaricabili anche dalla pagina API standard del sito): la collection e l'ambiente **BPM**. Seleziona l'ambiente e inserisci `bpmUrl`, `apiKey` e `userName`.
 
 ## Bruno
 
-Apri la cartella `bruno/BPM Web API` con **Open Collection**, seleziona l'ambiente **BPM** e inserisci i valori. `apiKey` è una variabile segreta: Bruno la conserva solo in locale e non la scrive nei file.
+Apri la cartella `bruno/BPM API standard` con **Open Collection**, seleziona l'ambiente **BPM** e inserisci i valori. `apiKey` è una variabile segreta: Bruno la conserva solo in locale e non la scrive nei file.
 
 In alternativa, Bruno può importare direttamente la collection Postman.
 

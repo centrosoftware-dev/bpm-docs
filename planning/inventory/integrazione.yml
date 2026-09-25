@@ -1,0 +1,86 @@
+area: integrazione
+voci:
+  - id: api-standard
+    tipo: riferimento
+    nome: API standard
+    percorso_ui: API standard
+    pagina: integrazione/api-standard/index.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: api-standard-autenticazione
+    tipo: riferimento
+    nome: Autenticazione e utenti delle API standard
+    percorso_ui: API standard
+    pagina: integrazione/api-standard/autenticazione.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: api-standard-processi
+    tipo: riferimento
+    nome: "API standard - processi"
+    percorso_ui: API standard
+    pagina: integrazione/api-standard/processi.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: api-standard-attivita
+    tipo: riferimento
+    nome: "API standard - attività e To-Do List"
+    percorso_ui: API standard
+    pagina: integrazione/api-standard/attivita.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: api-standard-documenti
+    tipo: riferimento
+    nome: "API standard - documenti e dossier"
+    percorso_ui: API standard
+    pagina: integrazione/api-standard/documenti.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: api-standard-utilita
+    tipo: riferimento
+    nome: "API standard - utilità"
+    percorso_ui: API standard
+    pagina: integrazione/api-standard/utilita.md
+    stato: da-verificare
+    fonte: manuale-precedente
+  - id: integrazione
+    tipo: area
+    nome: "Integrazione"
+    percorso_ui: "Documentazione"
+    pagina: integrazione/index.md
+    stato: da-verificare
+    fonte: esperto-prodotto
+  - id: api-standard-coda-chiamate
+    tipo: riferimento
+    nome: "Coda delle chiamate (chiamateapi)"
+    percorso_ui: "Configurazione > Configurazione > Parametri di sistema > Engine/automatismi"
+    pagina: integrazione/coda-chiamate.md
+    stato: da-verificare
+    fonte: esperto-prodotto
+  - id: connettore-file-system
+    tipo: connettore
+    nome: "Connettore File System"
+    percorso_ui: "Configurazione > Connettori"
+    pagina: integrazione/connettori/file-system.md
+    stato: da-verificare
+    fonte: esperto-prodotto
+  - id: dati-esterni-variabili
+    tipo: riferimento
+    nome: "Dati esterni nelle variabili"
+    percorso_ui: "Designer > Variabili > Fonte dati"
+    pagina: integrazione/dati-esterni.md
+    stato: da-verificare
+    fonte: esperto-prodotto
+  - id: operazione-carica-dati
+    tipo: oggetto
+    nome: "Operazione Carica Dati"
+    percorso_ui: "Designer > Operazioni"
+    pagina: integrazione/carica-dati.md
+    stato: da-verificare
+    fonte: esperto-prodotto
+  - id: operazione-esegui-sql
+    tipo: oggetto
+    nome: "Operazione Esegui SQL"
+    percorso_ui: "Designer > Operazioni"
+    pagina: integrazione/esegui-sql.md
+    stato: da-verificare
+    fonte: esperto-prodotto

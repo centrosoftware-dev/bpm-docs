@@ -1,0 +1,17 @@
+meta {
+  name: GetVersion
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{bpmUrl}}/api/ext/GetVersion
+  body: none
+  auth: none
+}
+
+docs {
+  Versione dell'applicazione. Nessuna chiave richiesta.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

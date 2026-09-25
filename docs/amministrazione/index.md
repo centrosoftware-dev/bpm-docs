@@ -22,4 +22,4 @@ Funzioni tecniche di gestione e monitoraggio dell'applicazione e del server sott
 - [Caricamento massivo](sistema/caricamento-massivo.md)
 - [Strumenti di verifica](sistema/strumenti-di-verifica/index.md)
 
-Connettori, dashboard e report, che nell'applicazione si trovano nel menu Configurazione, sono descritti rispettivamente in [Integrazione e AI](../integrazione-e-ai/index.md) e nelle [Parti comuni](../parti-comuni/index.md).
+Connettori, dashboard e report, che nell'applicazione si trovano nel menu Configurazione, sono descritti rispettivamente in [Integrazione](../integrazione/index.md) e nelle [Parti comuni](../parti-comuni/index.md).

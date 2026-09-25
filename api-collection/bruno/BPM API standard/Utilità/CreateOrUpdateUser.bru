@@ -1,0 +1,34 @@
+meta {
+  name: CreateOrUpdateUser
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/CreateOrUpdateUser
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "targetUserName": "utente.prova",
+    "password": "",
+    "email": "utente.prova@example.com",
+    "description": "Utente di prova",
+    "isExternal": false,
+    "passwordExpired": true,
+    "singleSignOn": false,
+    "systemUserName": "",
+    "domain": "",
+    "groups": []
+  }
+}
+
+docs {
+  Crea o aggiorna un utente (serve il diritto di gestione utenti).
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

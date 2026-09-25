@@ -214,50 +214,50 @@ voci:
     tipo: sezione-menu
     nome: Connettori
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/integrazione/connettori/index.md
+    pagina: integrazione/connettori/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: elenco-connettori
     tipo: schermata
     nome: Elenco connettori
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/integrazione/connettori/elenco.md
+    pagina: integrazione/connettori/elenco.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: stringhe-connessione
     tipo: schermata
-    nome: Stringhe di connessione
-    percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/integrazione/connettori/stringhe-di-connessione.md
-    stato: da-documentare
+    nome: Connessioni esterne
+    percorso_ui: Configurazione > Configurazione > Connessioni esterne
+    pagina: integrazione/connessioni-esterne.md
+    stato: da-verificare
     fonte: esperto-prodotto
   - id: utility-connector
     tipo: connettore
     nome: UtilityConnector
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/integrazione/connettori/utility-connector.md
+    pagina: integrazione/connettori/utility-connector.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettore-mail
     tipo: connettore
     nome: Connettore Mail
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/integrazione/connettori/mail.md
-    stato: da-documentare
+    pagina: integrazione/connettori/mail.md
+    stato: da-verificare
     fonte: esperto-prodotto
   - id: connettore-pdf
     tipo: connettore
     nome: Connettore PDF
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/integrazione/connettori/pdf.md
+    pagina: integrazione/connettori/pdf.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettore-web-service
     tipo: connettore
     nome: Connettore WebService
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/integrazione/connettori/web-service.md
-    stato: da-documentare
+    pagina: integrazione/connettori/web-service.md
+    stato: da-verificare
     fonte: esperto-prodotto
   - id: altre-opzioni
     tipo: sezione-menu

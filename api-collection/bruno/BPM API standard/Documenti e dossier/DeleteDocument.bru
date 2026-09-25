@@ -1,0 +1,25 @@
+meta {
+  name: DeleteDocument
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/DeleteDocument
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "InstanceId": "{{documentInstanceId}}"
+  }
+}
+
+docs {
+  ATTENZIONE: elimina il documento.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

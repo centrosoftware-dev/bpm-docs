@@ -150,3 +150,15 @@
   background: none;
   border: none;
 }
+
+/* Griglia a tre colonne (home, "Consulta il riferimento") */
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards.bpm-grid-3 > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Immagini con larghezza esplicita ({ width=… }): rispetta la dimensione indicata */
+.md-typeset a.glightbox img[width] {
+  width: auto;
+}

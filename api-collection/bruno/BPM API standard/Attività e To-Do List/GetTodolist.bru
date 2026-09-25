@@ -1,0 +1,32 @@
+meta {
+  name: GetTodolist
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/GetTodolist
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "fromDate": "2026-01-01",
+    "toDate": "2026-12-31",
+    "filterByUser": "",
+    "filterByText": "",
+    "filterByPriority": "",
+    "includeCompleted": false,
+    "includePlanned": false,
+    "includeCC": false
+  }
+}
+
+docs {
+  To-Do List dell'utente, con i filtri indicati.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

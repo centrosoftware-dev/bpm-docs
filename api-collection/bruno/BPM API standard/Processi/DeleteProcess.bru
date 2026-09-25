@@ -1,0 +1,25 @@
+meta {
+  name: DeleteProcess
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/DeleteProcess
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{instanceId}}"
+  }
+}
+
+docs {
+  ATTENZIONE: elimina l'istanza con attività, allegati e variabili.
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}

@@ -1,0 +1,43 @@
+meta {
+  name: CreateOrUpdateDocument
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/CreateOrUpdateDocument
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "model": "{{documentModel}}",
+    "startObject": "{{startObject}}",
+    "variables": {
+      "Metadato": "valore"
+    },
+    "sourceType": "base64",
+    "base64Source": {
+      "extension": ".txt",
+      "content": "RG9jdW1lbnRvIGFnZ2lvcm5hdG8="
+    },
+    "newVersion": "new_active",
+    "newVersionNumber": "2",
+    "newVersionDescription": "Aggiornamento da API",
+    "newVersionDate": "2026-01-31",
+    "signedCopy": false
+  }
+}
+
+script:post-response {
+  if (res.body && res.body.instanceId) bru.setEnvVar("documentInstanceId", res.body.instanceId);
+}
+
+docs {
+  Crea il documento o aggiorna quello con lo stesso nome (nuova versione se gestite).
+
+  Documentazione: sezione Integrazione > API standard del sito BPM.
+}
