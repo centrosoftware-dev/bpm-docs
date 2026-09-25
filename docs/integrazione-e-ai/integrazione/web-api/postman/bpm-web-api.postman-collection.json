@@ -1,0 +1,1130 @@
+{
+  "info": {
+    "name": "BPM Web API",
+    "description": "Chiamate delle Web API di BPM (/api/ext). Imposta l'ambiente 'BPM' con bpmUrl, apiKey e userName.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Processi",
+      "item": [
+        {
+          "name": "CreateNewProcess",
+          "request": {
+            "description": "Avvia una nuova istanza di un modello di processo.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/CreateNewProcess",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "CreateNewProcess"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"model\": \"{{processModel}}\",\n  \"startObject\": \"{{startObject}}\",\n  \"variables\": {\n    \"Nome variabile\": \"valore\",\n    \"Importo\": 100.5,\n    \"Data\": \"2026-01-31\",\n    \"Gruppo righe\": [\n      {\n        \"Codice\": \"P01\",\n        \"Descrizione\": \"Riga 1\"\n      }\n    ]\n  },\n  \"attachments\": [\n    {\n      \"fileName\": \"esempio.txt\",\n      \"content\": \"RXNlbXBpbyBkaSBhbGxlZ2F0bw==\",\n      \"root\": \"\",\n      \"folder\": \"\",\n      \"group\": \"\",\n      \"isEmail\": false\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const r = pm.response.json();",
+                  "if (r.instanceId) pm.environment.set(\"instanceId\", r.instanceId);",
+                  "if (r.documentName) pm.environment.set(\"documentName\", r.documentName);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "GetProcess",
+          "request": {
+            "description": "Stato di avanzamento, variabili e (con includeGraph) immagine del diagramma.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetProcess",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetProcess"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{instanceId}}\",\n  \"includeVariables\": [\n    \"*\"\n  ],\n  \"includeGraph\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "name": "Esempio di risposta",
+              "originalRequest": {
+                "description": "Stato di avanzamento, variabili e (con includeGraph) immagine del diagramma.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{bpmUrl}}/api/ext/GetProcess",
+                  "host": [
+                    "{{bpmUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "ext",
+                    "GetProcess"
+                  ]
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{instanceId}}\",\n  \"includeVariables\": [\n    \"*\"\n  ],\n  \"includeGraph\": false\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"model\": \"RECLAMO\",\n  \"documentName\": \"2/2026\",\n  \"documentDescription\": \"2/2026\",\n  \"instanceId\": \"667cedef-4562-4ac1-b853-08ab0bc1021d\",\n  \"documentText\": \"2/2026\",\n  \"state\": \"PRESO IN CARICO\",\n  \"variables\": {\n    \"ANNO\": 2026.0,\n    \"DATA APERTURA\": \"2026-03-16T00:00:00+01:00\",\n    \"CLIENTE CODICE\": \"ALPHA\",\n    \"CREA NC\": false,\n    \"PRESA_INCARICO_NOTE\": {\n      \"HTML\": \"<p>Da valutare con la produzione</p>\",\n      \"Text\": \"Da valutare con la produzione\"\n    },\n    \"DEFINIZIONE_ATTIVITA\": [\n      {\n        \"DESCRIZIONE_ATTIVITA\": \"Verifica del lotto\",\n        \"DATA_INIZIO_ATTIVITA\": \"19/03/2026\",\n        \"SCADENZA_ATTIVITA\": \"20/03/2026\"\n      }\n    ]\n  },\n  \"activeTasks\": [\n    {\n      \"activity\": \"Activity5\",\n      \"activityDescription\": \"ORDINE DI SOSTITUZIONE\",\n      \"userName\": \"DIRTEC;RESP. PRODUZIONE\",\n      \"assignedUsers\": [\n        {\n          \"userName\": \"DIRTEC\"\n        },\n        {\n          \"userName\": \"RESP. PRODUZIONE\"\n        }\n      ]\n    }\n  ],\n  \"tasks\": {\n    \"start1\": {\n      \"task\": \"start1\",\n      \"taskDescription\": \"NUOVO RECLAMO\",\n      \"state\": \"Done\",\n      \"executionCount\": 1,\n      \"dateInitActual\": \"2026-03-16\",\n      \"dateEndActual\": \"2026-03-16T10:19:34\"\n    },\n    \"Activity1\": {\n      \"task\": \"Activity1\",\n      \"taskDescription\": \"PRESA IN CARICO\",\n      \"state\": \"Done\",\n      \"executionCount\": 2,\n      \"assignedUsers\": [\n        {\n          \"userName\": \"DIRTEC\"\n        }\n      ],\n      \"dateEndPlan\": \"2026-03-18\",\n      \"dateEndUpd\": \"2026-03-19\",\n      \"dateEndActual\": \"2026-03-19T12:07:08\",\n      \"durationPlan\": 3,\n      \"durationActual\": 4\n    },\n    \"Activity5\": {\n      \"task\": \"Activity5\",\n      \"taskDescription\": \"ORDINE DI SOSTITUZIONE\",\n      \"state\": \"Active\",\n      \"activationDate\": \"2026-09-25\",\n      \"assignedUsers\": [\n        {\n          \"userName\": \"DIRTEC\"\n        },\n        {\n          \"userName\": \"RESP. PRODUZIONE\"\n        }\n      ]\n    },\n    \"Activity3\": {\n      \"task\": \"Activity3\",\n      \"taskDescription\": \"ESITO E RISPOSTA A CLIENTE\",\n      \"state\": \"None\",\n      \"assignedUsers\": [\n        {\n          \"userName\": \"BACKOFFICE COMMERCIALE\"\n        }\n      ],\n      \"dateEndPlan\": \"2026-03-20\"\n    },\n    \"SendEmail2\": {\n      \"task\": \"SendEmail2\",\n      \"taskDescription\": \"INVIO MAIL APERTURA\",\n      \"state\": \"Done\",\n      \"operations\": {\n        \"operation1\": {\n          \"description\": \"INVIO MAIL APERTURA\",\n          \"executed\": true,\n          \"errorText\": \"Missing mail model\",\n          \"executionDate\": \"2026-03-16T10:19:34\",\n          \"executedByUser\": \"ADMIN\"\n        }\n      }\n    }\n  },\n  \"processState\": {},\n  \"links\": [],\n  \"result\": true,\n  \"message\": \"\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "GetProcess (per nome)",
+          "request": {
+            "description": "Come GetProcess, identificando l'istanza con modello + nome.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetProcess",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetProcess"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"model\": \"{{processModel}}\",\n  \"documentName\": \"{{documentName}}\",\n  \"includeVariables\": [\n    \"*\"\n  ],\n  \"includeGraph\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateProcess",
+          "request": {
+            "description": "Modifica le variabili e, facoltativamente, forza lo stato.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/UpdateProcess",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "UpdateProcess"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{instanceId}}\",\n  \"variables\": {\n    \"Nome variabile\": \"nuovo valore\"\n  },\n  \"resetGroups\": [],\n  \"state\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UploadAttachment",
+          "request": {
+            "description": "Inserisce o aggiorna un allegato del processo (contenuto in base64).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/UploadAttachment",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "UploadAttachment"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{instanceId}}\",\n  \"fileName\": \"esempio.txt\",\n  \"fileDescription\": \"Allegato di prova\",\n  \"root\": \"\",\n  \"path\": \"\",\n  \"group\": \"\",\n  \"type\": \"\",\n  \"revision\": \"\",\n  \"state\": \"\",\n  \"variables\": {},\n  \"content\": \"RXNlbXBpbyBkaSBhbGxlZ2F0bw==\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AddLink",
+          "request": {
+            "description": "Collega due istanze di processo.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/AddLink",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "AddLink"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{instanceId}}\",\n  \"linkedInstanceId\": \"{{linkedInstanceId}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetSchema",
+          "request": {
+            "description": "Variabili richieste da uno start o da un'attività.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetSchema",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetSchema"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"modelName\": \"{{processModel}}\",\n  \"activityName\": \"{{startObject}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProcessModels",
+          "request": {
+            "description": "Elenco dei modelli di processo attivi (Name, Description).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/ProcessModels",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "ProcessModels"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteProcess",
+          "request": {
+            "description": "ATTENZIONE: elimina l'istanza con attività, allegati e variabili.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/DeleteProcess",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "DeleteProcess"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{instanceId}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Attività e To-Do List",
+      "item": [
+        {
+          "name": "GetTodolist",
+          "request": {
+            "description": "To-Do List dell'utente, con i filtri indicati.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetTodolist",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetTodolist"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"fromDate\": \"2026-01-01\",\n  \"toDate\": \"2026-12-31\",\n  \"filterByUser\": \"\",\n  \"filterByText\": \"\",\n  \"filterByPriority\": \"\",\n  \"includeCompleted\": false,\n  \"includePlanned\": false,\n  \"includeCC\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetPageTodoList",
+          "request": {
+            "description": "To-Do List paginata: aggiunge page, size, totalRecords, totalPages.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetPageTodoList",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetPageTodoList"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"fromDate\": \"2026-01-01\",\n  \"toDate\": \"2026-12-31\",\n  \"filterByUser\": \"\",\n  \"filterByText\": \"\",\n  \"filterByPriority\": \"\",\n  \"includeCompleted\": false,\n  \"includePlanned\": false,\n  \"includeCC\": false,\n  \"Page\": 1,\n  \"Size\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ExecTask",
+          "request": {
+            "description": "Esegue un'attività attiva (activity = nome interno, es. activity4).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/ExecTask",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "ExecTask"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{instanceId}}\",\n  \"activity\": \"{{activityName}}\",\n  \"comments\": \"Eseguita da API\",\n  \"variables\": {\n    \"Esito\": \"APPROVATA\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateTask",
+          "request": {
+            "description": "Aggiorna assegnatari, priorità, date di un'attività (solo i campi valorizzati).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/UpdateTask",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "UpdateTask"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{instanceId}}\",\n  \"activityName\": \"{{activityName}}\",\n  \"priority\": 5,\n  \"dueDate\": \"2026-12-31\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Documenti e dossier",
+      "item": [
+        {
+          "name": "CreateNewDocument (base64)",
+          "request": {
+            "description": "Crea un documento con il file in base64.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/CreateNewDocument",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "CreateNewDocument"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"model\": \"{{documentModel}}\",\n  \"startObject\": \"{{startObject}}\",\n  \"variables\": {\n    \"Metadato\": \"valore\"\n  },\n  \"sourceType\": \"base64\",\n  \"base64Source\": {\n    \"extension\": \".txt\",\n    \"content\": \"RG9jdW1lbnRvIGRpIHByb3Zh\"\n  },\n  \"barcode\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const r = pm.response.json();",
+                  "if (r.instanceId) pm.environment.set(\"documentInstanceId\", r.instanceId);",
+                  "if (r.documentName) pm.environment.set(\"documentNameDoc\", r.documentName);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CreateNewDocument (filePath)",
+          "request": {
+            "description": "Crea un documento leggendo il file da un percorso raggiungibile dal server BPM.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/CreateNewDocument",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "CreateNewDocument"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"model\": \"{{documentModel}}\",\n  \"startObject\": \"{{startObject}}\",\n  \"variables\": {\n    \"Metadato\": \"valore\"\n  },\n  \"sourceType\": \"filePath\",\n  \"filePathSource\": {\n    \"extension\": \".pdf\",\n    \"filePath\": \"\\\\\\\\server\\\\cartella\\\\documento.pdf\",\n    \"deleteAfter\": false\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const r = pm.response.json();",
+                  "if (r.instanceId) pm.environment.set(\"documentInstanceId\", r.instanceId);",
+                  "if (r.documentName) pm.environment.set(\"documentNameDoc\", r.documentName);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CreateOrUpdateDocument",
+          "request": {
+            "description": "Crea il documento o aggiorna quello con lo stesso nome (nuova versione se gestite).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/CreateOrUpdateDocument",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "CreateOrUpdateDocument"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"model\": \"{{documentModel}}\",\n  \"startObject\": \"{{startObject}}\",\n  \"variables\": {\n    \"Metadato\": \"valore\"\n  },\n  \"sourceType\": \"base64\",\n  \"base64Source\": {\n    \"extension\": \".txt\",\n    \"content\": \"RG9jdW1lbnRvIGFnZ2lvcm5hdG8=\"\n  },\n  \"newVersion\": \"new_active\",\n  \"newVersionNumber\": \"2\",\n  \"newVersionDescription\": \"Aggiornamento da API\",\n  \"newVersionDate\": \"2026-01-31\",\n  \"signedCopy\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const r = pm.response.json();",
+                  "if (r.instanceId) pm.environment.set(\"documentInstanceId\", r.instanceId);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "UpdateDocument",
+          "request": {
+            "description": "Aggiorna metadati, stato e (facoltativo) contenuto.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/UpdateDocument",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "UpdateDocument"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{documentInstanceId}}\",\n  \"variables\": {\n    \"Metadato\": \"nuovo valore\"\n  },\n  \"resetGroups\": [],\n  \"state\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateDocumentContent",
+          "request": {
+            "description": "Sostituisce solo il file del documento.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/UpdateDocumentContent",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "UpdateDocumentContent"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"instanceId\": \"{{documentInstanceId}}\",\n  \"sourceType\": \"base64\",\n  \"base64Source\": {\n    \"extension\": \".txt\",\n    \"content\": \"TnVvdm8gY29udGVudXRv\"\n  },\n  \"newVersion\": \"new_draft\",\n  \"newVersionNumber\": \"3\",\n  \"newVersionDescription\": \"Bozza da approvare\",\n  \"newVersionDate\": \"2026-01-31\",\n  \"signedCopy\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetDocument",
+          "request": {
+            "description": "Dati del documento: come GetProcess + documentDate, documentDueDate, documentBarcode, versions.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetDocument",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetDocument"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"InstanceId\": \"{{documentInstanceId}}\",\n  \"IncludeVariables\": [\n    \"*\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SearchDocuments",
+          "request": {
+            "description": "Ricerca per metadati e campi generali fix_*.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/SearchDocuments",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "SearchDocuments"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"Models\": [\n    \"{{documentModel}}\"\n  ],\n  \"Filters\": [\n    {\n      \"Name\": \"fix_documentdate\",\n      \"Value\": null,\n      \"ValueIn\": []\n    }\n  ],\n  \"dossierType\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DownloadDocument",
+          "request": {
+            "description": "Scarica il file (risposta binaria). Version facoltativa.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/DownloadDocument",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "DownloadDocument"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"InstanceId\": \"{{documentInstanceId}}\",\n  \"Version\": 0\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DownloadDocumentJSON",
+          "request": {
+            "description": "Scarica il file dentro un JSON (FileData in base64).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/DownloadDocumentJSON",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "DownloadDocumentJSON"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"InstanceId\": \"{{documentInstanceId}}\",\n  \"Version\": 0\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DocumentVersions",
+          "request": {
+            "description": "Elenco delle versioni del documento.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/DocumentVersions",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "DocumentVersions"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"InstanceId\": \"{{documentInstanceId}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DocumentSets",
+          "request": {
+            "description": "Elenco delle classi documentali attive (Name, Description).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/DocumentSets",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "DocumentSets"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AddDocumentToDossier",
+          "request": {
+            "description": "Inserisce il documento in un dossier (creato se non esiste).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/AddDocumentToDossier",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "AddDocumentToDossier"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"InstanceId\": \"{{documentInstanceId}}\",\n  \"Dossier\": {\n    \"Type\": \"TIPO DOSSIER\",\n    \"ID\": 0,\n    \"Name\": \"Dossier di prova\",\n    \"Description\": \"\",\n    \"Contact\": \"\",\n    \"Company\": \"\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteDocument",
+          "request": {
+            "description": "ATTENZIONE: elimina il documento.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/DeleteDocument",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "DeleteDocument"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"InstanceId\": \"{{documentInstanceId}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Utilità",
+      "item": [
+        {
+          "name": "GetUser",
+          "request": {
+            "description": "Verifica l'utente BPM e restituisce email e gruppi.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetUser",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetUser"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetUser (utente esterno)",
+          "request": {
+            "description": "Verifica il mapping con gli alias: <tipo>User / <tipo>Company.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetUser",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetUser"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authorization\": {\n    \"authenticationToken\": \"{{apiKey}}\",\n    \"{{aliasType}}User\": \"{{aliasUser}}\",\n    \"{{aliasType}}Company\": \"{{aliasCompany}}\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateOrUpdateUser",
+          "request": {
+            "description": "Crea o aggiorna un utente (serve il diritto di gestione utenti).\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/CreateOrUpdateUser",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "CreateOrUpdateUser"
+              ]
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authenticationToken\": \"{{apiKey}}\",\n  \"userName\": \"{{userName}}\",\n  \"targetUserName\": \"utente.prova\",\n  \"password\": \"\",\n  \"email\": \"utente.prova@example.com\",\n  \"description\": \"Utente di prova\",\n  \"isExternal\": false,\n  \"passwordExpired\": true,\n  \"singleSignOn\": false,\n  \"systemUserName\": \"\",\n  \"domain\": \"\",\n  \"groups\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetVersion",
+          "request": {
+            "description": "Versione dell'applicazione. Nessuna chiave richiesta.\n\nDocumentazione: sezione Integrazione > Web API del sito BPM.",
+            "header": [],
+            "url": {
+              "raw": "{{bpmUrl}}/api/ext/GetVersion",
+              "host": [
+                "{{bpmUrl}}"
+              ],
+              "path": [
+                "api",
+                "ext",
+                "GetVersion"
+              ]
+            },
+            "method": "GET"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

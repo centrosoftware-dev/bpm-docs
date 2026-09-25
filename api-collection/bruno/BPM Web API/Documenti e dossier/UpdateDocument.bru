@@ -1,0 +1,30 @@
+meta {
+  name: UpdateDocument
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/UpdateDocument
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{documentInstanceId}}",
+    "variables": {
+      "Metadato": "nuovo valore"
+    },
+    "resetGroups": [],
+    "state": ""
+  }
+}
+
+docs {
+  Aggiorna metadati, stato e (facoltativo) contenuto.
+
+  Documentazione: sezione Integrazione > Web API del sito BPM.
+}

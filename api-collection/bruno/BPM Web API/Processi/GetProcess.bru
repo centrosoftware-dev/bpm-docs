@@ -1,0 +1,29 @@
+meta {
+  name: GetProcess
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/GetProcess
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{instanceId}}",
+    "includeVariables": [
+      "*"
+    ],
+    "includeGraph": false
+  }
+}
+
+docs {
+  Stato di avanzamento, variabili e (con includeGraph) immagine del diagramma.
+
+  Documentazione: sezione Integrazione > Web API del sito BPM.
+}

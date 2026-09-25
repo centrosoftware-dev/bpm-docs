@@ -10,7 +10,7 @@ Lo Start puo configurare variabili e allegati da richiedere, utenti e responsabi
 
 ## Start su evento
 
-**Start su evento** avvia un'istanza di processo quando riceve un evento esterno definito da un connettore. I connettori disponibili sono configurati nel [Menu Configurazione](../../integrazione-e-ai/connettori/index.md).
+**Start su evento** avvia un'istanza di processo quando riceve un evento esterno definito da un connettore. I connettori disponibili sono configurati nel [Menu Configurazione](../../integrazione-e-ai/integrazione/connettori/index.md).
 
 ## Start a tempo
 

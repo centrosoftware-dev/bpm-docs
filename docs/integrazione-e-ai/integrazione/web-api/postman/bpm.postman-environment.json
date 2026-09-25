@@ -1,0 +1,96 @@
+{
+  "name": "BPM",
+  "values": [
+    {
+      "key": "bpmUrl",
+      "value": "https://bpm.azienda.it/BPM",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "apiKey",
+      "value": "",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "userName",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "processModel",
+      "value": "NOME MODELLO",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "documentModel",
+      "value": "NOME CLASSE DOCUMENTALE",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "startObject",
+      "value": "start1",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "activityName",
+      "value": "activity1",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "instanceId",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "documentName",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "linkedInstanceId",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "documentInstanceId",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "documentNameDoc",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "aliasType",
+      "value": "sam",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "aliasUser",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "aliasCompany",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment"
+}

@@ -1,0 +1,24 @@
+meta {
+  name: DocumentSets
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/DocumentSets
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}"
+  }
+}
+
+docs {
+  Elenco delle classi documentali attive (Name, Description).
+
+  Documentazione: sezione Integrazione > Web API del sito BPM.
+}

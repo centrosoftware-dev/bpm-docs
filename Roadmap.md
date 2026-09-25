@@ -43,12 +43,16 @@
 - Parti comuni (variabili, formule e script, dashboard, report, glossario): nessuna scheda in alto; ci si arriva dai link di processi, documenti e homepage. La sezione resta nella navigazione per avere la barra laterale, ma la sua scheda è nascosta via CSS.
 - Ogni informazione si documenta dove si configura. Dashboard e report si configurano nei loro menu ma si consultano da menu personalizzati e schermate dei processi: le pagine di configurazione lo dicono subito, e i modelli di processo e di documento rimandano a esse.
 - La parte operativa, piccola, sta nell'area a cui appartiene: To-Do List e ricerca processi in Processi; ricerca documenti e dossier in Documenti.
+- Integrazione e AI: la pagina d'ingresso riassume e rimanda a due sezioni nettamente separate, Integrazione (Web API, coda delle chiamate, SQL, fonti dati, script, acquisizione documenti, connettori) e Intelligenza artificiale.
 - Nei contenuti non insistere sul client desktop: il Designer passerà al web nei prossimi mesi.
 
 ## Da fare — Riccardo
 
 - [ ] Scrivere a mano la lista di tutto quello che il riferimento deve coprire, distinguendo le cose del prodotto (schermate, oggetti, campi, comandi) dai temi trasversali (permessi, formule, allegati…).
 - [ ] Portare avanti lo studio sui 300 modelli di processo e usarlo per verificare la lista.
+- [ ] Autenticazione del sito: parlare con chi gestisce l'accesso di `portali.centrosoftware.com` (OAuth 2.0 custom, non OpenID Connect) per registrare un nuovo client per la documentazione e capire quali dati utente restituisce (nome, azienda, ruolo).
+- [ ] Pubblicazione su Azure dietro una piccola app ASP.NET che fa login con lo stesso flusso di ERP Connect (`/account/signin`) e serve il sito statico generato da MkDocs.
+- [ ] Da capire: integrare la pipeline CI attuale (build MkDocs) con la costruzione e il rilascio del contenitore ASP.NET, al posto di GitHub Pages. Ipotesi: un solo repository, con l'app ASP.NET in una cartella `host/` e un Dockerfile multi-stage (build MkDocs, poi build .NET, poi immagine finale con il sito in `wwwroot`).
 
 # Appunti sparsi
 

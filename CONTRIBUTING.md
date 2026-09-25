@@ -35,6 +35,16 @@ Documenta il funzionamento comune una sola volta sotto `parti-comuni`. Nelle are
 
 Usa i termini definiti in `CONTEXT.md`. Mantieni nelle pagine i nomi esatti mostrati dall'interfaccia.
 
+## Esempi di codice
+
+Gli esempi (JSON, SQL, script) devono essere brevi: il sito diventerà anche documentazione stampabile in PDF.
+
+- Mostra solo i campi che servono a capire; l'elenco completo va nella tabella dei campi.
+- Abbrevia con `…` gli elementi ripetuti, le liste lunghe e i campi secondari.
+- Preferisci oggetti su una riga quando sono piccoli.
+- Usa dati di fantasia e segnaposto (`<chiave-api>`, `<id-istanza>`), mai dati reali di clienti.
+- Gli esempi completi e funzionanti vanno nella collection `api-collection/`, non nelle pagine.
+
 ## File e immagini
 
 Usa nomi di cartelle e file in minuscolo ASCII, con parole separate da trattini. Conserva gli screenshot sotto `docs/assets/` nell'area corrispondente, ritagliali sulla parte rilevante, usa testo alternativo e non mostrare dati reali o sensibili. Lo screenshot non sostituisce la descrizione testuale.

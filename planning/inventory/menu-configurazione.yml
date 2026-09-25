@@ -214,49 +214,49 @@ voci:
     tipo: sezione-menu
     nome: Connettori
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/connettori/index.md
+    pagina: integrazione-e-ai/integrazione/connettori/index.md
     stato: da-verificare
     fonte: esperto-prodotto
   - id: elenco-connettori
     tipo: schermata
     nome: Elenco connettori
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/connettori/elenco.md
+    pagina: integrazione-e-ai/integrazione/connettori/elenco.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: stringhe-connessione
     tipo: schermata
     nome: Stringhe di connessione
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/connettori/stringhe-di-connessione.md
+    pagina: integrazione-e-ai/integrazione/connettori/stringhe-di-connessione.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: utility-connector
     tipo: connettore
     nome: UtilityConnector
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/connettori/utility-connector.md
+    pagina: integrazione-e-ai/integrazione/connettori/utility-connector.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettore-mail
     tipo: connettore
     nome: Connettore Mail
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/connettori/mail.md
+    pagina: integrazione-e-ai/integrazione/connettori/mail.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettore-pdf
     tipo: connettore
     nome: Connettore PDF
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/connettori/pdf.md
+    pagina: integrazione-e-ai/integrazione/connettori/pdf.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: connettore-web-service
     tipo: connettore
     nome: Connettore WebService
     percorso_ui: Configurazione > Connettori
-    pagina: integrazione-e-ai/connettori/web-service.md
+    pagina: integrazione-e-ai/integrazione/connettori/web-service.md
     stato: da-documentare
     fonte: esperto-prodotto
   - id: altre-opzioni
@@ -275,8 +275,8 @@ voci:
     fonte: esperto-prodotto
   - id: chiavi-api-inbound
     tipo: schermata
-    nome: Chiavi API inbound
-    percorso_ui: Configurazione > Altre opzioni
+    nome: Chiavi di accesso Web API
+    percorso_ui: Configurazione > Configurazione > Chiavi di accesso Web API
     pagina: amministrazione/altre-opzioni/chiavi-api-inbound.md
-    stato: da-documentare
+    stato: da-verificare
     fonte: esperto-prodotto

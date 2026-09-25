@@ -143,3 +143,10 @@
 .md-typeset .bpm-small-link {
   font-size: 0.75rem;
 }
+
+/* Ellissi (…) negli esempi di codice abbreviati: nessuna evidenziazione di errore */
+.md-typeset .highlight .err {
+  color: inherit;
+  background: none;
+  border: none;
+}

@@ -1,0 +1,24 @@
+meta {
+  name: ProcessModels
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/ProcessModels
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}"
+  }
+}
+
+docs {
+  Elenco dei modelli di processo attivi (Name, Description).
+
+  Documentazione: sezione Integrazione > Web API del sito BPM.
+}

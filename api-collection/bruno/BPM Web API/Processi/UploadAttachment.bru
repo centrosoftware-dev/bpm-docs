@@ -1,0 +1,35 @@
+meta {
+  name: UploadAttachment
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/UploadAttachment
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "instanceId": "{{instanceId}}",
+    "fileName": "esempio.txt",
+    "fileDescription": "Allegato di prova",
+    "root": "",
+    "path": "",
+    "group": "",
+    "type": "",
+    "revision": "",
+    "state": "",
+    "variables": {},
+    "content": "RXNlbXBpbyBkaSBhbGxlZ2F0bw=="
+  }
+}
+
+docs {
+  Inserisce o aggiorna un allegato del processo (contenuto in base64).
+
+  Documentazione: sezione Integrazione > Web API del sito BPM.
+}

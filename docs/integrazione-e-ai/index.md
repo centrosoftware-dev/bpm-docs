@@ -1,10 +1,23 @@
 # Integrazione e AI
 
-BPM non lavora mai da solo: legge e scrive dati su ERP, CRM, database e web service, espone API REST e usa l'intelligenza artificiale all'interno di processi e documenti.
+BPM dialoga con gli altri sistemi aziendali e usa l'intelligenza artificiale all'interno di processi e documenti. Sono due temi distinti, descritti in due sezioni.
 
-!!! info "Sezione in preparazione"
-    Qui confluiranno connettori, API REST e strumenti di intelligenza artificiale.
+<div class="grid cards" markdown>
 
-## Contenuti
+-   :material-connection:{ .lg } **Integrazione**
 
-- [Connettori](connettori/index.md)
+    ---
+
+    Come BPM scambia dati con ERP, CRM, database e altre applicazioni: Web API, coda delle chiamate, operazioni SQL, fonti dati esterne, script, acquisizione automatica dei documenti, connettori.
+
+    [:octicons-arrow-right-24: Integrazione](integrazione/index.md)
+
+-   :material-creation-outline:{ .lg } **Intelligenza artificiale**
+
+    ---
+
+    Acquisizione di documenti da mail e cartelle, estrazione di testo e metadati, comprensione dei contenuti.
+
+    [:octicons-arrow-right-24: Intelligenza artificiale](ai/index.md)
+
+</div>

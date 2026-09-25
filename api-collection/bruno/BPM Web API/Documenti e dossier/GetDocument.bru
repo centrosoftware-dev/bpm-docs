@@ -1,0 +1,28 @@
+meta {
+  name: GetDocument
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/GetDocument
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "InstanceId": "{{documentInstanceId}}",
+    "IncludeVariables": [
+      "*"
+    ]
+  }
+}
+
+docs {
+  Dati del documento: come GetProcess + documentDate, documentDueDate, documentBarcode, versions.
+
+  Documentazione: sezione Integrazione > Web API del sito BPM.
+}

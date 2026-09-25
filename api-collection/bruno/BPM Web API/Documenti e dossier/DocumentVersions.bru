@@ -1,0 +1,25 @@
+meta {
+  name: DocumentVersions
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{bpmUrl}}/api/ext/DocumentVersions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "authenticationToken": "{{apiKey}}",
+    "userName": "{{userName}}",
+    "InstanceId": "{{documentInstanceId}}"
+  }
+}
+
+docs {
+  Elenco delle versioni del documento.
+
+  Documentazione: sezione Integrazione > Web API del sito BPM.
+}
