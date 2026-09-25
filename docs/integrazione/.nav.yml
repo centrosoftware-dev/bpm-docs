@@ -1,10 +1,11 @@
 nav:
   - index.md
-  - Connessioni esterne: connessioni-esterne.md
-  - Dati esterni nelle variabili: dati-esterni.md
-  - Operazioni:
-      - Carica Dati: carica-dati.md
-      - Esegui SQL: esegui-sql.md
-  - Connettori: connettori
   - API standard: api-standard
   - Coda delle chiamate: coda-chiamate.md
+  - Strumenti nel processo:
+      - Connessioni esterne: connessioni-esterne.md
+      - Dati esterni nelle variabili: dati-esterni.md
+      - Operazioni:
+          - Carica Dati: carica-dati.md
+          - Esegui SQL: esegui-sql.md
+      - Connettori: connettori
