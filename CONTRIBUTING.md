@@ -62,6 +62,17 @@ python tools/genera-connettori.py <cartella-manifesti> snippets/connettori
 
 Le descrizioni si correggono nei manifesti, non nei file generati.
 
+## Manuali Word
+
+I manuali stampabili (M-BPM-Designer, M-BPM-Integrazione, M-BPM-AI, M-BPM-Admin) si generano dal sito con il modello aziendale `export/M-BPM-template.docx`:
+
+```console
+python tools/genera-manuali.py integrazione   # un manuale
+python tools/genera-manuali.py                # tutti
+```
+
+Le sezioni incluse in ciascun manuale sono definite in `MANUALI`, all'inizio dello script. I link verso pagine di altre sezioni diventano testo semplice; quelli a file scaricabili rimandano al sito. Prima di pubblicare il PDF: aprire il documento in Word, aggiornare l'indice e far fare la revisione al reparto Education. Data e versione in copertina si gestiscono a mano.
+
 ## File e immagini
 
 Usa nomi di cartelle e file in minuscolo ASCII, con parole separate da trattini. Conserva gli screenshot sotto `docs/assets/` nell'area corrispondente, ritagliali sulla parte rilevante, usa testo alternativo e non mostrare dati reali o sensibili. Lo screenshot non sostituisce la descrizione testuale.

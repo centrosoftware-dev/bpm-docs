@@ -16,6 +16,9 @@ DOCS = ROOT / "docs"
 EXPORT_DIR = ROOT / "export"
 OUTPUT_DOCX = EXPORT_DIR / "Documentazione-BPM.docx"
 INTERMEDIATE_MD = EXPORT_DIR / "_intermediate.md"
+GROUP_ROOT = EXPORT_DIR / "_gruppi"
+ICON_RE = re.compile(r":(?:material|octicons|fontawesome)-[a-z0-9-]+:(?:\{[^}]*\})?\s?")
+SNIPPET_RE = re.compile(r'^\s*--8<--\s+"([^"]+)"\s*$', re.MULTILINE)
 DOC_TITLE = "Documentazione BPM"
 # I titoli ATX in Markdown/Pandoc supportano al massimo 6 '#': oltre, la riga
 # non viene riconosciuta come intestazione (nonostante Word supporti Heading 1-9).
@@ -101,12 +104,25 @@ def walk_nav(nav_file: Path, depth: int, title_override: str | None = None) -> l
         remaining = entries
         child_depth = depth
 
+    pages.extend(walk_nav_items(nav_file, remaining, child_depth))
+    return pages
+
+
+def walk_nav_items(nav_file: Path, remaining: list, child_depth: int) -> list[NavPage]:
+    pages: list[NavPage] = []
     for item in remaining:
         if isinstance(item, str):
             resolved = resolve_local_target(nav_file.parent, item)
             if resolved is None:
                 raise FileNotFoundError(f"{nav_file}: voce di navigazione inesistente: {item}.")
             pages.append(NavPage(title=derive_title(resolved), path=resolved.resolve(), depth=child_depth))
+            continue
+
+        if isinstance(item, dict) and len(item) == 1 and isinstance(next(iter(item.values())), list):
+            # Gruppo solo di navigazione (es. "Operazioni: [..]"): intestazione senza pagina.
+            title, children = next(iter(item.items()))
+            pages.append(NavPage(title=title, path=(GROUP_ROOT / f"{nav_file.parent.name}-{title}").resolve(), depth=child_depth))
+            pages.extend(walk_nav_items(nav_file, children, child_depth + 1))
             continue
 
         if isinstance(item, dict) and len(item) == 1:
@@ -315,8 +331,22 @@ def shift_and_dedupe_headings(text: str, nav_title: str, base_level: int) -> tup
     return "\n".join(out), kept_headings
 
 
+def expand_snippets(text: str) -> str:
+    def replace(match: re.Match) -> str:
+        snippet = ROOT / match.group(1)
+        if not snippet.is_file():
+            logging.warning("Snippet non trovato: %s", match.group(1))
+            return ""
+        return snippet.read_text(encoding="utf-8")
+    return SNIPPET_RE.sub(replace, text)
+
+
 def render_page(page: NavPage) -> tuple[str, list[str]]:
-    text = page.path.read_text(encoding="utf-8")
+    if not page.path.is_file() and GROUP_ROOT.resolve() in page.path.parents:
+        heading_level = min(page.depth, MAX_MARKDOWN_HEADING)
+        return f"{'#' * heading_level} {page.title}\n", [page.title]
+    text = expand_snippets(page.path.read_text(encoding="utf-8"))
+    text = ICON_RE.sub("", text)
     text = normalize_code_fences(text)
     text = convert_admonitions(text)
     text = convert_keys(text)
@@ -360,6 +390,8 @@ def build_id_maps(
 
 def warn_unhandled_markers(pages: list[NavPage]) -> None:
     for page in pages:
+        if not page.path.is_file():
+            continue
         text = page.path.read_text(encoding="utf-8")
         for name, pattern in UNHANDLED_MARKERS.items():
             if pattern.search(text):
@@ -412,7 +444,21 @@ def main() -> int:
         print("pandoc non trovato. Eseguire: winget install --id JohnMacFarlane.Pandoc")
         return 2
 
-    pages = walk_nav(DOCS / ".nav.yml", depth=1)
+    # Uso: python tools/export-docx.py [sezione]   es. python tools/export-docx.py integrazione
+    global OUTPUT_DOCX, DOC_TITLE
+    section = sys.argv[1] if len(sys.argv) > 1 else None
+    if section:
+        section_nav = DOCS / section / ".nav.yml"
+        if not section_nav.is_file():
+            print(f"Sezione non trovata: {section}")
+            return 2
+        root_nav = load_nav(DOCS / ".nav.yml")
+        section_title = next((t for e in root_nav if isinstance(e, dict) for t, v in e.items() if v == section), section.title())
+        DOC_TITLE = f"Documentazione BPM - {section_title}"
+        OUTPUT_DOCX = EXPORT_DIR / f"Documentazione-BPM-{section}.docx"
+        pages = walk_nav(section_nav, depth=1, title_override=section_title)
+    else:
+        pages = walk_nav(DOCS / ".nav.yml", depth=1)
     warn_unhandled_markers(pages)
 
     rendered_by_page: dict[Path, str] = {}

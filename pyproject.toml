@@ -9,4 +9,6 @@ dependencies = [
     "mkdocs-awesome-nav>=3.0.0",
     "mkdocs-glightbox>=0.4.0",
     "requests>=2.34.2",
+    "python-docx>=1.1",
+    "docxcompose>=1.4",
 ]

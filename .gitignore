@@ -122,9 +122,6 @@ venv.bak/
 # mkdocs documentation
 /site
 
-# docx export artifact
-/export/
-
 # mypy
 .mypy_cache/
 .dmypy.json

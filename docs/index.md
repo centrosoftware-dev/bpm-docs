@@ -37,7 +37,7 @@ BPM trasforma il lavoro che coinvolge più persone e reparti, oggi affidato a em
 
     Lettura e scrittura verso ERP, CRM, database e web service tramite connettori; API REST.
 
-    [:octicons-arrow-right-24: Connettori](integrazione/connettori/index.md)
+    [:octicons-arrow-right-24: Integrazione](integrazione/index.md)
 
 -   :material-creation-outline:{ .lg } **AI**
 
