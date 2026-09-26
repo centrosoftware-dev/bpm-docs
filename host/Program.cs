@@ -49,7 +49,11 @@ app.MapPost("/login", async (HttpContext http, string? returnUrl) =>
     }
 
     var identity = new ClaimsIdentity(
-        new[] { new Claim(ClaimTypes.Name, user.Username) },
+        new[]
+        {
+            new Claim(ClaimTypes.Name, user.Username),
+            new Claim(ClaimTypes.GivenName, user.EffectiveDisplayName)
+        },
         CookieAuthenticationDefaults.AuthenticationScheme);
 
     await http.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
@@ -62,6 +66,12 @@ app.MapGet("/logout", async (HttpContext http) =>
     await http.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
     return Results.Redirect("/login");
 });
+
+app.MapGet("/api/whoami", (HttpContext http) => Results.Json(new
+{
+    username = http.User.Identity?.Name,
+    displayName = http.User.FindFirstValue(ClaimTypes.GivenName)
+}));
 
 // Da qui in poi, tutto (pagine, immagini, search_index.json, download) resta
 // dietro login: nessuna eccezione oltre a /login e /logout.
@@ -94,6 +104,9 @@ record UserCredential
 {
     public string Username { get; init; } = "";
     public string Password { get; init; } = "";
+    public string? DisplayName { get; init; }
+
+    public string EffectiveDisplayName => string.IsNullOrWhiteSpace(DisplayName) ? Username : DisplayName;
 }
 
 static class LoginPage

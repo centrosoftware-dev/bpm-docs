@@ -162,3 +162,68 @@
 .md-typeset a.glightbox img[width] {
   width: auto;
 }
+
+/* Badge utente + logout nella barra in alto (iniettato da javascripts/session-bar.js) */
+.bpm-session {
+  position: relative;
+  margin-left: 0.6rem;
+  flex-shrink: 0;
+}
+.bpm-session__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+}
+.bpm-session__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--shp-text-accent-onbrand);
+  color: var(--shp-bg-brand-primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.bpm-session__name {
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+.bpm-session__chevron {
+  font-size: 0.6rem;
+  opacity: 0.8;
+}
+.bpm-session__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.4rem;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  min-width: 8rem;
+  overflow: hidden;
+  z-index: 10;
+}
+.bpm-session--open .bpm-session__menu {
+  display: block;
+}
+.bpm-session__menu a {
+  display: block;
+  padding: 0.6rem 0.9rem;
+  color: var(--shp-text-body);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.bpm-session__menu a:hover {
+  background: var(--shp-bg-brand-neutral);
+  color: var(--shp-text-link);
+}

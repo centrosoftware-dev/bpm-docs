@@ -32,6 +32,8 @@ extra:
       link: https://github.com/centrosoftware-dev/bpm-docs/tree/main/docs
 extra_css:
   - stylesheets/shape.css
+extra_javascript:
+  - javascripts/session-bar.js
 
 markdown_extensions:
   - pymdownx.critic
