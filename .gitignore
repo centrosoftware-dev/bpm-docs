@@ -129,3 +129,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# host/ (ASP.NET) build output, generated site and local credentials
+host/bin/
+host/obj/
+host/wwwroot/
+host/appsettings.Development.json
+publish/
